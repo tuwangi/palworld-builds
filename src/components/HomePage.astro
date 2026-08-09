@@ -13,93 +13,104 @@ interface Props {
 const { locale } = Astro.props;
 const strings = t(locale);
 const labels = taxonomyLabels(locale);
-
 const builds = getBuildSummaries(locale);
 
 const toOptions = (map: Map<string, string>) => [...map].map(([value, label]) => ({ value, label }));
 
 function activeOptions(options: { value: string; label: string }[], key: string) {
   const activeValues = new Set<string>();
-  for (const b of builds) {
-    const val = (b as Record<string, unknown>)[key];
-    if (Array.isArray(val)) {
-      (val as string[]).forEach((v) => activeValues.add(v));
-    } else if (typeof val === "string") {
-      activeValues.add(val);
-    }
+  for (const build of builds) {
+    const value = (build as Record<string, unknown>)[key];
+    if (Array.isArray(value)) value.forEach((item) => activeValues.add(item as string));
+    else if (typeof value === "string") activeValues.add(value);
   }
-  return options.filter((o) => activeValues.has(o.value));
+  return options.filter((option) => activeValues.has(option.value));
 }
 
 const purposeOptions = activeOptions(toOptions(labels.purpose), "purpose");
 const elementOptions = activeOptions(toOptions(labels.element), "elements");
 const progressionOptions = activeOptions(toOptions(labels.progression), "progression");
 const requirementOptions = activeOptions(toOptions(labels.requirement), "requirements");
-
-const buildHrefTemplate = `${buildPath(locale)}builds/{slug}/`;
+const elementCount = new Set(builds.flatMap((build) => build.elements)).size;
 ---
 
 <Layout title={strings.pageTitle} description={strings.tagline} locale={locale}>
-  <div class="py-8 sm:py-12">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <header class="flex items-start justify-between gap-x-4">
-        <div>
-          <h1 class="font-display text-2xl font-semibold tracking-tight text-zinc-100 sm:text-3xl">
-            Palworld Builds
-          </h1>
-          <p class="mt-2 max-w-[60ch] text-base text-pretty text-zinc-400 sm:text-sm">
-            {strings.tagline}
-          </p>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href={buildPath(locale)} class="brand-lockup">
+      <span class="brand-mark" aria-hidden="true">P</span>
+      <span>
+        <span class="brand-name block">Palworld Builds</span>
+        <span class="brand-kicker">Field guide / 1.0</span>
+      </span>
+    </a>
+    <a href={strings.localeSwitchHref} class="locale-link">{strings.localeSwitchTo}</a>
+  </nav>
+
+  <main class="page-wrap">
+    <section class="hero-grid" aria-labelledby="home-title">
+      <div>
+        <p class="eyebrow">{strings.heroEyebrow}</p>
+        <h1 id="home-title" class="hero-title">{strings.heroTitleLead} <em>{strings.heroTitleAccent}</em></h1>
+        <p class="hero-copy">{strings.heroCopy}</p>
+        <div class="stat-row" aria-label="Catalog statistics">
+          <div class="stat-box"><div class="stat-value">{builds.length}</div><div class="stat-label">{strings.statBuilds}</div></div>
+          <div class="stat-box"><div class="stat-value">{elementCount}</div><div class="stat-label">{strings.statElements}</div></div>
+          <div class="stat-box"><div class="stat-value">5</div><div class="stat-label">{strings.statSlots}</div></div>
         </div>
-        <a
-          href={strings.localeSwitchHref}
-          class="shrink-0 rounded-full border border-white/10 bg-white/5 py-1.5 px-3 text-xs font-medium text-zinc-300"
-        >
-          {strings.localeSwitchTo}
-        </a>
-      </header>
-
-      <div class="mt-6">
-        <ProfileControl
-          client:load
-          strings={{
-            profileHint: strings.profileHint,
-            profilePlaceholder: strings.profilePlaceholder,
-            profileJoinButton: strings.profileJoinButton,
-            profileActiveTemplate: strings.profileActiveTemplate,
-            profileLeaveButton: strings.profileLeaveButton,
-            profileErrorInvalid: strings.profileErrorInvalid,
-            profileErrorUnavailable: strings.profileErrorUnavailable,
-          }}
-        />
       </div>
-
-      <div class="mt-8">
-        <BuildBrowser
-          client:load
-          builds={builds}
-          purposeOptions={purposeOptions}
-          elementOptions={elementOptions}
-          progressionOptions={progressionOptions}
-          requirementOptions={requirementOptions}
-          buildHrefTemplate={buildHrefTemplate}
-          strings={{
-            searchLabel: strings.searchLabel,
-            searchPlaceholder: strings.searchPlaceholder,
-            filterLegendPurpose: strings.filterLegendPurpose,
-            filterLegendElement: strings.filterLegendElement,
-            filterLegendProgression: strings.filterLegendProgression,
-            filterLegendRequirement: strings.filterLegendRequirement,
-            favoritesOnly: strings.favoritesOnly,
-            clearFilters: strings.clearFilters,
-            resultsCountTemplate: strings.resultsCountTemplate,
-            emptyState: strings.emptyState,
-            requiredEquipmentBadge: strings.requiredEquipmentBadge,
-            saveFavorite: strings.saveFavorite,
-            removeFavorite: strings.removeFavorite,
-          }}
-        />
+      <div class="hero-note">
+        <p>{strings.heroNoteOne}</p>
+        <p class="mt-4">{strings.heroNoteTwo}</p>
       </div>
-    </div>
-  </div>
+    </section>
+
+    <section class="profile-strip" aria-label="Shared favorites">
+      <div>
+        <strong>{strings.collectionTitle}</strong>
+        <p>{strings.collectionDescription}</p>
+      </div>
+      <ProfileControl
+        client:load
+        strings={{
+          profileHint: strings.profileHint,
+          profilePlaceholder: strings.profilePlaceholder,
+          profileJoinButton: strings.profileJoinButton,
+          profileActiveTemplate: strings.profileActiveTemplate,
+          profileLeaveButton: strings.profileLeaveButton,
+          profileErrorInvalid: strings.profileErrorInvalid,
+          profileErrorUnavailable: strings.profileErrorUnavailable,
+        }}
+      />
+    </section>
+
+    <BuildBrowser
+      client:load
+      builds={builds}
+      purposeOptions={purposeOptions}
+      elementOptions={elementOptions}
+      progressionOptions={progressionOptions}
+      requirementOptions={requirementOptions}
+      buildHrefTemplate={`${buildPath(locale)}builds/{slug}/`}
+      strings={{
+        searchLabel: strings.searchLabel,
+        searchPlaceholder: strings.searchPlaceholder,
+        filterLegendPurpose: strings.filterLegendPurpose,
+        filterLegendElement: strings.filterLegendElement,
+        filterLegendProgression: strings.filterLegendProgression,
+        filterLegendRequirement: strings.filterLegendRequirement,
+        favoritesOnly: strings.favoritesOnly,
+        clearFilters: strings.clearFilters,
+        resultsCountTemplate: strings.resultsCountTemplate,
+        emptyState: strings.emptyState,
+        requiredEquipmentBadge: strings.requiredEquipmentBadge,
+        saveFavorite: strings.saveFavorite,
+        removeFavorite: strings.removeFavorite,
+        filtersLabel: strings.filtersLabel,
+        catalogEyebrow: strings.catalogEyebrow,
+        catalogHeading: strings.catalogHeading,
+        noMatchesHeading: strings.noMatchesHeading,
+        emptyStateHint: strings.emptyStateHint,
+      }}
+    />
+  </main>
 </Layout>

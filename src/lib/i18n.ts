@@ -45,6 +45,27 @@ type Strings = {
   profileAdoptedNotice: string;
   profileEmptyState: string;
   profileShareHint: string;
+  filtersLabel: string;
+  catalogEyebrow: string;
+  catalogHeading: string;
+  noMatchesHeading: string;
+  emptyStateHint: string;
+  detailDossier: string;
+  playEyebrow: string;
+  teamEyebrow: string;
+  equipmentEyebrow: string;
+  alternativesEyebrow: string;
+  heroEyebrow: string;
+  heroTitleLead: string;
+  heroTitleAccent: string;
+  heroCopy: string;
+  heroNoteOne: string;
+  heroNoteTwo: string;
+  collectionTitle: string;
+  collectionDescription: string;
+  statBuilds: string;
+  statElements: string;
+  statSlots: string;
 };
 
 const STRINGS: Record<Locale, Strings> = {
@@ -91,6 +112,27 @@ const STRINGS: Record<Locale, Strings> = {
     profileAdoptedNotice: "Perfil activado en este dispositivo.",
     profileEmptyState: "Este perfil todavía no tiene builds favoritas.",
     profileShareHint: "Comparte este enlace para que alguien más vea esta colección.",
+    filtersLabel: "Filtros",
+    catalogEyebrow: "La colección",
+    catalogHeading: "Elige tu próxima aventura",
+    noMatchesHeading: "Sin coincidencias todavía",
+    emptyStateHint: "Prueba quitando un filtro o buscando otro Pal.",
+    detailDossier: "Ficha de build",
+    playEyebrow: "Cómo se juega",
+    teamEyebrow: "Cinco slots",
+    equipmentEyebrow: "Loadout",
+    alternativesEyebrow: "Ajusta la receta",
+    heroEyebrow: "Constructor de equipos para curiosos",
+    heroTitleLead: "Encuentra una build que",
+    heroTitleAccent: "se sienta tuya.",
+    heroCopy: "Una colección viva de equipos de cinco Pals: meta, raros, divertidos y listos para probar.",
+    heroNoteOne: "Las builds están organizadas para que puedas elegir por intención, no solo por tier list.",
+    heroNoteTwo: "Guarda tus favoritas en este dispositivo o comparte una colección con un ID público.",
+    collectionTitle: "Tu colección",
+    collectionDescription: "Guarda una build y vuelve a ella cuando quieras.",
+    statBuilds: "Builds",
+    statElements: "Elementos",
+    statSlots: "Pals / equipo",
   },
   en: {
     htmlLang: "en",
@@ -135,6 +177,27 @@ const STRINGS: Record<Locale, Strings> = {
     profileAdoptedNotice: "Profile activated on this device.",
     profileEmptyState: "This profile has no favorite builds yet.",
     profileShareHint: "Share this link so someone else can see this collection.",
+    filtersLabel: "Filters",
+    catalogEyebrow: "The collection",
+    catalogHeading: "Choose your next adventure",
+    noMatchesHeading: "No matches yet",
+    emptyStateHint: "Try removing a filter or searching for another Pal.",
+    detailDossier: "Build dossier",
+    playEyebrow: "How it plays",
+    teamEyebrow: "Five slots",
+    equipmentEyebrow: "Loadout",
+    alternativesEyebrow: "Adjust the recipe",
+    heroEyebrow: "A team builder for the curious",
+    heroTitleLead: "Find a build that",
+    heroTitleAccent: "feels like yours.",
+    heroCopy: "A living collection of five-Pal teams: meta, strange, playful and ready to try.",
+    heroNoteOne: "Builds are organized by intent, so you can choose a feeling instead of chasing a tier list.",
+    heroNoteTwo: "Save favorites on this device or share a collection with a public ID.",
+    collectionTitle: "Your collection",
+    collectionDescription: "Save a build and find it again whenever you need it.",
+    statBuilds: "Builds",
+    statElements: "Elements",
+    statSlots: "Pals / team",
   },
 };
 

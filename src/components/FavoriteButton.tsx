@@ -9,7 +9,7 @@ type Props = {
 
 export function FavoriteButton({ isFavorite, onToggle, labels, withLabel = false }: Props) {
   const label = isFavorite ? labels.remove : labels.save;
-  const heartClass = isFavorite ? "size-4 shrink-0 text-brand-500" : "size-4 shrink-0 text-zinc-500";
+  const heartClass = isFavorite ? "size-4 shrink-0 text-[var(--coral)]" : "size-4 shrink-0 text-[var(--ink-soft)]";
 
   if (withLabel) {
     return (
@@ -17,7 +17,7 @@ export function FavoriteButton({ isFavorite, onToggle, labels, withLabel = false
         type="button"
         onClick={onToggle}
         aria-pressed={isFavorite}
-        class="inline-flex items-center gap-x-2 rounded-full border border-white/10 bg-white/5 py-2 pr-4 pl-3 text-sm font-medium text-zinc-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
+        class="inline-flex items-center gap-x-2 rounded-full border border-[var(--line)] bg-white/70 py-2 pr-4 pl-3 text-sm font-bold text-[var(--ink)]"
       >
         <HeartIcon class={heartClass} />
         {label}
@@ -31,7 +31,7 @@ export function FavoriteButton({ isFavorite, onToggle, labels, withLabel = false
       onClick={onToggle}
       aria-pressed={isFavorite}
       aria-label={label}
-      class="relative inline-flex size-9 shrink-0 items-center justify-center rounded-full focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
+      class="relative inline-flex size-9 shrink-0 items-center justify-center rounded-full"
     >
       <span class="pointer-fine:hidden absolute top-1/2 left-1/2 size-[max(100%,3rem)] -translate-1/2" aria-hidden="true" />
       <HeartIcon class={heartClass} />

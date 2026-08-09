@@ -21,14 +21,14 @@ export default function ProfileControl({ strings }: { strings: Strings }) {
   if (profileId) {
     return (
       <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5 text-sm">
-        <span class="text-zinc-300">{strings.profileActiveTemplate.replace("{id}", profileId)}</span>
+        <span class="font-bold text-white">{strings.profileActiveTemplate.replace("{id}", profileId)}</span>
         <button
           type="button"
           onClick={() => {
             leaveProfile();
             window.location.reload();
           }}
-          class="text-zinc-500 underline underline-offset-2"
+          class="text-white/60 underline underline-offset-2 hover:text-white"
         >
           {strings.profileLeaveButton}
         </button>
@@ -57,17 +57,17 @@ export default function ProfileControl({ strings }: { strings: Strings }) {
           onInput={(e) => setInput((e.target as HTMLInputElement).value)}
           placeholder={strings.profilePlaceholder}
           aria-label={strings.profilePlaceholder}
-          class="w-48 rounded-full border border-white/10 bg-white/5 py-1.5 px-3 text-sm text-zinc-100 placeholder:text-zinc-500 focus:border-brand-500/50 focus:outline-none"
+          class="w-48 rounded-xl border border-white/20 bg-white/10 py-2.5 px-3 text-sm text-white placeholder:text-white/45"
         />
         <button
           type="submit"
           disabled={status === "loading" || input.trim().length === 0}
-          class="rounded-full border border-white/10 bg-white/5 py-1.5 px-3 text-xs font-medium text-zinc-300 disabled:opacity-50"
+          class="rounded-xl border border-transparent bg-[var(--coral)] py-2.5 px-3 text-xs font-bold text-white disabled:opacity-50"
         >
           {strings.profileJoinButton}
         </button>
       </form>
-      <p class="mt-1.5 text-xs text-zinc-500">
+      <p class="mt-1.5 text-xs text-white/55">
         {status === "invalid" ? strings.profileErrorInvalid : status === "unavailable" ? strings.profileErrorUnavailable : strings.profileHint}
       </p>
     </div>

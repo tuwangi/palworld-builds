@@ -18,148 +18,123 @@ interface Props {
 const { build, locale } = Astro.props;
 const strings = t(locale);
 const labels = taxonomyLabels(locale);
-
 const capturedDate = new Date(build.source.capturedAt).toLocaleDateString(strings.dateLocale, {
   year: "numeric",
   month: "long",
   day: "numeric",
 });
-
 const otherLocaleHref = locale === "es" ? buildPath("en", build.slug) : buildPath("es", build.slug);
+const uniqueRequirements = build.requirements.filter((requirement) => !build.purpose.includes(requirement));
 ---
 
 <Layout title={`${build.name} — Palworld Builds`} description={build.summary} locale={locale}>
-  <div class="py-8 sm:py-12">
-    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between gap-x-4">
-        <a href={buildPath(locale)} class="inline-flex items-center gap-x-1 text-sm font-medium text-zinc-400">
-          <ChevronLeftIcon class="size-4 shrink-0" />
-          {strings.backToList}
-        </a>
-        <a
-          href={otherLocaleHref}
-          class="shrink-0 rounded-full border border-white/10 bg-white/5 py-1.5 px-3 text-xs font-medium text-zinc-300"
-        >
-          {strings.localeSwitchTo}
-        </a>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href={buildPath(locale)} class="brand-lockup">
+      <span class="brand-mark" aria-hidden="true">P</span>
+      <span>
+        <span class="brand-name block">Palworld Builds</span>
+        <span class="brand-kicker">Field guide / 1.0</span>
+      </span>
+    </a>
+    <a href={otherLocaleHref} class="locale-link">{strings.localeSwitchTo}</a>
+  </nav>
+
+  <main class="detail-shell">
+    <div class="detail-topbar">
+      <a href={buildPath(locale)} class="back-link"><ChevronLeftIcon class="size-4" /> {strings.backToList}</a>
+      <span class="eyebrow">{strings.detailDossier}</span>
+    </div>
+
+    <header class="detail-hero">
+      <div>
+        <p class="eyebrow">{labels.progression.get(build.progression) ?? build.progression} / {labels.verification.get(build.verification) ?? build.verification}</p>
+        <h1 class="detail-title">{build.name}</h1>
+        <p class="detail-summary">{build.summary}</p>
+        <div class="detail-badges">
+          {build.elements.map((element) => <ElementBadge element={element} locale={locale} />)}
+          {build.purpose.map((purpose) => <Badge>{labels.purpose.get(purpose) ?? purpose}</Badge>)}
+          {uniqueRequirements.map((requirement) => <Badge>{labels.requirement.get(requirement) ?? requirement}</Badge>)}
+        </div>
       </div>
+      <div class="detail-favorite">
+        <DetailFavoriteButton client:load buildId={build.id} labels={{ save: strings.saveFavorite, remove: strings.removeFavorite }} />
+      </div>
+    </header>
 
-      <header class="mt-4">
-        <div class="flex items-start justify-between gap-x-4">
-          <h1 class="font-display text-2xl font-semibold tracking-tight text-balance text-zinc-100 sm:text-3xl">
-            {build.name}
-          </h1>
-          <div class="shrink-0">
-            <DetailFavoriteButton client:load buildId={build.id} labels={{ save: strings.saveFavorite, remove: strings.removeFavorite }} />
-          </div>
-        </div>
-        <p class="mt-2 max-w-[60ch] text-base text-pretty text-zinc-400 sm:text-sm">{build.summary}</p>
+    {build.synergyNotes.length > 0 && (
+      <section class="synergy-panel" aria-labelledby="synergy-title">
+        <p class="eyebrow text-white/60">{strings.playEyebrow}</p>
+        <h2 id="synergy-title">{strings.sectionSynergy}</h2>
+        <ul role="list">
+          {build.synergyNotes.map((note) => <li>{note}</li>)}
+        </ul>
+      </section>
+    )}
 
-        <div class="mt-4 flex flex-wrap gap-1.5">
-          {build.elements.map((el) => <ElementBadge element={el} locale={locale} />)}
-          {build.purpose.map((p) => <Badge>{labels.purpose.get(p) ?? p}</Badge>)}
-          <Badge>{labels.progression.get(build.progression) ?? build.progression}</Badge>
-          {build.requirements.map((r) => <Badge>{labels.requirement.get(r) ?? r}</Badge>)}
-        </div>
-      </header>
+    <section class="detail-section" aria-labelledby="team-title">
+      <p class="eyebrow">{strings.teamEyebrow}</p>
+      <h2 id="team-title">{strings.sectionTeam}</h2>
+      <ol role="list" class="detail-list">
+        {build.pals.map((slot, index) => (
+          <li class="detail-card">
+            <div class="detail-card-head">
+              <span class="detail-number">{String(index + 1).padStart(2, "0")}</span>
+              <PalAvatar iconUrl={slot.iconUrl} name={slot.name} class="size-11" />
+              <h3>{slot.name}</h3>
+              {slot.elements.map((element) => <ElementBadge element={element} locale={locale} />)}
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1.5">{slot.role.map((role) => <Badge>{labels.role.get(role) ?? role}</Badge>)}</div>
+            <p>{slot.explanation}</p>
+          </li>
+        ))}
+      </ol>
+    </section>
 
-      {build.synergyNotes.length > 0 && (
-        <section class="mt-10">
-          <h2 class="font-display text-lg font-semibold text-zinc-100">{strings.sectionSynergy}</h2>
-          <ul role="list" class="mt-4 list-disc space-y-2 pl-5 marker:text-zinc-600">
-            {build.synergyNotes.map((note) => (
-              <li class="text-base text-pretty text-zinc-400 sm:text-sm">{note}</li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      <section class="mt-10">
-        <h2 class="font-display text-lg font-semibold text-zinc-100">{strings.sectionTeam}</h2>
-        <ol role="list" class="mt-4 space-y-3">
-          {build.pals.map((slot, index) => (
-            <li class="rounded-2xl border border-white/10 bg-zinc-900/60 p-4 sm:p-5">
-              <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5">
-                <span class="font-mono text-xs text-zinc-500 tabular-nums">{`0${index + 1}`}</span>
-                <PalAvatar iconUrl={slot.iconUrl} name={slot.name} class="size-10" />
-                <h3 class="font-display text-base font-semibold text-zinc-100">{slot.name}</h3>
-                {slot.elements.map((el) => <ElementBadge element={el} locale={locale} />)}
+    {build.equipment.length > 0 && (
+      <section class="detail-section" aria-labelledby="equipment-title">
+        <p class="eyebrow">{strings.equipmentEyebrow}</p>
+        <h2 id="equipment-title">{strings.sectionEquipment}</h2>
+        <ul role="list" class="detail-list">
+          {build.equipment.map((equipment) => (
+            <li class="detail-card">
+              <div class="detail-card-head">
+                <ItemIcon iconUrl={equipment.iconUrl} class="size-11" />
+                <h3>{equipment.name}</h3>
+                <Badge>{labels.equipmentKind.get(equipment.kind) ?? equipment.kind}</Badge>
+                <Badge class={equipment.status === "required" ? "border-[var(--coral)] bg-[#fbe3dc] text-[var(--coral-dark)]" : ""}>{labels.equipmentStatus.get(equipment.status) ?? equipment.status}</Badge>
               </div>
-              <div class="mt-2 flex flex-wrap gap-1.5">
-                {slot.role.map((r) => <Badge>{labels.role.get(r) ?? r}</Badge>)}
-              </div>
-              <p class="mt-2.5 text-base text-pretty text-zinc-400 sm:text-sm">{slot.explanation}</p>
+              {equipment.reason && <p>{equipment.reason}</p>}
+              {equipment.alternatives.length > 0 && <p class="text-xs">{strings.alternativesPrefix} {equipment.alternatives.map((alternative) => alternative.name).join(", ")}</p>}
             </li>
           ))}
-        </ol>
+        </ul>
       </section>
+    )}
 
-      {build.equipment.length > 0 && (
-        <section class="mt-10">
-          <h2 class="font-display text-lg font-semibold text-zinc-100">{strings.sectionEquipment}</h2>
-          <ul role="list" class="mt-4 space-y-3">
-            {build.equipment.map((eq) => (
-              <li class="rounded-2xl border border-white/10 bg-zinc-900/60 p-4 sm:p-5">
-                <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5">
-                  <ItemIcon iconUrl={eq.iconUrl} class="size-10" />
-                  <h3 class="font-display text-base font-semibold text-zinc-100">{eq.name}</h3>
-                  <Badge>{labels.equipmentKind.get(eq.kind) ?? eq.kind}</Badge>
-                  <Badge class={eq.status === "required" ? "border-brand-500/40 bg-brand-500/10 text-brand-300" : ""}>
-                    {labels.equipmentStatus.get(eq.status) ?? eq.status}
-                  </Badge>
-                </div>
-                {eq.reason && <p class="mt-2 text-base text-pretty text-zinc-400 sm:text-sm">{eq.reason}</p>}
-                {eq.alternatives.length > 0 && (
-                  <p class="mt-2 text-xs text-zinc-500">
-                    {strings.alternativesPrefix} {eq.alternatives.map((a) => a.name).join(", ")}
-                  </p>
-                )}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {build.alternatives.length > 0 && (
-        <section class="mt-10">
-          <h2 class="font-display text-lg font-semibold text-zinc-100">{strings.sectionAlternatives}</h2>
-          <ul role="list" class="mt-4 space-y-3">
-            {build.alternatives.map((alt) => (
-              <li class="rounded-2xl border border-white/10 bg-zinc-900/60 p-4 sm:p-5">
-                <div class="flex items-center gap-x-3">
-                  <PalAvatar iconUrl={alt.palIconUrl} name={alt.palName} class="size-8" />
-                  <p class="text-base font-medium text-zinc-200 sm:text-sm">
-                    {alt.palName} <span class="font-normal text-zinc-500">{strings.replaces}</span> {alt.replacesPalName}
-                  </p>
-                </div>
-                <p class="mt-1.5 text-base text-pretty text-zinc-400 sm:text-sm">{alt.reason}</p>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      <section class="mt-10 border-t border-white/10 pt-6">
-        <dl class="grid grid-cols-1 gap-x-6 gap-y-3 sm:grid-cols-3">
-          <div>
-            <dt class="text-xs font-medium text-zinc-500">{strings.gameVersionLabel}</dt>
-            <dd class="mt-0.5 font-mono text-sm text-zinc-300">{build.gameVersion}</dd>
-          </div>
-          <div>
-            <dt class="text-xs font-medium text-zinc-500">{strings.verificationLabel}</dt>
-            <dd class="mt-0.5 text-sm text-zinc-300">{labels.verification.get(build.verification) ?? build.verification}</dd>
-          </div>
-          <div>
-            <dt class="text-xs font-medium text-zinc-500">{strings.sourceLabel}</dt>
-            <dd class="mt-0.5 text-sm text-zinc-300">
-              <a href={build.source.url} target="_blank" rel="noopener noreferrer" class="text-brand-400 underline underline-offset-2">
-                {build.source.title ?? build.source.url}
-              </a>
-              <span class="text-zinc-500"> · {capturedDate}</span>
-            </dd>
-          </div>
-        </dl>
+    {build.alternatives.length > 0 && (
+      <section class="detail-section" aria-labelledby="alternatives-title">
+        <p class="eyebrow">{strings.alternativesEyebrow}</p>
+        <h2 id="alternatives-title">{strings.sectionAlternatives}</h2>
+        <ul role="list" class="detail-list">
+          {build.alternatives.map((alternative) => (
+            <li class="detail-card">
+              <div class="detail-card-head">
+                <PalAvatar iconUrl={alternative.palIconUrl} name={alternative.palName} class="size-9" />
+                <h3>{alternative.palName} <span class="font-sans text-sm font-medium text-[var(--ink-soft)]">{strings.replaces} {alternative.replacesPalName}</span></h3>
+              </div>
+              <p>{alternative.reason}</p>
+            </li>
+          ))}
+        </ul>
       </section>
-    </div>
-  </div>
+    )}
+
+    <footer class="detail-footer">
+      <dl>
+        <div><dt>{strings.gameVersionLabel}</dt><dd>{build.gameVersion}</dd></div>
+        <div><dt>{strings.verificationLabel}</dt><dd>{labels.verification.get(build.verification) ?? build.verification}</dd></div>
+        <div><dt>{strings.sourceLabel}</dt><dd><a href={build.source.url} target="_blank" rel="noopener noreferrer" class="font-bold text-[var(--coral-dark)] underline underline-offset-2">{build.source.title ?? build.source.url}</a><span class="block text-[var(--ink-soft)]">{capturedDate}</span></dd></div>
+      </dl>
+    </footer>
+  </main>
 </Layout>

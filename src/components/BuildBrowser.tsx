@@ -2,10 +2,9 @@ import { useMemo, useState } from "preact/hooks";
 import { useFavorites } from "./useFavorites";
 import { FavoriteButton } from "./FavoriteButton";
 import { ELEMENT_BADGE_CLASS, elementBadgeStyle } from "../lib/elementColors";
-import { MagnifyingGlassIcon, XMarkIcon } from "./icons";
+import { AdjustmentsHorizontalIcon, HeartIcon, MagnifyingGlassIcon, XMarkIcon } from "./icons";
 
 type Option = { value: string; label: string };
-
 type PalAvatar = { id: string; name: string; iconUrl: string | null };
 
 type BuildSummary = {
@@ -22,28 +21,6 @@ type BuildSummary = {
   pals: PalAvatar[];
 };
 
-function PalAvatarChip({ pal }: { pal: PalAvatar }) {
-  if (pal.iconUrl) {
-    return (
-      <img
-        src={pal.iconUrl}
-        alt=""
-        title={pal.name}
-        class="size-6 shrink-0 rounded-full bg-white/5 object-cover outline-1 -outline-offset-1 outline-white/10"
-      />
-    );
-  }
-  return (
-    <span
-      title={pal.name}
-      aria-hidden="true"
-      class="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-white/5 font-display text-[10px] text-zinc-500 outline-1 -outline-offset-1 outline-white/10"
-    >
-      {pal.name.charAt(0)}
-    </span>
-  );
-}
-
 type Strings = {
   searchLabel: string;
   searchPlaceholder: string;
@@ -58,6 +35,11 @@ type Strings = {
   requiredEquipmentBadge: string;
   saveFavorite: string;
   removeFavorite: string;
+  filtersLabel: string;
+  catalogEyebrow: string;
+  catalogHeading: string;
+  noMatchesHeading: string;
+  emptyStateHint: string;
 };
 
 type Props = {
@@ -77,12 +59,6 @@ function toggleInSet(set: Set<string>, value: string): Set<string> {
   return next;
 }
 
-function neutralChipClass(selected: boolean): string {
-  return selected
-    ? "rounded-full border border-brand-500/60 bg-brand-500/15 py-1 px-2.5 text-xs font-medium text-brand-300"
-    : "rounded-full border border-white/10 bg-white/5 py-1 px-2.5 text-xs font-medium text-zinc-300";
-}
-
 function FilterGroup({
   legend,
   options,
@@ -97,39 +73,40 @@ function FilterGroup({
   isElement?: boolean;
 }) {
   return (
-    <fieldset>
-      <legend class="text-xs font-medium text-zinc-500">{legend}</legend>
-      <div class="mt-1.5 flex flex-wrap gap-1.5">
-        {options.map((opt) => {
-          const isSelected = selected.has(opt.value);
-          if (isElement) {
-            return (
-              <button
-                key={opt.value}
-                type="button"
-                aria-pressed={isSelected}
-                onClick={() => onToggle(opt.value)}
-                class={`${ELEMENT_BADGE_CLASS} ${isSelected ? "ring-2 ring-offset-2 ring-offset-zinc-950 ring-(--el-text)" : ""}`}
-                style={elementBadgeStyle(opt.value)}
-              >
-                {opt.label}
-              </button>
-            );
-          }
+    <fieldset class="filter-group">
+      <legend>{legend}</legend>
+      <div class="filter-options">
+        {options.map((option) => {
+          const selectedNow = selected.has(option.value);
           return (
             <button
-              key={opt.value}
+              key={option.value}
               type="button"
-              aria-pressed={isSelected}
-              onClick={() => onToggle(opt.value)}
-              class={neutralChipClass(isSelected)}
+              aria-pressed={selectedNow}
+              onClick={() => onToggle(option.value)}
+              class={`${isElement ? ELEMENT_BADGE_CLASS : "filter-chip"} ${selectedNow ? "selected" : ""}`}
+              style={isElement ? elementBadgeStyle(option.value) : undefined}
             >
-              {opt.label}
+              {option.label}
             </button>
           );
         })}
       </div>
     </fieldset>
+  );
+}
+
+function PalStack({ pals }: { pals: PalAvatar[] }) {
+  return (
+    <div class="pal-stack" aria-label={pals.map((pal) => pal.name).join(", ")}>
+      {pals.map((pal, index) =>
+        pal.iconUrl ? (
+          <img key={`${pal.id}-${index}`} src={pal.iconUrl} alt="" title={pal.name} />
+        ) : (
+          <span key={`${pal.id}-${index}`} title={pal.name} aria-hidden="true">{pal.name.charAt(0)}</span>
+        ),
+      )}
+    </div>
   );
 }
 
@@ -148,10 +125,10 @@ export default function BuildBrowser({
   const [progressions, setProgressions] = useState<Set<string>>(new Set());
   const [requirements, setRequirements] = useState<Set<string>>(new Set());
   const [favoritesOnly, setFavoritesOnly] = useState(false);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const { favorites, isFavorite, toggle } = useFavorites();
 
-  const activeFilterCount =
-    purposes.size + elements.size + progressions.size + requirements.size + (favoritesOnly ? 1 : 0);
+  const activeFilterCount = purposes.size + elements.size + progressions.size + requirements.size + (favoritesOnly ? 1 : 0);
 
   function clearAll() {
     setSearch("");
@@ -164,14 +141,14 @@ export default function BuildBrowser({
 
   const filtered = useMemo(() => {
     const query = search.trim().toLowerCase();
-    return builds.filter((b) => {
-      if (favoritesOnly && !favorites.has(b.id)) return false;
-      if (purposes.size && !b.purpose.some((p) => purposes.has(p))) return false;
-      if (elements.size && !b.elements.some((e) => elements.has(e))) return false;
-      if (progressions.size && !progressions.has(b.progression)) return false;
-      if (requirements.size && !b.requirements.some((r) => requirements.has(r))) return false;
+    return builds.filter((build) => {
+      if (favoritesOnly && !favorites.has(build.id)) return false;
+      if (purposes.size && !build.purpose.some((value) => purposes.has(value))) return false;
+      if (elements.size && !build.elements.some((value) => elements.has(value))) return false;
+      if (progressions.size && !progressions.has(build.progression)) return false;
+      if (requirements.size && !build.requirements.some((value) => requirements.has(value))) return false;
       if (query) {
-        const haystack = `${b.name} ${b.summary} ${b.pals.map((p) => p.name).join(" ")}`.toLowerCase();
+        const haystack = `${build.name} ${build.summary} ${build.pals.map((pal) => pal.name).join(" ")}`.toLowerCase();
         if (!haystack.includes(query)) return false;
       }
       return true;
@@ -183,123 +160,100 @@ export default function BuildBrowser({
     .replace("{total}", String(builds.length));
 
   return (
-    <div>
-      <div class="relative">
-        <MagnifyingGlassIcon class="pointer-events-none absolute top-1/2 left-3.5 size-4 -translate-y-1/2 text-zinc-500" />
-        <input
-          type="search"
-          name="search"
-          aria-label={strings.searchLabel}
-          placeholder={strings.searchPlaceholder}
-          value={search}
-          onInput={(e) => setSearch((e.target as HTMLInputElement).value)}
-          class="w-full rounded-xl border border-white/10 bg-white/5 py-2.5 pr-3 pl-10 text-base text-zinc-100 placeholder:text-zinc-500 focus:border-brand-500/50 focus:outline-none sm:text-sm"
-        />
-      </div>
-
-      <div class="mt-4 space-y-3">
-        <FilterGroup
-          legend={strings.filterLegendPurpose}
-          options={purposeOptions}
-          selected={purposes}
-          onToggle={(v) => setPurposes((s) => toggleInSet(s, v))}
-        />
-        <FilterGroup
-          legend={strings.filterLegendElement}
-          options={elementOptions}
-          selected={elements}
-          onToggle={(v) => setElements((s) => toggleInSet(s, v))}
-          isElement
-        />
-        <FilterGroup
-          legend={strings.filterLegendProgression}
-          options={progressionOptions}
-          selected={progressions}
-          onToggle={(v) => setProgressions((s) => toggleInSet(s, v))}
-        />
-        <FilterGroup
-          legend={strings.filterLegendRequirement}
-          options={requirementOptions}
-          selected={requirements}
-          onToggle={(v) => setRequirements((s) => toggleInSet(s, v))}
-        />
-
-        <div class="flex flex-wrap items-center gap-2 pt-1">
-          <button
-            type="button"
-            aria-pressed={favoritesOnly}
-            onClick={() => setFavoritesOnly((v) => !v)}
-            class={neutralChipClass(favoritesOnly)}
-          >
-            {strings.favoritesOnly}
-          </button>
-          {activeFilterCount > 0 && (
+    <section aria-labelledby="catalog-title">
+      <div class="catalog-toolbar">
+        <div class="toolbar-row">
+          <label class="search-shell">
+            <span class="sr-only">{strings.searchLabel}</span>
+            <MagnifyingGlassIcon />
+            <input
+              type="search"
+              name="search"
+              aria-label={strings.searchLabel}
+              placeholder={strings.searchPlaceholder}
+              value={search}
+              onInput={(event) => setSearch((event.currentTarget as HTMLInputElement).value)}
+            />
+          </label>
+          <div class="toolbar-actions">
             <button
               type="button"
-              onClick={clearAll}
-              class="inline-flex items-center gap-x-1 rounded-full py-1 px-2.5 text-xs font-medium text-zinc-400"
+              class={`toolbar-button ${filtersOpen ? "active" : ""}`}
+              aria-expanded={filtersOpen}
+              onClick={() => setFiltersOpen((value) => !value)}
             >
-              <XMarkIcon class="size-4 shrink-0" />
-              {strings.clearFilters}
+              <AdjustmentsHorizontalIcon class="size-4" />
+              <span>{strings.filtersLabel}</span>
+              {activeFilterCount > 0 && <span class="grid size-5 place-items-center rounded-full bg-white/20 text-[10px]">{activeFilterCount}</span>}
             </button>
-          )}
+            <button
+              type="button"
+              aria-pressed={favoritesOnly}
+              onClick={() => setFavoritesOnly((value) => !value)}
+              class={`toolbar-button ${favoritesOnly ? "active" : ""}`}
+            >
+              <HeartIcon class="size-4" />
+              <span class="hidden sm:inline">{strings.favoritesOnly}</span>
+            </button>
+          </div>
         </div>
+        {filtersOpen && (
+          <div class="filter-panel">
+            <div class="filter-groups">
+              <FilterGroup legend={strings.filterLegendPurpose} options={purposeOptions} selected={purposes} onToggle={(value) => setPurposes((set) => toggleInSet(set, value))} />
+              <FilterGroup legend={strings.filterLegendElement} options={elementOptions} selected={elements} onToggle={(value) => setElements((set) => toggleInSet(set, value))} isElement />
+              <FilterGroup legend={strings.filterLegendProgression} options={progressionOptions} selected={progressions} onToggle={(value) => setProgressions((set) => toggleInSet(set, value))} />
+              <FilterGroup legend={strings.filterLegendRequirement} options={requirementOptions} selected={requirements} onToggle={(value) => setRequirements((set) => toggleInSet(set, value))} />
+            </div>
+            {activeFilterCount > 0 && (
+              <button type="button" onClick={clearAll} class="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-[var(--coral-dark)]">
+                <XMarkIcon class="size-4" /> {strings.clearFilters}
+              </button>
+            )}
+          </div>
+        )}
       </div>
 
-      <p class="mt-5 text-sm tabular-nums text-zinc-500">{resultsCount}</p>
+      <div class="results-bar">
+        <div>
+          <p class="eyebrow">{strings.catalogEyebrow}</p>
+          <h2 id="catalog-title" class="results-heading">{strings.catalogHeading}</h2>
+        </div>
+        <p class="results-count">{resultsCount}</p>
+      </div>
 
       {filtered.length === 0 ? (
-        <div class="mt-4 rounded-2xl border border-dashed border-white/10 py-12 text-center">
-          <p class="text-base text-zinc-400 sm:text-sm">{strings.emptyState}</p>
+        <div class="empty-state">
+          <strong>{strings.noMatchesHeading}</strong>
+          <p>{strings.emptyState} {strings.emptyStateHint}</p>
+          <button type="button" onClick={clearAll} class="toolbar-button mt-5">{strings.clearFilters}</button>
         </div>
       ) : (
-        <ul role="list" class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {filtered.map((build) => (
-            <li key={build.id} class="relative rounded-2xl border border-white/10 bg-zinc-900/60 p-4 sm:p-5">
-              <div class="flex items-start justify-between gap-x-3">
-                <h3 class="min-w-0 flex-1">
-                  <a
-                    href={buildHrefTemplate.replace("{slug}", build.slug)}
-                    class="font-display text-base font-semibold text-zinc-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
-                  >
-                    <span class="absolute inset-0" aria-hidden="true" />
-                    {build.name}
-                  </a>
-                </h3>
-                <div class="relative z-10 -mt-1 -mr-1">
-                  <FavoriteButton
-                    isFavorite={isFavorite(build.id)}
-                    onToggle={() => toggle(build.id)}
-                    labels={{ save: strings.saveFavorite, remove: strings.removeFavorite }}
-                  />
+        <ul role="list" class="build-grid">
+          {filtered.map((build, index) => (
+            <li key={build.id} class="build-card">
+              <div class="build-card-top">
+                <div>
+                  <span class="build-card-index">{String(index + 1).padStart(2, "0")} / BUILD</span>
+                  <h3><a href={buildHrefTemplate.replace("{slug}", build.slug)}>{build.name}</a></h3>
+                </div>
+                <div class="relative z-[1]">
+                  <FavoriteButton isFavorite={isFavorite(build.id)} onToggle={() => toggle(build.id)} labels={{ save: strings.saveFavorite, remove: strings.removeFavorite }} />
                 </div>
               </div>
-
-              <p class="mt-1.5 line-clamp-2 text-base text-pretty text-zinc-400 sm:text-sm">{build.summary}</p>
-
-              <div class="mt-3 flex flex-wrap gap-1.5">
-                {build.elements.map((el) => (
-                  <span key={el} class={ELEMENT_BADGE_CLASS} style={elementBadgeStyle(el)}>
-                    {elementOptions.find((o) => o.value === el)?.label ?? el}
-                  </span>
-                ))}
-                {build.hasRequiredEquipment && (
-                  <span class="rounded-full border border-white/10 bg-white/5 py-1 px-2.5 text-xs font-medium text-zinc-300">
-                    {strings.requiredEquipmentBadge}
-                  </span>
-                )}
+              <p class="build-card-summary">{build.summary}</p>
+              <div class="build-card-meta">
+                {build.elements.map((element) => <span key={element} class={ELEMENT_BADGE_CLASS} style={elementBadgeStyle(element)}>{elementOptions.find((option) => option.value === element)?.label ?? element}</span>)}
+                {build.hasRequiredEquipment && <span class="filter-chip">{strings.requiredEquipmentBadge}</span>}
               </div>
-
-              <div class="mt-3 flex items-center gap-1">
-                {build.pals.map((pal, i) => (
-                  <PalAvatarChip key={`${pal.id}-${i}`} pal={pal} />
-                ))}
+              <div class="build-card-team">
+                <PalStack pals={build.pals} />
+                <span class="build-card-arrow" aria-hidden="true">↗</span>
               </div>
-              <p class="mt-1.5 truncate text-xs text-zinc-500">{build.pals.map((p) => p.name).join(" · ")}</p>
             </li>
           ))}
         </ul>
       )}
-    </div>
+    </section>
   );
 }

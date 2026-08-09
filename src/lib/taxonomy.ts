@@ -35,7 +35,7 @@ const PURPOSE_LABELS: Record<Locale, Record<string, string>> = {
     exploration: "Exploración",
     mobility: "Movilidad",
     early_progression: "Progresión temprana",
-    endgame: "Endgame",
+    endgame: "Objetivo endgame",
     utility: "Utilidad",
   },
   en: {
@@ -51,7 +51,7 @@ const PURPOSE_LABELS: Record<Locale, Record<string, string>> = {
     exploration: "Exploration",
     mobility: "Mobility",
     early_progression: "Early progression",
-    endgame: "Endgame",
+    endgame: "Endgame focus",
     utility: "Utility",
   },
 };
@@ -93,7 +93,7 @@ const REQUIREMENT_LABELS: Record<Locale, Record<string, string>> = {
   es: {
     early_game: "Juego temprano",
     mid_game: "Juego medio",
-    endgame: "Endgame",
+    endgame: "Contenido endgame",
     legendary: "Legendario",
     breeding: "Cría",
     condensation: "Condensación",
@@ -104,7 +104,7 @@ const REQUIREMENT_LABELS: Record<Locale, Record<string, string>> = {
   en: {
     early_game: "Early game",
     mid_game: "Mid game",
-    endgame: "Endgame",
+    endgame: "Endgame content",
     legendary: "Legendary",
     breeding: "Breeding",
     condensation: "Condensation",
