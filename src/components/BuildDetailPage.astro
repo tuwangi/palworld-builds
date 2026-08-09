@@ -63,6 +63,17 @@ const otherLocaleHref = locale === "es" ? buildPath("en", build.slug) : buildPat
         </div>
       </header>
 
+      {build.synergyNotes.length > 0 && (
+        <section class="mt-10">
+          <h2 class="font-display text-lg font-semibold text-zinc-100">{strings.sectionSynergy}</h2>
+          <ul role="list" class="mt-4 list-disc space-y-2 pl-5 marker:text-zinc-600">
+            {build.synergyNotes.map((note) => (
+              <li class="text-base text-pretty text-zinc-400 sm:text-sm">{note}</li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       <section class="mt-10">
         <h2 class="font-display text-lg font-semibold text-zinc-100">{strings.sectionTeam}</h2>
         <ol role="list" class="mt-4 space-y-3">
@@ -104,17 +115,6 @@ const otherLocaleHref = locale === "es" ? buildPath("en", build.slug) : buildPat
                   </p>
                 )}
               </li>
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {build.synergyNotes.length > 0 && (
-        <section class="mt-10">
-          <h2 class="font-display text-lg font-semibold text-zinc-100">{strings.sectionSynergy}</h2>
-          <ul role="list" class="mt-4 list-disc space-y-2 pl-5 marker:text-zinc-600">
-            {build.synergyNotes.map((note) => (
-              <li class="text-base text-pretty text-zinc-400 sm:text-sm">{note}</li>
             ))}
           </ul>
         </section>

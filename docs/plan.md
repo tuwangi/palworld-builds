@@ -545,7 +545,7 @@ Fuente, decisiones y huecos conocidos documentados en
 Fase 1 cerrada salvo pulido visual futuro. Exportacion/importacion local de
 favoritos se descarta a pedido del usuario: la busqueda cubre esa necesidad.
 
-## Fase 2: perfiles compartidos (codigo completo, pendiente de desplegar)
+## Fase 2: perfiles compartidos (desplegado)
 
 Implementada siguiendo la arquitectura de la seccion 8: perfiles como JSON
 en `data/profiles/<id>.json`, escritos por una funcion serverless via GitHub

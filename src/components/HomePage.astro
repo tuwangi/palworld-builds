@@ -18,10 +18,23 @@ const builds = getBuildSummaries(locale);
 
 const toOptions = (map: Map<string, string>) => [...map].map(([value, label]) => ({ value, label }));
 
-const purposeOptions = toOptions(labels.purpose);
-const elementOptions = toOptions(labels.element);
-const progressionOptions = toOptions(labels.progression);
-const requirementOptions = toOptions(labels.requirement);
+function activeOptions(options: { value: string; label: string }[], key: string) {
+  const activeValues = new Set<string>();
+  for (const b of builds) {
+    const val = (b as Record<string, unknown>)[key];
+    if (Array.isArray(val)) {
+      (val as string[]).forEach((v) => activeValues.add(v));
+    } else if (typeof val === "string") {
+      activeValues.add(val);
+    }
+  }
+  return options.filter((o) => activeValues.has(o.value));
+}
+
+const purposeOptions = activeOptions(toOptions(labels.purpose), "purpose");
+const elementOptions = activeOptions(toOptions(labels.element), "elements");
+const progressionOptions = activeOptions(toOptions(labels.progression), "progression");
+const requirementOptions = activeOptions(toOptions(labels.requirement), "requirements");
 
 const buildHrefTemplate = `${buildPath(locale)}builds/{slug}/`;
 ---

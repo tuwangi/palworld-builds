@@ -1786,6 +1786,939 @@
         "capturedAt": "2026-08-09T00:00:00Z"
       },
       "verification": "reviewed"
+    },
+    {
+      "id": "eidrolon-hybrid-carry",
+      "slug": "eidrolon-hybrid-carry",
+      "name": "Eidrolon Dual-Type Hypercarry",
+      "summary": "Weaponless endgame build where Eidrolon is the sole fighter while four pocket pals stack dual-type attack and defense buffs for 60% total in each stat.",
+      "purpose": ["pal_element_damage", "active_pal_support", "survival", "endgame"],
+      "elements": ["dark", "dragon", "grass"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "eidrolon",
+          "role": ["carry", "mount"],
+          "explanation": "Liberated Pterosaur increases its own attack and movement speed for every Dragon or Dark Pal in the party; all four pocket slots naturally max out this multiplier."
+        },
+        {
+          "palId": "quivern",
+          "role": ["element_booster"],
+          "explanation": "Sky Dragon's Affection raises Dragon Pal attack by 10% (rank 1) to 30% (rank 5) while in the party, working from the pocket without ever being deployed."
+        },
+        {
+          "palId": "hoocrates",
+          "role": ["element_booster"],
+          "explanation": "Dark Knowledge raises Dark Pal attack by 10% (rank 1) to 30% (rank 5); because Eidrolon is Dark-type this applies a flat +30% attack boost at max condensation."
+        },
+        {
+          "palId": "wistella",
+          "role": ["defensive_support"],
+          "explanation": "Raises Dark Pal defense by 10% (rank 1) to 30% (rank 5); Eidrolon's Dark typing qualifies it for this buff from the pocket."
+        },
+        {
+          "palId": "dinossom",
+          "role": ["defensive_support"],
+          "explanation": "Raises Dragon Pal defense by 10% (rank 1) to 30% (rank 5); because Eidrolon is also Dragon-type this stacks with Wistella for 60% total defense at max condensation."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["endgame", "condensation", "breeding"],
+      "synergyNotes": [
+        "Eidrolon is both Dragon and Dark, qualifying for both Wistella and Dinossom defense buffs simultaneously — a 60% flat defense increase that applies against every damage type.",
+        "Quivern and Hoocrates stack 30% attack each from their respective element pools, giving a 60% total attack multiplier to every move Eidrolon uses.",
+        "The four support pals never need to be deployed or leveled; their partner skills function from the pocket and scale solely through the Pal Condenser, not character level.",
+        "Recommended passives on Eidrolon: Legend, Musclehead, Serenity, and Ferocious for maximum cooldown reduction and raw attack power."
+      ],
+      "alternatives": [
+        {
+          "palId": "orserk",
+          "replacesPalId": "wistella",
+          "reason": "Drops the Dark defense layer for Orserk's stacking 150% attack/defense ramp (requires landing player weapon hits via Drone Launcher or SMG); sacrifices the lazy no-ammo playstyle for a higher theoretical damage ceiling."
+        },
+        {
+          "palId": "eidrolon-ignis",
+          "replacesPalId": "eidrolon",
+          "reason": "Swap to the Fire/Dragon variant, then replace Hoocrates with Rooby (Fire attack up to 30%) and Wistella with a Fire-defense Pal for the same dual-type exploit on the Fire/Dragon axis."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.reddit.com/r/Palworld/comments/1vb5ekt/the_ultimate_dualtype_hypercarry_build_how_to/",
+        "title": "The Ultimate Dual-Type Hypercarry Build (r/Palworld)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "dragon-fire-tower",
+      "slug": "dragon-fire-tower",
+      "name": "Dragon Fire Tower Squad",
+      "summary": "Stack dragon and fire multipliers to turn Eidrolon Ignis into a Hard Tower boss-killer with Orserk ramp support.",
+      "purpose": ["pal_element_damage", "boss_damage", "endgame", "hybrid_damage"],
+      "elements": ["dragon", "fire", "electric"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "eidrolon-ignis",
+          "role": ["carry", "mount"],
+          "explanation": "Gains +6% attack per Dragon or Fire Pal in the party for up to 24% at four matching allies; serves as the main active fighter and mount for the entire team."
+        },
+        {
+          "palId": "blazamut-ryu",
+          "role": ["element_booster"],
+          "explanation": "Improves Dragon-type super-effective attacks by 25% (rank 1) to 40% (rank 5), amplifying every Dragon move used against a Dragon-weak target."
+        },
+        {
+          "palId": "jormuntide-ignis",
+          "role": ["status_applier"],
+          "explanation": "Enemies afflicted with Burn take 30% to 65% more damage at max condensation, multiplying the damage of all attacks after a Burn is applied."
+        },
+        {
+          "palId": "orserk",
+          "role": ["active_pal_booster"],
+          "explanation": "Every bullet that hits the enemy grants the active Pal +1% to 5% Attack and Defense for five seconds, stacking up to 30 times for +150% at max condensation; works with the Drone Launcher for hands-free stacking."
+        },
+        {
+          "palId": "quivern",
+          "role": ["element_booster"],
+          "explanation": "Boosts Dragon Pal attack by 10% (rank 1) to 30% (rank 5); applies to Eidrolon Ignis directly because it is a Dragon-type."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["endgame", "legendary", "condensation", "breeding"],
+      "synergyNotes": [
+        "Open with the Drone Launcher to build Orserk stacks immediately — 30 stacks grant +150% Attack and Defense to the active Pal, and the Drone Launcher builds them without consuming ammo.",
+        "Once Burn procs from Jormuntide Ignis, the target takes up to 65% increased damage from all sources, multiplying the already high Dragon damage modifiers from Quivern and Blazamut Ryu.",
+        "Eidrolon Ignis itself gains up to 24% attack from its own partner skill counting the four Dragon/Fire allies, stacking additively with the Quivern and Orserk buffs.",
+        "Recommended accessories: Elphidran Ring (Lv4 Dragon Damage), Jetdragon's Talisman (Lv4 Pal Defense), Divine Dragon's Baton (Lv4 Pal Attack), and Dogen Emblem (Lv4 Player Attack)."
+      ],
+      "alternatives": [
+        {
+          "palId": "celesdir-noct",
+          "replacesPalId": "quivern",
+          "reason": "Trades the universal Dragon attack buff for a riskier +80% attack at the cost of constant health drain; higher burst for fights you can end quickly but impractical for exploration."
+        },
+        {
+          "palId": "rooby",
+          "replacesPalId": "blazamut-ryu",
+          "reason": "Replaces the super-effective-only Dragon damage boost with a flat Fire Pal attack buff of up to 30% that works on all targets, not just Dragon-weak ones."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.reddit.com/r/Palworld/comments/1uxugm4/offering_late_game_advice/",
+        "title": "Offering Late Game Advice - Hardmode Towers Comp (r/Palworld)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "gobfin-player-stack",
+      "slug": "gobfin-player-stack",
+      "name": "Gobfin Player Stack",
+      "summary": "Mount an elemental converter and let four Gobfins turn your guns into legendary boss-killing machines.",
+      "purpose": ["player_weapon_damage", "boss_damage", "endgame"],
+      "elements": ["fire", "water"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "ragnahawk",
+          "role": ["mount", "element_conversion", "trainer_damage_support"],
+          "explanation": "While mounted, converts player attacks to Fire and increases player attack by 50% (rank 1) to 100% (rank 5); the elemental conversion lets you exploit enemy weaknesses."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Angry Shark raises player attack by 10% (rank 1) to 20% (rank 5) per Gobfin in the party, stacking additively for up to 80% with four max-condensed copies."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Second Gobfin: adds another 10% to 20% player attack."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Third Gobfin: adds another 10% to 20% player attack."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Fourth Gobfin: adds another 10% to 20% player attack. Four max-condensed Gobfins plus Vanguard passive on each totals ~120% player attack from the pocket alone."
+        }
+      ],
+      "equipment": [
+        {
+          "itemId": "assault-rifle",
+          "kind": "weapon",
+          "status": "recommended",
+          "reason": "High fire rate builds Orserk-independent DPS; any gun works — Shotgun for burst, Rocket Launcher for AoE — but the Assault Rifle offers the best sustained damage over a full magazine."
+        }
+      ],
+      "requirements": ["endgame", "condensation", "specific_weapon"],
+      "synergyNotes": [
+        "The math: four 4-star Gobfins grant +80% player attack from partner skills alone. Adding Vanguard (+10% each at 4-star) and Stronghold Strategist (+10% defense each) makes the player both harder-hitting and tankier than any Pal-led team.",
+        "Ragnahawk's 100% attack boost at max condensation applies after Gobfin stacking, effectively doubling the already massive player attack value.",
+        "This build killed Frostallion in under one minute with a Legendary Shotgun, compared to four minutes with a Pal-led team — the community's most-tested boss-killing setup.",
+        "Any elemental mount works: Frostallion for Ice, Beakon for Electric, Helzephyr for Dark, Chillet for Dragon. Swap the mount to match the boss weakness."
+      ],
+      "alternatives": [
+        {
+          "palId": "frostallion",
+          "replacesPalId": "ragnahawk",
+          "reason": "Swap to Frostallion for Ice-element conversion and double player damage while mounted; the community's preferred variant for Jetragon kills."
+        },
+        {
+          "palId": "gobfin-ignis",
+          "replacesPalId": "gobfin",
+          "reason": "Gobfin Ignis is identical to normal Gobfin in function; mix any combination of the two species since the attack buff uses the same Partner Skill across both forms."
+        },
+        {
+          "palId": "solenne",
+          "replacesPalId": "gobfin",
+          "reason": "Replace one Gobfin with Solenne for 30% to 80% player attack (no-dup-species condition met here); higher peak than a fourth max-condensed Gobfin."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://game8.co/games/Palworld/archives/443880",
+        "title": "Palworld 1.0 Best Builds and Teams (game8.co)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "sweepa-fluffball",
+      "slug": "sweepa-fluffball",
+      "name": "Sweepa Fluffball",
+      "summary": "Four baby Swee turn one Sweepa into an unstoppable ice tank — the community's favorite meme build that actually works.",
+      "purpose": ["pal_element_damage", "active_pal_support", "survival"],
+      "elements": ["ice"],
+      "progression": "mid",
+      "pals": [
+        {
+          "palId": "sweepa",
+          "role": ["carry", "mount"],
+          "explanation": "Each Swee in the party grants Sweepa +12% Attack and Defense (rank 1) to +24% (rank 5) per Swee; with four max-condensed Swee, Sweepa gains +96% Attack and +96% Defense."
+        },
+        {
+          "palId": "swee",
+          "role": ["active_pal_booster"],
+          "explanation": "First Swee: adds 12% to 24% Attack and Defense to Sweepa. Also carries Vanguard (+10% player attack at 4-star) and Stronghold Strategist (+10% player defense) as a bonus."
+        },
+        {
+          "palId": "swee",
+          "role": ["active_pal_booster"],
+          "explanation": "Second Swee: adds another 12% to 24%."
+        },
+        {
+          "palId": "swee",
+          "role": ["active_pal_booster"],
+          "explanation": "Third Swee: adds another 12% to 24%."
+        },
+        {
+          "palId": "swee",
+          "role": ["active_pal_booster"],
+          "explanation": "Fourth Swee: adds another 12% to 24%. Total Sweepa bonus at max condensation: +96% Attack, +96% Defense, making it about twice as strong as a normal Pal of its level."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["mid_game", "condensation", "breeding"],
+      "synergyNotes": [
+        "Sweepa's partner skill works off the number of Swee in the party, not their level or condensation — four 0-star Swee already give +48% each stat, making this viable as early as you can catch them.",
+        "Each Swee with 4-star Vanguard and Stronghold Strategist also gives the player +10% attack and +10% defense, stacking up to +40% each — the Swee pull double duty as player buffers.",
+        "Ride Sweepa into battle: it's mountable and its inflated stats make it a mobile fortress. Recommended passives: Legend, Ferocious, Musclehead, and Burly Body or Swift.",
+        "Sweepa and Swee spawn in the Astral Mountains; the whole team can be caught wild without breeding, then condensed later for the full +96% bonus."
+      ],
+      "alternatives": [],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.reddit.com/r/Palworld/comments/1ao4vg7/sweepa_team_is_so_overrated/",
+        "title": "Sweepa Team discussion and build math (r/Palworld)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "bellanoir-nightmare-ray",
+      "slug": "bellanoir-nightmare-ray",
+      "name": "Bellanoir Nightmare Ray",
+      "summary": "Dual Bellanoirs fire Nightmare Ray on cooldown with Lapure cutting the wait in half — the 1.0 meta for Dark boss-killing.",
+      "purpose": ["pal_element_damage", "boss_damage", "endgame"],
+      "elements": ["dark", "dragon", "electric", "neutral"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "bellanoir",
+          "role": ["carry"],
+          "explanation": "Nightmare Ray is a high-power exclusive Dark skill; Bellanoir's raw stats and Dark typing make it the primary damage dealer."
+        },
+        {
+          "palId": "bellanoir-libero",
+          "role": ["carry"],
+          "explanation": "Second Nightmare Ray user; rotate between the two Bellanoirs as cooldowns cycle, maintaining near-constant exclusive-skill uptime."
+        },
+        {
+          "palId": "lapure",
+          "role": ["utility"],
+          "explanation": "Reduces partner skill cooldowns of other party Pals by 25% to 50% at max condensation, letting both Bellanoirs fire Nightmare Ray roughly twice as often."
+        },
+        {
+          "palId": "orserk",
+          "role": ["active_pal_booster"],
+          "explanation": "Landing player bullets grants the active Pal +1% to 5% Attack and Defense per hit, stacking 30 times for +150% at max condensation; use the Drone Launcher for automatic stacking."
+        },
+        {
+          "palId": "silvegis",
+          "role": ["defensive_support"],
+          "explanation": "Reduces damage to the player's shield by 40% (rank 1) to 80% (rank 5) and reduces shield regeneration delay by 30% to 60%; keeps you alive while the Bellanoirs do the work."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["endgame", "condensation", "breeding", "legendary"],
+      "synergyNotes": [
+        "Orserk and Silvegis are the universal 1.0 endgame core — Orserk scales the active Pal to +150% Attack and Defense, Silvegis makes the player nearly immortal behind an 80% damage-reduced shield.",
+        "Lapure is the wildcard that doubles the team's effective DPS by halving cooldowns; it benefits both Bellanoirs simultaneously since the effect is party-wide.",
+        "Start every fight by deploying the Drone Launcher to build Orserk stacks, then swap to the first Bellanoir for Nightmare Ray, rotate to Bellanoir Libero when cooldown triggers, and repeat.",
+        "This is one of the most reliable Hard Tower boss-killing comps in 1.0 per community testing; the same Orserk+Silvegis+Lapure core works with any pair of same-element ace attackers."
+      ],
+      "alternatives": [
+        {
+          "palId": "hoocrates",
+          "replacesPalId": "silvegis",
+          "reason": "Drops the shield tank for an extra 30% Dark attack buff; pure DPS variant for fights where you can dodge everything."
+        },
+        {
+          "palId": "dandilord",
+          "replacesPalId": "bellanoir",
+          "reason": "Swap the Dark attackers for Poison specialists; Dandilord's Grass/Dark typing and poison kit replace the Bellanoir rotation with a DoT-focused alternative."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://game8.co/games/Palworld/archives/440398",
+        "title": "Palworld 1.0 Best Endgame Teams (game8.co)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "dual-hartalis-neutral",
+      "slug": "dual-hartalis-neutral",
+      "name": "Dual Hartalis Neutral Nuke",
+      "summary": "Two Hartalis cycling Purifying Light and Sacred Rain with Cremis buffing Neutral damage — the 1.0 Neutral boss-killing standard.",
+      "purpose": ["pal_element_damage", "boss_damage", "endgame"],
+      "elements": ["neutral", "dragon", "electric"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "hartalis",
+          "role": ["carry"],
+          "explanation": "Purifying Light and Sacred Rain are high-power Neutral exclusive skills; Savior Rainbow passive amplifies its own Neutral damage further."
+        },
+        {
+          "palId": "hartalis",
+          "role": ["carry"],
+          "explanation": "Second Hartalis for rotation; cycle between the two to maintain exclusive-skill uptime during cooldown windows."
+        },
+        {
+          "palId": "cremis",
+          "role": ["element_booster"],
+          "explanation": "Boosts Neutral Pal attack by 10% (rank 1) to 30% (rank 5); since both Hartalis are pure Neutral, this applies to all their damage."
+        },
+        {
+          "palId": "orserk",
+          "role": ["active_pal_booster"],
+          "explanation": "The universal endgame amplifier: landing bullets grants the active Pal up to +150% Attack and Defense with 30 stacks at max condensation."
+        },
+        {
+          "palId": "silvegis",
+          "role": ["defensive_support"],
+          "explanation": "Reduces shield damage by up to 80% and shield regen delay by up to 60%; the standard defensive anchor for all Orserk-core teams."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["endgame", "condensation", "breeding", "legendary"],
+      "synergyNotes": [
+        "Hartalis is one of the hardest-hitting Neutral Pals in 1.0 and its exclusive skills have no elemental resistances to worry about — every target takes full damage.",
+        "The Orserk + Silvegis universal core provides +150% attack/defense ramp and near-immortality; this same core appears in every game8 1.0 endgame team.",
+        "Cremis's 30% Neutral attack buff applies universally since both Hartalis are mono-Neutral; there's no element mismatch to waste the multiplier.",
+        "Recommended accessories mirror the standard endgame set: Pal Attack pendants and player survivability items, since the player's job is to hold the Drone Launcher and stay alive."
+      ],
+      "alternatives": [
+        {
+          "palId": "ribbuny",
+          "replacesPalId": "silvegis",
+          "reason": "Adds a second Neutral buffer for +60% total Neutral attack; pure DPS variant that sacrifices the shield for maximum Hartalis damage output."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://game8.co/games/Palworld/archives/440398",
+        "title": "Palworld 1.0 Best Endgame Teams — Neutral Element (game8.co)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "dual-knocklem-fire",
+      "slug": "dual-knocklem-fire",
+      "name": "Dual Knocklem Ignis Fire Rotation",
+      "summary": "Rotate two Knocklem Ignis to keep Iron Guardian Mode active permanently — the 1.0 Fire meta for sustained boss damage.",
+      "purpose": ["pal_element_damage", "boss_damage", "endgame"],
+      "elements": ["fire", "dragon", "electric", "neutral"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "knocklem-ignis",
+          "role": ["carry"],
+          "explanation": "Iron Guardian Mode massively boosts Attack and Defense while active; Flame Cutter is its exclusive high-damage Fire skill."
+        },
+        {
+          "palId": "knocklem-ignis",
+          "role": ["carry"],
+          "explanation": "Second Knocklem Ignis rotated in while the first is on cooldown; this keeps Iron Guardian Mode active on whichever Knocklem is currently deployed."
+        },
+        {
+          "palId": "kelpsea-ignis",
+          "role": ["element_booster"],
+          "explanation": "Boosts Fire Pal attack by 10% (rank 1) to 30% (rank 5); applies to both Knocklem Ignis variants."
+        },
+        {
+          "palId": "orserk",
+          "role": ["active_pal_booster"],
+          "explanation": "Drone Launcher hits build stacks of +1% to 5% Attack/Defense per hit on the active Pal, up to 30 stacks for +150% total at max condensation."
+        },
+        {
+          "palId": "silvegis",
+          "role": ["defensive_support"],
+          "explanation": "Up to 80% shield damage reduction and 60% faster shield recovery; the defensive backbone of every 1.0 endgame team."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["endgame", "condensation", "breeding", "legendary"],
+      "synergyNotes": [
+        "The rotation: deploy Knocklem Ignis 1, activate Iron Guardian Mode, build Orserk stacks, let it fight until the mode ends, then swap to Knocklem Ignis 2 and repeat — effectively infinite Guardian uptime.",
+        "Kelpsea Ignis's 30% Fire attack buff applies to both Knocklem variants simultaneously because it's a party-wide aura, not a targeted buff.",
+        "The same Orserk+Silvegis core that powers every game8 1.0 meta team works here; once you build one core, you can slot in any element's dual attackers.",
+        "Flame Cutter benefits from both the Kelpsea Ignis Fire buff and the Orserk attack ramp, making it hit substantially harder than its base damage suggests."
+      ],
+      "alternatives": [
+        {
+          "palId": "rooby",
+          "replacesPalId": "silvegis",
+          "reason": "Drops the shield for a second Fire attack buffer (Rooby is interchangeable with Kelpsea Ignis); total +60% Fire attack but no defensive safety net."
+        },
+        {
+          "palId": "finsider-ignis",
+          "replacesPalId": "silvegis",
+          "reason": "Adds extra Fire coverage while keeping some bulk; a middle-ground option between full DPS and full defense."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://game8.co/games/Palworld/archives/440398",
+        "title": "Palworld 1.0 Best Endgame Teams — Fire Element (game8.co)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "dual-dandilord-poison",
+      "slug": "dual-dandilord-poison",
+      "name": "Dual Dandilord Poison DoT",
+      "summary": "Two Dandilords stack poison while Hoocrates buffs their Dark half — a DoT-focused alternative to the Bellanoir dark meta.",
+      "purpose": ["pal_element_damage", "status_effects", "boss_damage", "endgame"],
+      "elements": ["dark", "grass", "dragon", "electric", "neutral"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "dandilord",
+          "role": ["carry", "status_applier"],
+          "explanation": "Grass/Dark dual-type with poison-inflicting skills; its Partner Skill amplifies poison damage ticks on afflicted targets."
+        },
+        {
+          "palId": "dandilord",
+          "role": ["carry", "status_applier"],
+          "explanation": "Second Dandilord doubles poison application speed and lets you rotate when one is on cooldown."
+        },
+        {
+          "palId": "hoocrates",
+          "role": ["element_booster"],
+          "explanation": "Boosts Dark Pal attack by 10% (rank 1) to 30% (rank 5); applies to both Dandilords since they share the Dark type."
+        },
+        {
+          "palId": "orserk",
+          "role": ["active_pal_booster"],
+          "explanation": "Ramps the active Pal to +150% Attack and Defense; since poison damage scales with the inflictor's attack, Orserk directly amplifies the DoT ticks."
+        },
+        {
+          "palId": "silvegis",
+          "role": ["defensive_support"],
+          "explanation": "Standard 1.0 shield anchor — 80% shield damage reduction means you can wait out poison DoT ticks safely."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["endgame", "condensation", "breeding", "legendary"],
+      "synergyNotes": [
+        "Poison damage over time scales with the inflicting Pal's attack stat — Orserk's +150% ramp applies to poison ticks just as it does to direct damage, making this uniquely efficient for DoT strategies.",
+        "Hoocrates buffs the Dark half of both Dandilords, and their Dark-type moves benefit while the poison ticks independently; the Grass half can be buffed separately with Bristla for a full DPS variant.",
+        "The Orserk+Silvegis core works just as well here as in the Bellanoir variant; swap the two ace attackers and the elemental buffer to change elements while keeping the same engine.",
+        "Dandilord's poison approach trades Nightmare Ray's burst for sustained pressure; better suited for long Hard Tower fights where consistent damage outpaces cooldown-gated nukes."
+      ],
+      "alternatives": [
+        {
+          "palId": "bristla",
+          "replacesPalId": "silvegis",
+          "reason": "Adds a Grass buffer for +30% Grass damage on top of Hoocrates's Dark buff; both Dandilord halves get amplified for maximum poison output."
+        },
+        {
+          "palId": "prixter",
+          "replacesPalId": "hoocrates",
+          "reason": "Replaces the pure Dark buffer with a Ground/Dark attacker that adds coverage and supplementary poison; a more flexible but less specialized option."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://game8.co/games/Palworld/archives/440398",
+        "title": "Palworld 1.0 Best Endgame Teams — Poison Dark Element (game8.co)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "flying-gunner-frostallion",
+      "slug": "flying-gunner-frostallion",
+      "name": "Flying Gunner Frostallion",
+      "summary": "Frostallion doubles your damage from the saddle while four Gobfins multiply it — the community's definitive legendary-hunting loadout.",
+      "purpose": ["player_weapon_damage", "boss_damage", "endgame"],
+      "elements": ["ice", "water"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "frostallion",
+          "role": ["mount", "element_conversion", "trainer_damage_support"],
+          "explanation": "While mounted, converts player attacks to Ice and doubles all player damage as a final multiplier; this doubling applies after Gobfin and accessory bonuses."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Angry Shark: +10% to 20% player attack per Gobfin; four copies stack additively to +80% before Frostallion's 2x multiplier."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Second Gobfin for another +10% to 20% player attack."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Third Gobfin for another +10% to 20% player attack."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Fourth Gobfin for another +10% to 20% player attack. With Vanguard on all four: +120% player attack before Frostallion's doubling, yielding roughly 10x the damage of an unbuffed player."
+        }
+      ],
+      "equipment": [
+        {
+          "itemId": "assault-rifle",
+          "kind": "weapon",
+          "status": "recommended",
+          "reason": "The Legendary Assault Rifle's high fire rate and magazine size keep sustained DPS high; 84 bullets killed a max-level Jetragon in community testing with this exact setup."
+        }
+      ],
+      "requirements": ["endgame", "condensation", "legendary", "specific_weapon", "specific_mount"],
+      "synergyNotes": [
+        "Frostallion's final 2x multiplier makes this the highest theoretical player damage in the game — community tests report 855 Attack with this setup, hitting for 10x what a fully-bred combat Pal achieves.",
+        "Gobfins run Vanguard (+10% player attack at 4-star) and Stronghold Strategist (+10% player defense) — the player ends up tankier than a Pal team despite being a 'glass cannon.'",
+        "This is THE legendary-hunting build: Frostallion's Ice conversion exploits Jetragon's Dragon weakness, and the 2x multiplier means even neutral targets die in seconds.",
+        "All 49 player stat points go into Attack for maximum return on the Gobfin percentage multipliers. Use two Attack Pendants and one Defense Pendant for accessories."
+      ],
+      "alternatives": [
+        {
+          "palId": "ragnahawk",
+          "replacesPalId": "frostallion",
+          "reason": "Ragnahawk gives +100% Fire attack but lacks Frostallion's 2x final multiplier; use against Ice-weak bosses where Fire conversion is more valuable than raw multiplier."
+        },
+        {
+          "palId": "solenne",
+          "replacesPalId": "gobfin",
+          "reason": "Solenne's 30% to 80% player attack (species-unique condition) replaces one Gobfin's 20% with a potentially larger boost; only works if the remaining team has no duplicate species."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.reddit.com/r/Palworld/comments/1afte0p/",
+        "title": "Frostallion + 4 Gobfin player attack build discussion (r/Palworld)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "legendary-exploration",
+      "slug": "legendary-exploration",
+      "name": "Legendary Exploration Kit",
+      "summary": "Jetragon for the skies, Necromus for the ground, Galeclaw to glide, and Kitsun for weather — a pure traversal build that skips combat for speed.",
+      "purpose": ["exploration", "mobility", "utility"],
+      "elements": ["dragon", "dark", "neutral", "fire"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "jetragon",
+          "role": ["mount", "mobility"],
+          "explanation": "Fastest flying mount in the game; covers long distances at unmatched speed and doubles as a Dragon-type emergency combat Pal."
+        },
+        {
+          "palId": "necromus",
+          "role": ["mount", "mobility"],
+          "explanation": "Fastest ground mount with excellent sprint speed and double-jump; pairs with Jetragon for environments where flying isn't practical."
+        },
+        {
+          "palId": "galeclaw",
+          "role": ["mobility", "utility"],
+          "explanation": "The best glider Pal in the game; deploying Galeclaw mid-air gives a massive forward burst, covering more horizontal distance than any parachute."
+        },
+        {
+          "palId": "kitsun",
+          "role": ["utility"],
+          "explanation": "While mounted, grants immunity to hot and cold temperature effects; eliminates the need for heat-resistant or cold-resistant armor swaps."
+        },
+        {
+          "palId": "jormuntide-ignis",
+          "role": ["utility"],
+          "explanation": "Provides Fire-type combat coverage for any hostile encounters during exploration; its high base stats mean you won't be defenseless if ambushed."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["endgame", "legendary"],
+      "synergyNotes": [
+        "This is not a combat build — every slot serves a traversal or quality-of-life purpose. Jetragon covers flight, Necromus covers ground, Galeclaw glides, and Kitsun solves temperature.",
+        "Galeclaw's glider boost procs on every deployment; tap jump and immediately open the glider for a horizontal speed burst that rivals some flying mounts.",
+        "Jormuntide Ignis is the combat safety slot; its high stats and Fire/Dragon typing provide enough firepower to handle random world encounters without swapping to a dedicated combat team.",
+        "No condensation or breeding required beyond catching the base Pals — this is a pick-up-and-go exploration loadout for postgame world traversal and farming routes."
+      ],
+      "alternatives": [
+        {
+          "palId": "frostallion",
+          "replacesPalId": "necromus",
+          "reason": "Frostallion is nearly as fast on the ground and adds Ice coverage instead of Dark; useful if you're farming Dragon-type areas where Ice is more relevant."
+        },
+        {
+          "palId": "verdash",
+          "replacesPalId": "jormuntide-ignis",
+          "reason": "Verdash adds a player movespeed buff while active; less combat power but more traversal speed for pure exploration routes."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://game8.co/games/Palworld/archives/443880",
+        "title": "Palworld 1.0 Best Exploration Team (game8.co)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "daedream-necklace-squad",
+      "slug": "daedream-necklace-squad",
+      "name": "Daedream Necklace Squad",
+      "summary": "Four Daedreams hover alongside you at all times via the necklace, auto-attacking everything in sight while you ride a mount.",
+      "purpose": ["pal_element_damage", "status_effects", "exploration"],
+      "elements": ["dark", "grass"],
+      "progression": "early",
+      "pals": [
+        {
+          "palId": "daedream",
+          "role": ["carry"],
+          "explanation": "Daedream's Necklace keeps it perpetually active without being summoned; it auto-attacks nearby enemies with Dark-type projectiles and can't kill wild Pals (mercy built into necklace attacks)."
+        },
+        {
+          "palId": "daedream",
+          "role": ["carry"],
+          "explanation": "Second Daedream adds another auto-attacker; all four fire independently, quadrupling passive DPS."
+        },
+        {
+          "palId": "daedream",
+          "role": ["carry"],
+          "explanation": "Third Daedream; the firing squad grows denser."
+        },
+        {
+          "palId": "daedream",
+          "role": ["carry"],
+          "explanation": "Fourth Daedream; with four active, the screen fills with homing Dark projectiles that delete small Pals without any player input."
+        },
+        {
+          "palId": "hoocrates",
+          "role": ["element_booster"],
+          "explanation": "Boosts Dark Pal attack by 10% (rank 1) to 30% (rank 5) while in the party; all four Daedreams benefit simultaneously."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["early_game", "condensation"],
+      "synergyNotes": [
+        "In 1.0, necklace Pals no longer require saddles and their attacks don't kill wild Pals — this makes the Daedream squad the ultimate passive capture assist, softening targets without accidental kills.",
+        "The four Daedreams attack independently of whatever the player is doing — you can ride a mount, fish, or mine while they clear threats around you automatically.",
+        "The Dark typing means they're strong against Neutral Pals (common in the wild); Hoocrates boosts all four at once for +30% Dark damage at max condensation.",
+        "Replace one Daedream with Dazzi for Electric coverage that also procs via necklace — Dazzi adds lightning follow-ups to the player's attacks while the Daedreams fire independently."
+      ],
+      "alternatives": [
+        {
+          "palId": "dazzi",
+          "replacesPalId": "daedream",
+          "reason": "Replace one Daedream with Dazzi for Electric type coverage; Dazzi's necklace adds lightning follow-ups to player attacks while remaining Daedreams keep firing."
+        },
+        {
+          "palId": "flopie",
+          "replacesPalId": "hoocrates",
+          "reason": "Replace the Dark buffer with Flopie for a healing necklace Pal that auto-collects nearby items; sacrifices damage for utility."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.reddit.com/r/Palworld/comments/1ady08l/",
+        "title": "Daedream Necklace allows multiple Daedreams simultaneously (r/Palworld)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "gorirat-berserker-nuke",
+      "slug": "gorirat-berserker-nuke",
+      "name": "Gorirat Berserker Nuke",
+      "summary": "Gorirat's +200% attack Gorilla Mode plus four pocket buffers stack to 27,430 attack — the highest Pal attack stat ever recorded in 1.0.",
+      "purpose": ["pal_element_damage", "boss_damage", "endgame"],
+      "elements": ["neutral", "dragon", "electric", "dark", "fire"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "gorirat",
+          "role": ["carry"],
+          "explanation": "Full-Power Gorilla Mode boosts attack by 50% (rank 1) to 200% (rank 5) during berserk, but only applies to shot-attack skills, not melee moves."
+        },
+        {
+          "palId": "orserk",
+          "role": ["active_pal_booster"],
+          "explanation": "Drone Launcher builds 30 stacks of +5% Attack and Defense each for +150% total at max condensation; the universal endgame amplifier."
+        },
+        {
+          "palId": "celesdir-noct",
+          "role": ["element_booster"],
+          "explanation": "Boosts the active Pal's attack by 80% at max condensation at the cost of health drain; synergizes with the burst playstyle since the fight should end before health matters."
+        },
+        {
+          "palId": "cremis",
+          "role": ["element_booster"],
+          "explanation": "Boosts Neutral Pal attack by 10% (rank 1) to 30% (rank 5); Gorirat is pure Neutral so the full buffer applies."
+        },
+        {
+          "palId": "blazamut",
+          "role": ["element_booster"],
+          "explanation": "Boosts Fire damage by 25% to 50% at max condensation; applies to any Fire-type shot-attack skill fruits taught to Gorirat."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["endgame", "condensation", "breeding", "legendary"],
+      "synergyNotes": [
+        "The math: Gorirat base attack +200% Gorilla Mode +150% Orserk +80% Celesdir Noct +30% Cremis +50% Blazamut (for Fire shot skills) + 4× baton accessories (+64%) + Mammorest Curry (+25%) = 27,430 attack peak.",
+        "This only works with shot-attack type skills (ranged projectiles) — Gorilla Mode explicitly excludes melee attacks. Teach Gorirat high-power shot skills via Skill Fruits.",
+        "Celesdir Noct's health drain is irrelevant if the fight ends in one burst window; for longer fights, swap to Silvegis to trade the +80% attack for an 80% shield.",
+        "This is a showcase-speedkill build — it deletes bosses but requires setup. For general play, drop Celesdir Noct for Silvegis and treat it as a strong-but-balanced Gorirat team."
+      ],
+      "alternatives": [
+        {
+          "palId": "silvegis",
+          "replacesPalId": "celesdir-noct",
+          "reason": "Drops the risky +80% attack for 80% shield damage reduction; turns the speedkill into a sustainable boss-fighting build for Hard Tower content."
+        },
+        {
+          "palId": "solenne",
+          "replacesPalId": "blazamut",
+          "reason": "Solenne used as a self-sufficient backup attacker instead of a pure buffer; her Purifying Light nuke can finish what Gorirat starts if it falls."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.reddit.com/r/Palworld/comments/1vgluzh/",
+        "title": "Babe wake up, new max attack just dropped — 27,430 (r/Palworld)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "tocotoco-bomb-squad",
+      "slug": "tocotoco-bomb-squad",
+      "name": "Tocotoco Bomb Squad",
+      "summary": "Five explosive egg-launching birds bred with combat passives — a meme build that's surprisingly lethal with Lucky skill rolls.",
+      "purpose": ["pal_element_damage", "status_effects"],
+      "elements": ["neutral"],
+      "progression": "mid",
+      "pals": [
+        {
+          "palId": "tocotoco",
+          "role": ["carry"],
+          "explanation": "Egg Bomb Launcher fires explosive projectiles; Lucky Tocotocos can roll skills from a 32-skill pool including Dragon Meteor (600 power) and Holy Burst (700 power)."
+        },
+        {
+          "palId": "tocotoco",
+          "role": ["carry"],
+          "explanation": "Second Tocotoco doubles the explosive output."
+        },
+        {
+          "palId": "tocotoco",
+          "role": ["carry"],
+          "explanation": "Third Tocotoco; with five birds, the battlefield becomes a bullet-hell of explosive eggs."
+        },
+        {
+          "palId": "tocotoco",
+          "role": ["carry"],
+          "explanation": "Fourth Tocotoco."
+        },
+        {
+          "palId": "tocotoco",
+          "role": ["carry"],
+          "explanation": "Fifth Tocotoco. One player rode a mutated Tocotoco ('Fat Fuack') with Megaton as a meme bomb-mount — the community named this Taco Tuesdays."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["mid_game", "condensation", "breeding"],
+      "synergyNotes": [
+        "Breed Tocotocos with Ferocious, Musclehead, Lucky, and Legend passives for maximum egg damage; Lucky also unlocks the expanded skill pool for each bird.",
+        "Lucky Tocotocos (level 51+ with minimum 50 IVs) can randomly roll Holy Burst (700 power), Thunderstorm (600), Dragon Meteor (600), or other ultra-high-power skills — making each bird a potential nuke.",
+        "This is a meme build, not a Hard Tower comp; it's absurdly fun in the open world where five birds carpet-bombing wild Pals never gets old.",
+        "The explosive eggs inherit the Tocotoco's attack stat, so condensation and soul upgrades directly boost the AoE damage of every egg launched."
+      ],
+      "alternatives": [
+        {
+          "palId": "jolthog-cryst",
+          "replacesPalId": "tocotoco",
+          "reason": "Replace one Tocotoco with Jolthog Cryst for Electric grenade coverage; adds Shock status on top of the explosive chaos."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.reddit.com/r/Palworld/comments/1v9ef25/",
+        "title": "Anyone tried riding an explosive mount? Tocotoco bomb memes (r/Palworld)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "elizabee-royal-guard",
+      "slug": "elizabee-royal-guard",
+      "name": "Elizabee Royal Guard",
+      "summary": "Four Beegardes buff Elizabee's attack and defense by +96% each while producing honey — the Grass analog to the Sweepa meme build.",
+      "purpose": ["pal_element_damage", "active_pal_support", "survival"],
+      "elements": ["grass"],
+      "progression": "mid",
+      "pals": [
+        {
+          "palId": "elizabee",
+          "role": ["carry"],
+          "explanation": "Each Beegarde in the party grants Elizabee +12% Attack and +12% Defense (rank 1) to +24% (rank 5) per Beegarde; Elizabee also has a hidden +5% to +8% self-attack boost from its own partner skill."
+        },
+        {
+          "palId": "beegarde",
+          "role": ["active_pal_booster"],
+          "explanation": "First Beegarde: +12% to +24% Attack and Defense to Elizabee. Also produces honey passively at the ranch when not in the active party."
+        },
+        {
+          "palId": "beegarde",
+          "role": ["active_pal_booster"],
+          "explanation": "Second Beegarde: +12% to +24%."
+        },
+        {
+          "palId": "beegarde",
+          "role": ["active_pal_booster"],
+          "explanation": "Third Beegarde: +12% to +24%."
+        },
+        {
+          "palId": "beegarde",
+          "role": ["active_pal_booster"],
+          "explanation": "Fourth Beegarde: +12% to +24%. Total at max condensation: +104% Attack (+96% from Beegardes + 8% self), +96% Defense."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["mid_game", "condensation", "breeding"],
+      "synergyNotes": [
+        "Unlike Sweepa/Swee which gives only Attack+Defense, Beegardes give both stats simultaneously — Elizabee becomes about twice as strong and twice as tanky as a normal Pal of its level.",
+        "Elizabee is a Grass type with a staff-wielding partner skill; it delivers strong Grass AoE damage and its inflated stats make it viable through mid-to-late game content.",
+        "Beegardes don't need levels or passives — only condensation matters for their partner skill scaling. Catch four wild Beegardes and you already have +48% to Elizabee at zero investment.",
+        "Bonus: Beegardes produce honey at the ranch, so the same Pals you breed for combat doubles as passive honey farmers in your base."
+      ],
+      "alternatives": [
+        {
+          "palId": "bristla",
+          "replacesPalId": "beegarde",
+          "reason": "Replace one Beegarde with Bristla for a Grass attack buff (+30% at max) that applies to Elizabee on top of the remaining Beegardes; trades some bulk for more damage."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.reddit.com/r/Palworld/comments/1aww8je/",
+        "title": "Updated Combat Teams List — Elizabee+Beegarde (r/Palworld)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
+    },
+    {
+      "id": "verdash-speed-demon",
+      "slug": "verdash-speed-demon",
+      "name": "Verdash Speed Demon",
+      "summary": "Verdash grants +40% movement speed instead of attack, while four Gobfins supply the damage — a Grass-element speedrunner's dream.",
+      "purpose": ["player_weapon_damage", "exploration", "mobility"],
+      "elements": ["grass", "water"],
+      "progression": "mid",
+      "pals": [
+        {
+          "palId": "verdash",
+          "role": ["element_conversion", "mobility"],
+          "explanation": "Unlike other element-swap Pals, Verdash grants +20% to +40% movement speed to itself and the player (rank 1 to 5) while converting player attacks to Grass — it trades the usual attack boost for extreme mobility."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Angry Shark: +10% to +20% player attack per Gobfin in the party with max condensation."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Second Gobfin: +20%."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Third Gobfin: +20%."
+        },
+        {
+          "palId": "gobfin",
+          "role": ["trainer_damage_support"],
+          "explanation": "Fourth Gobfin: +20%. Total: +80% player attack and +40% movement speed — you outrun everything while dealing Grass-typed weapon damage."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["mid_game", "condensation"],
+      "synergyNotes": [
+        "Verdash is the only element-swap Pal that boosts movement speed instead of attack; the speed boost lets you strafe-dodge boss attacks at ranges that would kill a stationary player.",
+        "The Gobfins compensate for Verdash's missing attack buff — +80% player attack from four maxed Gobfins brings your Grass-typed guns up to competitive boss-killing damage.",
+        "This build excels against Water and Ground Pals (weak to Grass) while the speed makes it the fastest farming build in the game — sprint through areas deleting wild Pals before they aggro.",
+        "Great for farming Ancient Civilization Parts: race through dungeons with +40% speed, one-shot bosses with Grass-typed guns, and be out before the timer ticks down."
+      ],
+      "alternatives": [
+        {
+          "palId": "solenne",
+          "replacesPalId": "gobfin",
+          "reason": "Solenne (30% to 80% player attack, species-unique condition) replaces one Gobfin for potentially higher player attack if the speed playstyle keeps you alive without the extra Gobfin."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.reddit.com/r/Palworld/comments/1aww8je/",
+        "title": "Updated Combat Teams List — Verdash Speed Build (r/Palworld)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "cross_checked"
     }
   ]
 }
