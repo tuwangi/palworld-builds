@@ -5,6 +5,7 @@ import { slugify } from "./lib/slug.mjs";
 const PAL_ICON_DIR = new URL("../public/icons/pals/", import.meta.url);
 const ITEM_ICON_DIR = new URL("../public/icons/items/", import.meta.url);
 const REPORT_PATH = new URL("../data/snapshot/icons-report.json", import.meta.url);
+const MANIFEST_PATH = new URL("../data/snapshot/icons-manifest.json", import.meta.url);
 
 const USER_AGENT = "palworld-builds-companion/0.1 (personal project)";
 
@@ -105,6 +106,15 @@ async function main() {
     items: { total: items.total, downloaded: items.ok.length, missing: items.missing },
   };
   await writeFile(REPORT_PATH, JSON.stringify(report, null, 2) + "\n");
+
+  // Statically importable list of which ids have a downloaded icon. The app
+  // reads this instead of checking the filesystem at runtime/build time —
+  // an `existsSync` relative to a source file's `import.meta.url` breaks
+  // once Vite bundles that file into dist/, since the bundled chunk no
+  // longer lives next to public/icons/. A plain JSON import has no such
+  // path dependency.
+  const manifest = { pals: pals.ok.sort(), items: items.ok.sort() };
+  await writeFile(MANIFEST_PATH, JSON.stringify(manifest, null, 2) + "\n");
 
   if (pals.failed.length > 0) {
     console.warn(`Pals without a downloaded icon: ${pals.failed.map((f) => f.id).join(", ")}`);

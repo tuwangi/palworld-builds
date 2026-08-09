@@ -1,9 +1,8 @@
-import { existsSync } from "node:fs";
-import { fileURLToPath } from "node:url";
 import catalogJson from "../../data/catalog.json";
 import catalogEsJson from "../../data/catalog.es.json";
 import palsJson from "../../data/snapshot/pals.json";
 import itemsJson from "../../data/snapshot/items.json";
+import iconsManifestJson from "../../data/snapshot/icons-manifest.json";
 import type { Locale } from "./taxonomy";
 
 type SnapshotPal = { id: string; name: string; elements: string[] };
@@ -73,21 +72,25 @@ function esFor(buildId: string): EsTranslation | undefined {
 
 /**
  * Icons are self-hosted (fetched once via scripts/fetch-icons.mjs) rather
- * than hotlinked from paldb.gg. Existence is checked once at build time so
- * both the static detail pages and the client-side listing island agree on
- * whether an icon exists, without either side re-deriving the answer.
+ * than hotlinked from paldb.gg. Which ids have one is read from a
+ * pre-generated manifest, not checked against the filesystem at
+ * build/runtime — `existsSync` relative to a source file's `import.meta.url`
+ * works in `astro dev` (unbundled) but breaks once Vite bundles this module
+ * into dist/, since the bundled chunk no longer lives next to public/icons/.
+ * A plain JSON import has no such path dependency, so both the static
+ * detail pages and the client-side listing island agree on whether an icon
+ * exists regardless of how the module got bundled.
  */
-function iconUrl(dir: "pals" | "items", id: string): string | null {
-  const path = new URL(`../../public/icons/${dir}/${id}.webp`, import.meta.url);
-  return existsSync(fileURLToPath(path)) ? `/icons/${dir}/${id}.webp` : null;
-}
+const iconManifest = iconsManifestJson as { pals: string[]; items: string[] };
+const palIconIds = new Set(iconManifest.pals);
+const itemIconIds = new Set(iconManifest.items);
 
 function palIconUrl(palId: string): string | null {
-  return iconUrl("pals", palId);
+  return palIconIds.has(palId) ? `/icons/pals/${palId}.webp` : null;
 }
 
 function itemIconUrl(itemId: string): string | null {
-  return iconUrl("items", itemId);
+  return itemIconIds.has(itemId) ? `/icons/items/${itemId}.webp` : null;
 }
 
 export type PalAvatar = { id: string; name: string; iconUrl: string | null };
