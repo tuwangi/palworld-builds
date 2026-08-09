@@ -584,6 +584,26 @@ antes de desplegar): mensajes de error correctos en vez de crashear,
 validacion de formato de ID en el cliente antes de llamar a la red, favoritos
 locales intactos en todo momento.
 
-Pendiente, y requiere las cuentas del usuario (no accion mia): crear el repo
-en GitHub, el token fine-grained, y el proyecto en Vercel con las variables
-de entorno. Checklist completo en `docs/deployment.md`.
+**Desplegado y verificado en produccion** (2026-08-09): repo publico en
+`github.com/tuwangi/palworld-builds`, proyecto en Vercel conectado,
+`GITHUB_TOKEN`/`GITHUB_REPO`/`GITHUB_BRANCH` configurados. Probado en vivo:
+`GET`/`PUT` en `/api/profile/:id` contra el repo real, un commit de perfil
+de prueba creado y borrado limpiamente, y confirmado que la sanitizacion de
+`buildId` inventados funciona en produccion (no solo en local). El repo se
+hizo publico a proposito: Vercel Hobby bloquea deploys automaticos cuando
+quien hace `git push` no es la cuenta duena del proyecto ni parte de su
+team, y ese era el caso aqui (colaborador con cuenta de GitHub distinta).
+
+Bug encontrado y corregido ya en produccion: los iconos (Fase 1) no
+aparecian nada mas desplegar, solo el fallback de inicial. Causa: la
+comprobacion de "existe el icono" usaba `existsSync` sobre una ruta relativa
+a `import.meta.url` del propio `src/lib/data.ts`, que apunta al codigo
+fuente real en `astro dev` pero deja de ser valida una vez que Vite empaqueta
+ese modulo para produccion. Arreglado leyendo un manifiesto JSON
+pre-generado (`data/snapshot/icons-manifest.json`,
+`scripts/fetch-icons.mjs`) en vez de tocar el filesystem — verificado esta
+vez contra el HTML real servido en produccion, no solo contra los archivos
+de `dist/`.
+
+Checklist de despliegue (ya completado, queda como referencia si se necesita
+reproducir en otro entorno): `docs/deployment.md`.

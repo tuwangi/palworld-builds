@@ -2,7 +2,11 @@ name: Validate catalog
 
 on:
   push:
+    paths-ignore:
+      - "data/profiles/**"
   pull_request:
+    paths-ignore:
+      - "data/profiles/**"
 
 jobs:
   validate:

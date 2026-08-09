@@ -1,9 +1,26 @@
 # Desplegar Fase 2 (perfiles compartidos)
 
-El codigo de Fase 2 ya esta completo y probado localmente (ver
-`docs/plan.md`). Lo que falta es exclusivamente configuracion de cuentas
-externas (GitHub, Vercel) que solo el usuario puede hacer — requieren sus
-credenciales, no las mias.
+**Ya desplegado (2026-08-09).** Repo: `github.com/tuwangi/palworld-builds`
+(publico). App: `palworld-builds.vercel.app`. Este documento queda como
+referencia por si hay que reproducir el setup en otro entorno.
+
+## Por que el repo es publico
+
+Vercel Hobby bloquea el deploy automatico cuando quien hace `git push` en
+GitHub no es la cuenta duena del proyecto en Vercel ni parte de su team
+(mensaje real: *"attempted to deploy a commit... but they're not a member
+of the team"*). Aqui el colaborador que empuja los commits (`daniel-lca`)
+es una cuenta de GitHub distinta a la duena del proyecto Vercel (`tuwangi`).
+Esa restriccion no aplica a repos publicos, asi que se opto por eso en vez
+de pagar Pro o forzar que todos los push salgan de una sola cuenta.
+
+Consecuencia real: el catalogo, el codigo y los iconos self-hosted (assets
+de Pocketpair, ya usados como cualquier wiki fan) quedan visibles
+publicamente. El `GITHUB_TOKEN` nunca estuvo en el repo — vive solo como
+variable de entorno en Vercel — asi que hacer el repo publico no expuso
+ninguna credencial.
+
+## Pasos seguidos (referencia)
 
 ## 1. Repo en GitHub
 
