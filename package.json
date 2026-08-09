@@ -1,0 +1,30 @@
+{
+  "name": "palworld-builds",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "snapshot:build": "node scripts/build-snapshot.mjs",
+    "icons:fetch": "node scripts/fetch-icons.mjs",
+    "validate": "node scripts/validate-catalog.mjs",
+    "validate:translations": "node scripts/validate-translations.mjs",
+    "dev": "astro dev",
+    "build": "npm run validate && npm run validate:translations && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/preact": "^6.0.2",
+    "@astrojs/vercel": "^11.0.5",
+    "@tailwindcss/vite": "^4.3.3",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "astro": "^7.2.0",
+    "cheerio": "^1.0.0",
+    "heroicons": "^2.2.0",
+    "preact": "^10.29.8",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "typescript": "^6.0.3"
+  }
+}

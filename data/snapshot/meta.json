@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.0",
+  "capturedAt": "2026-08-09T18:25:17.063Z",
+  "sources": {
+    "wiki.gg": "https://palworld.wiki.gg/wiki/Special:CargoTables",
+    "paldb": "https://paldb.gg/about/"
+  },
+  "counts": {
+    "pals": 289,
+    "palsFromWiki": 262,
+    "palsPatchedFromPaldb": 27,
+    "paldbReportedTotal": 288,
+    "items": 1444,
+    "itemsWithKind": 324,
+    "itemsUnmappedKind": 0
+  },
+  "unmappedItemKindPairs": [],
+  "palsInWikiNotInPaldbListing": [
+    {
+      "name": "Rayhound Cryst",
+      "paldeckNumber": "098B"
+    }
+  ]
+}

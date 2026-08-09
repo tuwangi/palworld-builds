@@ -1,0 +1,92 @@
+---
+import Layout from "../layouts/Layout.astro";
+import BuildBrowser from "./BuildBrowser";
+import ProfileControl from "./ProfileControl";
+import { getBuildSummaries } from "../lib/data";
+import { taxonomyLabels, type Locale } from "../lib/taxonomy";
+import { t, buildPath } from "../lib/i18n";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const strings = t(locale);
+const labels = taxonomyLabels(locale);
+
+const builds = getBuildSummaries(locale);
+
+const toOptions = (map: Map<string, string>) => [...map].map(([value, label]) => ({ value, label }));
+
+const purposeOptions = toOptions(labels.purpose);
+const elementOptions = toOptions(labels.element);
+const progressionOptions = toOptions(labels.progression);
+const requirementOptions = toOptions(labels.requirement);
+
+const buildHrefTemplate = `${buildPath(locale)}builds/{slug}/`;
+---
+
+<Layout title={strings.pageTitle} description={strings.tagline} locale={locale}>
+  <div class="py-8 sm:py-12">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <header class="flex items-start justify-between gap-x-4">
+        <div>
+          <h1 class="font-display text-2xl font-semibold tracking-tight text-zinc-100 sm:text-3xl">
+            Palworld Builds
+          </h1>
+          <p class="mt-2 max-w-[60ch] text-base text-pretty text-zinc-400 sm:text-sm">
+            {strings.tagline}
+          </p>
+        </div>
+        <a
+          href={strings.localeSwitchHref}
+          class="shrink-0 rounded-full border border-white/10 bg-white/5 py-1.5 px-3 text-xs font-medium text-zinc-300"
+        >
+          {strings.localeSwitchTo}
+        </a>
+      </header>
+
+      <div class="mt-6">
+        <ProfileControl
+          client:load
+          strings={{
+            profileHint: strings.profileHint,
+            profilePlaceholder: strings.profilePlaceholder,
+            profileJoinButton: strings.profileJoinButton,
+            profileActiveTemplate: strings.profileActiveTemplate,
+            profileLeaveButton: strings.profileLeaveButton,
+            profileErrorInvalid: strings.profileErrorInvalid,
+            profileErrorUnavailable: strings.profileErrorUnavailable,
+          }}
+        />
+      </div>
+
+      <div class="mt-8">
+        <BuildBrowser
+          client:load
+          builds={builds}
+          purposeOptions={purposeOptions}
+          elementOptions={elementOptions}
+          progressionOptions={progressionOptions}
+          requirementOptions={requirementOptions}
+          buildHrefTemplate={buildHrefTemplate}
+          strings={{
+            searchLabel: strings.searchLabel,
+            searchPlaceholder: strings.searchPlaceholder,
+            filterLegendPurpose: strings.filterLegendPurpose,
+            filterLegendElement: strings.filterLegendElement,
+            filterLegendProgression: strings.filterLegendProgression,
+            filterLegendRequirement: strings.filterLegendRequirement,
+            favoritesOnly: strings.favoritesOnly,
+            clearFilters: strings.clearFilters,
+            resultsCountTemplate: strings.resultsCountTemplate,
+            emptyState: strings.emptyState,
+            requiredEquipmentBadge: strings.requiredEquipmentBadge,
+            saveFavorite: strings.saveFavorite,
+            removeFavorite: strings.removeFavorite,
+          }}
+        />
+      </div>
+    </div>
+  </div>
+</Layout>

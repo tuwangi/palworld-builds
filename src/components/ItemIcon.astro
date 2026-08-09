@@ -1,0 +1,18 @@
+---
+interface Props {
+  iconUrl: string | null;
+  class?: string;
+}
+
+const { iconUrl, class: className = "size-10" } = Astro.props;
+---
+
+{
+  iconUrl && (
+    <img
+      src={iconUrl}
+      alt=""
+      class={`${className} shrink-0 rounded-lg bg-white/5 object-contain p-1 outline-1 -outline-offset-1 outline-white/10`}
+    />
+  )
+}

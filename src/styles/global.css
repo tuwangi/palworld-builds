@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Brand accent: kept distinct from every element hue below so favorites,
+     primary actions and active filters never get mistaken for element color
+     coding (see src/lib/elementColors.ts). */
+  --color-brand-400: #fb7185;
+  --color-brand-500: #f43f5e;
+  --color-brand-600: #e11d48;
+}
+
+@utility scheme-only-dark {
+  color-scheme: dark;
+}
+
+html {
+  @apply scheme-only-dark antialiased;
+}
+
+body {
+  @apply min-h-dvh bg-zinc-950 text-zinc-100;
+}
+
+#app {
+  @apply isolate;
+}

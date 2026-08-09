@@ -1,0 +1,565 @@
+{
+  "builds": {
+    "explosive-archer": {
+      "summary": "Cada flecha detona por el 30% de tu ataque, sin importar qué arco la disparó.",
+      "pals": [
+        "Lantern Enchantment detona cada flecha al impactar por 15% (rango 1) a 30% (rango 5) de tu daño de ataque, calculado desde tu estadística de ataque y no desde el arco.",
+        "Aumenta la velocidad de carga del arco entre 15% y 30%, permitiendo disparar más tiros a máxima potencia por minuto.",
+        "Aumenta el daño de arco entre 10% y 35%; el único Pal en 1.0 cuyo bono de arma equipada cubre arcos, así que este slot no tiene sustituto.",
+        "Aporta entre 30% y 80% de ataque mientras ningún par de Pals del equipo comparta especie; aumenta tanto la flecha como la explosión de Loomen porque ambas se calculan desde el ataque.",
+        "Aumenta el daño a puntos débiles entre 30% y 50%; un disparo cargado de arco da tiempo para apuntar a la cabeza."
+      ],
+      "equipment": [
+        "El bono de daño de Robinquill y el bono de velocidad de carga de Robinquill Terra solo aplican a arcos; la explosión de Loomen es un porcentaje fijo del ataque y funciona con cualquier arco."
+      ],
+      "synergyNotes": [
+        "Carga, apunta a la cabeza, suelta: Robinquill Terra hace la carga 30% más rápida, Robinquill añade hasta 35% de daño de arco, y Loomen detona la flecha al impactar por hasta 30% del ataque.",
+        "Solenne aumenta el ataque del que depende la explosión, escalando tanto la flecha como la detonación.",
+        "El nivel del arco casi no importa: la explosión es un porcentaje fijo del ataque en cualquier arco, por lo que el Three Shot Bow, de bajo ataque, se menciona como digno de probar."
+      ],
+      "alternatives": [
+        "El Vanwyrm base añade otro 20% a 40% de daño a puntos débiles al ser una especie distinta de Vanwyrm Cryst, así que los dos efectos se suman; cambia a Vanwyrm Cryst cuando tengas confianza de que cada disparo será a la cabeza.",
+        "Después de conectar un golpe a un punto débil, el siguiente golpea entre 30% y 60% más fuerte; encaja con disparos de arco individuales y deliberados.",
+        "Reduce el daño al escudo hasta en 80% y el retraso de regeneración hasta en 60%; tómalo si cargar un disparo te sigue matando."
+      ]
+    },
+    "gunslinger": {
+      "summary": "Dispara sin parar: tus balas son a la vez tu daño y el buff de tu Pal.",
+      "pals": [
+        "Aumenta el ataque del jugador entre 30% y 80% mientras cada Pal del equipo sea de una especie distinta.",
+        "Aumenta la velocidad de recarga del jugador entre 20% y 50%, algo importante porque las cargas de Orserk decaen cinco segundos después del último golpe.",
+        "Aumenta el daño de escopeta del jugador entre 10% y 35%; su Partner Skill activable también dispara una escopeta.",
+        "Cada bala que impacta da al Pal activo entre 1% y 5% de Ataque y Defensa durante cinco segundos, acumulable hasta 30 veces para un 150% con condensación máxima.",
+        "Añade entre 30% y 50% de daño a puntos débiles en cada disparo con cualquier arma."
+      ],
+      "equipment": [
+        "El bono de daño de Nyafia aplica específicamente a escopetas, así que la elección de arma no es libre; el tamaño del cargador importa porque las cargas de Orserk decaen al recargar."
+      ],
+      "synergyNotes": [
+        "Mantén la escopeta sobre el objetivo y no dejes de disparar: Solenne, Frostplume, Nyafia y Vanwyrm Cryst aumentan el propio daño o manejo del jugador.",
+        "Cada bala que impacta acumula el buff de Orserk en el Pal activo, hasta 150% de Ataque y Defensa con 30 cargas; las cargas expiran cinco segundos después del último golpe, así que una recarga larga deshace el progreso.",
+        "Los dos canales de daño son independientes: cuatro slots potencian al jugador, solo Orserk potencia al Pal activo."
+      ],
+      "alternatives": [
+        "Aumenta el daño de Partner Skill de los Pals que usan armas entre 20% y 50%, pero en este equipo solo la escopeta activable de Nyafia califica, y dura 10 segundos con un enfriamiento de 120 segundos (~8% de uptime).",
+        "Reemplaza a Nyafia cuando te decidas por armas de energía en vez de escopeta; ambos llevan el mismo tipo de efecto pero solo el que coincide con el arma equipada se activa.",
+        "Reduce a la mitad el enfriamiento de 120 segundos de Nyafia a 60; vale la pena solo si el equipo está construido específicamente alrededor de la ventana de escopeta activable.",
+        "Reduce el daño al escudo hasta en 80%; tómalo en vez de Vanwyrm Cryst si mueres demasiado seguido a rango de escopeta."
+      ]
+    },
+    "frostallion-charge-rifle": {
+      "summary": "Congela al objetivo, apunta a un punto débil y cobra con un disparo cargado amplificado.",
+      "pals": [
+        "Mientras está montado, convierte los ataques del jugador a Hielo, aumenta el ataque a distancia montado entre 10% y 40%, y ayuda a infligir Congelación (nivel 2 a 6).",
+        "Aumenta el daño del jugador a partes débiles entre 30% y 50%, premiando directamente los disparos cargados precisos.",
+        "Aumenta el daño del arma de energía equipada entre 10% y 35%, incluyendo el montaje de rifle de carga.",
+        "Premia los golpes del jugador a puntos débiles con un aumento adicional de daño de 30% a 60%.",
+        "Añade un aumento amplio de ataque a distancia del jugador de 30% a 80% encima de los multiplicadores especializados."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Monta a Frostallion para convertir el disparo a Hielo e intenta Congelar al objetivo antes de cargar, luego reposiciónate para un ángulo limpio al punto débil antes de soltar un disparo de rifle de carga totalmente preparado.",
+        "Los ~200,000 de daño reportados por la fuente en un muñeco de entrenamiento son un resultado de la comunidad bajo equipo, pasivas y condensación específicos, no una garantía universal."
+      ],
+      "alternatives": [
+        "Cambia algo de daño por una recuperación de escudo más rápida y ventanas de apuntado más seguras."
+      ]
+    },
+    "full-tackle-box": {
+      "summary": "Cada parte de un lanzamiento cubierta, usando las formas variantes que la mayoría de guías pasa por alto.",
+      "pals": [
+        "Mejora la tirada interna para pescar Pals con talento, de 74 a 82; la forma Eléctrica rinde estrictamente más que el Solmora base en cada rango.",
+        "Añade entre 55% y 95% más de recompensas tanto en capturas de objetos como de Pals.",
+        "Reduce la pérdida del medidor entre 12% y 35% mientras las barras de pesca no se solapan.",
+        "Inicia el medidor de captura entre 7% y 17% más alto y añade el mismo bono mientras las barras se solapan; la forma de Fuego supera al Whalaska base en cada rango.",
+        "Añade entre 300 y 600 de capacidad de carga, lo cual importa porque Jelliette casi duplica lo que rinde cada captura."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Ninguno de los cinco necesita estar desplegado durante el minijuego; cada efecto funciona desde el slot de equipo, así que mantén fuera la montura acuática que te convenga y viaja entre puntos.",
+        "Solmora Lux y Whalaska Ignis son formas variantes criadas, estrictamente mejores que sus formas base en cada rango y sin ninguna condición asociada.",
+        "El peso, no el tiempo ni el cebo, termina una sesión de pesca una vez que Jelliette está activa; por eso Lunaris ocupa el último slot en vez de un segundo efecto de pesca (solo seis Pals en 1.0 llevan algún efecto de Pesca)."
+      ],
+      "alternatives": [
+        "La forma base rinde de 70 a 80 frente al 74 a 82 de la forma Lux; úsala solo si ya está condensada y el proyecto de cría no vale la pena.",
+        "La forma de Hielo rinde 5% a 14% frente al 7% a 17% de la forma de Fuego; estrictamente inferior, una opción de respaldo y no una elección real.",
+        "10% a 50% de probabilidad de no consumir una esfera lanzada; útil si pescas para capturar Pals y no solo para recolectar objetos."
+      ]
+    },
+    "poison-and-blind-lock": {
+      "summary": "La única combinación de dos estados que las reglas permiten, porque el Veneno se acumula sobre cualquier otro.",
+      "pals": [
+        "Añade Ceguera nivel 2 a 6 a los ataques del jugador desde el slot de equipo, estableciendo la primera ventana de control; también es el único Pal que aplica Ceguera de forma pasiva y aprende Poison Fog para aplicar Veneno desde su barra.",
+        "Aumenta el daño infligido tanto por el jugador como por Roujay mientras el objetivo está Cegado, de 50% a 65%.",
+        "Aumenta el daño infligido tanto por el jugador como por Prixter mientras el Veneno está activo, de 50% a 65%.",
+        "Los golpes del jugador contra enemigos Envenenados reducen su ataque entre 40% y 80%, el número de mitigación más alto de cualquier partner skill del juego; solo aplica en los golpes propios del jugador.",
+        "Amplifica el daño a distancia del jugador entre 30% y 80% mientras se mantengan cinco especies distintas, convirtiendo cada ventana de estado en una fase de explosión de daño."
+      ],
+      "equipment": [
+        "El equipo necesita suficientes golpes por segundo para mantener ambos estados renovados y activar repetidamente el corte de ataque de Bakemi; el Plasma Rifle es la opción de DPS sostenido más alta para eso."
+      ],
+      "synergyNotes": [
+        "El Veneno es el único efecto de estado en Palworld 1.0 que coexiste con otro en vez de reemplazarlo, así que Ceguera más Veneno es el único bloqueo de dos estados que se sostiene; Roujay y Prixter se activan ambos con el mismo golpe.",
+        "Despliega a Venusa y abre con Poison Fog (0 de poder, estado puro); la Ceguera ya se aplica de forma pasiva desde el slot de equipo, así que un solo lanzamiento pone ambos estados en el objetivo a la vez. Reaplica el Veneno cada 17 segundos.",
+        "Los jefes de tipo Oscuro son inmunes a la Ceguera, lo que desactiva el aplicador de Venusa y el bono de Roujay; el Veneno no tiene inmunidad, así que el equipo sigue funcionando pero rinde aproximadamente la mitad contra objetivos Oscuros."
+      ],
+      "alternatives": [
+        "También aprende Poison Fog en el nivel 1 y añade entre 10% y 35% de daño de escopeta desde el slot de equipo; cámbialo si prefieres daño de arma sobre el corte de ataque enemigo.",
+        "Su habilidad activable pone Veneno en los propios ataques del jugador durante 30 segundos, liberando a Venusa para usar movimientos de daño; también otorga al equipo inmunidad al Veneno e inmunidad al gas tóxico del World Tree."
+      ]
+    },
+    "saya-and-selyne-hard-rotation": {
+      "summary": "Cinco Dragones que se hacen más fuertes por cada otro Dragón que tengan al lado.",
+      "pals": [
+        "Gana entre 2% y 6% de Ataque y Velocidad de Movimiento por cada otro Pal Dragón u Oscuro en el equipo (24% en rango 5 aquí); abre o reposiciona rápido antes de ceder el campo.",
+        "Gana entre 4% y 8% de ataque a distancia por cada otro aliado Dragón, 32% con condensación máxima y cuatro aliados Dragón; aporta una ventana compacta de daño explosivo a distancia.",
+        "Cada bala que impacta da al Pal activo (montado) entre 1% y 5% de Ataque y Defensa, acumulable hasta 30 veces para 150% con condensación máxima; es Dragón, así que también alimenta los bonos por conteo de los demás miembros.",
+        "Aumenta el daño del jugador y de los Pals contra objetivos débiles a Dragón entre 25% y 40%.",
+        "Aumenta el ataque a distancia entre 15% y 30% para cada Pal Dragón del equipo, que aquí significa los cinco."
+      ],
+      "equipment": [
+        "El arma del jugador es relleno entre barras de habilidad montadas; la cadencia de disparo importa porque cada bala alimenta una carga de Orserk sobre el Dragón que esté montado."
+      ],
+      "synergyNotes": [
+        "La composición es el equipo: tres de las cinco partner skills escalan con la cantidad de Dragones en el equipo, así que los cinco miembros deben mantenerse de tipo Dragón o los bonos por conteo se reducen de inmediato.",
+        "Patrón de rotación: monta a un Pal, gasta sus habilidades activas, desmonta, pasa al siguiente; cada Pal tiene un conjunto de enfriamientos independiente, y disparar durante el cambio sigue alimentando las cargas de Orserk.",
+        "Dragón vence a Oscuro, por eso esta composición encaja específicamente con la torre de Saya y Selyne; Hielo vence a Dragón, así que una torre como la de Bjorn/Bastigor pone a los cinco miembros del lado perdedor del enfrentamiento."
+      ],
+      "alternatives": [
+        "Otro Dragón, que mantiene intacto cada bono por conteo mientras añade una montura más rápida y un kit de misiles; el cambio más limpio del equipo.",
+        "También es Dragón, así que no cuesta nada en composición y compra hasta 80% de reducción de daño al escudo; tómalo si el modo difícil te está matando en vez de ganarte por tiempo."
+      ]
+    },
+    "loot-goblin": {
+      "summary": "Bonos específicos por ruta para Mineral, Oro, despiece y capacidad de carga.",
+      "pals": [
+        "Mientras está montado, aumenta el daño a mineral entre 1100% y 3300% y añade entre 150% y 300% más de Mineral; no es un bono pasivo para todos los nodos, solo está activo mientras está montado y minando.",
+        "Mientras está en el equipo, añade entre 100% y 200% más de Monedas de Oro de los enemigos derrotados.",
+        "Mientras está en el equipo, añade entre 100% y 200% más de objetos al usar el Cuchillo de Carnicero.",
+        "Mientras está en el equipo, añade entre 300 y 600 de capacidad de carga.",
+        "Mientras está en el equipo, mejora la eficiencia de minado del jugador entre 30% y 60% y reduce el peso de la Piedra entre 80% y 100%."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Esto es un kit de herramientas por ruta, no cinco multiplicadores globales de botín: cambia el slot especialista según el material objetivo (monta a Astegon para rutas de Mineral, mantén a Dumud Gild para el Oro enemigo, lleva a Splatterina al usar el Cuchillo de Carnicero).",
+        "Los efectos de reducción de peso son específicos por material en los datos actuales: Fuddler solo reduce el peso de la Piedra, así que cámbialo por Turtacle en rutas con mucho Mineral o por Gumoss para madera."
+      ],
+      "alternatives": [
+        "Úsalo para drops de Alma de Pal de los Pals derrotados en vez de Monedas de Oro.",
+        "Úsalo para conseguir Cromita en vez de Mineral general.",
+        "Cámbialo en rutas con mucho Mineral para obtener entre 80% y 100% de reducción de peso de Mineral, ya que la reducción de peso de Fuddler solo cubre Piedra.",
+        "Un bono de capacidad de carga muy temprano del roster inicial, antes de tener disponible a Lunaris."
+      ]
+    },
+    "aegis-wall": {
+      "summary": "Reduce el tiempo sin escudo, recorta el daño al escudo y superpone recuperación condicional.",
+      "pals": [
+        "Reduce el retraso de regeneración del escudo entre 30% y 60% y el daño al escudo entre 65% y 80%; la capa de escudo siempre relevante mientras está en el equipo.",
+        "Aumenta la Defensa del jugador entre 50% y 65%, pero solo mientras el jugador está corriendo.",
+        "Genera una barrera de 5% a 9% después de conectar cinco golpes cuerpo a cuerpo en cinco segundos.",
+        "Por debajo de 30% de Vida, restaura entre 20% y 40% de Vida, y luego entra en un enfriamiento de 120 segundos.",
+        "Fuera de combate, regenera entre 0.15% y 0.75% de Vida por segundo para el jugador y el Pal."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Mitigación en capas con condiciones explícitas, no una promesa de invulnerabilidad: Lapiron necesita estar corriendo, Warsect necesita cinco golpes cuerpo a cuerpo en cinco segundos, Teafant se activa solo por debajo de 30% de Vida con un enfriamiento de 120 segundos, y Celesdir solo regenera fuera de combate.",
+        "Silvegis es el especialista directo en escudo (su Aegis Shield lleva tanto la reducción de retraso de regeneración como la reducción de daño al escudo en los datos actuales), mientras los otros cuatro añaden Defensa al correr, una barrera activada por cuerpo a cuerpo y recuperación en vez de duplicarlo."
+      ],
+      "alternatives": []
+    },
+    "catch-squad": {
+      "summary": "Elige un montaje de bonus trasero, Congelación o Hiedra, y luego apunta a pasivas y preserva esferas.",
+      "pals": [
+        "Añade de 1 a 5 niveles de captura solo cuando el lanzamiento obtiene un bono trasero.",
+        "Añade de 1 a 5 niveles de captura mientras el objetivo está Congelado.",
+        "Añade de 1 a 5 niveles de captura mientras el objetivo está Cubierto de Hiedra.",
+        "Mientras pelea junto al jugador, da a los Pals capturados entre 15% y 30% de probabilidad de compartir una de las Passive Skills elegibles de Yakumo (algunas pasivas están excluidas).",
+        "Da a cada esfera lanzada entre 10% y 50% de probabilidad de no consumirse; no devuelve una esfera después de una captura fallida."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Esto es una caja de herramientas de captura, no cinco bonos que se suman: elige el montaje que el objetivo y las habilidades de estado permitan (bono trasero, Congelación o Cubierto de Hiedra) en vez de asumir que los tres bonos de nivel de captura se acumulan en un solo lanzamiento.",
+        "Rotación práctica: debilita al objetivo con Mercy Hit o un Ring of Mercy para que el montaje no lo termine por accidente, aplica la condición elegida, y luego lanza."
+      ],
+      "alternatives": [
+        "Úsalo cuando las esferas autoguiadas y la capacidad de carga extra importen más que un bono de captura específico por condición."
+      ]
+    },
+    "traversal-kit": {
+      "summary": "Encadena saltos a pie, planeo y escalada, y cambia a Starryon después del anochecer.",
+      "pals": [
+        "Añade exactamente un salto extra en el aire y un dash en el aire para el jugador; la condensación no aumenta ninguno de los dos conteos.",
+        "Hace al jugador más flotante al saltar y caer; un indicador fijo de baja gravedad a pie.",
+        "Evita el daño por caída del jugador y extiende la duración de planeo a alta velocidad del planeador equipado.",
+        "Aumenta la velocidad de escalada del jugador entre 50% y 100%, la estadística a pie que más escala en este kit.",
+        "Mientras es montado, gana 25% de potencia de salto; su propia velocidad de movimiento sube entre 50% y 100% pero solo de noche. Ninguno de los dos bonos montados aplica a pie."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Cuatro efectos funcionan a pie (Verdash, Valentail, Celaray, Gorirat Terra); la potencia de salto y la velocidad nocturna de Starryon aplican al propio Starryon mientras está montado, no como un buff para el jugador.",
+        "El bono de escalada de Gorirat Terra y la velocidad nocturna de Starryon escalan ambos de 50% a 100% con la condensación; Verdash, Valentail y Celaray se mantienen fijos en su efecto base sin importar el rango."
+      ],
+      "alternatives": [
+        "Úsalo como montura diurna solo cuando también reconstruyas el equipo alrededor de otros Pals Neutrales."
+      ]
+    },
+    "knocklem-poison-tank": {
+      "summary": "Deja que Knocklem sostenga el campo mientras el Veneno habilita daño, mitigación y rotaciones más rápidas.",
+      "pals": [
+        "Elegido por la comunidad como el carry activo resistente del núcleo de veneno: se mantiene activo para absorber presión y entregar el daño directo de Pal del equipo. No hay un número de partner skill documentado para este slot; se elige por su resistencia.",
+        "Convierte los golpes del jugador sobre objetivos Envenenados en una reducción de ataque enemigo de 40% a 80%.",
+        "Aumenta el daño del jugador y de Prixter entre 50% y 65% mientras el objetivo siga Envenenado.",
+        "Añade una rotación de Tierra a distancia (15% a 30% de ataque) cuando Knocklem necesita recuperarse.",
+        "Reduce el enfriamiento de Partner Skill del jugador entre 10% y 50% para que la utilidad regrese antes."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Abre con una aplicación de Veneno, y luego deja a Knocklem activo para retener la atención mientras atacas al objetivo debilitado; reaplica el Veneno antes de que se acabe para que Prixter y Bakemi sigan contribuyendo.",
+        "Esto cambia el daño explosivo máximo por un ciclo de jefe más indulgente: gasta un slot en la resistencia de Knocklem y otro en la utilidad de enfriamiento de Lapure en vez de maximizar el daño, a diferencia de un equipo de veneno tipo glass cannon."
+      ],
+      "alternatives": [
+        "Úsalo cuando el daño de arma de fuego del jugador importe más que la recuperación de enfriamiento."
+      ]
+    },
+    "mobility-melee-swarm": {
+      "summary": "Haz dash, planea y pelea de cerca mientras dos Daedream añaden fuego de apoyo constante.",
+      "pals": [
+        "Añade un salto extra en el aire y un dash en el aire, permitiendo a un jugador cuerpo a cuerpo entrar, evadir y volver a comprometerse.",
+        "Elegido por su planeo de combate responsivo y su reposicionamiento rápido en pleno combate, usado para cruzar huecos y reajustar la distancia durante las peleas. No hay un número de partner skill documentado para este slot.",
+        "Aumenta la velocidad de ataque cuerpo a cuerpo del jugador entre 15% y 30%, haciendo que el ciclo de combate cercano se sienta más rápido.",
+        "Se queda junto al jugador con su collar y aporta ataques de apoyo automáticos; el primero de dos copias intencionales para el concepto de familiar orbitante.",
+        "Una segunda copia, duplicada a propósito (y preservada en el enlace del Team Builder de la fuente) para duplicar la presión de apoyo automática."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Usa a Galeclaw y Verdash para entrar desde arriba o cruzar huecos con seguridad, y luego mantente lo bastante cerca para que el ritmo cuerpo a cuerpo más rápido de Loupmoon importe.",
+        "Los dos Daedream equipados con collar aportan presión automática mientras esquivas y golpeas; haz dash en el aire o planea lejos después de un combo arriesgado, y vuelve a entrar una vez que el estamina y la distancia sean cómodos.",
+        "Recomendación de la comunidad (trátalo como una meta de cría, no un requisito): Stronghold Strategist en los cinco Pals para defensa extra del jugador, ya que el juego a corta distancia no tiene mitigación de otro modo."
+      ],
+      "alternatives": [
+        "Úsalo para prevenir el daño por caída cuando la seguridad de exploración importe más que un segundo familiar."
+      ]
+    },
+    "sustain-and-rescue-squad": {
+      "summary": "Rota entre daño, resistencia, curación y recuperación de emergencia en vez de apostar por un solo carry.",
+      "pals": [
+        "Elegido por la comunidad como el líder de combate de propósito general del equipo: maneja el tiempo de campo habitual y da espacio a los miembros defensivos para recuperarse. No hay un número de partner skill documentado para este slot.",
+        "Toma un slot de rotación resistente cuando la pelea se vuelve demasiado peligrosa para el líder de daño; un slot de combate duradero elegido por sus estadísticas base y no por un número de partner skill documentado.",
+        "Añade otro cuerpo de alta resistencia para que el equipo pueda seguir rotando bajo presión sostenida; elegido por su resistencia y no por un bono numérico de equipo.",
+        "Usa su Partner Skill activable para restaurar al jugador y al equipo después de daño significativo; la herramienta de sustain central de la alineación.",
+        "Ocupa el último slot como red de seguridad enfocada en recuperación para rotaciones fallidas; elección de rescate seleccionada por la comunidad."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "No es un equipo para matar jefes rápido: está orientado a la recuperación, cambiando una pila especializada de daño por más formas de estabilizarse después de un error.",
+        "Deja que Elphidran maneje la presión normal y rota a Tetroise o Whalaska cuando el líder recibe demasiado daño; guarda la curación de Lyleen hasta que tanto el jugador como varios Pals la necesiten, en vez de usarla para un relleno pequeño."
+      ],
+      "alternatives": [
+        "Úsalo como sanador si Petallia ya está condensada o es más fácil de reclutar.",
+        "Úsalo cuando la recuperación de escudo del jugador sea más útil que un segundo Pal resistente."
+      ]
+    },
+    "anubis-hard-tower-ground-team": {
+      "summary": "Construye una rotación cargada de Tierra alrededor de Anubis para peleas de torre en difícil.",
+      "pals": [
+        "El carry destacado del hilo de la comunidad para la pelea de torre en difícil: ancla la rotación activa con presión de Tierra rápida y estadísticas de combate generales sólidas. No hay un número de partner skill documentado para este slot.",
+        "Añade otra barra de habilidad activa orientada a Tierra y un conjunto distinto de tiempos de ataque, como parte de la rotación de modo difícil probada por el hilo.",
+        "Añade infligir Barro (nivel 2 a 6) y velocidad de movimiento montado para un reposicionamiento más seguro.",
+        "Evita que el equipo sea completamente de tipo Tierra y premia la presión de balas sostenida, dando un perfil elemental distinto si una fase resiste Tierra.",
+        "Añade una opción defensiva compacta (15% a 30% de Defensa) para el último slot durante fases peligrosas."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Abre con Anubis y gasta sus ataques de Tierra más rápidos, y luego alterna entre Dualith Noct y Surfent Terra mientras esas habilidades se recuperan.",
+        "Saca a Orserk cuando el jefe resista Tierra o cuando la presión de balas sostenida sea más segura; mantén a Kikit como el pivote defensivo para fases peligrosas, y vuelve a Anubis una vez que los enfriamientos se restablezcan."
+      ],
+      "alternatives": [
+        "La discusión original ofreció a Dumud como el quinto slot de Tierra más ofensivo; úsalo cuando la rotación ya sea segura y se quiera otro slot ofensivo de Tierra en vez de supervivencia."
+      ]
+    },
+    "fast-kill-exploration-party": {
+      "summary": "Limpia enemigos errantes rápido, reinicia enfriamientos y sigue moviéndote entre objetivos.",
+      "pals": [
+        "Combina presión a distancia con velocidad de movimiento (2% a 6% cada una) para mantener la ruta en marcha.",
+        "Devuelve entre 30% y 60% de su enfriamiento de habilidad activa al derrotar a un enemigo, ideal para cadenas de objetivos más débiles; mucho menos valioso contra un solo jefe grande.",
+        "Aumenta el daño del jugador y de los Pals entre 25% y 40% contra enemigos vulnerables a Oscuro.",
+        "Slot de planeador elegido por la comunidad: mantiene el desplazamiento fluido entre peleas y da una opción de utilidad familiar de juego temprano. No hay un número de partner skill documentado para este slot.",
+        "Aumenta el bono de nivel de captura de 1 a 5 cuando una esfera golpea por detrás."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Viaja sobre Eidrolon y abre cada grupo con suficiente daño explosivo para darle a Maraith objetivos rápidos de rematar, encadenando enemigos más débiles para que siga devolviendo su enfriamiento.",
+        "Una alineación versátil y desenfadada en vez de una pila de daño para un solo jefe; brilla limpiando enemigos errantes, mazmorras y objetivos mixtos donde importan el movimiento, las muertes repetidas y capturas ocasionales."
+      ],
+      "alternatives": [
+        "Úsalo para un planeo de combate más rápido si la utilidad de captura no es prioridad."
+      ]
+    },
+    "life-steal-player-tank": {
+      "summary": "Mantente en pie con robo de vida, recuperación de escudo, daño a distancia y Pals de rotación resistentes.",
+      "pals": [
+        "Devuelve entre 5% y 9% del daño infligido como vida, tanto para el jugador como para Felbat.",
+        "Aumenta el ataque a distancia del jugador entre 30% y 80% para que el paquete de supervivencia siga aportando ofensiva.",
+        "Aumenta el daño del arma de energía equipada entre 10% y 35% para un montaje de raid liderado por el jugador.",
+        "Reduce el tiempo de inicio de recuperación del escudo entre 30% y 60% y reduce el daño recibido en el escudo entre 65% y 80%.",
+        "Reduce el desgaste del equipamiento entre 80% y 100% durante intentos de raid largos y sesiones de farmeo repetidas; resistencia económica y no daño directo, el slot más fácil de cambiar para un intento corto."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Principalmente un equipo de daño de jugador: Solenne y Xenogard premian el uso de armas, mientras Felbat y Silvegis ayudan al jugador a sobrevivir el tiempo suficiente para seguir disparando.",
+        "Mantén a Felbat activo mientras infliges daño de arma constante para que el robo de vida compense el daño acumulado; rompe la línea de visión cuando el escudo caiga para que Silvegis pueda acelerar la recuperación."
+      ],
+      "alternatives": [
+        "Úsalo como el carry de robo de vida si está mejor criado o ya condensado.",
+        "Úsalo para una curación activa grande cuando la recuperación explosiva importe más que la resistencia del equipo."
+      ]
+    },
+    "bellanoir-glass-cannon-rotation": {
+      "summary": "Alterna entre dos Bellanoir Libero a través de un núcleo de Veneno para presión implacable de alto riesgo.",
+      "pals": [
+        "Toma la primera ventana activa y descarga un set de habilidades de alto daño; la primera de dos copias intencionales para barras de habilidad activa independientes.",
+        "Una segunda copia intencional: entra cuando las habilidades más fuertes de la primera copia están enfriándose, aportando una barra de habilidad activa independiente.",
+        "Genera presión adicional mediante golpes de bala repetidos durante la rotación.",
+        "Aumenta el daño del jugador y de Prixter entre 50% y 65% siempre que el Veneno esté activo.",
+        "Añade un efecto de reducción de ataque enemigo de 40% a 80% contra objetivos Envenenados."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Los slots duplicados de Bellanoir Libero son deliberados: alterna entre las dos barras de habilidad activa independientes en vez de esperar a que un solo set de enfriamientos termine.",
+        "Aplica el Veneno primero para que Prixter y Bakemi estén activos, descarga las habilidades más fuertes del primer Bellanoir Libero, y luego cambia de inmediato a la segunda copia para otra barra completa de daño explosivo.",
+        "La variante de equipo de estado más agresiva de la discusión original: tres slots dedicados a pago de daño/estado y dos a carries de daño explosivo activo, con menos herramientas de recuperación dedicadas que la versión con Knocklem, así que los errores son más difíciles de absorber."
+      ],
+      "alternatives": [
+        "Reemplaza a un Bellanoir Libero con un carry activo duradero para intentos más seguros.",
+        "Reemplaza a Orserk cuando la recuperación de enfriamiento de Partner Skill sea más importante."
+      ]
+    },
+    "soak-shock-overload": {
+      "summary": "Abre con Empapado, convierte al jugador a Eléctrico, y convierte la Electrificación en daño en cadena.",
+      "pals": [
+        "Hace que los ataques del jugador inflijan Empapado nivel 2 a 6, estableciendo la primera ventana de daño.",
+        "Aumenta el daño infligido por el jugador y Jormuntide entre 50% y 65% mientras el enemigo siga Empapado.",
+        "Activa una conversión a Eléctrico de 30 segundos y un aumento de 30% de Ataque del jugador con un enfriamiento de 50 segundos, conectando la apertura de Empapado con la mitad Eléctrica de la rotación. No garantiza la Electrificación por sí sola.",
+        "Los golpes del jugador sobre un enemigo Electrificado activan una descarga de área equivalente a 40% a 60% del ataque del jugador.",
+        "Aumenta el daño Eléctrico del jugador y de Univolt entre 25% y 40%, pero solo cuando el Eléctrico golpea una debilidad elemental."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Juega como una secuencia, no como estados simultáneos: marca al objetivo con Ophydia para que Jormuntide amplifique la ventana inicial de Empapado, luego activa a Prixter Lux para la conversión Eléctrica temporizada, y sigue disparando hasta que la Electrificación reemplace la apertura para que Slowatt se convierta en el pago.",
+        "Univolt solo rinde contra enemigos realmente vulnerables a Eléctrico, ya que su bono es condicional a golpear una debilidad elemental."
+      ],
+      "alternatives": [
+        "Reemplaza a Univolt cuando la Electrificación aplicada de forma confiable por el jugador importe más que el bono condicional de punto débil Eléctrico."
+      ]
+    },
+    "poison-barrier": {
+      "summary": "Envenena al objetivo, recorta su ataque, y pelea detrás de recuperación de escudo y robo de vida.",
+      "pals": [
+        "Activa 30 segundos de infligir Veneno en los ataques del jugador y protege pasivamente al equipo del Veneno y del gas tóxico del World Tree.",
+        "Aumenta el daño del jugador y de Prixter entre 50% y 65% mientras el Veneno esté activo.",
+        "Los golpes del jugador contra un objetivo Envenenado reducen su Ataque entre 40% y 80%.",
+        "Reduce el retraso de regeneración del escudo entre 30% y 60% y reduce el daño recibido en el escudo entre 65% y 80% durante toda la rotación de Veneno.",
+        "Mientras pelean juntos, el jugador y Felbat recuperan entre 5% y 9% del daño infligido como Vida; requiere que Felbat sea el Pal activo, no solo estar en el equipo."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Un ciclo de supervivencia en capas, no una barrera permanente literal: activa a Dandilord justo antes de la fase de daño, establece el Veneno para activar la reducción de ataque de Bakemi, y sigue atacando durante la ventana amplificada de Prixter mientras Silvegis protege el ciclo del escudo.",
+        "Silvegis llena un hueco que el Veneno por sí solo no resuelve: ni Prixter ni Bakemi protegen directamente el escudo del jugador, así que aporta esa capa defensiva separada."
+      ],
+      "alternatives": [
+        "Úsalo para regeneración pasiva fuera de combate cuando se prefiera la recuperación entre enfrentamientos sobre el robo de vida activo.",
+        "Un carry de robo de vida con menos Ataque pero la misma curva de recuperación de 5% a 9% para jugador y Pal."
+      ]
+    },
+    "skutlass-katana-rush": {
+      "summary": "Convierte a Skutlass Ignis en una katana y aprovecha sus diez segundos de vida con golpes cuerpo a cuerpo más rápidos y duros.",
+      "pals": [
+        "Se convierte en una katana de 2,900 a 4,200 de Ataque durante diez segundos con un enfriamiento de diez segundos; la mecánica definitoria y deliberadamente de alto riesgo del equipo. Que se acabe el tiempo o usar Iaigiri lo incapacita.",
+        "Aumenta el daño de arma cuerpo a cuerpo del jugador entre 10% y 35% desde un slot de equipo.",
+        "Aumenta la velocidad de ataque de arma cuerpo a cuerpo del jugador entre 15% y 30%, ayudando a aprovechar la ventana de la katana.",
+        "Genera una barrera de 5% a 9% después de conectar cinco golpes cuerpo a cuerpo dentro de la ventana requerida.",
+        "Aumenta el Ataque del jugador entre 30% y 80% porque las cinco especies del equipo son distintas."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "No es el equipo cuerpo a cuerpo matemáticamente más fuerte según la propia fuente: el autor original llamó a Skutlass y Warsect Terra los slots divertidos pero más débiles, y sugirió por separado una versión normal con Loupmoon + Gobfin para más daño puro; esta guía conserva la identidad inusual de katana viviente.",
+        "Activa a Skutlass Ignis solo cuando ya estés en rango; conecta cinco golpes cuerpo a cuerpo rápidos para activar la barrera de Warsect Terra, y cambia el objeto sostenido antes de que termine el temporizador de diez segundos (en vez de usar Iaigiri) para evitar la incapacitación."
+      ],
+      "alternatives": [
+        "Reemplaza a Skutlass con un montaje de arma cuerpo a cuerpo convencional mientras conservas el bono de velocidad de ataque de 15% a 30%.",
+        "10% a 20% más de Ataque del jugador cuando el daño importe más que la pequeña barrera de cinco golpes."
+      ]
+    },
+    "death-from-above": {
+      "summary": "Lánzate, flota en baja gravedad, y sigue disparando durante un planeo rápido con Galeclaw.",
+      "pals": [
+        "Lanza al jugador alto por el aire y otorga 50% más de Ataque hasta aterrizar; el lanzamiento y la ventana de Ataque en el aire definen todo el patrón de juego.",
+        "Reduce la gravedad del jugador para que la ventana de disparo en el aire dure más.",
+        "Aumenta la velocidad de recarga del jugador entre 20% y 50%, reduciendo el tiempo muerto antes de aterrizar.",
+        "Habilita planeo a alta velocidad con disparo de mano derecha, para que el jugador pueda dirigirse sin terminar el ataque.",
+        "Aumenta el Ataque del jugador entre 30% y 80% mientras cada especie del equipo se mantenga distinta."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Activa a Croajiro en el borde del alcance del arma para el lanzamiento, empieza a disparar una vez en el aire, usa a Valentail para extender la caída, y luego pasa al planeo de Galeclaw para tener control hacia adelante mientras mantienes el arma activa.",
+        "La contribución propia verificada de Croajiro es 50% más de Ataque en el aire (una cifra mayor que circula en la comunidad de la fuente probablemente incluye otros modificadores de montaje, así que la guía conserva solo el número confirmado)."
+      ],
+      "alternatives": [
+        "Reemplaza a Solenne cuando un bono de arma de energía disponible sea más práctico que construir alrededor de un equipo de especies todas distintas.",
+        "Úsalo con un arma totalmente automática cuando que la última bala de cada cargador se convierta en un pago especializado sea más útil que el bono de ataque de Solenne."
+      ]
+    },
+    "fire-team-template": {
+      "summary": "Superpone Ataque, Defensa y daño a puntos débiles de Pals de Fuego alrededor de un núcleo confiable de Quemadura.",
+      "pals": [
+        "Aumenta el Ataque de cada Pal de Fuego del equipo entre 15% y 30%; las copias duplicadas no se acumulan.",
+        "Aumenta la Defensa de cada Pal de Fuego entre 15% y 30% mientras está en el equipo.",
+        "Aumenta el daño de Fuego del jugador y de los Pals entre 25% y 40% solo contra un objetivo débil a Fuego.",
+        "Los ataques del jugador infligen Quemadura nivel 2 (rango 1) a nivel 6 (rango 5); una curva de intensidad de estado, no un bono de daño porcentual.",
+        "130 de Ataque base, y aumenta el daño del jugador y de los Pals contra enemigos Quemándose entre 50% y 65%; también anula el daño de lava para el jugador."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Plantilla inicial editable, no una jerarquía fija: mantén los tres roles de soporte juntos, y reemplaza un slot de campo cuando el viaje, limpiar oleadas o un plan de estado distinto importen más.",
+        "El daño de Quemadura y el daño a puntos débiles de Fuego son condiciones separadas e independientes: Jormuntide Ignis verifica si el enemigo se está Quemando, Finsider Ignis verifica si es débil a Fuego, y una puede ser cierta sin la otra."
+      ],
+      "alternatives": [
+        "Cámbialo cuando el viaje montado en agua importe más que el montaje de Quemadura; con otros cuatro Pals de Fuego o Agua, su bono de movimiento exclusivo para sí mismo totaliza +20% en rango 1 o +100% en rango 5.",
+        "Úsalo para peleas con muchos enemigos: cada derrota otorga al Pal activo +5% a +10% de Ataque y Defensa durante 20 segundos, acumulable hasta cinco veces."
+      ]
+    },
+    "grass-team-template": {
+      "summary": "Superpone Ataque, Defensa y daño a puntos débiles de Pals de Planta alrededor de un núcleo de campo de dos slots.",
+      "pals": [
+        "Aumenta el Ataque de cada Pal de Planta entre 15% y 30% desde cualquier slot de equipo; un segundo Bristla no añade otra copia.",
+        "Aumenta la Defensa de cada Pal de Planta entre 15% y 30% mientras está en el equipo.",
+        "Aumenta el daño de Planta del jugador y de los Pals entre 25% y 40% solo cuando el objetivo es débil a Planta.",
+        "135 de Ataque base, el más alto en el roster de Planta actual; su Veneno activable y su protección de equipo contra veneno/gas tóxico añaden control y utilidad en vez de daño de Planta.",
+        "120 de Ataque base combinado con una curación activable para el jugador y los Pals del equipo (80% en rango 1, 90% en rango 5) con un enfriamiento de 300 segundos; mejor usada después de daño significativo y no como regeneración pasiva."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Plantilla inicial editable: mantén los tres roles de soporte (Bristla, Nitemary Botan, Ribbuny Botan) juntos, y despliega a Dandilord o Lyleen según lo requiera el enfrentamiento.",
+        "Los tres efectos de soporte de Planta son cálculos separados (Ataque, Defensa, daño a puntos débiles), cada uno sin acumularse con un portador duplicado de sí mismo; el bono de punto débil no hace nada contra un objetivo que no sea débil a Planta."
+      ],
+      "alternatives": [
+        "Úsalo para otro atacante que escala por sí mismo en vez de la curación; con otros cuatro Pals de Planta, su auto-bono es +8% Ataque y Defensa en rango 1 o +24% en rango 5.",
+        "Cámbialo en un montaje de Cubierto de Hiedra; 120 de Ataque base mantiene el slot de campo creíble, y su habilidad añade una explosión cuando el jugador golpea a un enemigo Cubierto de Hiedra."
+      ]
+    },
+    "water-team-template": {
+      "summary": "Combina Ataque, Defensa y daño a puntos débiles de Pals de Agua con presión y resistencia.",
+      "pals": [
+        "Aumenta el Ataque de cada Pal de Agua entre 15% y 30%; las copias duplicadas no se acumulan.",
+        "Aumenta la Defensa de cada Pal de Agua entre 15% y 30% mientras está en el equipo.",
+        "Aumenta el daño de Agua del jugador y de los Pals entre 25% y 40% solo cuando el objetivo es débil a Agua.",
+        "145 de Ataque base; sigue los ataques del jugador con golpes de lanza de Agua mientras está en el equipo y puede montarse para cruzar el agua, con un bono de velocidad de nado que empieza en el rango 2.",
+        "180 de Vida base y 200 de Defensa base para un slot de rotación duradero; su Partner Skill solo patrulla/bombardea mientras está asignado a una base, así que no se cuenta aquí como un bono de combate de equipo."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Los últimos dos slots son roles, no una jerarquía universal: reemplaza la presión (Neptilius) o la resistencia (Panthalus) cuando una pelea necesite conversión del jugador, viaje aéreo o una mezcla elemental distinta.",
+        "Penking Lux aporta su bono de combate solo cuando el enemigo es débil a Agua; Kelpsea y Gloopie Primo aplican sin importar el enfrentamiento."
+      ],
+      "alternatives": [
+        "Úsalo para conversión a Agua del jugador montado; cambia el tipo de ataque del jinete y aumenta el Ataque del jugador montado, pero no aumenta el Ataque de los Pals de Agua como lo hace Kelpsea.",
+        "135 de Ataque base y viaje volador rápido, pero su bono Azure Sovereign solo escala con otros Pals Dragón, que esta plantilla no tiene de otro modo."
+      ]
+    },
+    "electric-team-template": {
+      "summary": "Apoya a los Pals Eléctricos, y luego convierte el fuego del jugador montado y genera Electrificación.",
+      "pals": [
+        "Aumenta el Ataque de cada Pal Eléctrico entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
+        "Aumenta la Defensa de cada Pal Eléctrico entre 15% y 30% mientras está en el equipo.",
+        "Aumenta el daño Eléctrico del jugador y de los Pals entre 25% y 40% solo cuando el objetivo es débil a Eléctrico; montarlo es opcional.",
+        "Mientras está montado, cambia los ataques del jugador a Eléctrico y aumenta el Ataque del jugador entre 5% y 20%; ambos efectos dejan de aplicar al desmontar.",
+        "Hace que los ataques del jugador inflijan Electrificación nivel 2 (rango 1) a nivel 6 (rango 5); combina con Helzephyr Lux para daño Eléctrico del jugador."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Un punto de partida centrado en el jinete, no una afirmación de que los mismos cinco slots sirven para todo enfrentamiento Eléctrico: mantén a Sparkit, Dinossom Lux y Univolt en el equipo, monta a Helzephyr Lux, y ataca con el jugador.",
+        "Helzephyr Lux no potencia a cada Pal Eléctrico; solo cambia el elemento de ataque y el Ataque del propio jugador montado. Sparkit es el miembro que aumenta el Ataque de los Pals Eléctricos en todo el equipo."
+      ],
+      "alternatives": [
+        "Úsalo en una variante centrada en armas de fuego; cada bala que impacta otorga al Pal activo +1% a 5% de Ataque y Defensa durante cinco segundos, acumulable hasta 30 veces, pero no potencia el arma del jugador.",
+        "Añádelo cuando los enemigos agrupados importen más que un slot de soporte; golpear a un objetivo Electrificado activa una descarga de área equivalente a 40% a 60% del daño de ataque del jugador."
+      ]
+    },
+    "ice-team-template": {
+      "summary": "Apoya a Frostallion, congela al objetivo, y luego elige entre noquearlo o capturarlo.",
+      "pals": [
+        "Aumenta el Ataque de cada Pal de Hielo entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
+        "Aumenta la Defensa de cada Pal de Hielo entre 15% y 30% mientras está en el equipo; sus características de ser montable y de doble salto no cambian al receptor del efecto de equipo.",
+        "Aumenta el daño de Hielo del jugador y de los Pals entre 25% y 40% solo cuando el objetivo es débil a Hielo; montarlo es opcional.",
+        "Mientras está montado, cambia los ataques del jugador a Hielo, aumenta el Ataque del jugador entre 10% y 40%, y aplica Congelación nivel 2 a 6; deja de aplicar al desmontar.",
+        "Mejora los intentos de captura contra Pals afligidos con Congelación en una curva de nivel de captura de 1 a 5; no hace nada a un objetivo no congelado."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Un equipo de Hielo de final de juego construido como un ciclo de congelar y capturar: mantén a Foxcicle, Rayhound Cryst y Moldron Cryst en el equipo, monta a Frostallion, aplica Congelación, y lanza una esfera durante esa ventana; reemplaza el slot de captura cuando el objetivo sea una derrota rápida en vez de una captura.",
+        "Frostallion no potencia a cada Pal de Hielo: Foxcicle es el miembro del equipo que aumenta el Ataque de los Pals de Hielo, mientras Frostallion solo convierte y potencia los propios ataques del jugador montado."
+      ],
+      "alternatives": [
+        "Una variante más simple de montura terrestre: mientras está montado convierte los ataques del jugador a Hielo y aumenta el Ataque del jugador entre 5% y 20%, pero sin el nivel de Congelación ni el viaje volador de Frostallion.",
+        "Úsalo en una variante desmontada centrada en armas de fuego cuando el tiempo de recarga importe más que el slot de captura; aumenta la velocidad de recarga del jugador entre 20% y 50%."
+      ]
+    },
+    "ground-team-template": {
+      "summary": "Aplica Barro con el fuego del jugador, y deja que todo el equipo lo aproveche.",
+      "pals": [
+        "Aumenta el Ataque de cada Pal de Tierra entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
+        "Aumenta la Defensa de cada Pal de Tierra entre 15% y 30% mientras está en el equipo.",
+        "Aumenta el daño de Tierra del jugador y de los Pals entre 25% y 40% solo cuando el objetivo es débil a Tierra; su curva separada de 80% a 100% es reducción de peso de Azufre/Carbón, no daño de combate.",
+        "Hace que los ataques del jugador inflijan Barro nivel 2 (rango 1) a nivel 6 (rango 5) mientras está en el equipo; montarlo es opcional.",
+        "Aumenta el daño del jugador y de los Pals contra enemigos afligidos con Barro entre 50% y 65%; no hace nada antes de que el Barro esté activo."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Trata las condiciones de punto débil y de Barro de forma independiente: mantén a Dumud, Kikit y Turtacle Terra en el equipo, golpea con el jugador para que Surfent Terra aplique Barro, y ataca durante esa ventana para que Pierdon contribuya.",
+        "El daño de Barro y el daño a puntos débiles de Tierra no siempre aplican juntos; Pierdon verifica el estado de Barro mientras Turtacle Terra verifica una debilidad elemental a Tierra, y la plantilla no asume que ambas sean ciertas en cada enfrentamiento."
+      ],
+      "alternatives": [
+        "Una variante de conversión temporizada del jugador: convierte los ataques del jugador a Tierra y aumenta el Ataque del jugador en 30% durante 30 segundos tras la activación, con un enfriamiento de 50 segundos, en vez de un bono de Tierra permanente para todo el equipo.",
+        "Una variante de daño directo de Pal: 125 de Ataque base que gana entre 4% y 8% de Ataque por cada otro miembro del equipo de Fuego o Tierra (16% a 32% con cuatro aliados calificados)."
+      ]
+    },
+    "dark-team-template": {
+      "summary": "Aplica Ceguera con el fuego del jugador, y explótala con todo el equipo.",
+      "pals": [
+        "Aumenta el Ataque de cada Pal Oscuro entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
+        "Aumenta la Defensa de cada Pal Oscuro entre 15% y 30% mientras está en el equipo.",
+        "Aumenta el daño Oscuro del jugador y de los Pals entre 25% y 40% solo cuando el objetivo es débil a Oscuro.",
+        "Hace que los ataques del jugador inflijan Ceguera nivel 2 (rango 1) a nivel 6 (rango 5) mientras está en el equipo.",
+        "Aumenta el daño del jugador y de los Pals contra enemigos afligidos con Ceguera entre 50% y 65%; no hace nada antes de que la Ceguera esté activa."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Un equipo Oscuro de final de juego: mantén a Hoocrates, Wistella y Croajiro Noct en el equipo, golpea con el jugador para que Venusa aplique Ceguera, y ataca durante esa ventana para que Roujay contribuya.",
+        "Las condiciones de punto débil y de Ceguera son independientes: Roujay verifica si el objetivo está afligido con Ceguera, mientras Croajiro Noct verifica en cambio una debilidad elemental a Oscuro; la plantilla no promete que ambas se activen en cada objetivo."
+      ],
+      "alternatives": [
+        "Para una variante de Veneno, cambia ambos slots de Ceguera y activa a Dandilord para que los ataques del jugador inflijan Veneno (empezando en nivel 2, activación de 30 segundos con enfriamiento de 50 segundos); su efecto de equipo aporta inmunidad al Veneno en vez de daño Oscuro.",
+        "Combínalo con una fuente confiable de Veneno como Dandilord; aumenta el daño del jugador y de los Pals contra enemigos Envenenados entre 50% y 65%, pero no hace nada hasta que el Veneno esté activo."
+      ]
+    },
+    "dragon-team-template": {
+      "summary": "Construye un carry de cinco Dragones, y alimenta a Shaolong con golpes de bala sostenidos.",
+      "pals": [
+        "Aumenta el Ataque de cada Pal Dragón entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
+        "Aumenta la Defensa de cada Pal Dragón entre 15% y 30% mientras está en el equipo.",
+        "Aumenta el daño Dragón del jugador y de los Pals entre 25% y 40% solo cuando el objetivo es débil a Dragón.",
+        "Cada bala del jugador que impacta otorga al Pal activo +1% a 5% de Ataque y Defensa durante cinco segundos, acumulable hasta 30 veces; no potencia el arma propia del jugador.",
+        "Gana +4% a 8% de Ataque por cada otro Pal Dragón en el equipo; con los cuatro aliados por defecto calificando, eso es +16% a 32% de Ataque propio antes de otros efectos."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Un armazón de carry coordinado, no cinco multiplicadores de daño intercambiables: mantén a Quivern, Dinossom, Blazamut Ryu y Orserk en el equipo, despliega a Shaolong, y conecta golpes de bala del jugador continuamente para mantener las cargas de Orserk en el Pal activo.",
+        "Mantener a los cinco miembros del equipo de tipo Dragón importa mecánicamente: Shaolong cuenta a cada otro Pal Dragón por separado, así que reemplazar uno con un Pal que no sea Dragón elimina un aliado calificado de su auto-bono."
+      ],
+      "alternatives": [
+        "Una variante más simple centrada en el jinete: mientras está montado, convierte los ataques del jugador a Dragón y aumenta el Ataque del jugador entre 5% y 20%, pero no reemplaza el soporte de Ataque de Pals Dragón de Quivern para todo el equipo.",
+        "Para enfrentamientos explosivos: da al jugador y a los Pals del equipo inmunidad a Aturdimiento y 60% a 80% de resistencia a explosiones, un paquete defensivo en vez de otro efecto de daño Dragón."
+      ]
+    }
+  }
+}

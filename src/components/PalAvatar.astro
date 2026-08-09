@@ -1,0 +1,26 @@
+---
+interface Props {
+  iconUrl: string | null;
+  name: string;
+  class?: string;
+}
+
+const { iconUrl, name, class: className = "size-10" } = Astro.props;
+---
+
+{
+  iconUrl ? (
+    <img
+      src={iconUrl}
+      alt=""
+      class={`${className} shrink-0 rounded-full bg-white/5 object-cover outline-1 -outline-offset-1 outline-white/10`}
+    />
+  ) : (
+    <span
+      class={`${className} shrink-0 inline-flex items-center justify-center rounded-full bg-white/5 font-display text-zinc-500 outline-1 -outline-offset-1 outline-white/10`}
+      aria-hidden="true"
+    >
+      {name.charAt(0)}
+    </span>
+  )
+}

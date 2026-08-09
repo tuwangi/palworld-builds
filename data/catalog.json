@@ -1,0 +1,1791 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.0",
+  "builds": [
+    {
+      "id": "explosive-archer",
+      "slug": "explosive-archer",
+      "name": "Explosive Archer",
+      "summary": "Every arrow detonates for 30% of your attack, independent of which bow fired it.",
+      "purpose": ["player_weapon_damage", "boss_damage"],
+      "elements": ["dark", "fire", "grass", "ground"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "loomen",
+          "role": ["trainer_damage_support"],
+          "explanation": "Lantern Enchantment detonates each arrow on contact for 15% (rank 1) to 30% (rank 5) of your attack damage, calculated from your attack stat rather than the bow."
+        },
+        {
+          "palId": "robinquill-terra",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises bow charge speed by 15% to 30%, letting you fire more full-power shots per minute."
+        },
+        {
+          "palId": "robinquill",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises bow damage by 10% to 35%; the only pal in 1.0 whose equipped-weapon bonus covers bows, so this slot has no substitute."
+        },
+        {
+          "palId": "solenne",
+          "role": ["trainer_damage_support"],
+          "explanation": "Pays 30% to 80% attack while no two party pals share a species; raises both the arrow and the Loomen explosion since it is priced off attack."
+        },
+        {
+          "palId": "vanwyrm-cryst",
+          "role": ["weak_point_support"],
+          "explanation": "Raises weak-point damage by 30% to 50%; a charged bow shot gives time to line up a headshot."
+        }
+      ],
+      "equipment": [
+        {
+          "itemId": "mechanical-bow",
+          "kind": "weapon",
+          "status": "required",
+          "reason": "Robinquill's damage bonus and Robinquill Terra's charge-speed bonus only apply to bows; the Loomen explosion is a flat percentage of attack and works with any bow.",
+          "alternatives": ["advanced-bow", "three-shot-bow", "compound-bow"]
+        }
+      ],
+      "requirements": ["condensation", "specific_weapon"],
+      "synergyNotes": [
+        "Charge, aim for the head, release: Robinquill Terra makes the charge 30% faster, Robinquill adds up to 35% bow damage, and Loomen detonates the arrow on contact for up to 30% of attack.",
+        "Solenne raises the attack the explosion is priced off, scaling both the arrow and the detonation.",
+        "Bow tier barely matters: the explosion is a fixed percentage of attack on every bow, which is why the low-attack Three Shot Bow is called out as worth testing."
+      ],
+      "alternatives": [
+        {
+          "palId": "vanwyrm",
+          "replacesPalId": "vanwyrm-cryst",
+          "reason": "Base Vanwyrm adds another 20% to 40% weak-point damage as a different species from Vanwyrm Cryst, so the two effects add; swap toward Vanwyrm Cryst instead when confident every shot is a headshot."
+        },
+        {
+          "palId": "cryolinx-terra",
+          "replacesPalId": "vanwyrm-cryst",
+          "reason": "After a weak-point hit connects, the next one lands 30% to 60% harder; suits deliberate single bow shots."
+        },
+        {
+          "palId": "silvegis",
+          "replacesPalId": "vanwyrm-cryst",
+          "reason": "Cuts shield damage by up to 80% and regeneration delay by up to 60%; take it if drawing a charged shot keeps getting you killed."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/bow",
+        "title": "Explosive Archer Build in Palworld 1.0 (Party Comp and Team Link)",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "gunslinger",
+      "slug": "gunslinger",
+      "name": "Gunslinger",
+      "summary": "Shoot constantly: your bullets are both your damage and your pal buff.",
+      "purpose": ["player_weapon_damage", "active_pal_support", "hybrid_damage"],
+      "elements": ["dark", "neutral", "ice", "dragon", "electric"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "solenne",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer attack by 30% to 80% while every pal in the party is a different species."
+        },
+        {
+          "palId": "frostplume",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer reload speed by 20% to 50%, which matters because Orserk's stacks decay five seconds after the last hit."
+        },
+        {
+          "palId": "nyafia",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer shotgun damage by 10% to 35%; its activated Partner Skill also fires a shotgun."
+        },
+        {
+          "palId": "orserk",
+          "role": ["active_pal_booster"],
+          "explanation": "Each landed bullet gives the active pal 1% to 5% Attack and Defense for five seconds, stacking up to 30 times for 150% at full condensation."
+        },
+        {
+          "palId": "vanwyrm-cryst",
+          "role": ["weak_point_support"],
+          "explanation": "Adds 30% to 50% weak-point damage on every shot with every gun."
+        }
+      ],
+      "equipment": [
+        {
+          "itemId": "prototype-shotgun",
+          "kind": "weapon",
+          "status": "required",
+          "reason": "Nyafia's damage bonus applies to shotguns specifically, so the weapon choice is not open; magazine size matters because Orserk's stacks decay on reload.",
+          "alternatives": ["beam-scatter"]
+        }
+      ],
+      "requirements": ["condensation", "specific_weapon", "endgame"],
+      "synergyNotes": [
+        "Keep a shotgun on the target and never stop firing: Solenne, Frostplume, Nyafia and Vanwyrm Cryst raise the trainer's own damage or handling.",
+        "Every bullet that lands stacks the Orserk buff on the active pal, up to 150% Attack and Defense at 30 stacks; stacks expire five seconds after the last hit, so a long reload undoes the ramp.",
+        "The two damage lanes are separate: four slots buff the trainer, only Orserk buffs the active pal."
+      ],
+      "alternatives": [
+        {
+          "palId": "xenolord",
+          "replacesPalId": "vanwyrm-cryst",
+          "reason": "Raises Partner Skill damage of weapon-wielding pals 20% to 50%, but in this party only Nyafia's activated shotgun qualifies, and it runs 10 seconds on a 120-second cooldown (~8% uptime)."
+        },
+        {
+          "palId": "xenogard",
+          "replacesPalId": "nyafia",
+          "reason": "Replace Nyafia when committing to energy weapons instead of a shotgun; both carry the same effect type but only the one matching the equipped weapon pays out."
+        },
+        {
+          "palId": "lapure",
+          "replacesPalId": "vanwyrm-cryst",
+          "reason": "Halves Nyafia's 120-second cooldown to 60; worth it only if built specifically around the activated shotgun window."
+        },
+        {
+          "palId": "silvegis",
+          "replacesPalId": "vanwyrm-cryst",
+          "reason": "Cuts shield damage by up to 80%; take it over Vanwyrm Cryst if dying too often at shotgun range."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/firearm",
+        "title": "Gunslinger Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "frostallion-charge-rifle",
+      "slug": "frostallion-charge-rifle",
+      "name": "Frostallion Charge Rifle",
+      "summary": "Freeze the target, line up a weak point and cash out with an amplified charged shot.",
+      "purpose": ["player_weapon_damage", "boss_damage"],
+      "elements": ["ice", "dark", "neutral", "dragon", "ground"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "frostallion",
+          "role": ["mount", "element_conversion"],
+          "explanation": "While mounted, converts trainer attacks to Ice, raises mounted ranged attack by 10% to 40%, and helps inflict Freeze (level 2 to 6)."
+        },
+        {
+          "palId": "vanwyrm-cryst",
+          "role": ["weak_point_support"],
+          "explanation": "Raises trainer damage dealt to weak body parts by 30% to 50%, directly rewarding accurate charge shots."
+        },
+        {
+          "palId": "xenogard",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises damage from the equipped energy weapon by 10% to 35%, including the charge-rifle setup."
+        },
+        {
+          "palId": "cryolinx-terra",
+          "role": ["weak_point_support"],
+          "explanation": "Rewards trainer weak-point hits with an additional 30% to 60% damage increase."
+        },
+        {
+          "palId": "solenne",
+          "role": ["trainer_damage_support"],
+          "explanation": "Adds a broad trainer ranged-attack increase of 30% to 80% on top of the specialized multipliers."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation", "endgame", "rare_content"],
+      "synergyNotes": [
+        "Mount Frostallion to convert the shot to Ice and try to Freeze the target before charging, then reposition for a clean weak-point angle before releasing one fully prepared charge-rifle shot.",
+        "Source-reported ~200,000 damage on a training dummy is a community result under specific gear/passives/condensation, not a universal guarantee."
+      ],
+      "alternatives": [
+        {
+          "palId": "silvegis",
+          "replacesPalId": "vanwyrm-cryst",
+          "reason": "Trades some damage for faster shield recovery and safer aiming windows."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/charge-rifle",
+        "title": "Frostallion Charge Rifle Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "full-tackle-box",
+      "slug": "full-tackle-box",
+      "name": "Full Tackle Box",
+      "summary": "Every part of a cast covered, using the variant forms most guides overlook.",
+      "purpose": ["utility", "capture"],
+      "elements": ["water", "electric", "dark", "fire", "ice", "neutral"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "solmora-lux",
+          "role": ["utility"],
+          "explanation": "Improves the internal roll for fishing up talented Pals, 74 to 82; the Electric form pays strictly higher than base Solmora at every rank."
+        },
+        {
+          "palId": "jelliette",
+          "role": ["utility"],
+          "explanation": "Adds 55% to 95% more rewards to both item catches and Pal catches."
+        },
+        {
+          "palId": "gloopie",
+          "role": ["utility"],
+          "explanation": "Reduces gauge loss by 12% to 35% while the fishing bars are not overlapping."
+        },
+        {
+          "palId": "whalaska-ignis",
+          "role": ["utility"],
+          "explanation": "Starts the capture gauge 7% to 17% higher and adds the same bonus while the bars overlap; the Fire form beats base Whalaska at every rank."
+        },
+        {
+          "palId": "lunaris",
+          "role": ["utility"],
+          "explanation": "Adds 300 to 600 carrying capacity, which matters because Jelliette nearly doubles what every catch yields."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation", "breeding"],
+      "synergyNotes": [
+        "None of the five needs to be deployed during the minigame; every effect works from the party slot, so keep whichever water mount is convenient out and ride between spots.",
+        "Solmora Lux and Whalaska Ignis are bred variant forms, strictly better than their base forms at every rank with no condition attached.",
+        "Weight, not time or bait, ends a fishing trip once Jelliette is running; that is why Lunaris fills the last slot instead of a second fishing effect (only six pals in 1.0 carry a Fishing effect at all)."
+      ],
+      "alternatives": [
+        {
+          "palId": "solmora",
+          "replacesPalId": "solmora-lux",
+          "reason": "Base form pays 70 to 80 against the Lux form's 74 to 82; use only if already condensed and the breeding project isn't worth it."
+        },
+        {
+          "palId": "whalaska",
+          "replacesPalId": "whalaska-ignis",
+          "reason": "Ice form pays 5% to 14% against the Fire form's 7% to 17%; strictly lower, a fallback rather than a choice."
+        },
+        {
+          "palId": "katress",
+          "replacesPalId": "lunaris",
+          "reason": "10% to 50% chance not to consume a thrown sphere; useful if fishing to catch Pals rather than only to collect items."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/fishing",
+        "title": "Full Tackle Box Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "poison-and-blind-lock",
+      "slug": "poison-and-blind-lock",
+      "name": "Poison and Blind Lock",
+      "summary": "The one two-status combo the rules allow, because Poison layers on top of everything.",
+      "purpose": ["status_effects", "player_weapon_damage", "boss_damage"],
+      "elements": ["dark", "ground", "neutral"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "venusa",
+          "role": ["status_applier"],
+          "explanation": "Adds Blind level 2 to 6 to trainer attacks from the party slot, establishing the first control window; also the only pal that both applies Blind passively and learns Poison Fog to apply Poison from its bar."
+        },
+        {
+          "palId": "roujay",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises damage dealt by both trainer and Roujay while the target is Blinded, 50% to 65%."
+        },
+        {
+          "palId": "prixter",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises damage dealt by both trainer and Prixter while Poison is active, 50% to 65%."
+        },
+        {
+          "palId": "bakemi",
+          "role": ["weak_point_support", "defensive_support"],
+          "explanation": "Trainer hits against Poisoned enemies lower their attack by 40% to 80%, the largest mitigation number of any partner skill in the game; only applies on the trainer's own hits."
+        },
+        {
+          "palId": "solenne",
+          "role": ["trainer_damage_support"],
+          "explanation": "Amplifies trainer ranged damage 30% to 80% while keeping five different species, turning each status window into a burst phase."
+        }
+      ],
+      "equipment": [
+        {
+          "itemId": "plasma-rifle",
+          "kind": "weapon",
+          "status": "recommended",
+          "reason": "The build needs enough hits per second to keep both statuses refreshed and to trigger Bakemi's attack cut repeatedly; Plasma Rifle is the highest sustained DPS option for that.",
+          "alternatives": ["heavy-assault-rifle"]
+        }
+      ],
+      "requirements": ["condensation", "endgame"],
+      "synergyNotes": [
+        "Poison is the only status effect in Palworld 1.0 that coexists with another instead of replacing it, so Blind plus Poison is the one two-status lock that holds; Roujay and Prixter both pay out on the same hit.",
+        "Field Venusa and open with Poison Fog (0 power, pure status); Blind is already applying passively from the party slot, so one cast puts both statuses on the target at once. Reapply Poison every 17 seconds.",
+        "Dark-type bosses are immune to Blind, which switches off Venusa's applier and Roujay's bonus; Poison has no immunity, so the build still works but roughly halves against Dark targets."
+      ],
+      "alternatives": [
+        {
+          "palId": "nyafia",
+          "replacesPalId": "bakemi",
+          "reason": "Also learns Poison Fog at level 1 and adds 10% to 35% shotgun damage from the party slot; swap in if weapon damage is preferred over the enemy attack cut."
+        },
+        {
+          "palId": "dandilord",
+          "replacesPalId": "venusa",
+          "reason": "Its activated skill puts Poison on the trainer's own attacks for 30 seconds, freeing Venusa to run damage moves; also grants the party Poison immunity and World Tree toxic gas immunity."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/poison-blind",
+        "title": "Poison and Blind Lock Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "saya-and-selyne-hard-rotation",
+      "slug": "saya-and-selyne-hard-rotation",
+      "name": "Saya and Selyne Hard Rotation",
+      "summary": "Five Dragons that each get stronger for every other Dragon standing next to them.",
+      "purpose": ["pal_element_damage", "boss_damage", "hybrid_damage"],
+      "elements": ["dragon", "water", "fire"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "eidrolon",
+          "role": ["mount", "mobility"],
+          "explanation": "Gains 2% to 6% Attack and Move Speed for each other Dragon or Dark pal in the party (24% at rank 5 here); opens or repositions quickly before yielding the field."
+        },
+        {
+          "palId": "shaolong",
+          "role": ["mount", "carry"],
+          "explanation": "Gains 4% to 8% ranged attack for each other Dragon ally, 32% at full condensation with four Dragon allies; contributes a compact ranged burst window."
+        },
+        {
+          "palId": "orserk",
+          "role": ["active_pal_booster"],
+          "explanation": "Each landed bullet gives the active (mounted) pal 1% to 5% Attack and Defense, stacking up to 30 times for 150% at full condensation; itself a Dragon, so it also feeds the other members' count-based bonuses."
+        },
+        {
+          "palId": "blazamut-ryu",
+          "role": ["mount", "weak_point_support"],
+          "explanation": "Raises trainer and Pal damage against Dragon-weak targets by 25% to 40%."
+        },
+        {
+          "palId": "quivern",
+          "role": ["mount", "element_booster"],
+          "explanation": "Raises ranged attack by 15% to 30% for every Dragon pal in the party, which here means all five."
+        }
+      ],
+      "equipment": [
+        {
+          "itemId": "plasma-rifle",
+          "kind": "weapon",
+          "status": "recommended",
+          "reason": "The trainer's weapon is filler between mounted skill bars; rate of fire matters because every bullet feeds an Orserk stack onto whichever Dragon is currently mounted."
+        }
+      ],
+      "requirements": ["condensation", "endgame", "legendary", "rare_content"],
+      "synergyNotes": [
+        "The composition is the build: three of the five partner skills scale with the number of Dragons in the party, so all five members must stay Dragon-type or the count-based bonuses shrink immediately.",
+        "Rotation pattern: mount a pal, spend its active skills, dismount, move to the next; each pal has an independent cooldown pool, and shooting during the swap keeps feeding Orserk stacks.",
+        "Dragon beats Dark, which is why this comp suits the Saya and Selyne tower specifically; Ice beats Dragon, so a tower like Bjorn/Bastigor puts all five members on the wrong side of the matchup."
+      ],
+      "alternatives": [
+        {
+          "palId": "jetragon",
+          "replacesPalId": "orserk",
+          "reason": "Another Dragon, keeping every count-based bonus intact while adding a faster mount and a missile kit; the cleanest swap in the party."
+        },
+        {
+          "palId": "silvegis",
+          "replacesPalId": "orserk",
+          "reason": "Also a Dragon, so it costs nothing in composition and buys up to 80% shield damage reduction; take it if hard mode is killing you rather than out-timing you."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/saya-selyne-hard",
+        "title": "Saya and Selyne Hard Rotation Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "loot-goblin",
+      "slug": "loot-goblin",
+      "name": "Loot Goblin",
+      "summary": "Route-specific boosts for Ore, Gold, butchering and carrying capacity.",
+      "purpose": ["utility", "early_progression"],
+      "elements": ["dark", "dragon", "ground", "water", "neutral"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "astegon",
+          "role": ["mount", "utility"],
+          "explanation": "While mounted, raises ore damage by 1100% to 3300% and adds 150% to 300% more Ore; not a passive all-node bonus, only active while mounted and mining."
+        },
+        {
+          "palId": "dumud-gild",
+          "role": ["utility"],
+          "explanation": "While in party, adds 100% to 200% more Gold Coins from defeated enemies."
+        },
+        {
+          "palId": "splatterina",
+          "role": ["utility"],
+          "explanation": "While in party, adds 100% to 200% more items from using the Meat Cleaver."
+        },
+        {
+          "palId": "lunaris",
+          "role": ["utility"],
+          "explanation": "While in party, adds 300 to 600 carrying capacity."
+        },
+        {
+          "palId": "fuddler",
+          "role": ["utility"],
+          "explanation": "While in party, improves trainer mining efficiency by 30% to 60% and reduces Stone weight by 80% to 100%."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "This is a route toolkit, not five global loot multipliers: swap the specialist slot to match the target material (mount Astegon for Ore runs, keep Dumud Gild for enemy Gold, bring Splatterina when using the Meat Cleaver).",
+        "Weight-reduction effects are material-specific in the current data: Fuddler only reduces Stone weight, so swap it for Turtacle on Ore-heavy runs or Gumoss for wood."
+      ],
+      "alternatives": [
+        {
+          "palId": "nitemary",
+          "replacesPalId": "dumud-gild",
+          "reason": "Use for Pal Soul drops from defeated Pals instead of Gold Coins."
+        },
+        {
+          "palId": "smokie",
+          "replacesPalId": "astegon",
+          "reason": "Use for Chromite acquisition instead of general Ore."
+        },
+        {
+          "palId": "turtacle",
+          "replacesPalId": "fuddler",
+          "reason": "Swap into Ore-heavy runs for 80% to 100% Ore weight reduction, since Fuddler's weight reduction only covers Stone."
+        },
+        {
+          "palId": "cattiva",
+          "replacesPalId": "lunaris",
+          "reason": "A very early carry-weight boost from the starter roster, before Lunaris is available."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/looting",
+        "title": "Loot Goblin Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "aegis-wall",
+      "slug": "aegis-wall",
+      "name": "Aegis Wall",
+      "summary": "Shorten shield downtime, cut shield damage and layer conditional recovery.",
+      "purpose": ["survival", "player_support"],
+      "elements": ["dark", "ground", "grass", "water", "neutral"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "silvegis",
+          "role": ["defensive_support"],
+          "explanation": "Reduces shield-regeneration delay by 30% to 60% and shield damage by 65% to 80%; the always-relevant shield layer while in party."
+        },
+        {
+          "palId": "lapiron",
+          "role": ["defensive_support"],
+          "explanation": "Raises trainer Defense by 50% to 65%, but only while the trainer is sprinting."
+        },
+        {
+          "palId": "warsect",
+          "role": ["defensive_support"],
+          "explanation": "Generates a 5% to 9% barrier after five melee hits land within five seconds."
+        },
+        {
+          "palId": "teafant",
+          "role": ["healing"],
+          "explanation": "Below 30% Health, restores 20% to 40% Health, then enters a 120-second cooldown."
+        },
+        {
+          "palId": "celesdir",
+          "role": ["healing"],
+          "explanation": "Outside combat, regenerates 0.15% to 0.75% Health per second for the trainer and the pal."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "Layered mitigation with explicit conditions, not a promise of invulnerability: Lapiron needs sprinting, Warsect needs five melee hits within five seconds, Teafant triggers only below 30% Health with a 120-second cooldown, and Celesdir only regenerates outside combat.",
+        "Silvegis is the direct shield specialist (its Aegis Shield carries both shield-regen-delay reduction and shield-damage reduction in the current data), while the other four add sprinting Defense, a melee-triggered barrier and recovery rather than duplicating it."
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/shield-tank",
+        "title": "Aegis Wall Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "catch-squad",
+      "slug": "catch-squad",
+      "name": "Catch Squad",
+      "summary": "Choose a back, Freeze or Ivy setup, then target passives and preserve spheres.",
+      "purpose": ["capture"],
+      "elements": ["dark", "ice", "grass", "neutral"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "wispaw",
+          "role": ["status_applier"],
+          "explanation": "Adds 1 to 5 capture levels only when the throw earns a back bonus."
+        },
+        {
+          "palId": "muffly",
+          "role": ["status_applier"],
+          "explanation": "Adds 1 to 5 capture levels while the target is Frozen."
+        },
+        {
+          "palId": "souffline",
+          "role": ["status_applier"],
+          "explanation": "Adds 1 to 5 capture levels while the target is Ivy-Covered."
+        },
+        {
+          "palId": "yakumo",
+          "role": ["utility"],
+          "explanation": "While fighting alongside the trainer, gives captured Pals a 15% to 30% chance to share one of Yakumo's eligible Passive Skills (some passives excluded)."
+        },
+        {
+          "palId": "katress",
+          "role": ["utility"],
+          "explanation": "Gives each thrown sphere a 10% to 50% chance not to be consumed; does not refund a sphere after a failed capture."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "This is a capture toolbox, not five additive bonuses: pick the setup the target and status skills support (back bonus, Freeze, or Ivy-Covered) rather than assuming the three capture-level bonuses stack on one throw.",
+        "Practical rotation: weaken the target with Mercy Hit or a Ring of Mercy so the setup cannot accidentally finish it, apply the chosen condition, then throw."
+      ],
+      "alternatives": [
+        {
+          "palId": "lunaris",
+          "replacesPalId": "katress",
+          "reason": "Use when homing spheres and extra carrying capacity matter more than a condition-specific capture bonus."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/capture",
+        "title": "Catch Squad Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "traversal-kit",
+      "slug": "traversal-kit",
+      "name": "Traversal Kit",
+      "summary": "Chain on-foot jumps, gliding and climbing, then switch to Starryon after dark.",
+      "purpose": ["exploration", "mobility"],
+      "elements": ["grass", "neutral", "water", "ground", "dark"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "verdash",
+          "role": ["mobility"],
+          "explanation": "Adds exactly one extra trainer mid-air jump and one mid-air dash; condensing does not increase either count."
+        },
+        {
+          "palId": "valentail",
+          "role": ["mobility"],
+          "explanation": "Makes the trainer floatier while jumping and falling; a fixed on-foot low-gravity flag."
+        },
+        {
+          "palId": "celaray",
+          "role": ["mobility"],
+          "explanation": "Prevents trainer fall damage and extends the equipped glider's high-speed gliding duration."
+        },
+        {
+          "palId": "gorirat-terra",
+          "role": ["mobility"],
+          "explanation": "Raises trainer climbing speed by 50% to 100%, the on-foot stat that scales most in this kit."
+        },
+        {
+          "palId": "starryon",
+          "role": ["mount", "mobility"],
+          "explanation": "While ridden, gains 25% jump power; its own movement speed rises 50% to 100% but only at night. Neither mounted bonus applies on foot."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "Four effects work on foot (Verdash, Valentail, Celaray, Gorirat Terra); Starryon's jump power and night speed apply to Starryon itself while mounted, not as a trainer buff.",
+        "Gorirat Terra's climbing bonus and Starryon's night speed both scale 50% to 100% with condensation; Verdash, Valentail and Celaray stay fixed at their base effect regardless of rank."
+      ],
+      "alternatives": [
+        {
+          "palId": "starryon-primo",
+          "replacesPalId": "starryon",
+          "reason": "Use for a daytime mount only when also rebuilding the party around other Neutral pals."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/mobility",
+        "title": "Traversal Kit Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "knocklem-poison-tank",
+      "slug": "knocklem-poison-tank",
+      "name": "Knocklem Poison Tank",
+      "summary": "Let Knocklem hold the field while Poison enables damage, mitigation and faster rotations.",
+      "purpose": ["survival", "status_effects", "boss_damage"],
+      "elements": ["ground", "dark", "water", "neutral"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "knocklem",
+          "role": ["carry", "defensive_support"],
+          "explanation": "Community-selected as the tanky active carry for the poison core: stays active to absorb pressure and deliver the team's direct Pal damage. No specific partner-skill number is documented for this slot; it is chosen for durability."
+        },
+        {
+          "palId": "bakemi",
+          "role": ["weak_point_support", "defensive_support"],
+          "explanation": "Turns trainer hits on Poisoned targets into an enemy attack reduction of 40% to 80%."
+        },
+        {
+          "palId": "prixter",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer and Prixter damage by 50% to 65% while the target remains Poisoned."
+        },
+        {
+          "palId": "dumud",
+          "role": ["carry", "flex"],
+          "explanation": "Adds a ranged Ground rotation (15% to 30% attack) when Knocklem needs to recover."
+        },
+        {
+          "palId": "lapure",
+          "role": ["utility"],
+          "explanation": "Shortens the trainer's Partner Skill cooldown by 10% to 50% so utility comes back sooner."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "Lead with a Poison application, then leave Knocklem active to hold attention while attacking the debuffed target; reapply Poison before it falls off so Prixter and Bakemi keep contributing.",
+        "This trades peak burst for a forgiving boss loop: it spends a slot on Knocklem's staying power and another on Lapure's cooldown utility instead of maximizing damage, unlike a glass-cannon poison team."
+      ],
+      "alternatives": [
+        {
+          "palId": "solenne",
+          "replacesPalId": "lapure",
+          "reason": "Use when player firearm damage matters more than cooldown recovery."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/knocklem-poison",
+        "title": "Knocklem Poison Tank Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "mobility-melee-swarm",
+      "slug": "mobility-melee-swarm",
+      "name": "Mobility Melee Swarm",
+      "summary": "Dash, glide and fight up close while two Daedreams add constant follow-up fire.",
+      "purpose": ["mobility", "exploration", "hybrid_damage"],
+      "elements": ["grass", "neutral", "dark"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "verdash",
+          "role": ["mobility"],
+          "explanation": "Adds an extra mid-air jump and mid-air dash, letting a melee player enter, evade and re-engage."
+        },
+        {
+          "palId": "galeclaw",
+          "role": ["mobility", "carry"],
+          "explanation": "Chosen for responsive combat gliding and rapid mid-fight repositioning, used to cross gaps and reset spacing during fights. No specific partner-skill number documented for this slot."
+        },
+        {
+          "palId": "loupmoon",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer melee attack speed by 15% to 30%, making the close-range loop feel faster."
+        },
+        {
+          "palId": "daedream",
+          "role": ["carry", "flex"],
+          "explanation": "Stays beside the trainer with its necklace and contributes automatic follow-up attacks; first of two intentional copies for the orbiting-familiar theme."
+        },
+        {
+          "palId": "daedream",
+          "role": ["carry", "flex"],
+          "explanation": "A second copy, intentionally duplicated (and preserved in the source's Team Builder link) to double the automatic follow-up pressure."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "Use Galeclaw and Verdash to enter from above or cross gaps safely, then stay close enough for Loupmoon's faster melee rhythm to matter.",
+        "The two necklace-equipped Daedreams supply automatic pressure while dodging and striking; air dash or glide away after a risky combo, then re-enter once stamina and spacing are comfortable.",
+        "Community recommendation (treat as a breeding goal, not a requirement): Stronghold Strategist on all five pals for extra trainer defense, since close-range play is otherwise unmitigated."
+      ],
+      "alternatives": [
+        {
+          "palId": "celaray",
+          "replacesPalId": "daedream",
+          "reason": "Use for fall-damage prevention when exploration safety matters more than a second familiar."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/mobility-melee",
+        "title": "Mobility Melee Swarm Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "sustain-and-rescue-squad",
+      "slug": "sustain-and-rescue-squad",
+      "name": "Sustain and Rescue Squad",
+      "summary": "Rotate damage, bulk, healing and emergency recovery instead of betting on one carry.",
+      "purpose": ["survival", "active_pal_support"],
+      "elements": ["dragon", "ground", "ice", "water", "grass", "neutral"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "elphidran",
+          "role": ["carry"],
+          "explanation": "Community-selected as the party's general-purpose combat lead: handles routine field time and gives the defensive members room to recover. No specific partner-skill number documented for this slot."
+        },
+        {
+          "palId": "tetroise",
+          "role": ["defensive_support", "flex"],
+          "explanation": "Takes a sturdy rotation slot when the fight becomes too dangerous for the damage lead; a durable combat slot chosen for its base stats rather than a documented partner-skill number."
+        },
+        {
+          "palId": "whalaska",
+          "role": ["defensive_support", "flex"],
+          "explanation": "Adds another high-bulk body so the party can keep rotating under sustained pressure; chosen for staying power rather than a numerical party buff."
+        },
+        {
+          "palId": "lyleen",
+          "role": ["healing"],
+          "explanation": "Uses its activated Partner Skill to restore the trainer and party after meaningful damage; the central sustain tool in the lineup."
+        },
+        {
+          "palId": "herbil",
+          "role": ["healing", "flex"],
+          "explanation": "Fills the last slot as a recovery-focused safety net for failed rotations; community-selected rescue pick."
+        }
+      ],
+      "equipment": [],
+      "requirements": [],
+      "synergyNotes": [
+        "Not a fast boss-kill party: it is recovery-oriented, trading a specialized damage stack for more ways to stabilize after a mistake.",
+        "Let Elphidran handle normal pressure and rotate to Tetroise or Whalaska when the lead takes too much damage; save Lyleen's heal until both the trainer and multiple pals need it rather than for a small top-up."
+      ],
+      "alternatives": [
+        {
+          "palId": "petallia",
+          "replacesPalId": "lyleen",
+          "reason": "Use as the healer if Petallia is already condensed or easier to recruit."
+        },
+        {
+          "palId": "silvegis",
+          "replacesPalId": "whalaska",
+          "reason": "Use when trainer shield recovery is more useful than a second bulky pal."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/sustain-rescue",
+        "title": "Sustain and Rescue Squad Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "anubis-hard-tower-ground-team",
+      "slug": "anubis-hard-tower-ground-team",
+      "name": "Anubis Hard-Tower Ground Team",
+      "summary": "Build a Ground-heavy rotation around Anubis for hard tower fights.",
+      "purpose": ["pal_element_damage", "boss_damage"],
+      "elements": ["ground", "dark", "dragon", "electric"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "anubis",
+          "role": ["carry"],
+          "explanation": "The community thread's featured carry for the hard tower fight: anchors the active rotation with fast Ground pressure and strong general combat stats. No specific partner-skill number documented for this slot."
+        },
+        {
+          "palId": "dualith-noct",
+          "role": ["carry", "flex"],
+          "explanation": "Adds another Ground-oriented active skill bar and a different set of attack timings, as part of the thread's tested hard-mode rotation."
+        },
+        {
+          "palId": "surfent-terra",
+          "role": ["mount", "status_applier"],
+          "explanation": "Adds Muddy infliction (level 2 to 6) and mounted movement speed for safer repositioning."
+        },
+        {
+          "palId": "orserk",
+          "role": ["active_pal_booster", "flex"],
+          "explanation": "Prevents the party from being entirely Ground-type and rewards sustained bullet pressure, giving a different elemental profile if a phase resists Ground."
+        },
+        {
+          "palId": "kikit",
+          "role": ["defensive_support"],
+          "explanation": "Adds a compact defensive option (15% to 30% Defense) for the final slot during dangerous phases."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation", "endgame", "rare_content"],
+      "synergyNotes": [
+        "Open with Anubis and spend its fastest Ground attacks, then cycle through Dualith Noct and Surfent Terra while those skills recover.",
+        "Bring out Orserk when the boss resists Ground or when sustained bullet pressure is safer; keep Kikit as the defensive pivot for dangerous phases, then return to Anubis once cooldowns reset."
+      ],
+      "alternatives": [
+        {
+          "palId": "dumud",
+          "replacesPalId": "kikit",
+          "reason": "The original discussion offered Dumud as the more offensive fifth Ground slot; use it when the rotation is already safe and another offensive Ground slot is wanted over survival."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/anubis-hard-tower",
+        "title": "Anubis Hard-Tower Ground Team Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "fast-kill-exploration-party",
+      "slug": "fast-kill-exploration-party",
+      "name": "Fast-Kill Exploration Party",
+      "summary": "Clear roaming enemies quickly, reset cooldowns and keep moving between objectives.",
+      "purpose": ["exploration", "capture", "early_progression"],
+      "elements": ["dragon", "dark", "water"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "eidrolon",
+          "role": ["mount", "mobility"],
+          "explanation": "Combines ranged pressure with movement speed (2% to 6% each) to keep the route moving."
+        },
+        {
+          "palId": "maraith",
+          "role": ["carry"],
+          "explanation": "Refunds 30% to 60% of its active-skill cooldown after defeating an enemy, ideal for chains of weaker targets; much less valuable against a single large boss."
+        },
+        {
+          "palId": "croajiro-noct",
+          "role": ["weak_point_support"],
+          "explanation": "Raises trainer and Pal damage by 25% to 40% against enemies vulnerable to Dark."
+        },
+        {
+          "palId": "killamari",
+          "role": ["mobility", "flex"],
+          "explanation": "Community-selected glider slot: keeps traversal smooth between fights and gives a familiar early-game utility option. No specific partner-skill number documented for this slot."
+        },
+        {
+          "palId": "wispaw",
+          "role": ["status_applier", "utility"],
+          "explanation": "Raises the capture-level bonus by 1 to 5 when a sphere hits from behind."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "Travel on Eidrolon and open each pack with enough burst to give Maraith quick finishing targets, chaining weaker enemies so it keeps refunding its cooldown.",
+        "A playful all-purpose lineup rather than a single-boss damage stack; it shines clearing roaming enemies, dungeons and mixed objectives where movement, repeated kills and occasional captures all matter."
+      ],
+      "alternatives": [
+        {
+          "palId": "galeclaw",
+          "replacesPalId": "killamari",
+          "reason": "Use for faster combat gliding if capture utility is not a priority."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/fast-kill-exploration",
+        "title": "Fast-Kill Exploration Party Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "life-steal-player-tank",
+      "slug": "life-steal-player-tank",
+      "name": "Life-Steal Player Tank",
+      "summary": "Stay on your feet with life steal, shield recovery, ranged damage and durable rotation Pals.",
+      "purpose": ["player_support", "player_weapon_damage", "survival"],
+      "elements": ["dark", "neutral", "dragon", "ground"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "felbat",
+          "role": ["healing", "defensive_support"],
+          "explanation": "Returns 5% to 9% of damage dealt as health for both trainer and Felbat."
+        },
+        {
+          "palId": "solenne",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer ranged attack by 30% to 80% so the survival package still contributes offense."
+        },
+        {
+          "palId": "xenogard",
+          "role": ["trainer_damage_support"],
+          "explanation": "Boosts equipped energy-weapon damage by 10% to 35% for a player-led raid setup."
+        },
+        {
+          "palId": "silvegis",
+          "role": ["defensive_support"],
+          "explanation": "Shortens shield recovery start rate by 30% to 60% and reduces shield damage taken by 65% to 80%."
+        },
+        {
+          "palId": "tetroise-primo",
+          "role": ["utility"],
+          "explanation": "Reduces equipment wear by 80% to 100% during long raid attempts and repeated farming sessions; economic endurance rather than direct damage, easiest slot to swap out for a short attempt."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation", "endgame", "rare_content"],
+      "synergyNotes": [
+        "Primarily a player-damage build: Solenne and Xenogard reward weapon use, while Felbat and Silvegis help the trainer survive long enough to keep firing.",
+        "Keep Felbat active while dealing steady weapon damage so life steal offsets chip damage; break line of sight when the shield drops so Silvegis can accelerate recovery."
+      ],
+      "alternatives": [
+        {
+          "palId": "lovander",
+          "replacesPalId": "felbat",
+          "reason": "Use as the life-steal carrier if it is better bred or already condensed."
+        },
+        {
+          "palId": "lyleen",
+          "replacesPalId": "tetroise-primo",
+          "reason": "Use for a large active heal when burst recovery matters more than gear endurance."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/life-steal-raid",
+        "title": "Life-Steal Player Tank Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "bellanoir-glass-cannon-rotation",
+      "slug": "bellanoir-glass-cannon-rotation",
+      "name": "Bellanoir Glass-Cannon Rotation",
+      "summary": "Cycle two Bellanoir Liberos through a Poison core for relentless high-risk pressure.",
+      "purpose": ["boss_damage", "status_effects", "hybrid_damage"],
+      "elements": ["dark", "dragon", "electric", "ground"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "bellanoir-libero",
+          "role": ["carry"],
+          "explanation": "Takes the first active window and unloads a high-damage skill set; first of two intentional copies for independent active-skill bars."
+        },
+        {
+          "palId": "bellanoir-libero",
+          "role": ["carry"],
+          "explanation": "A second, intentional copy: enters when the first copy's strongest skills are cooling down, supplying an independent active-skill bar."
+        },
+        {
+          "palId": "orserk",
+          "role": ["active_pal_booster"],
+          "explanation": "Builds additional pressure through repeated bullet hits during the rotation."
+        },
+        {
+          "palId": "prixter",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer and Prixter damage by 50% to 65% whenever Poison is active."
+        },
+        {
+          "palId": "bakemi",
+          "role": ["weak_point_support", "defensive_support"],
+          "explanation": "Adds a 40% to 80% enemy attack-down effect against Poisoned targets."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation", "endgame", "rare_content"],
+      "synergyNotes": [
+        "The duplicate Bellanoir Libero slots are deliberate: rotate between the two independent active-skill bars instead of waiting for one full cooldown set.",
+        "Apply Poison first so Prixter and Bakemi are online, unload the first Bellanoir Libero's strongest skills, then swap immediately to the second copy for another full burst bar.",
+        "The most aggressive status-party variant in the source discussion: three slots devoted to damage/status payoff and two to active burst carries, with fewer dedicated recovery tools than the Knocklem version, so mistakes are harder to absorb."
+      ],
+      "alternatives": [
+        {
+          "palId": "knocklem",
+          "replacesPalId": "bellanoir-libero",
+          "reason": "Replace one Bellanoir Libero with a durable active carry for safer attempts."
+        },
+        {
+          "palId": "lapure",
+          "replacesPalId": "orserk",
+          "reason": "Replace Orserk when Partner Skill cooldown recovery is more important."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/bellanoir-rotation",
+        "title": "Bellanoir Glass-Cannon Rotation Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "soak-shock-overload",
+      "slug": "soak-shock-overload",
+      "name": "Soak/Shock Overload",
+      "summary": "Open with Soak, convert the trainer to Electric, then turn Electrify into chain damage.",
+      "purpose": ["status_effects", "player_weapon_damage", "hybrid_damage"],
+      "elements": ["dragon", "water", "electric", "ground"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "ophydia",
+          "role": ["status_applier"],
+          "explanation": "Makes trainer attacks inflict Soak level 2 to 6, establishing the first damage window."
+        },
+        {
+          "palId": "jormuntide",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises damage dealt by trainer and Jormuntide by 50% to 65% while the enemy remains Soaked."
+        },
+        {
+          "palId": "prixter-lux",
+          "role": ["element_conversion"],
+          "explanation": "Activates a 30-second Electric conversion and 30% trainer Attack boost on a 50-second cooldown, connecting the Soak opener to the Electric half of the rotation. Does not guarantee Electrify by itself."
+        },
+        {
+          "palId": "slowatt",
+          "role": ["trainer_damage_support"],
+          "explanation": "Trainer hits on an Electrified enemy trigger an area discharge worth 40% to 60% of trainer attack."
+        },
+        {
+          "palId": "univolt",
+          "role": ["weak_point_support"],
+          "explanation": "Raises trainer and Univolt Electric damage by 25% to 40%, but only when Electric is hitting an elemental weakness."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation", "endgame"],
+      "synergyNotes": [
+        "Play as a sequence, not simultaneous statuses: tag the target with Ophydia so Jormuntide amplifies the opening Soak window, then activate Prixter Lux for the timed Electric conversion, and keep firing until Electrify replaces the opener so Slowatt becomes the payoff.",
+        "Univolt only pays off against enemies actually vulnerable to Electric, since its bonus is conditional on hitting an elemental weakness."
+      ],
+      "alternatives": [
+        {
+          "palId": "snock",
+          "replacesPalId": "univolt",
+          "reason": "Replace Univolt when reliable trainer-applied Electrify matters more than the conditional Electric weak-point bonus."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/soak-shock-overload",
+        "title": "Soak/Shock Overload Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "poison-barrier",
+      "slug": "poison-barrier",
+      "name": "Poison Barrier",
+      "summary": "Poison the target, cut its attack, and fight behind shield recovery and life steal.",
+      "purpose": ["status_effects", "survival", "player_support"],
+      "elements": ["grass", "dark", "ground", "neutral"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "dandilord",
+          "role": ["status_applier", "defensive_support"],
+          "explanation": "Activates 30 seconds of Poison infliction on trainer attacks and passively protects the party from Poison and World Tree toxic gas."
+        },
+        {
+          "palId": "prixter",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer and Prixter damage by 50% to 65% while Poison is active."
+        },
+        {
+          "palId": "bakemi",
+          "role": ["weak_point_support", "defensive_support"],
+          "explanation": "Trainer hits against a Poisoned target reduce its Attack by 40% to 80%."
+        },
+        {
+          "palId": "silvegis",
+          "role": ["defensive_support"],
+          "explanation": "Shortens shield-regeneration delay by 30% to 60% and reduces shield damage taken by 65% to 80% throughout the Poison rotation."
+        },
+        {
+          "palId": "felbat",
+          "role": ["healing"],
+          "explanation": "While fighting together, trainer and Felbat recover 5% to 9% of damage dealt as Health; requires Felbat to be the active pal, not just in party."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation", "endgame"],
+      "synergyNotes": [
+        "A layered survival loop, not a literal permanent barrier: activate Dandilord just before the damage phase, establish Poison to trigger Bakemi's attack reduction, then keep attacking through Prixter's amplified window while Silvegis protects the shield cycle.",
+        "Silvegis fills a gap Poison alone does not solve: neither Prixter nor Bakemi directly protects the trainer's shield, so it supplies that separate defensive layer."
+      ],
+      "alternatives": [
+        {
+          "palId": "celesdir",
+          "replacesPalId": "felbat",
+          "reason": "Use for passive out-of-combat regeneration when recovery between engagements is preferred over active life steal."
+        },
+        {
+          "palId": "lovander",
+          "replacesPalId": "felbat",
+          "reason": "A lower-Attack life-steal carrier with the same 5% to 9% trainer-and-Pal recovery curve."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/poison-barrier",
+        "title": "Poison Barrier Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "skutlass-katana-rush",
+      "slug": "skutlass-katana-rush",
+      "name": "Skutlass Katana Rush",
+      "summary": "Turn Skutlass Ignis into a katana and pack its ten-second life span with faster, harder melee hits.",
+      "purpose": ["player_weapon_damage", "hybrid_damage"],
+      "elements": ["fire", "water", "ground", "ice", "dark", "neutral"],
+      "progression": "mid",
+      "pals": [
+        {
+          "palId": "skutlass-ignis",
+          "role": ["carry"],
+          "explanation": "Becomes a 2,900-to-4,200-Attack katana for ten seconds on a ten-second cooldown; the party's defining and deliberately high-risk mechanic. Timing out or using Iaigiri incapacitates it."
+        },
+        {
+          "palId": "pupperai",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer melee weapon damage by 10% to 35% from a party slot."
+        },
+        {
+          "palId": "loupmoon-cryst",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer melee weapon attack speed by 15% to 30%, helping fill the katana window."
+        },
+        {
+          "palId": "warsect-terra",
+          "role": ["defensive_support"],
+          "explanation": "Generates a 5% to 9% barrier after five melee hits land within the required window."
+        },
+        {
+          "palId": "solenne",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer Attack by 30% to 80% because all five party species are different."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "Not the mathematically strongest melee party by the source's own admission: the original author called Skutlass and Warsect Terra the fun, weaker slots and separately suggested a normal Loupmoon + Gobfin version for more raw damage; this guide keeps the unusual living-katana identity.",
+        "Activate Skutlass Ignis only when already in range; land five quick melee hits to trigger Warsect Terra's barrier, and switch held item before the ten-second timer ends (rather than using Iaigiri) to avoid incapacitation."
+      ],
+      "alternatives": [
+        {
+          "palId": "loupmoon",
+          "replacesPalId": "skutlass-ignis",
+          "reason": "Replace Skutlass with a conventional melee weapon setup while preserving the 15% to 30% attack-speed bonus."
+        },
+        {
+          "palId": "gobfin",
+          "replacesPalId": "warsect-terra",
+          "reason": "10% to 20% more trainer Attack when damage matters more than the small five-hit barrier."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/skutlass-melee",
+        "title": "Skutlass Katana Rush Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "death-from-above",
+      "slug": "death-from-above",
+      "name": "Death From Above",
+      "summary": "Launch, hang in low gravity, and keep shooting through a fast Galeclaw glide.",
+      "purpose": ["player_weapon_damage", "mobility", "hybrid_damage"],
+      "elements": ["water", "neutral"],
+      "progression": "mid",
+      "pals": [
+        {
+          "palId": "croajiro",
+          "role": ["mobility", "carry"],
+          "explanation": "Launches the trainer high into the air and grants 50% more Attack until landing; the launch and airborne Attack window define the entire play pattern."
+        },
+        {
+          "palId": "valentail",
+          "role": ["mobility"],
+          "explanation": "Reduces gravity on the trainer so the airborne firing window lasts longer."
+        },
+        {
+          "palId": "frostplume",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer reload speed by 20% to 50%, reducing dead time before landing."
+        },
+        {
+          "palId": "galeclaw",
+          "role": ["mobility", "carry"],
+          "explanation": "Enables high-speed gliding with right-hand shooting, so the trainer can steer without ending the attack."
+        },
+        {
+          "palId": "solenne",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises trainer Attack by 30% to 80% while every party species remains different."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "Activate Croajiro at the edge of weapon range for the launch, start firing once airborne, use Valentail to stretch the fall, then transition into Galeclaw gliding for forward control while keeping the weapon active.",
+        "Croajiro's own verified contribution is 50% more Attack while airborne (a larger figure circulating in the source community likely folds in other setup modifiers, so the guide keeps only the confirmed number)."
+      ],
+      "alternatives": [
+        {
+          "palId": "xenogard",
+          "replacesPalId": "solenne",
+          "reason": "Replace Solenne when an available energy-weapon bonus is more practical than building around an all-unique-species party."
+        },
+        {
+          "palId": "xenovader",
+          "replacesPalId": "solenne",
+          "reason": "Use with a full-auto weapon when the last bullet of each magazine becoming a specialized payoff is more useful than Solenne's attack bonus."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/death-from-above",
+        "title": "Death From Above Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "fire-team-template",
+      "slug": "fire-team-template",
+      "name": "Fire Team Template",
+      "summary": "Layer Fire-Pal Attack, Defense and weak-point damage around a reliable Burn core.",
+      "purpose": ["pal_element_damage", "status_effects", "early_progression"],
+      "elements": ["fire", "water", "dragon"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "kelpsea-ignis",
+          "role": ["element_booster"],
+          "explanation": "Raises the Attack of every Fire Pal in the party by 15% to 30%; duplicate copies do not stack."
+        },
+        {
+          "palId": "rooby",
+          "role": ["element_booster"],
+          "explanation": "Raises the Defense of every Fire Pal by 15% to 30% while in the party."
+        },
+        {
+          "palId": "finsider-ignis",
+          "role": ["weak_point_support"],
+          "explanation": "Raises the player's and Pals' Fire damage by 25% to 40% only against a Fire-weak target."
+        },
+        {
+          "palId": "renjishi",
+          "role": ["status_applier"],
+          "explanation": "Player attacks inflict Burn level 2 (rank 1) to level 6 (rank 5); a status-strength curve, not a percent damage bonus."
+        },
+        {
+          "palId": "jormuntide-ignis",
+          "role": ["carry", "trainer_damage_support"],
+          "explanation": "130 base Attack, and raises the player's and Pals' damage to Burning enemies by 50% to 65%; also nullifies lava damage for the trainer."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "Editable starting template, not a fixed ranking: keep the three support jobs together, and replace a field slot when travel, wave clearing or a different status plan matters more.",
+        "Burn damage and Fire weak-point damage are separate, independent conditions: Jormuntide Ignis checks whether the enemy is Burning, Finsider Ignis checks whether it is weak to Fire, and one can be true without the other."
+      ],
+      "alternatives": [
+        {
+          "palId": "ghangler-ignis",
+          "replacesPalId": "renjishi",
+          "reason": "Swap in when mounted water travel matters more than the Burn setup; with four other Fire or Water pals its self-only movement bonus totals +20% at rank 1 or +100% at rank 5."
+        },
+        {
+          "palId": "blazamut",
+          "replacesPalId": "jormuntide-ignis",
+          "reason": "Use for enemy-dense fights: each defeat grants the active Pal +5% to +10% Attack and Defense for 20 seconds, stacking up to five times."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/fire-team",
+        "title": "Fire Team Template Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "grass-team-template",
+      "slug": "grass-team-template",
+      "name": "Grass Team Template",
+      "summary": "Layer Grass-Pal Attack, Defense and weak-point damage around a two-slot field core.",
+      "purpose": ["pal_element_damage", "player_support", "early_progression"],
+      "elements": ["grass", "dark"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "bristla",
+          "role": ["element_booster"],
+          "explanation": "Raises the Attack of every Grass Pal by 15% to 30% from any party slot; a second Bristla does not add another copy."
+        },
+        {
+          "palId": "nitemary-botan",
+          "role": ["element_booster"],
+          "explanation": "Raises the Defense of every Grass Pal by 15% to 30% while in the party."
+        },
+        {
+          "palId": "ribbuny-botan",
+          "role": ["weak_point_support"],
+          "explanation": "Raises the player's and Pals' Grass damage by 25% to 40% only when the target is weak to Grass."
+        },
+        {
+          "palId": "dandilord",
+          "role": ["carry"],
+          "explanation": "135 base Attack, the highest in the current Grass roster; its activated Poison and party-wide poison/toxic-gas protection add control and utility rather than Grass damage."
+        },
+        {
+          "palId": "lyleen",
+          "role": ["healing", "carry"],
+          "explanation": "120 base Attack paired with an activated heal for the player and party Pals (80% at rank 1, 90% at rank 5) on a 300-second cooldown; best used after meaningful damage rather than as passive regeneration."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "Editable starting template: keep the three support jobs (Bristla, Nitemary Botan, Ribbuny Botan) together, then field Dandilord or Lyleen as the encounter demands.",
+        "The three Grass support effects are separate calculations (Attack, Defense, weak-point damage), each non-stacking with a duplicate carrier of itself; the weak-point bonus does nothing against a target that isn't weak to Grass."
+      ],
+      "alternatives": [
+        {
+          "palId": "leafan",
+          "replacesPalId": "lyleen",
+          "reason": "Use for another self-scaling attacker instead of the heal; with four other Grass pals its self-buff is +8% Attack and Defense at rank 1 or +24% at rank 5."
+        },
+        {
+          "palId": "silvance",
+          "replacesPalId": "dandilord",
+          "reason": "Swap into an Ivy-Covered setup; 120 base Attack keeps the field slot credible, and its skill adds an explosion when the player hits an Ivy-Covered enemy."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/grass-team",
+        "title": "Grass Team Template Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "water-team-template",
+      "slug": "water-team-template",
+      "name": "Water Team Template",
+      "summary": "Pair Water-Pal Attack, Defense and weak-point damage with pressure and bulk.",
+      "purpose": ["pal_element_damage", "survival", "early_progression"],
+      "elements": ["water", "neutral", "electric"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "kelpsea",
+          "role": ["element_booster"],
+          "explanation": "Raises the Attack of every Water Pal by 15% to 30%; duplicate copies do not stack."
+        },
+        {
+          "palId": "gloopie-primo",
+          "role": ["element_booster"],
+          "explanation": "Raises the Defense of every Water Pal by 15% to 30% while in the party."
+        },
+        {
+          "palId": "penking-lux",
+          "role": ["weak_point_support"],
+          "explanation": "Raises the player's and Pals' Water damage by 25% to 40% only when the target is weak to Water."
+        },
+        {
+          "palId": "neptilius",
+          "role": ["carry", "mount"],
+          "explanation": "145 base Attack; follows the player's attacks with Water spear strikes while in the party and can be ridden across water, with a swim-speed bonus starting at rank 2."
+        },
+        {
+          "palId": "panthalus",
+          "role": ["defensive_support", "flex"],
+          "explanation": "180 base HP and 200 base Defense for a durable rotation slot; its Partner Skill only patrols/bombards while assigned at a base, so it is not counted here as a party combat buff."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "The final two slots are jobs, not a universal ranking: replace pressure (Neptilius) or bulk (Panthalus) when a fight needs trainer conversion, aerial travel or a different elemental mix.",
+        "Penking Lux contributes its combat bonus only when the enemy is weak to Water; Kelpsea and Gloopie Primo apply regardless of matchup."
+      ],
+      "alternatives": [
+        {
+          "palId": "azurobe",
+          "replacesPalId": "neptilius",
+          "reason": "Use for mounted trainer Water conversion; changes the rider's attack type and boosts mounted trainer Attack, but does not raise the Attack of Water Pals like Kelpsea does."
+        },
+        {
+          "palId": "shaolong",
+          "replacesPalId": "panthalus",
+          "reason": "135 base Attack and fast flying travel, but its Azure Sovereign bonus only scales with other Dragon pals, which this template otherwise lacks."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/water-team",
+        "title": "Water Team Template Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "electric-team-template",
+      "slug": "electric-team-template",
+      "name": "Electric Team Template",
+      "summary": "Support Electric Pals, then convert mounted trainer fire and build Electrify.",
+      "purpose": ["pal_element_damage", "status_effects", "early_progression"],
+      "elements": ["electric", "dragon", "dark"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "sparkit",
+          "role": ["element_booster"],
+          "explanation": "Raises the Attack of every Electric Pal by 15% to 30% while in the party; duplicates do not stack."
+        },
+        {
+          "palId": "dinossom-lux",
+          "role": ["element_booster"],
+          "explanation": "Raises the Defense of every Electric Pal by 15% to 30% while in the party."
+        },
+        {
+          "palId": "univolt",
+          "role": ["weak_point_support"],
+          "explanation": "Raises the player's and Pals' Electric damage by 25% to 40% only when the target is weak to Electric; riding it is optional."
+        },
+        {
+          "palId": "helzephyr-lux",
+          "role": ["mount", "element_conversion"],
+          "explanation": "While mounted, changes the trainer's attacks to Electric and raises trainer Attack by 5% to 20%; both effects stop applying when dismounted."
+        },
+        {
+          "palId": "snock",
+          "role": ["status_applier"],
+          "explanation": "Makes the player's attacks inflict Electrify level 2 (rank 1) to level 6 (rank 5); pairs with Helzephyr Lux for Electric trainer damage."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "A rider-led starting point, not a claim that the same five slots fit every Electric encounter: keep Sparkit, Dinossom Lux and Univolt in the party, mount Helzephyr Lux, and attack with the trainer.",
+        "Helzephyr Lux does not buff every Electric Pal; it only changes the mounted trainer's own attack element and Attack. Sparkit is the member that raises Electric-Pal Attack across the party."
+      ],
+      "alternatives": [
+        {
+          "palId": "orserk",
+          "replacesPalId": "helzephyr-lux",
+          "reason": "Use in a firearm-led variation; each bullet hit grants the active Pal +1% to 5% Attack and Defense for five seconds, stacking up to 30 times, but does not buff the trainer's gun."
+        },
+        {
+          "palId": "slowatt",
+          "replacesPalId": "univolt",
+          "reason": "Add when clustered enemies matter more than a support slot; hitting an Electrified target triggers an area discharge worth 40% to 60% of the player's attack damage."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/electric-team",
+        "title": "Electric Team Template Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "ice-team-template",
+      "slug": "ice-team-template",
+      "name": "Ice Team Template",
+      "summary": "Support Frostallion, freeze the target, then choose a knockout or a catch.",
+      "purpose": ["pal_element_damage", "status_effects", "capture"],
+      "elements": ["ice", "ground"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "foxcicle",
+          "role": ["element_booster"],
+          "explanation": "Raises the Attack of every Ice Pal by 15% to 30% while in the party; duplicates do not stack."
+        },
+        {
+          "palId": "rayhound-cryst",
+          "role": ["element_booster"],
+          "explanation": "Raises the Defense of every Ice Pal by 15% to 30% while in the party; its rideable and double-jump features do not change the recipient of the party effect."
+        },
+        {
+          "palId": "moldron-cryst",
+          "role": ["weak_point_support"],
+          "explanation": "Raises the player's and Pals' Ice damage by 25% to 40% only when the target is weak to Ice; riding it is optional."
+        },
+        {
+          "palId": "frostallion",
+          "role": ["mount", "element_conversion", "status_applier"],
+          "explanation": "While mounted, changes the trainer's attacks to Ice, raises trainer Attack by 10% to 40%, and applies Freeze level 2 to 6; stops applying when dismounted."
+        },
+        {
+          "palId": "muffly",
+          "role": ["utility"],
+          "explanation": "Improves capture attempts against Pals afflicted with Freeze on a 1-to-5 capture-level curve; does nothing to an unfrozen target."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation", "endgame"],
+      "synergyNotes": [
+        "A late-game Ice party built as a freeze-and-capture loop: keep Foxcicle, Rayhound Cryst and Moldron Cryst in the party, mount Frostallion, apply Freeze, then throw a sphere during that window; replace the capture slot when the objective is a fast defeat rather than a catch.",
+        "Frostallion does not buff every Ice Pal: Foxcicle is the party member that raises Ice-Pal Attack, while Frostallion only converts and boosts the mounted trainer's own attacks."
+      ],
+      "alternatives": [
+        {
+          "palId": "univolt-cryst",
+          "replacesPalId": "frostallion",
+          "reason": "A simpler ground-mount variation: while mounted it converts trainer attacks to Ice and raises trainer Attack by 5% to 20%, but without Frostallion's Freeze level or flying travel."
+        },
+        {
+          "palId": "frostplume",
+          "replacesPalId": "muffly",
+          "reason": "Use in an unmounted firearm variation when reload time matters more than the capture slot; raises trainer reload speed by 20% to 50%."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/ice-team",
+        "title": "Ice Team Template Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "ground-team-template",
+      "slug": "ground-team-template",
+      "name": "Ground Team Template",
+      "summary": "Apply Muddy with trainer fire, then let the whole party exploit it.",
+      "purpose": ["pal_element_damage", "status_effects", "early_progression"],
+      "elements": ["ground", "water"],
+      "progression": "mixed",
+      "pals": [
+        {
+          "palId": "dumud",
+          "role": ["element_booster"],
+          "explanation": "Raises the Attack of every Ground Pal by 15% to 30% while in the party; duplicates do not stack."
+        },
+        {
+          "palId": "kikit",
+          "role": ["element_booster"],
+          "explanation": "Raises the Defense of every Ground Pal by 15% to 30% while in the party."
+        },
+        {
+          "palId": "turtacle-terra",
+          "role": ["weak_point_support"],
+          "explanation": "Raises the player's and Pals' Ground damage by 25% to 40% only when the target is weak to Ground; its separate 80% to 100% curve is Sulfur/Coal weight reduction, not combat damage."
+        },
+        {
+          "palId": "surfent-terra",
+          "role": ["status_applier"],
+          "explanation": "Makes the player's attacks inflict Muddy level 2 (rank 1) to level 6 (rank 5) while in the party; riding is optional."
+        },
+        {
+          "palId": "pierdon",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises the player's and Pals' damage against enemies afflicted with Muddy by 50% to 65%; does nothing before Muddy is active."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation"],
+      "synergyNotes": [
+        "Treat the weak-point and Muddy conditions independently: keep Dumud, Kikit and Turtacle Terra in the party, hit with the trainer to let Surfent Terra apply Muddy, then attack during that window so Pierdon contributes.",
+        "Muddy damage and Ground weak-point damage do not always apply together; Pierdon checks for the Muddy status while Turtacle Terra checks for a Ground elemental weakness, and the template does not assume both are true in every encounter."
+      ],
+      "alternatives": [
+        {
+          "palId": "anubis",
+          "replacesPalId": "surfent-terra",
+          "reason": "A timed trainer-conversion variation: converts trainer attacks to Ground and raises trainer Attack by 30% for 30 seconds after activation, on a 50-second cooldown, rather than a permanent party-wide Ground buff."
+        },
+        {
+          "palId": "moldron",
+          "replacesPalId": "pierdon",
+          "reason": "A direct Pal-damage variation: 125 base Attack gaining 4% to 8% Attack per other Fire or Ground party member (16% to 32% with four qualifying allies)."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/ground-team",
+        "title": "Ground Team Template Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "dark-team-template",
+      "slug": "dark-team-template",
+      "name": "Dark Team Template",
+      "summary": "Apply Blind with trainer fire, then exploit it with the whole party.",
+      "purpose": ["pal_element_damage", "status_effects"],
+      "elements": ["dark", "water"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "hoocrates",
+          "role": ["element_booster"],
+          "explanation": "Raises the Attack of every Dark Pal by 15% to 30% while in the party; duplicates do not stack."
+        },
+        {
+          "palId": "wistella",
+          "role": ["element_booster"],
+          "explanation": "Raises the Defense of every Dark Pal by 15% to 30% while in the party."
+        },
+        {
+          "palId": "croajiro-noct",
+          "role": ["weak_point_support"],
+          "explanation": "Raises the player's and Pals' Dark damage by 25% to 40% only when the target is weak to Dark."
+        },
+        {
+          "palId": "venusa",
+          "role": ["status_applier"],
+          "explanation": "Makes the player's attacks inflict Blind level 2 (rank 1) to level 6 (rank 5) while in the party."
+        },
+        {
+          "palId": "roujay",
+          "role": ["trainer_damage_support"],
+          "explanation": "Raises the player's and Pals' damage against enemies afflicted with Blind by 50% to 65%; does nothing before Blind is active."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation", "endgame"],
+      "synergyNotes": [
+        "A late-game Dark party: keep Hoocrates, Wistella and Croajiro Noct in the party, hit with the trainer so Venusa applies Blind, then attack during that window so Roujay contributes.",
+        "The weak-point and Blind conditions are independent: Roujay checks whether the target is afflicted with Blind, while Croajiro Noct checks a Dark elemental weakness instead; the template does not promise both trigger on every target."
+      ],
+      "alternatives": [
+        {
+          "palId": "dandilord",
+          "replacesPalId": "venusa",
+          "reason": "For a Poison variation, swap both Blind slots and activate Dandilord to make trainer attacks inflict Poison (starting at level 2, 30-second activation on a 50-second cooldown); its party effect supplies Poison immunity rather than Dark damage."
+        },
+        {
+          "palId": "prixter",
+          "replacesPalId": "roujay",
+          "reason": "Pair with a reliable Poison source such as Dandilord; raises the player's and Pals' damage against Poisoned enemies by 50% to 65%, but does nothing until Poison is active."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/dark-team",
+        "title": "Dark Team Template Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    },
+    {
+      "id": "dragon-team-template",
+      "slug": "dragon-team-template",
+      "name": "Dragon Team Template",
+      "summary": "Build a five-Dragon carry, then feed Shaolong with sustained bullet hits.",
+      "purpose": ["pal_element_damage", "active_pal_support", "boss_damage"],
+      "elements": ["dragon", "grass", "fire", "electric", "water"],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "quivern",
+          "role": ["element_booster"],
+          "explanation": "Raises the Attack of every Dragon Pal by 15% to 30% while in the party; duplicates do not stack."
+        },
+        {
+          "palId": "dinossom",
+          "role": ["element_booster"],
+          "explanation": "Raises the Defense of every Dragon Pal by 15% to 30% while in the party."
+        },
+        {
+          "palId": "blazamut-ryu",
+          "role": ["weak_point_support"],
+          "explanation": "Raises the player's and Pals' Dragon damage by 25% to 40% only when the target is weak to Dragon."
+        },
+        {
+          "palId": "orserk",
+          "role": ["active_pal_booster"],
+          "explanation": "Each trainer bullet hit grants the active Pal +1% to 5% Attack and Defense for five seconds, stacking up to 30 times; does not buff the trainer's own gun."
+        },
+        {
+          "palId": "shaolong",
+          "role": ["carry"],
+          "explanation": "Gains +4% to 8% Attack for each other Dragon Pal in the party; with all four default allies qualifying, that is +16% to 32% self Attack before other effects."
+        }
+      ],
+      "equipment": [],
+      "requirements": ["condensation", "endgame", "rare_content"],
+      "synergyNotes": [
+        "A coordinated carry shell, not five interchangeable damage multipliers: keep Quivern, Dinossom, Blazamut Ryu and Orserk in the party, field Shaolong, and land trainer bullet hits continuously to maintain Orserk's stacks on the active Pal.",
+        "Keeping all five party members Dragon-type matters mechanically: Shaolong counts each other Dragon Pal separately, so replacing one with a non-Dragon pal removes a qualifying ally from its self-buff."
+      ],
+      "alternatives": [
+        {
+          "palId": "chillet",
+          "replacesPalId": "shaolong",
+          "reason": "A simpler rider-focused variation: while mounted, converts the trainer's attacks to Dragon and raises trainer Attack by 5% to 20%, but does not replace Quivern's party-wide Dragon-Pal Attack support."
+        },
+        {
+          "palId": "aegidron",
+          "replacesPalId": "orserk",
+          "reason": "For explosive encounters: gives the player and party Pals Stun immunity and 60% to 80% explosion resistance, a defensive package rather than another Dragon damage effect."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://www.palmods.gg/guides/builds/dragon-team",
+        "title": "Dragon Team Template Build in Palworld 1.0",
+        "capturedAt": "2026-08-09T00:00:00Z"
+      },
+      "verification": "reviewed"
+    }
+  ]
+}

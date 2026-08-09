@@ -1,0 +1,14 @@
+---
+import { elementBadgeStyle, ELEMENT_BADGE_CLASS } from "../lib/elementColors";
+import { taxonomyLabels, type Locale } from "../lib/taxonomy";
+
+interface Props {
+  element: string;
+  locale?: Locale;
+}
+
+const { element, locale = "es" } = Astro.props;
+const label = taxonomyLabels(locale).element.get(element) ?? element;
+---
+
+<span class={ELEMENT_BADGE_CLASS} style={elementBadgeStyle(element)}>{label}</span>

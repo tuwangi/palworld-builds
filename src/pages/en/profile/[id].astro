@@ -1,0 +1,13 @@
+---
+export const prerender = false;
+
+import ProfilePage from "../../../components/ProfilePage.astro";
+import { isValidProfileId } from "../../../lib/profileId";
+
+const { id } = Astro.params;
+if (!id || !isValidProfileId(id)) {
+  return Astro.redirect("/en/");
+}
+---
+
+<ProfilePage id={id} locale="en" />

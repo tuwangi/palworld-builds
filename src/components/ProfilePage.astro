@@ -1,0 +1,92 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ElementBadge from "./ElementBadge.astro";
+import PalAvatar from "./PalAvatar.astro";
+import AdoptProfileButton from "./AdoptProfileButton";
+import { ChevronLeftIcon } from "./icons";
+import { readProfile, GitHubNotConfiguredError } from "../lib/github";
+import { getBuildSummaries } from "../lib/data";
+import type { Locale } from "../lib/taxonomy";
+import { t, buildPath } from "../lib/i18n";
+
+interface Props {
+  id: string;
+  locale: Locale;
+}
+
+const { id, locale } = Astro.props;
+const strings = t(locale);
+
+let favoriteIds: string[] = [];
+let backendError: "not_configured" | "unavailable" | null = null;
+try {
+  const existing = await readProfile(id);
+  favoriteIds = existing?.profile.favorites ?? [];
+} catch (err) {
+  backendError = err instanceof GitHubNotConfiguredError ? "not_configured" : "unavailable";
+}
+
+const favoriteIdSet = new Set(favoriteIds);
+const favoriteBuilds = getBuildSummaries(locale).filter((b) => favoriteIdSet.has(b.id));
+---
+
+<Layout title={strings.profileViewTitleTemplate.replace("{id}", id)} locale={locale}>
+  <div class="py-8 sm:py-12">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+      <a href={buildPath(locale)} class="inline-flex items-center gap-x-1 text-sm font-medium text-zinc-400">
+        <ChevronLeftIcon class="size-4 shrink-0" />
+        {strings.backToList}
+      </a>
+
+      <header class="mt-4 flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <h1 class="font-display text-2xl font-semibold tracking-tight text-zinc-100 sm:text-3xl">
+            {strings.profileViewTitleTemplate.replace("{id}", id)}
+          </h1>
+          <p class="mt-2 max-w-[60ch] text-base text-pretty text-zinc-400 sm:text-sm">{strings.profileShareHint}</p>
+        </div>
+        {!backendError && (
+          <AdoptProfileButton
+            client:load
+            id={id}
+            label={strings.profileAdoptButton}
+            errorLabel={strings.profileErrorUnavailable}
+            redirectTo={buildPath(locale)}
+          />
+        )}
+      </header>
+
+      {backendError ? (
+        <div class="mt-8 rounded-2xl border border-dashed border-white/10 py-12 text-center">
+          <p class="text-base text-zinc-400 sm:text-sm">{strings.profileErrorUnavailable}</p>
+        </div>
+      ) : favoriteBuilds.length === 0 ? (
+        <div class="mt-8 rounded-2xl border border-dashed border-white/10 py-12 text-center">
+          <p class="text-base text-zinc-400 sm:text-sm">{strings.profileEmptyState}</p>
+        </div>
+      ) : (
+        <ul role="list" class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          {favoriteBuilds.map((build) => (
+            <li class="rounded-2xl border border-white/10 bg-zinc-900/60 p-4 sm:p-5">
+              <a
+                href={`${buildPath(locale)}builds/${build.slug}/`}
+                class="font-display text-base font-semibold text-zinc-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
+              >
+                {build.name}
+              </a>
+              <p class="mt-1.5 line-clamp-2 text-base text-pretty text-zinc-400 sm:text-sm">{build.summary}</p>
+              <div class="mt-3 flex flex-wrap gap-1.5">
+                {build.elements.map((el) => <ElementBadge element={el} locale={locale} />)}
+              </div>
+              <div class="mt-3 flex items-center gap-1">
+                {build.pals.map((pal) => (
+                  <PalAvatar iconUrl={pal.iconUrl} name={pal.name} class="size-6" />
+                ))}
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  </div>
+</Layout>

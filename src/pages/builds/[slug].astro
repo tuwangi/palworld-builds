@@ -1,0 +1,15 @@
+---
+import BuildDetailPage from "../../components/BuildDetailPage.astro";
+import { getBuildDetails } from "../../lib/data";
+
+export function getStaticPaths() {
+  return getBuildDetails("es").map((build) => ({
+    params: { slug: build.slug },
+    props: { build },
+  }));
+}
+
+const { build } = Astro.props;
+---
+
+<BuildDetailPage build={build} locale="es" />

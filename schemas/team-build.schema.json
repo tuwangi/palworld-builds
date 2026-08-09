@@ -1,0 +1,283 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://palworld-builds.local/schemas/team-build.schema.json",
+  "title": "Palworld Builds Catalog",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "gameVersion", "builds"],
+  "properties": {
+    "schemaVersion": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "gameVersion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "builds": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/teamBuild"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$",
+      "minLength": 1
+    },
+    "nonEmptyString": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "type": "string",
+      "enum": [
+        "pal_element_damage",
+        "player_weapon_damage",
+        "player_support",
+        "active_pal_support",
+        "hybrid_damage",
+        "boss_damage",
+        "capture",
+        "survival",
+        "status_effects",
+        "exploration",
+        "mobility",
+        "early_progression",
+        "endgame",
+        "utility"
+      ]
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "carry",
+        "element_booster",
+        "trainer_damage_support",
+        "active_pal_booster",
+        "mount",
+        "element_conversion",
+        "weak_point_support",
+        "status_applier",
+        "defensive_support",
+        "healing",
+        "mobility",
+        "utility",
+        "flex"
+      ]
+    },
+    "requirement": {
+      "type": "string",
+      "enum": [
+        "early_game",
+        "mid_game",
+        "endgame",
+        "legendary",
+        "breeding",
+        "condensation",
+        "specific_weapon",
+        "specific_mount",
+        "rare_content"
+      ]
+    },
+    "element": {
+      "type": "string",
+      "enum": [
+        "neutral",
+        "fire",
+        "water",
+        "grass",
+        "electric",
+        "ice",
+        "ground",
+        "dark",
+        "dragon"
+      ]
+    },
+    "equipment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["itemId", "kind", "status"],
+      "properties": {
+        "itemId": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "type": "string",
+          "enum": ["weapon", "armor", "accessory", "shield", "glider"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["recommended", "required"]
+        },
+        "reason": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "palSlot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["palId", "role", "explanation"],
+      "properties": {
+        "palId": {
+          "$ref": "#/$defs/id"
+        },
+        "role": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/role"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "explanation": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "alternative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["palId", "replacesPalId", "reason"],
+      "properties": {
+        "palId": {
+          "$ref": "#/$defs/id"
+        },
+        "replacesPalId": {
+          "$ref": "#/$defs/id"
+        },
+        "reason": {
+          "$ref": "#/$defs/nonEmptyString"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "capturedAt"],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "minLength": 1
+        },
+        "title": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "capturedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "teamBuild": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "slug",
+        "name",
+        "summary",
+        "purpose",
+        "elements",
+        "progression",
+        "pals",
+        "equipment",
+        "requirements",
+        "synergyNotes",
+        "gameVersion",
+        "source",
+        "verification"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "slug": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "summary": {
+          "$ref": "#/$defs/nonEmptyString"
+        },
+        "purpose": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/purpose"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "elements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/element"
+          },
+          "uniqueItems": true
+        },
+        "progression": {
+          "type": "string",
+          "enum": ["early", "mid", "endgame", "mixed"]
+        },
+        "pals": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/palSlot"
+          },
+          "minItems": 5,
+          "maxItems": 5
+        },
+        "equipment": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/equipment"
+          },
+          "uniqueItems": true
+        },
+        "requirements": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/requirement"
+          },
+          "uniqueItems": true
+        },
+        "synergyNotes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/nonEmptyString"
+          }
+        },
+        "alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          },
+          "uniqueItems": true
+        },
+        "gameVersion": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "verification": {
+          "type": "string",
+          "enum": ["unverified", "reviewed", "cross_checked"]
+        }
+      }
+    }
+  }
+}
