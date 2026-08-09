@@ -110,6 +110,10 @@ function PalStack({ pals }: { pals: PalAvatar[] }) {
   );
 }
 
+function cardStyle(build: BuildSummary): Record<string, string> {
+  return { "--card-accent": elementBadgeStyle(build.elements[0] ?? "neutral")["--el-text"] };
+}
+
 export default function BuildBrowser({
   builds,
   purposeOptions,
@@ -231,7 +235,7 @@ export default function BuildBrowser({
       ) : (
         <ul role="list" class="build-grid">
           {filtered.map((build, index) => (
-            <li key={build.id} class="build-card">
+            <li key={build.id} class="build-card" style={cardStyle(build)}>
               <div class="build-card-top">
                 <div>
                   <span class="build-card-index">{String(index + 1).padStart(2, "0")} / BUILD</span>

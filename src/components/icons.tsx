@@ -13,6 +13,14 @@ export function HeartIcon({ class: className }: IconProps) {
   );
 }
 
+export function HeartOutlineIcon({ class: className }: IconProps) {
+  return (
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true" class={className}>
+      <path stroke-linecap="round" stroke-linejoin="round" d="M8 13.1s-5.75-3.23-5.75-7.1A3.25 3.25 0 0 1 8 4.18 3.25 3.25 0 0 1 13.75 6c0 3.87-5.75 7.1-5.75 7.1Z" />
+    </svg>
+  );
+}
+
 export function MagnifyingGlassIcon({ class: className }: IconProps) {
   return (
     <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" class={className}>

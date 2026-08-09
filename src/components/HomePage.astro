@@ -31,7 +31,6 @@ const purposeOptions = activeOptions(toOptions(labels.purpose), "purpose");
 const elementOptions = activeOptions(toOptions(labels.element), "elements");
 const progressionOptions = activeOptions(toOptions(labels.progression), "progression");
 const requirementOptions = activeOptions(toOptions(labels.requirement), "requirements");
-const elementCount = new Set(builds.flatMap((build) => build.elements)).size;
 ---
 
 <Layout title={strings.pageTitle} description={strings.tagline} locale={locale}>
@@ -52,11 +51,6 @@ const elementCount = new Set(builds.flatMap((build) => build.elements)).size;
         <p class="eyebrow">{strings.heroEyebrow}</p>
         <h1 id="home-title" class="hero-title">{strings.heroTitleLead} <em>{strings.heroTitleAccent}</em></h1>
         <p class="hero-copy">{strings.heroCopy}</p>
-        <div class="stat-row" aria-label="Catalog statistics">
-          <div class="stat-box"><div class="stat-value">{builds.length}</div><div class="stat-label">{strings.statBuilds}</div></div>
-          <div class="stat-box"><div class="stat-value">{elementCount}</div><div class="stat-label">{strings.statElements}</div></div>
-          <div class="stat-box"><div class="stat-value">5</div><div class="stat-label">{strings.statSlots}</div></div>
-        </div>
       </div>
       <div class="hero-note">
         <p>{strings.heroNoteOne}</p>

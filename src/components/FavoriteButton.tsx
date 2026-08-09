@@ -1,4 +1,4 @@
-import { HeartIcon } from "./icons";
+import { HeartIcon, HeartOutlineIcon } from "./icons";
 
 type Props = {
   isFavorite: boolean;
@@ -19,7 +19,7 @@ export function FavoriteButton({ isFavorite, onToggle, labels, withLabel = false
         aria-pressed={isFavorite}
         class="inline-flex items-center gap-x-2 rounded-full border border-[var(--line)] bg-white/70 py-2 pr-4 pl-3 text-sm font-bold text-[var(--ink)]"
       >
-        <HeartIcon class={heartClass} />
+        {isFavorite ? <HeartIcon class={heartClass} /> : <HeartOutlineIcon class={heartClass} />}
         {label}
       </button>
     );
@@ -34,7 +34,7 @@ export function FavoriteButton({ isFavorite, onToggle, labels, withLabel = false
       class="relative inline-flex size-9 shrink-0 items-center justify-center rounded-full"
     >
       <span class="pointer-fine:hidden absolute top-1/2 left-1/2 size-[max(100%,3rem)] -translate-1/2" aria-hidden="true" />
-      <HeartIcon class={heartClass} />
+      {isFavorite ? <HeartIcon class={heartClass} /> : <HeartOutlineIcon class={heartClass} />}
     </button>
   );
 }
