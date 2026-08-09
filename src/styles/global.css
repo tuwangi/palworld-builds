@@ -426,6 +426,59 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 .detail-card p { @apply mt-3 text-sm leading-6 text-[var(--ink-soft)]; }
 .detail-number { @apply font-mono text-xs font-bold text-[var(--coral-dark)]; }
 
+.pal-trigger {
+  @apply inline-flex min-w-0 flex-1 items-center gap-3 rounded-2xl text-left;
+  cursor: pointer;
+}
+
+.pal-trigger:hover .pal-trigger-arrow {
+  @apply bg-[var(--coral)] text-white;
+  transform: rotate(8deg);
+}
+
+.pal-trigger img, .pal-trigger > span:first-of-type {
+  outline: 1px solid rgba(19, 34, 56, 0.16);
+  outline-offset: -1px;
+}
+
+.pal-trigger-copy { @apply flex min-w-0 flex-col; }
+.pal-trigger-copy strong { @apply font-display text-lg font-bold tracking-[-0.04em] text-[var(--ink)]; }
+.pal-trigger-copy span { @apply mt-0.5 text-xs font-semibold text-[var(--coral-dark)]; }
+.pal-trigger-arrow { @apply ml-auto grid size-8 shrink-0 place-items-center rounded-full bg-[var(--paper)] text-[var(--ink-soft)]; }
+
+.pal-modal-backdrop {
+  @apply fixed inset-0 z-50 grid place-items-center bg-[rgba(19,34,56,0.48)] p-4 backdrop-blur-sm;
+  animation: modal-fade-in 180ms ease-out both;
+}
+
+.pal-modal {
+  @apply relative max-h-[min(760px,calc(100dvh-2rem))] w-full max-w-xl overflow-y-auto rounded-[26px] border border-[var(--line)] bg-[var(--card)] p-6 shadow-[0_25px_90px_rgba(19,34,56,0.25)] sm:p-8;
+  animation: modal-rise-in 240ms cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.pal-modal-close {
+  @apply absolute right-4 top-4 grid size-9 place-items-center rounded-full bg-[var(--paper)] text-[var(--ink-soft)];
+}
+
+.pal-modal-close:hover { @apply bg-[var(--coral)] text-white; }
+.pal-modal-header { @apply flex items-center gap-4 border-b border-[var(--line)] pb-6 pr-8; }
+.pal-modal-header h2 { @apply mt-1 font-display text-3xl font-bold tracking-[-0.06em] text-[var(--ink)]; }
+.pal-modal-header img, .pal-modal-header > span { outline: 1px solid rgba(19, 34, 56, 0.18); outline-offset: -1px; }
+.pal-modal-tags { @apply mt-2 flex flex-wrap gap-1.5; }
+.pal-modal-tags span { @apply rounded-full border border-[var(--line)] bg-[var(--paper)] px-2.5 py-1 text-[11px] font-bold text-[var(--ink-soft)]; }
+.pal-modal-body { @apply mt-6 grid gap-5; }
+.pal-info-block { @apply border-l-2 border-[var(--line)] pl-4; }
+.pal-info-featured { @apply border-[var(--coral)]; }
+.pal-info-label { @apply mt-0 text-[10px] font-bold uppercase tracking-[0.15em] text-[var(--coral-dark)]; }
+.pal-info-block h3 { @apply mt-1 font-display text-lg font-bold text-[var(--ink)]; }
+.pal-info-block p:not(.pal-info-label) { @apply mt-2 text-sm leading-6 text-[var(--ink-soft)]; }
+.pal-info-block ul { @apply mt-2 grid gap-1.5 text-sm leading-6 text-[var(--ink-soft)]; }
+.pal-info-block li { @apply pl-4; }
+.pal-info-block li::before { content: "•"; margin-left: -1rem; margin-right: 0.5rem; color: var(--coral); }
+
+@keyframes modal-fade-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes modal-rise-in { from { opacity: 0; transform: translateY(10px) scale(0.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+
 .detail-footer { @apply mt-12 border-t border-[var(--line)] pt-6; }
 .detail-footer dl { @apply grid gap-5 sm:grid-cols-3; }
 .detail-footer dt { @apply text-[10px] font-bold uppercase tracking-[0.14em] text-[var(--ink-soft)]; }
@@ -447,4 +500,6 @@ button:focus-visible, a:focus-visible, input:focus-visible {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
   }
+
+  .pal-modal-backdrop, .pal-modal { animation: none; }
 }

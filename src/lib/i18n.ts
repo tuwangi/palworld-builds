@@ -55,6 +55,15 @@ type Strings = {
   teamEyebrow: string;
   equipmentEyebrow: string;
   alternativesEyebrow: string;
+  palOpenDetails: string;
+  palClose: string;
+  palPartnerSkill: string;
+  palBuildRole: string;
+  palBuildNotes: string;
+  palRecommendedSkills: string;
+  palRecommendedPassives: string;
+  palSpecialNote: string;
+  palEyebrow: string;
   heroEyebrow: string;
   heroTitleLead: string;
   heroTitleAccent: string;
@@ -122,6 +131,15 @@ const STRINGS: Record<Locale, Strings> = {
     teamEyebrow: "Cinco slots",
     equipmentEyebrow: "Loadout",
     alternativesEyebrow: "Ajusta la receta",
+    palOpenDetails: "Ver detalles",
+    palClose: "Cerrar detalles",
+    palPartnerSkill: "Habilidad de compañero",
+    palBuildRole: "Rol en esta build",
+    palBuildNotes: "Por qué está aquí",
+    palRecommendedSkills: "Ataques recomendados",
+    palRecommendedPassives: "Pasivas recomendadas",
+    palSpecialNote: "Nota especial",
+    palEyebrow: "Detalle del Pal",
     heroEyebrow: "Constructor de equipos para curiosos",
     heroTitleLead: "Encuentra una build que",
     heroTitleAccent: "se sienta tuya.",
@@ -187,6 +205,15 @@ const STRINGS: Record<Locale, Strings> = {
     teamEyebrow: "Five slots",
     equipmentEyebrow: "Loadout",
     alternativesEyebrow: "Adjust the recipe",
+    palOpenDetails: "View details",
+    palClose: "Close details",
+    palPartnerSkill: "Partner skill",
+    palBuildRole: "Role in this build",
+    palBuildNotes: "Why it is here",
+    palRecommendedSkills: "Recommended attacks",
+    palRecommendedPassives: "Recommended passives",
+    palSpecialNote: "Special note",
+    palEyebrow: "Pal details",
     heroEyebrow: "A team builder for the curious",
     heroTitleLead: "Find a build that",
     heroTitleAccent: "feels like yours.",

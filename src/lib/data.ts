@@ -5,7 +5,13 @@ import itemsJson from "../../data/snapshot/items.json";
 import iconsManifestJson from "../../data/snapshot/icons-manifest.json";
 import type { Locale } from "./taxonomy";
 
-type SnapshotPal = { id: string; name: string; elements: string[] };
+export type SnapshotPartnerSkill = {
+  name: string;
+  description: string;
+  workType?: string;
+  scaling?: { level: number; effectType: string; effectValue: string; target?: string }[];
+};
+type SnapshotPal = { id: string; name: string; elements: string[]; partnerSkill: SnapshotPartnerSkill | null };
 type SnapshotItem = { id: string; name: string; kind: string | null };
 
 type EquipmentEntry = {
@@ -16,7 +22,14 @@ type EquipmentEntry = {
   alternatives?: string[];
 };
 
-type PalSlot = { palId: string; role: string[]; explanation: string };
+type PalSlot = {
+  palId: string;
+  role: string[];
+  explanation: string;
+  recommendedSkills?: string[];
+  recommendedPassives?: string[];
+  specialNote?: string;
+};
 
 type Alternative = { palId: string; replacesPalId: string; reason: string };
 
@@ -116,6 +129,10 @@ export type ResolvedPalSlot = {
   role: string[];
   explanation: string;
   iconUrl: string | null;
+  partnerSkill: SnapshotPartnerSkill | null;
+  recommendedSkills: string[];
+  recommendedPassives: string[];
+  specialNote?: string;
 };
 
 export type ResolvedEquipment = {
@@ -180,6 +197,10 @@ function toDetail(build: RawBuild, locale: Locale): BuildDetail {
         role: slot.role,
         explanation: es?.pals[i] ?? slot.explanation,
         iconUrl: palIconUrl(pal.id),
+        partnerSkill: pal.partnerSkill,
+        recommendedSkills: slot.recommendedSkills ?? [],
+        recommendedPassives: slot.recommendedPassives ?? [],
+        specialNote: slot.specialNote,
       };
     }),
     equipment: build.equipment.map((eq, i) => {
