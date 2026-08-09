@@ -1799,7 +1799,8 @@
         {
           "palId": "eidrolon",
           "role": ["carry", "mount"],
-          "explanation": "Liberated Pterosaur increases its own attack and movement speed for every Dragon or Dark Pal in the party; all four pocket slots naturally max out this multiplier."
+          "explanation": "Liberated Pterosaur increases its own attack and movement speed for every Dragon or Dark Pal in the party; all four pocket slots naturally max out this multiplier.",
+          "recommendedPassives": ["Legend", "Musclehead", "Serenity", "Ferocious"]
         },
         {
           "palId": "quivern",
@@ -2000,7 +2001,8 @@
         {
           "palId": "sweepa",
           "role": ["carry", "mount"],
-          "explanation": "Each Swee in the party grants Sweepa +12% Attack and Defense (rank 1) to +24% (rank 5) per Swee; with four max-condensed Swee, Sweepa gains +96% Attack and +96% Defense."
+          "explanation": "Each Swee in the party grants Sweepa +12% Attack and Defense (rank 1) to +24% (rank 5) per Swee; with four max-condensed Swee, Sweepa gains +96% Attack and +96% Defense.",
+          "recommendedPassives": ["Legend", "Ferocious", "Musclehead", "Burly Body", "Swift"]
         },
         {
           "palId": "swee",
@@ -2558,7 +2560,9 @@
         {
           "palId": "tocotoco",
           "role": ["carry"],
-          "explanation": "Egg Bomb Launcher fires explosive projectiles; Lucky Tocotocos can roll skills from a 32-skill pool including Dragon Meteor (600 power) and Holy Burst (700 power)."
+          "explanation": "Egg Bomb Launcher fires explosive projectiles; Lucky Tocotocos can roll skills from a 32-skill pool including Dragon Meteor (600 power) and Holy Burst (700 power).",
+          "recommendedSkills": ["Dragon Meteor", "Holy Burst", "Thunderstorm"],
+          "recommendedPassives": ["Ferocious", "Musclehead", "Lucky", "Legend"]
         },
         {
           "palId": "tocotoco",
