@@ -8,7 +8,7 @@
         "Aumenta la velocidad de carga del arco entre 15% y 30%, permitiendo disparar más tiros a máxima potencia por minuto.",
         "Aumenta el daño de arco entre 10% y 35%; el único Pal en 1.0 cuyo bono de arma equipada cubre arcos, así que este slot no tiene sustituto.",
         "Aporta entre 30% y 80% de ataque mientras ningún par de Pals del equipo comparta especie; aumenta tanto la flecha como la explosión de Loomen porque ambas se calculan desde el ataque.",
-        "Aumenta el daño a puntos débiles entre 30% y 50%; un disparo cargado de arco da tiempo para apuntar a la cabeza."
+        "Aumenta el daño a puntos débiles entre 20% (rango 1) y 40% (rango 5); un disparo cargado de arco da tiempo para apuntar a la cabeza."
       ],
       "equipment": [
         "El bono de daño de Robinquill y el bono de velocidad de carga de Robinquill Terra solo aplican a arcos; la explosión de Loomen es un porcentaje fijo del ataque y funciona con cualquier arco."
@@ -140,9 +140,9 @@
       "name": "Duende del botín",
       "summary": "Bonos específicos por ruta para Mineral, Oro, despiece y capacidad de carga.",
       "pals": [
-        "Mientras está montado, aumenta el daño a mineral entre 1100% y 3300% y añade entre 150% y 300% más de Mineral; no es un bono pasivo para todos los nodos, solo está activo mientras está montado y minando.",
+        "Mientras está montado, aumenta el daño a mineral entre 1100% y 3300% y añade entre 100% y 200% más de Mineral; no es un bono pasivo para todos los nodos, solo está activo mientras está montado y minando.",
         "Mientras está en el equipo, añade entre 100% y 200% más de Monedas de Oro de los enemigos derrotados.",
-        "Mientras está en el equipo, añade entre 100% y 200% más de objetos al usar el Cuchillo de Carnicero.",
+        "Mientras está en el equipo, añade entre 10% y 15% más de objetos al usar el Cuchillo de Carnicero.",
         "Mientras está en el equipo, añade entre 300 y 600 de capacidad de carga.",
         "Mientras está en el equipo, mejora la eficiencia de minado del jugador entre 30% y 60% y reduce el peso de la Piedra entre 80% y 100%."
       ],
@@ -220,7 +220,7 @@
         "Elegido por la comunidad como el carry activo resistente del núcleo de veneno: se mantiene activo para absorber presión y entregar el daño directo de Pal del equipo. No hay un número de partner skill documentado para este slot; se elige por su resistencia.",
         "Convierte los golpes del jugador sobre objetivos Envenenados en una reducción de ataque enemigo de 40% a 80%.",
         "Aumenta el daño del jugador y de Prixter entre 50% y 65% mientras el objetivo siga Envenenado.",
-        "Añade una rotación de Tierra a distancia (15% a 30% de ataque) cuando Knocklem necesita recuperarse.",
+        "Añade una rotación de Tierra a distancia y aumenta el Ataque de los Pals de Tierra entre 10% (rango 1) y 20% (rango 5) cuando Knocklem necesita recuperarse.",
         "Reduce el enfriamiento de Partner Skill del jugador entre 10% y 50% para que la utilidad regrese antes."
       ],
       "equipment": [],
@@ -435,7 +435,7 @@
       "summary": "Superpone Ataque, Defensa y daño a puntos débiles de Pals de Fuego alrededor de un núcleo confiable de Quemadura.",
       "pals": [
         "Aumenta el Ataque de cada Pal de Fuego del equipo entre 15% y 30%; las copias duplicadas no se acumulan.",
-        "Aumenta la Defensa de cada Pal de Fuego entre 15% y 30% mientras está en el equipo.",
+        "Tiny Spark aumenta el Ataque — no la Defensa — de cada Pal de Fuego entre 10% (rango 1) y 20% (rango 5) mientras está en el equipo.",
         "Aumenta el daño de Fuego del jugador y de los Pals entre 25% y 40% solo contra un objetivo débil a Fuego.",
         "Los ataques del jugador infligen Quemadura nivel 2 (rango 1) a nivel 6 (rango 5); una curva de intensidad de estado, no un bono de daño porcentual.",
         "130 de Ataque base, y aumenta el daño del jugador y de los Pals contra enemigos Quemándose entre 50% y 65%; también anula el daño de lava para el jugador."
@@ -454,7 +454,7 @@
       "name": "Plantilla de equipo de Planta",
       "summary": "Superpone Ataque, Defensa y daño a puntos débiles de Pals de Planta alrededor de un núcleo de campo de dos slots.",
       "pals": [
-        "Aumenta el Ataque de cada Pal de Planta entre 15% y 30% desde cualquier slot de equipo; un segundo Bristla no añade otra copia.",
+        "Aumenta el Ataque de cada Pal de Planta entre 10% (rango 1) y 20% (rango 5) desde cualquier slot de equipo; un segundo Bristla no añade otra copia.",
         "Aumenta la Defensa de cada Pal de Planta entre 15% y 30% mientras está en el equipo.",
         "Aumenta el daño de Planta del jugador y de los Pals entre 25% y 40% solo cuando el objetivo es débil a Planta.",
         "135 de Ataque base, el más alto en el roster de Planta actual; su Veneno activable y su protección de equipo contra veneno/gas tóxico añaden control y utilidad en vez de daño de Planta.",
@@ -474,7 +474,7 @@
       "name": "Plantilla de equipo de Agua",
       "summary": "Combina Ataque, Defensa y daño a puntos débiles de Pals de Agua con presión y resistencia.",
       "pals": [
-        "Aumenta el Ataque de cada Pal de Agua entre 15% y 30%; las copias duplicadas no se acumulan.",
+        "Aumenta el Ataque de cada Pal de Agua un 15%; las copias duplicadas no se acumulan. wiki.gg documenta ese 15% pero no publica curva de condensación.",
         "Aumenta la Defensa de cada Pal de Agua entre 15% y 30% mientras está en el equipo.",
         "Aumenta el daño de Agua del jugador y de los Pals entre 25% y 40% solo cuando el objetivo es débil a Agua.",
         "145 de Ataque base; sigue los ataques del jugador con golpes de lanza de Agua mientras está en el equipo y puede montarse para cruzar el agua, con un bono de velocidad de nado que empieza en el rango 2.",
@@ -514,7 +514,7 @@
       "name": "Plantilla de equipo de Hielo",
       "summary": "Apoya a Frostallion, congela al objetivo, y luego elige entre noquearlo o capturarlo.",
       "pals": [
-        "Aumenta el Ataque de cada Pal de Hielo entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
+        "Aumenta el Ataque de cada Pal de Hielo entre 10% (rango 1) y 20% (rango 5) mientras está en el equipo; las copias duplicadas no se acumulan.",
         "Aumenta la Defensa de cada Pal de Hielo entre 15% y 30% mientras está en el equipo; sus características de ser montable y de doble salto no cambian al receptor del efecto de equipo.",
         "Aumenta el daño de Hielo del jugador y de los Pals entre 25% y 40% solo cuando el objetivo es débil a Hielo; montarlo es opcional.",
         "Mientras está montado, cambia los ataques del jugador a Hielo, aumenta el Ataque del jugador entre 10% y 40%, y aplica Congelación nivel 2 a 6; deja de aplicar al desmontar.",
@@ -534,7 +534,7 @@
       "name": "Plantilla de equipo de Tierra",
       "summary": "Aplica Barro con el fuego del jugador, y deja que todo el equipo lo aproveche.",
       "pals": [
-        "Aumenta el Ataque de cada Pal de Tierra entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
+        "Aumenta el Ataque de cada Pal de Tierra entre 10% (rango 1) y 20% (rango 5) mientras está en el equipo; las copias duplicadas no se acumulan.",
         "Aumenta la Defensa de cada Pal de Tierra entre 15% y 30% mientras está en el equipo.",
         "Aumenta el daño de Tierra del jugador y de los Pals entre 25% y 40% solo cuando el objetivo es débil a Tierra; su curva separada de 80% a 100% es reducción de peso de Azufre/Carbón, no daño de combate.",
         "Hace que los ataques del jugador inflijan Barro nivel 2 (rango 1) a nivel 6 (rango 5) mientras está en el equipo; montarlo es opcional.",
@@ -638,7 +638,7 @@
       "name": "Acumulación de jugador con Gobfin",
       "summary": "Monta un conversor elemental y deja que cuatro Gobfins conviertan tus armas en máquinas de matar jefes legendarios.",
       "pals": [
-        "Mientras está montado, convierte los ataques del jugador a Fuego y aumenta el ataque del jugador entre 50% (rango 1) y 100% (rango 5); la conversión elemental te permite explotar las debilidades del enemigo.",
+        "Mientras está montado, convierte los ataques del jugador a Fuego y aumenta el ataque del jugador entre 5% (rango 1) y 20% (rango 5); la conversión elemental es el motivo real para montarlo, no la cifra de ataque.",
         "Angry Shark aumenta el ataque del jugador entre 10% (rango 1) y 20% (rango 5) por cada Gobfin en el equipo, acumulándose aditivamente hasta 80% con cuatro copias condensadas al máximo.",
         "Segundo Gobfin: añade otro 10% a 20% de ataque del jugador.",
         "Tercer Gobfin: añade otro 10% a 20% de ataque del jugador.",

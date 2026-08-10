@@ -97,3 +97,98 @@ La seccion 14 del plan sigue vigente; todos esos modelos existen hoy. Ajustes:
 4. Seccion 9/Fase 2: nota de que puede adelantarse si resulta trivial.
 5. Seccion 11: usar tabla GameVersions de wiki.gg como detector de versiones.
 6. Seccion 4: nota de que exploration/mobility se solapan a proposito (multi-etiqueta).
+
+---
+
+# Auditoria de contenido del catalogo — 2026-08-10
+
+Auditor: sesion de Claude Opus 5. Alcance: verificar cada cifra que el
+catalogo afirma sobre un Pal contra los datos reales de wiki.gg
+(`PalPartnerSkill` + `PalPartnerSkillScale`), y contra la fuente citada por
+cada build.
+
+## Resultado
+
+De **154 slots que citan un porcentaje**:
+
+| Veredicto | Slots | Que significa |
+| --- | --- | --- |
+| OK | 58 | todas las cifras aparecen en los datos del Pal |
+| PARCIAL | 36 | algunas si — normalmente un valor real mas un total derivado (5% x 30 stacks = 150%), que es legitimo |
+| CONTRADICHO | 49 | **ninguna** cifra citada existe en los datos del Pal |
+| SIN DATOS | 11 | wiki.gg no tiene fila de partner skill para ese Pal |
+
+Reproducible con `npm run audit:scaling`.
+
+## Los tres tipos de error encontrados
+
+**1. Tope equivocado.** Los buffs de ataque por elemento van de +10% a +20%
+(verificado en las 12 habilidades de ese tipo del juego, salvo Static
+Electricity que si es 15%-30%). El catalogo repetia "15% a 30%" como
+plantilla. Corregido donde el efecto coincidia.
+
+**2. Estadistica equivocada.** `rooby` (Tiny Spark) aumenta el **Ataque** de
+los Pals de Fuego; estaba descrito como Defensa. Mismo patron en varias
+plantillas por elemento, donde el slot 1 siempre decia "Defensa" sin que
+existiera tal efecto.
+
+**3. Efecto inexistente.** El caso grave. Ejemplos verificados en vivo:
+
+- `prixter` (4 builds): Scorpion Sonar **encuentra la salida de una mazmorra**.
+  Estaba descrito como "+50% a 65% de daño mientras hay Veneno".
+- `kikit` (2 builds): reduce el **peso del petroleo crudo**. Descrito como
+  "+15% a 30% de Defensa a los Pals de Tierra".
+- `quivern` (4 builds) y `dinossom`: su habilidad es daño elemental
+  **solo mientras la montas** (+50% a +100%). Descritas como buffs pasivos de
+  equipo. **No existe ningun Pal en el juego que aumente el ataque de los Pals
+  Dragon** — la unica fila con target "Dragon Pals" es Dragon Hunter, y es
+  tasa de objetos.
+- `jormuntide` (soak-shock-overload): montura acuatica que evita gastar
+  aguante. Descrita como amplificador de daño con Empapado.
+- `silvegis` (5 builds): Aegis Shield no publica ninguna curva; las cifras
+  "65% a 80% de reduccion de daño de escudo" no salen de ninguna fuente.
+
+## Que dicen las fuentes citadas
+
+- **palmods.gg** (29 builds): las URLs existen (HTTP 200).
+- **game8.co** (6 builds): existen. La 443880 **no da** las cifras de
+  Ragnahawk ni Gobfin que el catalogo le atribuye. La 440398 si dice "30%
+  Attack buff at their Lv. 5 Partner Skill" para Cremis y Hoocrates —
+  pero tanto la pagina de wiki.gg como su tabla Cargo dicen +20%, igual que
+  las otras once habilidades del mismo tipo. game8 esta desactualizado ahi.
+- **reddit.com** (9 builds): **no verificable**. Reddit bloquea el acceso
+  automatizado (403 en www, old y proxies), igual que le pasaba a la sesion
+  que redacto el plan (ver PLAN.md, "Filtro de calidad de fuente"). Ademas:
+  - 5 de las 9 URLs son solo el ID del post, sin slug — un enlace copiado de
+    un navegador siempre lleva slug.
+  - 4 de los IDs empiezan por `1a...`, rango que corresponde a principios de
+    2024, pero describen contenido exclusivo de 1.0 (Eidrolon, Bellanoir
+    Libero, Knocklem Ignis).
+  - Buscar los titulos citados en la web no devuelve ningun post.
+
+  No se puede afirmar que esas 9 fuentes sean inventadas, pero no se ha
+  podido confirmar que existan y su contenido no es reproducible.
+
+## Que se corrigio en esta pasada
+
+17 slots donde el efecto coincidia y solo la cifra estaba mal, en ingles y
+español a la vez (Dark Knowledge y Fluffy Wool a 20%, Long-Sleeved Hurray
+desde 10%, Queen Bee Command desde 0%, Aerial Marauder 20-40%, Black
+Ankylosaur 100-200% de mineral, Blade of Uncontrolled Passion 10-15%, Flame
+Wing 5-20%, y los buffs elementales de Bristla, Foxcicle, Dumud x2, Rooby).
+
+## Que NO se corrigio, y por que
+
+Los 49 CONTRADICHO + 11 SIN DATOS restantes no son un problema de numeros:
+la afirmacion describe un efecto que ese Pal no tiene. Sustituir la cifra no
+arregla nada, y escribir la descripcion real deja varias builds sin
+justificacion (¿por que llevar a Prixter en un equipo de veneno si su
+habilidad abre mazmorras?). Arreglarlo es re-redactar el catalogo desde
+wiki.gg, y en algunos casos retirar la build. Esa es una decision de
+producto.
+
+Medida provisional tomada: **33 de las 44 builds bajaron a
+`verification: "unverified"`** — las que contienen al menos una afirmacion
+contradicha o sin datos. La app mostraba "Verificacion cruzada" sobre builds
+cuyas cifras no resisten el cruce, y esa etiqueta era el problema mas urgente.
+Las 11 restantes conservan su etiqueta.

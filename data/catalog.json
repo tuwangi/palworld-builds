@@ -52,7 +52,7 @@
           "role": [
             "weak_point_support"
           ],
-          "explanation": "Raises weak-point damage by 30% to 50%; a charged bow shot gives time to line up a headshot."
+          "explanation": "Raises weak-point damage by 20% (rank 1) to 40% (rank 5); a charged bow shot gives time to line up a headshot."
         }
       ],
       "equipment": [
@@ -100,7 +100,7 @@
         "title": "Explosive Archer Build in Palworld 1.0 (Party Comp and Team Link)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "gunslinger",
@@ -206,7 +206,7 @@
         "title": "Gunslinger Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "frostallion-charge-rifle",
@@ -286,7 +286,7 @@
         "title": "Frostallion Charge Rifle Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "full-tackle-box",
@@ -376,7 +376,7 @@
         "title": "Full Tackle Box Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "poison-and-blind-lock",
@@ -470,7 +470,7 @@
         "title": "Poison and Blind Lock Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "saya-and-selyne-hard-rotation",
@@ -566,7 +566,7 @@
         "title": "Saya and Selyne Hard Rotation Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "loot-goblin",
@@ -592,7 +592,7 @@
             "mount",
             "utility"
           ],
-          "explanation": "While mounted, raises ore damage by 1100% to 3300% and adds 150% to 300% more Ore; not a passive all-node bonus, only active while mounted and mining."
+          "explanation": "While mounted, raises ore damage by 1100% to 3300% and adds 100% to 200% more Ore; not a passive all-node bonus, only active while mounted and mining."
         },
         {
           "palId": "dumud-gild",
@@ -606,7 +606,7 @@
           "role": [
             "utility"
           ],
-          "explanation": "While in party, adds 100% to 200% more items from using the Meat Cleaver."
+          "explanation": "While in party, adds 10% to 15% more items from using the Meat Cleaver."
         },
         {
           "palId": "lunaris",
@@ -729,7 +729,7 @@
         "title": "Aegis Wall Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "catch-squad",
@@ -931,7 +931,7 @@
             "carry",
             "flex"
           ],
-          "explanation": "Adds a ranged Ground rotation (15% to 30% attack) when Knocklem needs to recover."
+          "explanation": "Adds a ranged Ground rotation and raises Ground Pal Attack by 10% (rank 1) to 20% (rank 5) when Knocklem needs to recover."
         },
         {
           "palId": "lapure",
@@ -962,7 +962,7 @@
         "title": "Knocklem Poison Tank Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "mobility-melee-swarm",
@@ -1042,7 +1042,7 @@
         "title": "Mobility Melee Swarm Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "sustain-and-rescue-squad",
@@ -1207,7 +1207,7 @@
         "title": "Anubis Hard-Tower Ground Team Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "fast-kill-exploration-party",
@@ -1371,7 +1371,7 @@
         "title": "Life-Steal Player Tank Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "bellanoir-glass-cannon-rotation",
@@ -1457,7 +1457,7 @@
         "title": "Bellanoir Glass-Cannon Rotation Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "soak-shock-overload",
@@ -1535,7 +1535,7 @@
         "title": "Soak/Shock Overload Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "poison-barrier",
@@ -1620,7 +1620,7 @@
         "title": "Poison Barrier Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "skutlass-katana-rush",
@@ -1703,7 +1703,7 @@
         "title": "Skutlass Katana Rush Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "death-from-above",
@@ -1785,7 +1785,7 @@
         "title": "Death From Above Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "fire-team-template",
@@ -1816,7 +1816,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Raises the Defense of every Fire Pal by 15% to 30% while in the party."
+          "explanation": "Tiny Spark raises the Attack — not the Defense — of every Fire Pal by 10% (rank 1) to 20% (rank 5) while in the party."
         },
         {
           "palId": "finsider-ignis",
@@ -1867,7 +1867,7 @@
         "title": "Fire Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "grass-team-template",
@@ -1890,7 +1890,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Raises the Attack of every Grass Pal by 15% to 30% from any party slot; a second Bristla does not add another copy."
+          "explanation": "Raises the Attack of every Grass Pal by 10% (rank 1) to 20% (rank 5) from any party slot; a second Bristla does not add another copy."
         },
         {
           "palId": "nitemary-botan",
@@ -1948,7 +1948,7 @@
         "title": "Grass Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "water-team-template",
@@ -1972,7 +1972,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Raises the Attack of every Water Pal by 15% to 30%; duplicate copies do not stack."
+          "explanation": "Raises the Attack of every Water Pal by 15%; duplicate copies do not stack. wiki.gg documents the 15% but publishes no condensation curve for it."
         },
         {
           "palId": "gloopie-primo",
@@ -2031,7 +2031,7 @@
         "title": "Water Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "electric-team-template",
@@ -2113,7 +2113,7 @@
         "title": "Electric Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "ice-team-template",
@@ -2136,7 +2136,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Raises the Attack of every Ice Pal by 15% to 30% while in the party; duplicates do not stack."
+          "explanation": "Raises the Attack of every Ice Pal by 10% (rank 1) to 20% (rank 5) while in the party; duplicates do not stack."
         },
         {
           "palId": "rayhound-cryst",
@@ -2196,7 +2196,7 @@
         "title": "Ice Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "ground-team-template",
@@ -2219,7 +2219,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Raises the Attack of every Ground Pal by 15% to 30% while in the party; duplicates do not stack."
+          "explanation": "Raises the Attack of every Ground Pal by 10% (rank 1) to 20% (rank 5) while in the party; duplicates do not stack."
         },
         {
           "palId": "kikit",
@@ -2276,7 +2276,7 @@
         "title": "Ground Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "dark-team-template",
@@ -2356,7 +2356,7 @@
         "title": "Dark Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "dragon-team-template",
@@ -2441,7 +2441,7 @@
         "title": "Dragon Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "unverified"
     },
     {
       "id": "eidrolon-hybrid-carry",
@@ -2534,7 +2534,7 @@
         "title": "The Ultimate Dual-Type Hypercarry Build (r/Palworld)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "dragon-fire-tower",
@@ -2622,7 +2622,7 @@
         "title": "Offering Late Game Advice - Hardmode Towers Comp (r/Palworld)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "gobfin-player-stack",
@@ -2647,7 +2647,7 @@
             "element_conversion",
             "trainer_damage_support"
           ],
-          "explanation": "While mounted, converts player attacks to Fire and increases player attack by 50% (rank 1) to 100% (rank 5); the elemental conversion lets you exploit enemy weaknesses."
+          "explanation": "While mounted, converts player attacks to Fire and increases player attack by 5% (rank 1) to 20% (rank 5); the elemental conversion is the real reason to ride it, not the attack figure."
         },
         {
           "palId": "gobfin",
@@ -2800,7 +2800,7 @@
         "title": "Sweepa Team discussion and build math (r/Palworld)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "bellanoir-nightmare-ray",
@@ -2887,7 +2887,7 @@
         "title": "Palworld 1.0 Best Endgame Teams (game8.co)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "dual-hartalis-neutral",
@@ -2968,7 +2968,7 @@
         "title": "Palworld 1.0 Best Endgame Teams — Neutral Element (game8.co)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "dual-knocklem-fire",
@@ -3055,7 +3055,7 @@
         "title": "Palworld 1.0 Best Endgame Teams — Fire Element (game8.co)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "dual-dandilord-poison",
@@ -3146,7 +3146,7 @@
         "title": "Palworld 1.0 Best Endgame Teams — Poison Dark Element (game8.co)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "flying-gunner-frostallion",
@@ -3500,7 +3500,7 @@
         "title": "Babe wake up, new max attack just dropped — 27,430 (r/Palworld)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "tocotoco-bomb-squad",
@@ -3745,7 +3745,7 @@
         "title": "Updated Combat Teams List — Verdash Speed Build (r/Palworld)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     }
   ]
 }
