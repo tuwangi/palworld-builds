@@ -2,14 +2,17 @@ import { useEffect, useState } from "preact/hooks";
 import { XMarkIcon } from "./icons";
 import type { LocalizedPartnerSkill } from "../lib/partnerSkillLocalization";
 
+/** Condensation is capped at four stars; rank 0 is an uncondensed Pal. */
+const RANK_LABELS = ["☆", "★", "★★", "★★★", "★★★★"];
+
 type Strings = {
   openDetails: string;
   close: string;
   partnerSkill: string;
   partnerSkillMissing: string;
   scalingTitle: string;
-  scalingBase: string;
-  scalingMax: string;
+  scalingEffect: string;
+  scalingNote: string;
   buildRole: string;
   buildNotes: string;
   recommendedSkills: string;
@@ -111,9 +114,10 @@ export default function PalInfoModal({
                         <table>
                           <thead>
                             <tr>
-                              <th scope="col"></th>
-                              <th scope="col">{strings.scalingBase}</th>
-                              <th scope="col">{strings.scalingMax}</th>
+                              <th scope="col"><span class="sr-only">{strings.scalingEffect}</span></th>
+                              {RANK_LABELS.map((label) => (
+                                <th scope="col" key={label}>{label}</th>
+                              ))}
                             </tr>
                           </thead>
                           <tbody>
@@ -123,12 +127,16 @@ export default function PalInfoModal({
                                   {row.effectType}
                                   {row.target && <span>{row.target}</span>}
                                 </th>
-                                <td>{row.base}</td>
-                                <td>{row.max}</td>
+                                {row.values.map((value, rank) => (
+                                  <td key={rank} class={rank === row.values.length - 1 ? "is-max" : undefined}>
+                                    {value || "—"}
+                                  </td>
+                                ))}
                               </tr>
                             ))}
                           </tbody>
                         </table>
+                        <p class="pal-scaling-note">{strings.scalingNote}</p>
                       </div>
                     )}
                   </>

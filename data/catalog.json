@@ -24,7 +24,7 @@
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Lantern Enchantment detonates each arrow on contact for 15% (rank 1) to 30% (rank 5) of your attack damage, calculated from your attack stat rather than the bow."
+          "explanation": "Lantern Enchantment detonates each arrow on contact for 15% (0★) to 30% (4★) of your attack damage, calculated from your attack stat rather than the bow."
         },
         {
           "palId": "robinquill-terra",
@@ -52,7 +52,7 @@
           "role": [
             "weak_point_support"
           ],
-          "explanation": "Raises weak-point damage by 20% (rank 1) to 40% (rank 5); a charged bow shot gives time to line up a headshot."
+          "explanation": "Raises weak-point damage by 20% (0★) to 40% (4★); a charged bow shot gives time to line up a headshot."
         }
       ],
       "equipment": [
@@ -147,7 +147,7 @@
           "role": [
             "active_pal_booster"
           ],
-          "explanation": "Each landed bullet gives the active pal 1% to 5% Attack and Defense for five seconds, stacking up to 30 times for 150% at full condensation."
+          "explanation": "Each landed bullet gives the active pal 1% to 5% Attack and Defense for five seconds, stacking up to 30 times for 150% at 4★."
         },
         {
           "palId": "vanwyrm-cryst",
@@ -495,7 +495,7 @@
             "mount",
             "mobility"
           ],
-          "explanation": "Gains 2% to 6% Attack and Move Speed for each other Dragon or Dark pal in the party (24% at rank 5 here); opens or repositions quickly before yielding the field."
+          "explanation": "Gains 2% to 6% Attack and Move Speed for each other Dragon or Dark pal in the party (24% at 4★ here); opens or repositions quickly before yielding the field."
         },
         {
           "palId": "shaolong",
@@ -503,14 +503,14 @@
             "mount",
             "carry"
           ],
-          "explanation": "Gains 4% to 8% ranged attack for each other Dragon ally, 32% at full condensation with four Dragon allies; contributes a compact ranged burst window."
+          "explanation": "Gains 4% to 8% ranged attack for each other Dragon ally, 32% at 4★ with four Dragon allies; contributes a compact ranged burst window."
         },
         {
           "palId": "orserk",
           "role": [
             "active_pal_booster"
           ],
-          "explanation": "Each landed bullet gives the active (mounted) pal 1% to 5% Attack and Defense, stacking up to 30 times for 150% at full condensation; itself a Dragon, so it also feeds the other members' count-based bonuses."
+          "explanation": "Each landed bullet gives the active (mounted) pal 1% to 5% Attack and Defense, stacking up to 30 times for 150% at 4★; itself a Dragon, so it also feeds the other members' count-based bonuses."
         },
         {
           "palId": "blazamut-ryu",
@@ -931,7 +931,7 @@
             "carry",
             "flex"
           ],
-          "explanation": "Adds a ranged Ground rotation and raises Ground Pal Attack by 10% (rank 1) to 20% (rank 5) when Knocklem needs to recover."
+          "explanation": "Adds a ranged Ground rotation and raises Ground Pal Attack by 10% (0★) to 20% (4★) when Knocklem needs to recover."
         },
         {
           "palId": "lapure",
@@ -1816,7 +1816,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Tiny Spark raises the Attack — not the Defense — of every Fire Pal by 10% (rank 1) to 20% (rank 5) while in the party."
+          "explanation": "Tiny Spark raises the Attack — not the Defense — of every Fire Pal by 10% (0★) to 20% (4★) while in the party."
         },
         {
           "palId": "finsider-ignis",
@@ -1830,7 +1830,7 @@
           "role": [
             "status_applier"
           ],
-          "explanation": "Player attacks inflict Burn level 2 (rank 1) to level 6 (rank 5); a status-strength curve, not a percent damage bonus."
+          "explanation": "Player attacks inflict Burn level 2 (0★) to level 6 (4★); a status-strength curve, not a percent damage bonus."
         },
         {
           "palId": "jormuntide-ignis",
@@ -1853,7 +1853,7 @@
         {
           "palId": "ghangler-ignis",
           "replacesPalId": "renjishi",
-          "reason": "Swap in when mounted water travel matters more than the Burn setup; with four other Fire or Water pals its self-only movement bonus totals +20% at rank 1 or +100% at rank 5."
+          "reason": "Swap in when mounted water travel matters more than the Burn setup; with four other Fire or Water pals its self-only movement bonus totals +20% at 0★ or +100% at 4★."
         },
         {
           "palId": "blazamut",
@@ -1890,7 +1890,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Raises the Attack of every Grass Pal by 10% (rank 1) to 20% (rank 5) from any party slot; a second Bristla does not add another copy."
+          "explanation": "Raises the Attack of every Grass Pal by 10% (0★) to 20% (4★) from any party slot; a second Bristla does not add another copy."
         },
         {
           "palId": "nitemary-botan",
@@ -1919,7 +1919,7 @@
             "healing",
             "carry"
           ],
-          "explanation": "120 base Attack paired with an activated heal for the player and party Pals (80% at rank 1, 90% at rank 5) on a 300-second cooldown; best used after meaningful damage rather than as passive regeneration."
+          "explanation": "120 base Attack paired with an activated heal for the player and party Pals (80% at 0★, 90% at 4★) on a 300-second cooldown; best used after meaningful damage rather than as passive regeneration."
         }
       ],
       "equipment": [],
@@ -1934,7 +1934,7 @@
         {
           "palId": "leafan",
           "replacesPalId": "lyleen",
-          "reason": "Use for another self-scaling attacker instead of the heal; with four other Grass pals its self-buff is +8% Attack and Defense at rank 1 or +24% at rank 5."
+          "reason": "Use for another self-scaling attacker instead of the heal; with four other Grass pals its self-buff is +8% Attack and Defense at 0★ or +24% at 4★."
         },
         {
           "palId": "silvance",
@@ -2084,7 +2084,7 @@
           "role": [
             "status_applier"
           ],
-          "explanation": "Makes the player's attacks inflict Electrify level 2 (rank 1) to level 6 (rank 5); pairs with Helzephyr Lux for Electric trainer damage."
+          "explanation": "Makes the player's attacks inflict Electrify level 2 (0★) to level 6 (4★); pairs with Helzephyr Lux for Electric trainer damage."
         }
       ],
       "equipment": [],
@@ -2136,7 +2136,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Raises the Attack of every Ice Pal by 10% (rank 1) to 20% (rank 5) while in the party; duplicates do not stack."
+          "explanation": "Raises the Attack of every Ice Pal by 10% (0★) to 20% (4★) while in the party; duplicates do not stack."
         },
         {
           "palId": "rayhound-cryst",
@@ -2219,7 +2219,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Raises the Attack of every Ground Pal by 10% (rank 1) to 20% (rank 5) while in the party; duplicates do not stack."
+          "explanation": "Raises the Attack of every Ground Pal by 10% (0★) to 20% (4★) while in the party; duplicates do not stack."
         },
         {
           "palId": "kikit",
@@ -2240,7 +2240,7 @@
           "role": [
             "status_applier"
           ],
-          "explanation": "Makes the player's attacks inflict Muddy level 2 (rank 1) to level 6 (rank 5) while in the party; riding is optional."
+          "explanation": "Makes the player's attacks inflict Muddy level 2 (0★) to level 6 (4★) while in the party; riding is optional."
         },
         {
           "palId": "pierdon",
@@ -2319,7 +2319,7 @@
           "role": [
             "status_applier"
           ],
-          "explanation": "Makes the player's attacks inflict Blind level 2 (rank 1) to level 6 (rank 5) while in the party."
+          "explanation": "Makes the player's attacks inflict Blind level 2 (0★) to level 6 (4★) while in the party."
         },
         {
           "palId": "roujay",
@@ -2480,28 +2480,28 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Sky Dragon's Affection raises Dragon Pal attack by 10% (rank 1) to 30% (rank 5) while in the party, working from the pocket without ever being deployed."
+          "explanation": "Sky Dragon's Affection raises Dragon Pal attack by 10% (0★) to 30% (4★) while in the party, working from the pocket without ever being deployed."
         },
         {
           "palId": "hoocrates",
           "role": [
             "element_booster"
           ],
-          "explanation": "Dark Knowledge raises Dark Pal attack by 10% (rank 1) to 20% (rank 5); because Eidrolon is Dark-type this applies a flat +20% attack boost at max condensation."
+          "explanation": "Dark Knowledge raises Dark Pal attack by 10% (0★) to 20% (4★); because Eidrolon is Dark-type this applies a flat +20% attack boost at 4★."
         },
         {
           "palId": "wistella",
           "role": [
             "defensive_support"
           ],
-          "explanation": "Raises Dark Pal defense by 10% (rank 1) to 30% (rank 5); Eidrolon's Dark typing qualifies it for this buff from the pocket."
+          "explanation": "Raises Dark Pal defense by 10% (0★) to 30% (4★); Eidrolon's Dark typing qualifies it for this buff from the pocket."
         },
         {
           "palId": "dinossom",
           "role": [
             "defensive_support"
           ],
-          "explanation": "Raises Dragon Pal defense by 10% (rank 1) to 30% (rank 5); because Eidrolon is also Dragon-type this stacks with Wistella for 60% total defense at max condensation."
+          "explanation": "Raises Dragon Pal defense by 10% (0★) to 30% (4★); because Eidrolon is also Dragon-type this stacks with Wistella for 60% total defense at 4★."
         }
       ],
       "equipment": [],
@@ -2567,28 +2567,28 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Improves Dragon-type super-effective attacks by 25% (rank 1) to 40% (rank 5), amplifying every Dragon move used against a Dragon-weak target."
+          "explanation": "Improves Dragon-type super-effective attacks by 25% (0★) to 40% (4★), amplifying every Dragon move used against a Dragon-weak target."
         },
         {
           "palId": "jormuntide-ignis",
           "role": [
             "status_applier"
           ],
-          "explanation": "Enemies afflicted with Burn take 30% to 65% more damage at max condensation, multiplying the damage of all attacks after a Burn is applied."
+          "explanation": "Enemies afflicted with Burn take 30% to 65% more damage at 4★, multiplying the damage of all attacks after a Burn is applied."
         },
         {
           "palId": "orserk",
           "role": [
             "active_pal_booster"
           ],
-          "explanation": "Every bullet that hits the enemy grants the active Pal +1% to 5% Attack and Defense for five seconds, stacking up to 30 times for +150% at max condensation; works with the Drone Launcher for hands-free stacking."
+          "explanation": "Every bullet that hits the enemy grants the active Pal +1% to 5% Attack and Defense for five seconds, stacking up to 30 times for +150% at 4★; works with the Drone Launcher for hands-free stacking."
         },
         {
           "palId": "quivern",
           "role": [
             "element_booster"
           ],
-          "explanation": "Boosts Dragon Pal attack by 10% (rank 1) to 30% (rank 5); applies to Eidrolon Ignis directly because it is a Dragon-type."
+          "explanation": "Boosts Dragon Pal attack by 10% (0★) to 30% (4★); applies to Eidrolon Ignis directly because it is a Dragon-type."
         }
       ],
       "equipment": [],
@@ -2647,14 +2647,14 @@
             "element_conversion",
             "trainer_damage_support"
           ],
-          "explanation": "While mounted, converts player attacks to Fire and increases player attack by 5% (rank 1) to 20% (rank 5); the elemental conversion is the real reason to ride it, not the attack figure."
+          "explanation": "While mounted, converts player attacks to Fire and increases player attack by 5% (0★) to 20% (4★); the elemental conversion is the real reason to ride it, not the attack figure."
         },
         {
           "palId": "gobfin",
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Angry Shark raises player attack by 10% (rank 1) to 20% (rank 5) per Gobfin in the party, stacking additively for up to 80% with four max-condensed copies."
+          "explanation": "Angry Shark raises player attack by 10% (0★) to 20% (4★) per Gobfin in the party, stacking additively for up to 80% with four 4★ copies."
         },
         {
           "palId": "gobfin",
@@ -2675,7 +2675,7 @@
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Fourth Gobfin: adds another 10% to 20% player attack. Four max-condensed Gobfins plus Vanguard passive on each totals ~120% player attack from the pocket alone."
+          "explanation": "Fourth Gobfin: adds another 10% to 20% player attack. Four 4★ Gobfins plus Vanguard passive on each totals ~120% player attack from the pocket alone."
         }
       ],
       "equipment": [
@@ -2693,7 +2693,7 @@
       ],
       "synergyNotes": [
         "The math: four 4-star Gobfins grant +80% player attack from partner skills alone. Adding Vanguard (+10% each at 4-star) and Stronghold Strategist (+10% defense each) makes the player both harder-hitting and tankier than any Pal-led team.",
-        "Ragnahawk's 100% attack boost at max condensation applies after Gobfin stacking, effectively doubling the already massive player attack value.",
+        "Ragnahawk's 100% attack boost at 4★ applies after Gobfin stacking, effectively doubling the already massive player attack value.",
         "This build killed Frostallion in under one minute with a Legendary Shotgun, compared to four minutes with a Pal-led team — the community's most-tested boss-killing setup.",
         "Any elemental mount works: Frostallion for Ice, Beakon for Electric, Helzephyr for Dark, Chillet for Dragon. Swap the mount to match the boss weakness."
       ],
@@ -2711,7 +2711,7 @@
         {
           "palId": "solenne",
           "replacesPalId": "gobfin",
-          "reason": "Replace one Gobfin with Solenne for 30% to 80% player attack (no-dup-species condition met here); higher peak than a fourth max-condensed Gobfin."
+          "reason": "Replace one Gobfin with Solenne for 30% to 80% player attack (no-dup-species condition met here); higher peak than a fourth 4★ Gobfin."
         }
       ],
       "gameVersion": "1.0",
@@ -2743,7 +2743,7 @@
             "carry",
             "mount"
           ],
-          "explanation": "Each Swee in the party grants Sweepa +12% Attack and Defense (rank 1) to +24% (rank 5) per Swee; with four max-condensed Swee, Sweepa gains +96% Attack and +96% Defense.",
+          "explanation": "Each Swee in the party grants Sweepa +12% Attack and Defense (0★) to +24% (4★) per Swee; with four 4★ Swee, Sweepa gains +96% Attack and +96% Defense.",
           "recommendedPassives": [
             "Legend",
             "Ferocious",
@@ -2778,7 +2778,7 @@
           "role": [
             "active_pal_booster"
           ],
-          "explanation": "Fourth Swee: adds another 12% to 24%. Total Sweepa bonus at max condensation: +96% Attack, +96% Defense, making it about twice as strong as a normal Pal of its level."
+          "explanation": "Fourth Swee: adds another 12% to 24%. Total Sweepa bonus at 4★: +96% Attack, +96% Defense, making it about twice as strong as a normal Pal of its level."
         }
       ],
       "equipment": [],
@@ -2839,21 +2839,21 @@
           "role": [
             "utility"
           ],
-          "explanation": "Reduces partner skill cooldowns of other party Pals by 10% (rank 1) to 50% at max condensation, letting both Bellanoirs fire Nightmare Ray roughly twice as often."
+          "explanation": "Reduces partner skill cooldowns of other party Pals by 10% (0★) to 50% at 4★, letting both Bellanoirs fire Nightmare Ray roughly twice as often."
         },
         {
           "palId": "orserk",
           "role": [
             "active_pal_booster"
           ],
-          "explanation": "Landing player bullets grants the active Pal +1% to 5% Attack and Defense per hit, stacking 30 times for +150% at max condensation; use the Drone Launcher for automatic stacking."
+          "explanation": "Landing player bullets grants the active Pal +1% to 5% Attack and Defense per hit, stacking 30 times for +150% at 4★; use the Drone Launcher for automatic stacking."
         },
         {
           "palId": "silvegis",
           "role": [
             "defensive_support"
           ],
-          "explanation": "Reduces damage to the player's shield by 40% (rank 1) to 80% (rank 5) and reduces shield regeneration delay by 30% to 60%; keeps you alive while the Bellanoirs do the work."
+          "explanation": "Reduces damage to the player's shield by 40% (0★) to 80% (4★) and reduces shield regeneration delay by 30% to 60%; keeps you alive while the Bellanoirs do the work."
         }
       ],
       "equipment": [],
@@ -2925,14 +2925,14 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Boosts Neutral Pal attack by 10% (rank 1) to 20% (rank 5); since both Hartalis are pure Neutral, this applies to all their damage."
+          "explanation": "Boosts Neutral Pal attack by 10% (0★) to 20% (4★); since both Hartalis are pure Neutral, this applies to all their damage."
         },
         {
           "palId": "orserk",
           "role": [
             "active_pal_booster"
           ],
-          "explanation": "The universal endgame amplifier: landing bullets grants the active Pal up to +150% Attack and Defense with 30 stacks at max condensation."
+          "explanation": "The universal endgame amplifier: landing bullets grants the active Pal up to +150% Attack and Defense with 30 stacks at 4★."
         },
         {
           "palId": "silvegis",
@@ -3007,14 +3007,14 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Boosts Fire Pal attack by 10% (rank 1) to 30% (rank 5); applies to both Knocklem Ignis variants."
+          "explanation": "Boosts Fire Pal attack by 10% (0★) to 30% (4★); applies to both Knocklem Ignis variants."
         },
         {
           "palId": "orserk",
           "role": [
             "active_pal_booster"
           ],
-          "explanation": "Drone Launcher hits build stacks of +1% to 5% Attack/Defense per hit on the active Pal, up to 30 stacks for +150% total at max condensation."
+          "explanation": "Drone Launcher hits build stacks of +1% to 5% Attack/Defense per hit on the active Pal, up to 30 stacks for +150% total at 4★."
         },
         {
           "palId": "silvegis",
@@ -3098,7 +3098,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Boosts Dark Pal attack by 10% (rank 1) to 20% (rank 5); applies to both Dandilords since they share the Dark type."
+          "explanation": "Boosts Dark Pal attack by 10% (0★) to 20% (4★); applies to both Dandilords since they share the Dark type."
         },
         {
           "palId": "orserk",
@@ -3380,7 +3380,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Boosts Dark Pal attack by 10% (rank 1) to 20% (rank 5) while in the party; all four Daedreams benefit simultaneously."
+          "explanation": "Boosts Dark Pal attack by 10% (0★) to 20% (4★) while in the party; all four Daedreams benefit simultaneously."
         }
       ],
       "equipment": [],
@@ -3391,7 +3391,7 @@
       "synergyNotes": [
         "In 1.0, necklace Pals no longer require saddles and their attacks don't kill wild Pals — this makes the Daedream squad the ultimate passive capture assist, softening targets without accidental kills.",
         "The four Daedreams attack independently of whatever the player is doing — you can ride a mount, fish, or mine while they clear threats around you automatically.",
-        "The Dark typing means they're strong against Neutral Pals (common in the wild); Hoocrates boosts all four at once for +30% Dark damage at max condensation.",
+        "The Dark typing means they're strong against Neutral Pals (common in the wild); Hoocrates boosts all four at once for +30% Dark damage at 4★.",
         "Replace one Daedream with Dazzi for Electric coverage that also procs via necklace — Dazzi adds lightning follow-ups to the player's attacks while the Daedreams fire independently."
       ],
       "alternatives": [
@@ -3438,35 +3438,35 @@
           "role": [
             "carry"
           ],
-          "explanation": "Full-Power Gorilla Mode boosts attack by 50% (rank 1) to 200% (rank 5) during berserk, but only applies to shot-attack skills, not melee moves."
+          "explanation": "Full-Power Gorilla Mode boosts attack by 50% (0★) to 200% (4★) during berserk, but only applies to shot-attack skills, not melee moves."
         },
         {
           "palId": "orserk",
           "role": [
             "active_pal_booster"
           ],
-          "explanation": "Drone Launcher builds 30 stacks of +5% Attack and Defense each for +150% total at max condensation; the universal endgame amplifier."
+          "explanation": "Drone Launcher builds 30 stacks of +5% Attack and Defense each for +150% total at 4★; the universal endgame amplifier."
         },
         {
           "palId": "celesdir-noct",
           "role": [
             "element_booster"
           ],
-          "explanation": "Boosts the active Pal's attack by 80% at max condensation at the cost of health drain; synergizes with the burst playstyle since the fight should end before health matters."
+          "explanation": "Boosts the active Pal's attack by 80% at 4★ at the cost of health drain; synergizes with the burst playstyle since the fight should end before health matters."
         },
         {
           "palId": "cremis",
           "role": [
             "element_booster"
           ],
-          "explanation": "Boosts Neutral Pal attack by 10% (rank 1) to 20% (rank 5); Gorirat is pure Neutral so the full buffer applies."
+          "explanation": "Boosts Neutral Pal attack by 10% (0★) to 20% (4★); Gorirat is pure Neutral so the full buffer applies."
         },
         {
           "palId": "blazamut",
           "role": [
             "element_booster"
           ],
-          "explanation": "Boosts Fire damage by 25% to 50% at max condensation; applies to any Fire-type shot-attack skill fruits taught to Gorirat."
+          "explanation": "Boosts Fire damage by 25% to 50% at 4★; applies to any Fire-type shot-attack skill fruits taught to Gorirat."
         }
       ],
       "equipment": [],
@@ -3610,7 +3610,7 @@
           "role": [
             "carry"
           ],
-          "explanation": "Each Beegarde in the party grants Elizabee +12% Attack and +12% Defense (rank 1) to +24% (rank 5) per Beegarde; Elizabee also has a self-attack boost from its own partner skill that only starts above rank 1, reaching +8% at rank 5."
+          "explanation": "Each Beegarde in the party grants Elizabee +12% Attack and +12% Defense (0★) to +24% (4★) per Beegarde; Elizabee also has a self-attack boost from its own partner skill that only starts above 0★, reaching +8% at 4★."
         },
         {
           "palId": "beegarde",
@@ -3638,7 +3638,7 @@
           "role": [
             "active_pal_booster"
           ],
-          "explanation": "Fourth Beegarde: +12% to +24%. Total at max condensation: +104% Attack (+96% from Beegardes + 8% self), +96% Defense."
+          "explanation": "Fourth Beegarde: +12% to +24%. Total at 4★: +104% Attack (+96% from Beegardes + 8% self), +96% Defense."
         }
       ],
       "equipment": [],
@@ -3690,14 +3690,14 @@
             "element_conversion",
             "mobility"
           ],
-          "explanation": "Unlike other element-swap Pals, Verdash grants +20% to +40% movement speed to itself and the player (rank 1 to 5) while converting player attacks to Grass — it trades the usual attack boost for extreme mobility."
+          "explanation": "Unlike other element-swap Pals, Verdash grants +20% to +40% movement speed to itself and the player (0★ to 5) while converting player attacks to Grass — it trades the usual attack boost for extreme mobility."
         },
         {
           "palId": "gobfin",
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Angry Shark: +10% to +20% player attack per Gobfin in the party with max condensation."
+          "explanation": "Angry Shark: +10% to +20% player attack per Gobfin in the party with 4★."
         },
         {
           "palId": "gobfin",

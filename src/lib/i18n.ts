@@ -61,8 +61,8 @@ type Strings = {
   palPartnerSkill: string;
   palPartnerSkillMissing: string;
   palScalingTitle: string;
-  palScalingBase: string;
-  palScalingMax: string;
+  palScalingEffect: string;
+  palScalingNote: string;
   palBuildRole: string;
   palBuildNotes: string;
   palRecommendedSkills: string;
@@ -150,8 +150,8 @@ const STRINGS: Record<Locale, Strings> = {
     palPartnerSkillMissing:
       "wiki.gg todavía no publica la habilidad de compañero de este Pal. No la inventamos: en cuanto aparezca en la fuente, se muestra aquí.",
     palScalingTitle: "Escalado por condensación",
-    palScalingBase: "Rango 0",
-    palScalingMax: "Rango 4",
+    palScalingEffect: "Efecto",
+    palScalingNote: "Condensación de 0 a 4 estrellas, el máximo del juego. Aparte de la habilidad, cada estrella suma un 5% de Salud, Ataque y Defensa al propio Pal, hasta un 20% con 4 estrellas.",
     palBuildRole: "Rol en esta build",
     palBuildNotes: "Por qué está aquí",
     palRecommendedSkills: "Ataques recomendados",
@@ -237,8 +237,8 @@ const STRINGS: Record<Locale, Strings> = {
     palPartnerSkillMissing:
       "wiki.gg doesn't publish this Pal's partner skill yet. We don't invent one — it will show up here as soon as the source has it.",
     palScalingTitle: "Condensation scaling",
-    palScalingBase: "Rank 0",
-    palScalingMax: "Rank 4",
+    palScalingEffect: "Effect",
+    palScalingNote: "Condensation runs from 0 to 4 stars, the game maximum. On top of the skill, every star adds 5% Health, Attack and Defense to the Pal itself, up to 20% at 4 stars.",
     palBuildRole: "Role in this build",
     palBuildNotes: "Why it is here",
     palRecommendedSkills: "Recommended attacks",

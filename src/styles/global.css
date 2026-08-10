@@ -596,3 +596,17 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 .profile-collection {
   @apply mt-10;
 }
+
+.pal-scaling table { @apply min-w-max; }
+
+.pal-scaling thead th:not(:first-child) {
+  @apply pl-3 text-right text-[11px] tracking-normal text-[var(--ink-soft)];
+}
+
+.pal-scaling tbody td.is-max {
+  @apply font-bold text-[var(--coral-dark)];
+}
+
+.pal-scaling-note {
+  @apply mt-2 text-[11px] leading-5 text-[var(--ink-soft)];
+}
