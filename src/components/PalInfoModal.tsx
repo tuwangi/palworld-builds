@@ -17,7 +17,7 @@ type Strings = {
 type Props = {
   name: string;
   iconUrl: string | null;
-  elements: string[];
+  elementLabels: string[];
   roleLabels: string[];
   explanation: string;
   partnerSkill: SnapshotPartnerSkill | null;
@@ -43,7 +43,7 @@ function cleanWikiText(value: string): string {
 export default function PalInfoModal({
   name,
   iconUrl,
-  elements,
+  elementLabels,
   roleLabels,
   explanation,
   partnerSkill,
@@ -81,9 +81,9 @@ export default function PalInfoModal({
               </span>
               {roleLabels.length > 0 && <span class="pal-card-roles">{roleLabels.map((role) => <span>{role}</span>)}</span>}
             </span>
-            <span class="pal-card-elements">{elements.map((element) => <span>{element}</span>)}</span>
           </span>
         </span>
+        <span class="pal-card-elements">{elementLabels.map((element) => <span>{element}</span>)}</span>
         {contextLabel && <span class="pal-context-label">{contextLabel}</span>}
         <span class="pal-card-note">{explanation}</span>
       </button>
@@ -97,7 +97,7 @@ export default function PalInfoModal({
               <div>
                 <p class="eyebrow">{strings.eyebrow}</p>
                 <h2 id={`pal-title-${name}`}>{name}</h2>
-                <div class="pal-modal-tags">{elements.map((element) => <span>{element}</span>)}</div>
+                <div class="pal-modal-tags">{elementLabels.map((element) => <span>{element}</span>)}</div>
               </div>
             </div>
 

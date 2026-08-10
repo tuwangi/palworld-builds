@@ -81,7 +81,7 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
               client:load
               name={slot.name}
               iconUrl={slot.iconUrl}
-              elements={slot.elements}
+              elementLabels={slot.elements.map((element) => labels.element.get(element) ?? element)}
               roleLabels={slot.role.map((role) => labels.role.get(role) ?? role)}
               explanation={slot.explanation}
               partnerSkill={slot.partnerSkill}
@@ -138,7 +138,7 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
                 client:load
                 name={alternative.palName}
                 iconUrl={alternative.palIconUrl}
-                elements={alternative.palElements}
+                elementLabels={alternative.palElements.map((element) => labels.element.get(element) ?? element)}
                 roleLabels={[]}
                 explanation={alternative.reason}
                 partnerSkill={alternative.palPartnerSkill}
