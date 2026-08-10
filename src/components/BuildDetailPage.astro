@@ -89,6 +89,7 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
               recommendedPassives={slot.recommendedPassives}
               specialNote={slot.specialNote}
               slotNumber={String(index + 1).padStart(2, "0")}
+              locale={locale}
               strings={{
                 openDetails: strings.palOpenDetails,
                 close: strings.palClose,
@@ -145,6 +146,7 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
                 recommendedSkills={[]}
                 recommendedPassives={[]}
                 contextLabel={`${strings.replaces} ${alternative.replacesPalName}`}
+                locale={locale}
                 strings={{
                   openDetails: strings.palOpenDetails,
                   close: strings.palClose,

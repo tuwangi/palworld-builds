@@ -1,6 +1,8 @@
 import { useEffect, useState } from "preact/hooks";
 import { XMarkIcon } from "./icons";
 import type { SnapshotPartnerSkill } from "../lib/data";
+import { localizePartnerSkill } from "../lib/partnerSkillLocalization";
+import type { Locale } from "../lib/taxonomy";
 
 type Strings = {
   openDetails: string;
@@ -26,19 +28,9 @@ type Props = {
   specialNote?: string;
   contextLabel?: string;
   slotNumber?: string;
+  locale: Locale;
   strings: Strings;
 };
-
-function cleanWikiText(value: string): string {
-  return value
-    .replace(/<[^>]*>/g, "")
-    .replace(/\[\[File:[^\]]+\]\]/gi, "")
-    .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, "$2")
-    .replace(/\[\[([^\]]+)\]\]/g, "$1")
-    .replace(/\[([^\]]+)\]\([^\)]+\)/g, "$1")
-    .replace(/\s+/g, " ")
-    .trim();
-}
 
 export default function PalInfoModal({
   name,
@@ -52,6 +44,7 @@ export default function PalInfoModal({
   specialNote,
   contextLabel,
   slotNumber,
+  locale,
   strings,
 }: Props) {
   const [open, setOpen] = useState(false);
@@ -65,7 +58,7 @@ export default function PalInfoModal({
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
-  const partnerDescription = partnerSkill ? cleanWikiText(partnerSkill.description) : "";
+  const localizedPartner = partnerSkill ? localizePartnerSkill(partnerSkill, locale) : null;
 
   return (
     <>
@@ -105,8 +98,8 @@ export default function PalInfoModal({
               {partnerSkill && (
                 <div class="pal-info-block pal-info-featured">
                   <p class="pal-info-label">{strings.partnerSkill}</p>
-                  <h3>{partnerSkill.name}</h3>
-                  <p>{partnerDescription}</p>
+                  <h3>{localizedPartner?.name}</h3>
+                  <p>{localizedPartner?.description}</p>
                 </div>
               )}
               {roleLabels.length > 0 && <div class="pal-info-block">
