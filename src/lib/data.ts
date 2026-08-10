@@ -4,6 +4,7 @@ import palsJson from "../../data/snapshot/pals.json";
 import itemsJson from "../../data/snapshot/items.json";
 import iconsManifestJson from "../../data/snapshot/icons-manifest.json";
 import type { Locale } from "./taxonomy";
+import { localizePartnerSkill, type LocalizedPartnerSkill } from "./partnerSkillLocalization";
 
 export type SnapshotPartnerSkill = {
   name: string;
@@ -52,6 +53,7 @@ type RawBuild = {
 };
 
 type EsTranslation = {
+  name?: string;
   summary: string;
   pals: string[];
   synergyNotes: string[];
@@ -129,7 +131,7 @@ export type ResolvedPalSlot = {
   role: string[];
   explanation: string;
   iconUrl: string | null;
-  partnerSkill: SnapshotPartnerSkill | null;
+  partnerSkill: LocalizedPartnerSkill | null;
   recommendedSkills: string[];
   recommendedPassives: string[];
   specialNote?: string;
@@ -150,7 +152,7 @@ export type ResolvedAlternative = {
   palName: string;
   palIconUrl: string | null;
   palElements: string[];
-  palPartnerSkill: SnapshotPartnerSkill | null;
+  palPartnerSkill: LocalizedPartnerSkill | null;
   replacesPalId: string;
   replacesPalName: string;
   reason: string;
@@ -171,7 +173,7 @@ function toSummary(build: RawBuild, locale: Locale): BuildSummary {
   return {
     id: build.id,
     slug: build.slug,
-    name: build.name,
+    name: es?.name ?? build.name,
     summary: es?.summary ?? build.summary,
     purpose: build.purpose,
     elements: build.elements,
@@ -199,7 +201,7 @@ function toDetail(build: RawBuild, locale: Locale): BuildDetail {
         role: slot.role,
         explanation: es?.pals[i] ?? slot.explanation,
         iconUrl: palIconUrl(pal.id),
-        partnerSkill: pal.partnerSkill,
+        partnerSkill: pal.partnerSkill ? localizePartnerSkill(pal.partnerSkill, pal.id, locale) : null,
         recommendedSkills: slot.recommendedSkills ?? [],
         recommendedPassives: slot.recommendedPassives ?? [],
         specialNote: slot.specialNote,
@@ -223,7 +225,10 @@ function toDetail(build: RawBuild, locale: Locale): BuildDetail {
       palName: resolvePal(alt.palId).name,
       palIconUrl: palIconUrl(alt.palId),
       palElements: resolvePal(alt.palId).elements,
-      palPartnerSkill: resolvePal(alt.palId).partnerSkill,
+      palPartnerSkill: (() => {
+        const skill = resolvePal(alt.palId).partnerSkill;
+        return skill ? localizePartnerSkill(skill, alt.palId, locale) : null;
+      })(),
       replacesPalId: alt.replacesPalId,
       replacesPalName: resolvePal(alt.replacesPalId).name,
       reason: es?.alternatives[i] ?? alt.reason,

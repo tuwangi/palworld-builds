@@ -40,6 +40,7 @@ type Strings = {
   profileLeaveButton: string;
   profileErrorInvalid: string;
   profileErrorUnavailable: string;
+  profileErrorNotYours: string;
   profileViewTitleTemplate: string;
   profileAdoptButton: string;
   profileAdoptedNotice: string;
@@ -58,6 +59,10 @@ type Strings = {
   palOpenDetails: string;
   palClose: string;
   palPartnerSkill: string;
+  palPartnerSkillMissing: string;
+  palScalingTitle: string;
+  palScalingBase: string;
+  palScalingMax: string;
   palBuildRole: string;
   palBuildNotes: string;
   palRecommendedSkills: string;
@@ -75,6 +80,12 @@ type Strings = {
   statBuilds: string;
   statElements: string;
   statSlots: string;
+  navPrimary: string;
+  profileStripLabel: string;
+  siteDescription: string;
+  notFoundTitle: string;
+  notFoundHeading: string;
+  notFoundCopy: string;
 };
 
 const STRINGS: Record<Locale, Strings> = {
@@ -116,6 +127,8 @@ const STRINGS: Record<Locale, Strings> = {
     profileLeaveButton: "Salir",
     profileErrorInvalid: "Ese ID no es válido. Usa letras, números y guiones (3 a 32 caracteres).",
     profileErrorUnavailable: "No se pudo conectar con el perfil. Tus favoritos siguen guardados en este dispositivo.",
+    profileErrorNotYours:
+      "Ese ID ya lo reclamó otro dispositivo. Copiamos sus builds a este, pero para editarlo hace falta el dispositivo original. Elige otro ID para sincronizar.",
     profileViewTitleTemplate: "Colección de {id}",
     profileAdoptButton: "Usar este perfil en este dispositivo",
     profileAdoptedNotice: "Perfil activado en este dispositivo.",
@@ -134,6 +147,11 @@ const STRINGS: Record<Locale, Strings> = {
     palOpenDetails: "Ver detalles",
     palClose: "Cerrar detalles",
     palPartnerSkill: "Habilidad de compañero",
+    palPartnerSkillMissing:
+      "wiki.gg todavía no publica la habilidad de compañero de este Pal. No la inventamos: en cuanto aparezca en la fuente, se muestra aquí.",
+    palScalingTitle: "Escalado por condensación",
+    palScalingBase: "Rango 0",
+    palScalingMax: "Rango 4",
     palBuildRole: "Rol en esta build",
     palBuildNotes: "Por qué está aquí",
     palRecommendedSkills: "Ataques recomendados",
@@ -151,6 +169,12 @@ const STRINGS: Record<Locale, Strings> = {
     statBuilds: "Builds",
     statElements: "Elementos",
     statSlots: "Pals / equipo",
+    navPrimary: "Navegación principal",
+    profileStripLabel: "Favoritos compartidos",
+    siteDescription: "Companion personal de equipos de Palworld.",
+    notFoundTitle: "Página no encontrada — Palworld Builds",
+    notFoundHeading: "Esta página no existe",
+    notFoundCopy: "El enlace está roto o la build cambió de nombre. Vuelve al catálogo y búscala desde ahí.",
   },
   en: {
     htmlLang: "en",
@@ -190,6 +214,8 @@ const STRINGS: Record<Locale, Strings> = {
     profileLeaveButton: "Leave",
     profileErrorInvalid: "That ID isn't valid. Use letters, numbers and hyphens (3 to 32 characters).",
     profileErrorUnavailable: "Couldn't reach the profile backend. Your favorites are still saved on this device.",
+    profileErrorNotYours:
+      "Another device already claimed that ID. Its builds were copied here, but editing it needs the original device. Pick a different ID to sync.",
     profileViewTitleTemplate: "{id}'s collection",
     profileAdoptButton: "Use this profile on this device",
     profileAdoptedNotice: "Profile activated on this device.",
@@ -208,6 +234,11 @@ const STRINGS: Record<Locale, Strings> = {
     palOpenDetails: "View details",
     palClose: "Close details",
     palPartnerSkill: "Partner skill",
+    palPartnerSkillMissing:
+      "wiki.gg doesn't publish this Pal's partner skill yet. We don't invent one — it will show up here as soon as the source has it.",
+    palScalingTitle: "Condensation scaling",
+    palScalingBase: "Rank 0",
+    palScalingMax: "Rank 4",
     palBuildRole: "Role in this build",
     palBuildNotes: "Why it is here",
     palRecommendedSkills: "Recommended attacks",
@@ -225,6 +256,12 @@ const STRINGS: Record<Locale, Strings> = {
     statBuilds: "Builds",
     statElements: "Elements",
     statSlots: "Pals / team",
+    navPrimary: "Primary navigation",
+    profileStripLabel: "Shared favorites",
+    siteDescription: "Personal companion app for Palworld teams.",
+    notFoundTitle: "Page not found — Palworld Builds",
+    notFoundHeading: "This page doesn't exist",
+    notFoundCopy: "The link is broken or the build was renamed. Head back to the catalog and search for it there.",
   },
 };
 

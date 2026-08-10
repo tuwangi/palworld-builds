@@ -16,6 +16,12 @@ export type StoredProfile = {
   id: string;
   favorites: string[];
   updatedAt: string;
+  /**
+   * SHA-256 of the write token held by whoever claimed this ID. Absent on
+   * profiles created before write tokens existed — see profileAuth.ts for how
+   * those are handled.
+   */
+  tokenHash?: string;
 };
 
 class GitHubNotConfiguredError extends Error {
@@ -72,23 +78,46 @@ export async function readProfile(id: string): Promise<{ profile: StoredProfile;
  * Creates or updates `data/profiles/<id>.json`. Pass the `sha` returned by
  * `readProfile` when updating an existing file; omit it (or pass
  * `undefined`) when creating a new one.
+ *
+ * The Contents API rejects a stale `sha` with 409. That happens for real here
+ * — two tabs of the same profile debounce-flush at once — so a conflict
+ * re-reads the current blob and retries against it once rather than dropping
+ * the write silently.
  */
-export async function writeProfile(id: string, favorites: string[], sha: string | undefined): Promise<void> {
+export async function writeProfile(
+  id: string,
+  favorites: string[],
+  sha: string | undefined,
+  tokenHash: string | undefined,
+): Promise<void> {
   const { token, repo, branch } = config();
   const path = `data/profiles/${id}.json`;
-  const profile: StoredProfile = { id, favorites, updatedAt: new Date().toISOString() };
+  const profile: StoredProfile = {
+    id,
+    favorites,
+    updatedAt: new Date().toISOString(),
+    ...(tokenHash ? { tokenHash } : {}),
+  };
   const content = Buffer.from(JSON.stringify(profile, null, 2) + "\n", "utf8").toString("base64");
 
-  const res = await fetch(contentsUrl(repo, path), {
-    method: "PUT",
-    headers: { ...authHeaders(token), "Content-Type": "application/json" },
-    body: JSON.stringify({
-      message: `profile: update ${id} (${favorites.length} favorite${favorites.length === 1 ? "" : "s"})`,
-      content,
-      branch,
-      ...(sha ? { sha } : {}),
-    }),
-  });
+  async function put(currentSha: string | undefined) {
+    return fetch(contentsUrl(repo, path), {
+      method: "PUT",
+      headers: { ...authHeaders(token), "Content-Type": "application/json" },
+      body: JSON.stringify({
+        message: `profile: update ${id} (${favorites.length} favorite${favorites.length === 1 ? "" : "s"})`,
+        content,
+        branch,
+        ...(currentSha ? { sha: currentSha } : {}),
+      }),
+    });
+  }
+
+  let res = await put(sha);
+  if (res.status === 409 || res.status === 422) {
+    const latest = await readProfile(id);
+    res = await put(latest?.sha);
+  }
 
   if (!res.ok) throw new Error(`GitHub write failed (${res.status}): ${await res.text()}`);
 }

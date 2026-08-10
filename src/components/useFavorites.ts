@@ -3,7 +3,27 @@ import { isValidProfileId } from "../lib/profileId";
 
 const FAVORITES_KEY = "palworld-builds:favorites";
 const PROFILE_KEY = "palworld-builds:profile";
+const TOKEN_KEY_PREFIX = "palworld-builds:profile-token:";
 const SYNC_DEBOUNCE_MS = 1200;
+
+/**
+ * Write token for a profile ID. It never leaves this device except as a
+ * bearer header, and the server only ever stores its SHA-256 — so the ID
+ * stays shareable while the collection stays writable by its owner alone.
+ */
+function readToken(profileId: string): string | null {
+  return localStorage.getItem(TOKEN_KEY_PREFIX + profileId);
+}
+
+function ensureToken(profileId: string): string {
+  const existing = readToken(profileId);
+  if (existing) return existing;
+  const bytes = new Uint8Array(32);
+  crypto.getRandomValues(bytes);
+  const token = Array.from(bytes, (b) => b.toString(16).padStart(2, "0")).join("");
+  localStorage.setItem(TOKEN_KEY_PREFIX + profileId, token);
+  return token;
+}
 
 function readFavorites(): Set<string> {
   try {
@@ -32,7 +52,10 @@ async function pushToProfile(profileId: string, favorites: Set<string>): Promise
   try {
     const res = await fetch(`/api/profile/${encodeURIComponent(profileId)}`, {
       method: "PUT",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${ensureToken(profileId)}`,
+      },
       body: JSON.stringify({ favorites: [...favorites] }),
     });
     return res.ok;
@@ -41,7 +64,9 @@ async function pushToProfile(profileId: string, favorites: Set<string>): Promise
   }
 }
 
-export type JoinProfileResult = { ok: true } | { ok: false; reason: "invalid_id" | "unavailable" };
+export type JoinProfileResult =
+  | { ok: true }
+  | { ok: false; reason: "invalid_id" | "unavailable" | "not_yours" };
 
 /**
  * Favorites always live in localStorage first — that's what makes the app
@@ -86,6 +111,11 @@ export function useFavorites() {
    * whatever is already local (never silently discards local picks), then
    * reloads so every island on the page re-reads the same, now-consistent
    * localStorage state.
+   *
+   * Reading someone else's collection is always allowed; writing to it is not.
+   * If the ID is already claimed and this device has no token for it, the
+   * merge still lands locally and the profile is simply not adopted for sync —
+   * reported back as `not_yours` rather than failing silently on every push.
    */
   async function joinProfile(rawId: string): Promise<JoinProfileResult> {
     const id = rawId.trim().toLowerCase();
@@ -94,11 +124,20 @@ export function useFavorites() {
     try {
       const res = await fetch(`/api/profile/${encodeURIComponent(id)}`);
       if (!res.ok) return { ok: false, reason: "unavailable" };
-      const data = (await res.json()) as { favorites?: string[] };
+      const data = (await res.json()) as { favorites?: string[]; claimed?: boolean };
       const merged = new Set([...readFavorites(), ...(data.favorites ?? [])]);
       writeFavorites(merged);
+
+      if (data.claimed && !readToken(id)) {
+        return { ok: false, reason: "not_yours" };
+      }
+
       writeProfileId(id);
-      await pushToProfile(id, merged);
+      const pushed = await pushToProfile(id, merged);
+      if (!pushed) {
+        writeProfileId(null);
+        return { ok: false, reason: "not_yours" };
+      }
       return { ok: true };
     } catch {
       return { ok: false, reason: "unavailable" };

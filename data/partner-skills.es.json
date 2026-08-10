@@ -1,0 +1,1059 @@
+{
+  "_readme": [
+    "Traducción al español de las habilidades de compañero (partner skills).",
+    "Clave = nombre EXACTO en inglés tal como aparece en data/snapshot/pals.json.",
+    "La clave \"\" corresponde a Elgrove: wiki.gg publica su descripción con el",
+    "nombre de la habilidad vacío. No se inventa un nombre; se traduce solo la",
+    "descripción y la UI oculta el título.",
+    "Los nombres de Pals se dejan en inglés (la app los muestra así); los",
+    "objetos y términos comunes sí se traducen, igual que en catalog.es.json.",
+    "Ninguna cifra puede cambiar respecto al inglés: scripts/validate-translations.mjs lo verifica."
+  ],
+  "skills": {
+    "": {
+      "name": "",
+      "description": "Al activarla, Elgrove cambia el tipo de ataque del jugador a Planta y aumenta el Ataque."
+    },
+    "Aegis Shield": {
+      "name": "Escudo Égida",
+      "description": "Se puede montar. Aumenta la duración del escudo al usar Carga Égida mientras la montas."
+    },
+    "Aerial Marauder": {
+      "name": "Saqueador aéreo",
+      "description": "Se puede montar como montura voladora. Aumenta el daño que el jugador inflige a los puntos débiles enemigos mientras la monta."
+    },
+    "Aerial Missile": {
+      "name": "Misil aéreo",
+      "description": "Se puede montar como montura voladora. Permite disparar un lanzamisiles a gran velocidad mientras la montas."
+    },
+    "Amicable Holy Dragon": {
+      "name": "Dragón sagrado amistoso",
+      "description": "Se puede montar como montura voladora. Mientras vuela, aumenta la velocidad de movimiento. Mientras combate contigo, los Pals Oscuros sueltan más objetos al ser derrotados."
+    },
+    "Amicable Water Dragon": {
+      "name": "Dragón de agua amistoso",
+      "description": "Se puede montar como montura voladora. Mientras vuela, aumenta la velocidad de movimiento. Mientras esté en el equipo, el jugador y los Pals del equipo reciben un 15% menos de daño de Fuego y son inmunes a Quemadura. (No es acumulable)"
+    },
+    "Angry Shark": {
+      "name": "Tiburón furioso",
+      "description": "Al activarla, ataca al enemigo objetivo con un potente Cañón de agua. Cuando este Pal usa Cañón de agua, aplica un multiplicador de 1.1x. Mientras esté en el equipo, aumenta el Ataque del jugador un 10%."
+    },
+    "Antigravity": {
+      "name": "Antigravedad",
+      "description": "Mientras esté en el equipo, las esferas se dirigen solas hacia los Pals y la capacidad de carga aumenta en 300. (No es acumulable)"
+    },
+    "Aqua Spout": {
+      "name": "Chorro acuático",
+      "description": "Mientras esté en el equipo, aumenta el Ataque de los Pals de Agua un 15%. (No es acumulable) A veces suelta Fluidos de Pal acuático cuando se asigna al Rancho."
+    },
+    "Aurora Guide": {
+      "name": "Guía de la aurora",
+      "description": "Mientras esté en el equipo, aumenta el Ataque de los Pals de Hielo. A veces suelta Órgano de hielo cuando se asigna al rancho."
+    },
+    "Balmy Weather": {
+      "name": "Clima templado",
+      "description": "Se puede montar. Mientras esté en la base, reduce el tiempo que tardan los Pals asignados a la Granja de cría en producir huevos. (El efecto no es acumulable.)"
+    },
+    "Berry Picker": {
+      "name": "Recolectora de bayas",
+      "description": "A veces suelta Bayas rojas de su lomo cuando se asigna al rancho."
+    },
+    "Best Boy": {
+      "name": "Buen chico",
+      "description": "Mientras esté en el equipo, aumenta el daño de las armas cuerpo a cuerpo del jugador un 10%. (No es acumulable)"
+    },
+    "Big Stretch": {
+      "name": "Gran estiramiento",
+      "description": "Mientras esté en el equipo, reduce los efectos de la gravedad sobre el jugador y lo vuelve más flotante al saltar y al caer. (No es acumulable)"
+    },
+    "Birds of a Feather": {
+      "name": "Tal para cual",
+      "description": "Se puede montar. Mientras combate contigo, es más fácil encontrar Pals con la misma habilidad pasiva que este Pal. (Excluye ciertas habilidades pasivas)"
+    },
+    "Bitter Pop": {
+      "name": "Estallido amargo",
+      "description": "A veces suelta Algodón de azúcar con caramelo cuando se asigna al Rancho. Mientras esté en la base, reduce la velocidad a la que baja el hambre de los Pals de la base. (No es acumulable)"
+    },
+    "Black Ankylosaur": {
+      "name": "Anquilosaurio negro",
+      "description": "Se puede montar como montura voladora. Aumenta el daño infligido a las vetas de mineral y permite obtener más Mineral mientras la montas."
+    },
+    "Black Fox Lord": {
+      "name": "Señor zorro negro",
+      "description": "Mientras combate contigo, cambia el tipo de ataque del jugador a Oscuro."
+    },
+    "Black Hare": {
+      "name": "Liebre negra",
+      "description": "Se puede montar. Mientras la montas, cambia el ataque del jugador a Oscuro y aumenta el Ataque un 5%"
+    },
+    "Black Steed": {
+      "name": "Corcel negro",
+      "description": "Se puede montar como montura voladora. Cambia el tipo de ataque del jugador a Oscuro y potencia los ataques Oscuros mientras la montas."
+    },
+    "Blade of Uncontrolled Passion": {
+      "name": "Hoja de pasión descontrolada",
+      "description": "Mientras la lleves contigo, aumenta la cantidad de objetos obtenidos al usar el Cuchillo de carnicero."
+    },
+    "Blazing Black magic": {
+      "name": "Magia negra ardiente",
+      "description": "Mientras esté en la base, aumenta en +1 el nivel de aptitud de Encendido de todos los demás Pals de la base"
+    },
+    "Blessing of Purification": {
+      "name": "Bendición de purificación",
+      "description": "Se puede montar. Aumenta la velocidad de recuperación automática del jugador mientras la monta."
+    },
+    "Blessing of the Flower Spirit": {
+      "name": "Bendición del espíritu floral",
+      "description": "Al activarla, unas flores reconfortantes restauran un 75% de la Salud del jugador. Mientras esté en la base, aumenta en +1 el nivel de aptitud de Plantación de todos los demás Pals de la base. (No es acumulable)"
+    },
+    "Blizzard Crash": {
+      "name": "Impacto de ventisca",
+      "description": "Se puede montar. Mientras la montas, asesta golpes demoledores con un martillo forjado en hielo."
+    },
+    "Brandish Blade": {
+      "name": "Blandir la hoja",
+      "description": "Al activarla, ataca al enemigo objetivo con un potente Iaigiri."
+    },
+    "Brave Sailor": {
+      "name": "Marinero valiente",
+      "description": "Mientras esté en el equipo, los Pals de Fuego sueltan un 40% más de objetos al ser derrotados."
+    },
+    "Burning Future": {
+      "name": "Futuro ardiente",
+      "description": "Mientras esté en el equipo, cuando el jugador ataca a un enemigo afectado por Quemadura, el enemigo explota e inflige daño equivalente a un porcentaje del daño de ataque del jugador a los enemigos cercanos. (No es acumulable.)"
+    },
+    "Caffeine Inoculation": {
+      "name": "Inoculación de cafeína",
+      "description": "Al activarla, Depresso se bebe una bebida energética entera y aumenta su Velocidad de movimiento y su Velocidad de trabajo un 100%. A veces suelta Glándula de veneno cuando se asigna al Rancho."
+    },
+    "Candy Pop": {
+      "name": "Estallido de caramelo",
+      "description": "A veces suelta Algodón de azúcar cuando se asigna al Rancho. Mientras esté en la base, reduce en un -10% la velocidad a la que baja el hambre de los Pals de la base. (No es acumulable)"
+    },
+    "Cat Helper": {
+      "name": "Gato ayudante",
+      "description": "Mientras esté en el equipo, Cattiva ayuda a cargar el equipaje y aumenta la capacidad máxima de carga del jugador en 100. (No es acumulable.)"
+    },
+    "Celestial Darkness": {
+      "name": "Oscuridad celestial",
+      "description": "Se puede montar como montura voladora. Potencia los ataques Neutrales y Oscuros mientras la montas."
+    },
+    "Charging Shell": {
+      "name": "Caparazón cargado",
+      "description": "Mientras esté en el equipo, los ataques del jugador infligen Electrocución. (No es acumulable)"
+    },
+    "Charming Fish": {
+      "name": "Pez encantador",
+      "description": "Se puede montar para desplazarse por el agua. Mientras esté en el equipo, facilita pescar Pals con buen talento. (No es acumulable)"
+    },
+    "Charming Spore": {
+      "name": "Espora encantadora",
+      "description": "Mientras esté en la base, aumenta el nivel de aptitud de Producción de medicinas de todos los demás Pals de la base. (No es acumulable)"
+    },
+    "Cheery Rifle": {
+      "name": "Rifle alegre",
+      "description": "Al activarla, Tanzee dispara sin piedad un rifle de asalto contra los enemigos cercanos durante un tiempo limitado."
+    },
+    "Chilled Whale Cruiser": {
+      "name": "Ballena crucero gélida",
+      "description": "Se puede montar. Mientras combate contigo, el minijuego de pesca empieza con el medidor de captura más alto de lo normal. Además, el medidor de captura se llena más rápido cuando la barra está alineada."
+    },
+    "Chillswitch": {
+      "name": "Cambio gélido",
+      "description": "Mientras esté en el equipo, cuando el jugador ataca a un enemigo afectado por Electrocución, el enemigo descarga electricidad e inflige daño equivalente a un porcentaje del daño de ataque del jugador a los enemigos cercanos. (No es acumulable.)"
+    },
+    "Chipper Chimp Gunfire": {
+      "name": "Fuego de simio animoso",
+      "description": "Al activarla, Tanzee Ignis dispara sin piedad un rifle de asalto de Fuego contra los enemigos cercanos durante un tiempo limitado."
+    },
+    "Cold Bomb": {
+      "name": "Bomba gélida",
+      "description": "Al activarla, equipa a Jolthog Cryst al jugador para lanzarlo contra un enemigo y provocar una explosión de Hielo al impactar."
+    },
+    "Cool Body": {
+      "name": "Cuerpo fresco",
+      "description": "Se puede montar. Mantiene fresco al jinete en entornos calurosos."
+    },
+    "Corruption Laser": {
+      "name": "Láser de corrupción",
+      "description": "Se puede montar. Al activarla, Dualith dispara un potente láser Oscuro desde su mano derecha."
+    },
+    "Cozy Whale Cruiser": {
+      "name": "Ballena crucero acogedora",
+      "description": "Se puede montar. Mientras combate contigo, el minijuego de pesca empieza con el medidor de captura más alto de lo normal. Además, el medidor de captura se llena más rápido cuando la barra está alineada."
+    },
+    "Crackle Booster": {
+      "name": "Potenciador chispeante",
+      "description": "Mientras esté en la base, aumenta el nivel de aptitud de Generación de electricidad de todos los demás Pals de la base. (No es acumulable)"
+    },
+    "Dark Gleam Strike": {
+      "name": "Golpe de brillo oscuro",
+      "description": "Al activarla, ataca al enemigo objetivo con una potente Garra saltarina."
+    },
+    "Dark Knight of the Abyss": {
+      "name": "Caballero oscuro del abismo",
+      "description": "Se puede montar. Permite doble salto mientras la montas."
+    },
+    "Dark Knowledge": {
+      "name": "Conocimiento oscuro",
+      "description": "Mientras esté en el equipo, aumenta el Ataque de los Pals Oscuros un 15%. (No es acumulable)"
+    },
+    "Dark-Nester": {
+      "name": "Anidador oscuro",
+      "description": "Se puede montar como montura voladora. Mientras esté en el equipo, aumenta el daño del jugador y de sus Pals contra enemigos afectados por Ceguera. (No es acumulable)"
+    },
+    "Darkclaw Hunter": {
+      "name": "Cazador de garra oscura",
+      "description": "Al activarla, ataca al enemigo objetivo con una potente Garra infernal."
+    },
+    "Darkflame Lion": {
+      "name": "León de llama oscura",
+      "description": "Se puede montar. Mientras combate contigo, los Pals Neutrales sueltan más objetos al ser derrotados."
+    },
+    "Death-Cheating Feline": {
+      "name": "Felino que engaña a la muerte",
+      "description": "Mientras esté en el equipo, aumenta la tasa de captura cuando se obtiene bonificación por ataque por la espalda. (No es acumulable)"
+    },
+    "Desert Empress": {
+      "name": "Emperatriz del desierto",
+      "description": "Mientras esté en la base, mejora la velocidad de trabajo de Anubis. Aumenta la eficiencia si Sekhmet también está trabajando en un Banco de trabajo, un Taller u otras instalaciones relacionadas. (No es acumulable)"
+    },
+    "Dig Here!": {
+      "name": "¡Cava aquí!",
+      "description": "A veces desentierra objetos del suelo cuando se asigna al rancho."
+    },
+    "Dig, Dog! Dig!": {
+      "name": "¡Cava, perrito, cava!",
+      "description": "Al activarla, usa su fino olfato para detectar Cromita cercana. Mientras combate contigo, se obtiene una gran cantidad de Cromita."
+    },
+    "Direhowl Rider": {
+      "name": "Jinete de Direhowl",
+      "description": "Se puede montar. Se desplaza algo más rápido que la mayoría de monturas."
+    },
+    "Dragon Hunter": {
+      "name": "Cazador de dragones",
+      "description": "Mientras combate contigo, los Pals Dragón sueltan más objetos al ser derrotados."
+    },
+    "Dragon Kaiser": {
+      "name": "Káiser dragón",
+      "description": "Se puede montar. Potencia los ataques de Dragón mientras la montas."
+    },
+    "Dream Chaser": {
+      "name": "Cazador de sueños",
+      "description": "Mientras esté en el equipo, aparece junto al jugador. Ataca a los enemigos hostiles con balas de magia Oscura. Estas balas no reducen la Salud del objetivo por debajo de 1."
+    },
+    "Drill Crusher": {
+      "name": "Taladro triturador",
+      "description": "Al activarla, entra en estado de Giro de caparazón. Sigue al jugador mientras gira y aumenta la eficiencia de minado de mineral un 800%."
+    },
+    "Echo Chamber": {
+      "name": "Cámara de eco",
+      "description": "Mientras esté en el equipo, Finsider ayuda a cargar el equipaje y reduce el peso de las armas en el inventario del jugador."
+    },
+    "Egg Layer": {
+      "name": "Ponedora de huevos",
+      "description": "A veces pone un Huevo cuando se asigna al rancho."
+    },
+    "Eggbomb Launcher": {
+      "name": "Lanzahuevos explosivo",
+      "description": "Al activarla, se equipa al jugador y se transforma en un lanzahuevos."
+    },
+    "Electro Hunter": {
+      "name": "Cazador eléctrico",
+      "description": "Mientras combate contigo, los Pals Eléctricos sueltan más objetos al ser derrotados."
+    },
+    "Electro-Massage Incubation": {
+      "name": "Incubación con electromasaje",
+      "description": "Se puede montar como montura voladora. Mientras esté en la base, reduce el tiempo de incubación de los huevos. (No es acumulable)"
+    },
+    "Ember Chamber": {
+      "name": "Cámara de brasas",
+      "description": "Mientras esté en el equipo, Finsider Ignis ayuda a cargar el equipaje y reduce el peso de las armas en el inventario del jugador. También aumenta el Ataque de los Pals de Fuego."
+    },
+    "Entangling Tongue": {
+      "name": "Lengua enredadora",
+      "description": "Mientras esté en el equipo, cuando el jugador hace una voltereta o un paso de esquiva, Carnibora crea un torbellino que inflige daño de Planta a los enemigos que toca. (No es acumulable)"
+    },
+    "Ferocious Thunder Dragon": {
+      "name": "Dragón del trueno feroz",
+      "description": "Mientras esté en el equipo, cada bala que impacta a un enemigo aumenta el Ataque y la Defensa del Pal que combate a tu lado un 1% durante 5 segundos. Este efecto se acumula hasta 30 veces. (No es acumulable)"
+    },
+    "Fire Tackle": {
+      "name": "Embestida de fuego",
+      "description": "Al activarla, Fuack Ignis surfea sobre el fuego hacia un enemigo y lo embiste."
+    },
+    "Fish Fillet": {
+      "name": "Filete de pescado",
+      "description": "Al activarla, Skutlass se convierte en la katana del jugador (Ataque: 2,600). Si no vuelve pronto a su forma normal, Skutlass quedará incapacitado. También quedará incapacitado si se usa Iaigiri."
+    },
+    "Flame Lantern": {
+      "name": "Linterna flamígera",
+      "description": "Se puede montar para desplazarse rápido por el agua. Mientras combate contigo, se reduce el tiempo que tardan los Pals en picar durante la pesca nocturna."
+    },
+    "Flame Wing": {
+      "name": "Ala flamígera",
+      "description": "Se puede montar como montura voladora. Mientras la montas, cambia el tipo de ataque del jugador a Fuego y aumenta el Ataque un 5%."
+    },
+    "Flameclaw Hunter": {
+      "name": "Cazador de garra llameante",
+      "description": "Al activarla, ataca al enemigo objetivo con una potente Garra infernal."
+    },
+    "Floral Boost": {
+      "name": "Impulso floral",
+      "description": "Mientras esté en la base, Lullu llena la granja de buen ánimo y aumenta la velocidad de crecimiento de los cultivos."
+    },
+    "Flower Dance": {
+      "name": "Danza floral",
+      "description": "Mientras esté en el equipo, alarga el periodo de invulnerabilidad de las volteretas y los pasos de esquiva. (No es acumulable)"
+    },
+    "Fluffy": {
+      "name": "Esponjoso",
+      "description": "Mientras esté en el equipo, las estadísticas de Sweepa aumentan."
+    },
+    "Fluffy Flutterer": {
+      "name": "Aleteador esponjoso",
+      "description": "Mientras esté en el equipo, aumenta la tasa de captura de Pals afectados por Congelación. (No es acumulable)"
+    },
+    "Fluffy Shield": {
+      "name": "Escudo esponjoso",
+      "description": "Al activarla, se equipa al jugador y se convierte en un escudo. A veces suelta Lana cuando se asigna al Rancho."
+    },
+    "Fluffy Wool": {
+      "name": "Lana esponjosa",
+      "description": "Mientras esté en el equipo, aumenta el Ataque de los Pals Neutrales. A veces suelta Lana cuando se asigna al rancho."
+    },
+    "Flying Trapeze": {
+      "name": "Trapecio volador",
+      "description": "Mientras esté en el equipo, modifica el rendimiento del planeador equipado. Permite ascender lentamente mientras planeas."
+    },
+    "Fogged Mind": {
+      "name": "Mente nublada",
+      "description": "Se puede montar. Cambia el tipo de ataque del jugador a Oscuro mientras la montas."
+    },
+    "Forest Laser": {
+      "name": "Láser del bosque",
+      "description": "Se puede montar. Al activarla, Dualith dispara un potente láser de Planta desde su mano derecha."
+    },
+    "Fortified Shell": {
+      "name": "Caparazón fortificado",
+      "description": "Mientras combate contigo, aumenta la Defensa del jugador y reduce el daño recibido de Fuego."
+    },
+    "Fragrant Dragon": {
+      "name": "Dragón fragante",
+      "description": "Se puede montar. Potencia los ataques de Planta mientras la montas."
+    },
+    "Fried Killamari": {
+      "name": "Killamari frito",
+      "description": "Mientras esté en el equipo, modifica el rendimiento del planeador equipado. Permite flotar suavemente durante más tiempo mientras planeas."
+    },
+    "Fried Squid": {
+      "name": "Calamar frito",
+      "description": "Mientras esté en el equipo, modifica el rendimiento del planeador equipado. Permite flotar suavemente durante más tiempo mientras planeas."
+    },
+    "Friend of Earth": {
+      "name": "Amigo de la tierra",
+      "description": "Mientras esté en el equipo, aumenta la Defensa del jugador mientras esprinta. (No es acumulable)"
+    },
+    "Frozen Gleam Strike": {
+      "name": "Golpe de brillo gélido",
+      "description": "Al activarla, ataca al enemigo objetivo con Garra de nieve. Cuando este Pal usa Garra de nieve, aplica un multiplicador de daño de 1.1x. Mientras esté en el equipo, aumenta la velocidad de ataque de las armas cuerpo a cuerpo del jugador un 15%"
+    },
+    "Full-Power Gorilla Mode": {
+      "name": "Modo gorila a plena potencia",
+      "description": "Al activarla, desata una furia primitiva que aumenta el Ataque de Gorirat un 75% durante un tiempo limitado."
+    },
+    "Fuzzy Fairy": {
+      "name": "Hada peluda",
+      "description": "Mientras esté en el equipo, aumenta la tasa de captura de Pals afectados por Cubierto de hiedra. (No es acumulable)"
+    },
+    "Gaia Crusher": {
+      "name": "Triturador de Gaia",
+      "description": "Se puede montar. Mejora la eficiencia al talar árboles y minar mineral mientras la montas."
+    },
+    "Galeclaw Glider": {
+      "name": "Planeador Galeclaw",
+      "description": "Mientras esté en el equipo, modifica el rendimiento del planeador equipado. Permite planear a alta velocidad y disparar con la mano derecha."
+    },
+    "Glaring Cat's Eye": {
+      "name": "Ojo de gato fulminante",
+      "description": "Se puede montar. Mientras esté en el equipo, al recoger un Huevo de Pal hay un 50% de probabilidad de recibir uno extra. (No es acumulable)"
+    },
+    "Glorious Mist": {
+      "name": "Niebla gloriosa",
+      "description": "Se puede montar. Mientras esté en el equipo, los ataques del jugador infligen Empapado. (No es acumulable)"
+    },
+    "Goddess of the Tranquil Light": {
+      "name": "Diosa de la luz serena",
+      "description": "Al activarla, la gracia reconfortante de la reina restaura una gran cantidad de Salud del jugador."
+    },
+    "Gold Digger": {
+      "name": "Buscadora de oro",
+      "description": "A veces desentierra Monedas de oro cuando se asigna al rancho."
+    },
+    "Golden Harvest": {
+      "name": "Cosecha dorada",
+      "description": "Mientras esté en el equipo, aumenta un +100% la cantidad de Monedas de oro que sueltan los enemigos. A veces suelta Aceite de Pal de alta calidad cuando se asigna al Rancho, con una pequeña probabilidad de soltar Monedas de oro. (No es acumulable)"
+    },
+    "Grass Dragon Affection": {
+      "name": "Afecto del dragón de planta",
+      "description": "Se puede montar como montura voladora. Mientras vuela, aumenta la velocidad de movimiento. Potencia los ataques de Planta mientras la montas."
+    },
+    "Grass Weaver": {
+      "name": "Tejedor de hierba",
+      "description": "Mientras esté en el equipo, aumenta el Ataque de los Pals de Planta. Mientras esté en la base, aumenta la eficiencia de trabajo en el Banco de armas, la Línea de montaje de armas y otras instalaciones relacionadas."
+    },
+    "Grassland Speedster": {
+      "name": "Velocista de la pradera",
+      "description": "Mientras combate contigo, aumenta la velocidad de movimiento del jugador y cambia su tipo de ataque a Planta."
+    },
+    "Grave Robber": {
+      "name": "Saqueadora de tumbas",
+      "description": "A veces desentierra Huesos cuando se asigna al rancho."
+    },
+    "Grenadier Panda": {
+      "name": "Panda granadero",
+      "description": "Se puede montar. Permite disparar un lanzagranadas a gran velocidad mientras la montas."
+    },
+    "Grimoire Collector": {
+      "name": "Coleccionista de grimorios",
+      "description": "Mientras esté en el equipo, los Pals Neutrales sueltan más objetos al ser derrotados. Además, hay un 10% de probabilidad de no consumir la Esfera Pal al lanzarla. (No es acumulable)"
+    },
+    "Grinning Death": {
+      "name": "Muerte sonriente",
+      "description": "Mientras esté en el equipo, atacar a enemigos afectados por Veneno reduce su Ataque. (No es acumulable)"
+    },
+    "Grounded Archer": {
+      "name": "Arquero arraigado",
+      "description": "Mientras esté en el equipo, aumenta el daño de arco del jugador."
+    },
+    "Guardian of the Desert": {
+      "name": "Guardián del desierto",
+      "description": "Mientras combate contigo, aplica daño de Tierra a los ataques del jugador. A veces esquiva ataques con un quiebro lateral a gran velocidad durante el combate."
+    },
+    "Guardian of the Forest": {
+      "name": "Guardián del bosque",
+      "description": "Se puede montar. Permite hacer un doble salto mientras la montas y aumenta la eficiencia de tala un 220%."
+    },
+    "Guardian of the Golden Forest": {
+      "name": "Guardián del bosque dorado",
+      "description": "Se puede montar. Permite hacer un doble salto mientras la montas. Aumenta la eficiencia al talar árboles."
+    },
+    "Guardian of the Snowy Mountain": {
+      "name": "Guardián de la montaña nevada",
+      "description": "Se puede montar. Mientras esté en el equipo, Wumpo ayuda a cargar el equipaje y aumenta la capacidad máxima de carga del jugador."
+    },
+    "Guardian of the South": {
+      "name": "Guardián del sur",
+      "description": "Se puede montar. Mientras esté en el equipo, Wumpo Botan ayuda a cargar el equipaje y aumenta la capacidad máxima de carga del jugador."
+    },
+    "Happy Clover": {
+      "name": "Trébol de la suerte",
+      "description": "Mientras esté en la base, aumenta en +1 el nivel de aptitud de Recolección de todos los demás Pals de la base. (No es acumulable)"
+    },
+    "Hard Armor": {
+      "name": "Armadura resistente",
+      "description": "Mientras combate contigo, aumenta la Defensa del jugador y reduce el daño recibido de Fuego."
+    },
+    "Hard Head": {
+      "name": "Cabeza dura",
+      "description": "Se puede montar. Aumenta la eficiencia al destruir Piedra un 500%."
+    },
+    "Harvest Goddess": {
+      "name": "Diosa de la cosecha",
+      "description": "Al activarla, la gracia reconfortante de la reina restaura una gran cantidad de Salud del jugador."
+    },
+    "Hawk Eye": {
+      "name": "Ojo de halcón",
+      "description": "Mientras combate contigo, permite infligir más daño a los puntos débiles."
+    },
+    "Heart Drain": {
+      "name": "Drenaje de corazón",
+      "description": "Mientras combate contigo, otorga al jugador y a Lovander un efecto de robo de vida que restaura como Salud un 5% del daño infligido."
+    },
+    "Hellflame Lion": {
+      "name": "León de llama infernal",
+      "description": "Se puede montar. Mientras combate contigo, los Pals de Planta sueltan más objetos al ser derrotados."
+    },
+    "Helper Bunny": {
+      "name": "Conejita ayudante",
+      "description": "Mientras esté en el equipo, aparece junto al jugador. Recoge automáticamente los objetos cercanos."
+    },
+    "Herbil Pulse": {
+      "name": "Pulso de Herbil",
+      "description": "Mientras esté en el equipo, Herbil usa sus poderes curativos para restaurar un 30% de la Salud máxima del jugador cuando queda incapacitado."
+    },
+    "Holy Knight of the Firmament": {
+      "name": "Caballero sagrado del firmamento",
+      "description": "Se puede montar. Permite triple salto mientras la montas."
+    },
+    "Homeward Prayer": {
+      "name": "Plegaria de regreso",
+      "description": "Al activarla, te traslada a la base más cercana. No se puede usar dentro de mazmorras ni sitios similares."
+    },
+    "Hug Me Please": {
+      "name": "Abrázame, por favor",
+      "description": "Mientras esté en el equipo, aumenta el daño del jugador y de sus Pals contra enemigos afectados por Cubierto de hiedra. (No es acumulable)"
+    },
+    "Hug You So Much": {
+      "name": "Te abrazo muchísimo",
+      "description": "Mientras esté en el equipo, los ataques del jugador infligen Cubierto de hiedra 2. (No es acumulable)"
+    },
+    "Huggy Fire": {
+      "name": "Abrazo de fuego",
+      "description": "Al activarla, se equipa al jugador y se transforma en un lanzallamas."
+    },
+    "Huggy Frost": {
+      "name": "Abrazo helado",
+      "description": "Al activarla, se equipa al jugador y ataca con aire gélido."
+    },
+    "Hungry Missile": {
+      "name": "Misil hambriento",
+      "description": "Se puede montar. Permite disparar un lanzamisiles a gran velocidad mientras la montas."
+    },
+    "Ice Crusher": {
+      "name": "Triturador de hielo",
+      "description": "Se puede montar. Mejora la eficiencia al talar árboles y minar mineral mientras la montas."
+    },
+    "Ice Steed": {
+      "name": "Corcel de hielo",
+      "description": "Se puede montar como montura voladora. Cambia el tipo de ataque del jugador a Hielo y potencia los ataques de Hielo mientras la montas."
+    },
+    "Ice-Loving Beast": {
+      "name": "Bestia amante del hielo",
+      "description": "Se puede montar. Mientras esté en el equipo, reduce el peso del mineral un 35%. (No es acumulable)"
+    },
+    "Icewing Dance": {
+      "name": "Danza de alas heladas",
+      "description": "Se puede montar para desplazarse por el agua. Cambia el tipo de ataque del jugador a Hielo mientras la montas."
+    },
+    "Icy Maw": {
+      "name": "Fauces heladas",
+      "description": "Mientras esté en el equipo, Munchill enfría los ingredientes dentro de su boca y hace que la comida de tu inventario se eche a perder más despacio."
+    },
+    "Invisible Eye": {
+      "name": "Ojo invisible",
+      "description": "Mientras esté en el equipo, reduce la probabilidad de ser detectado por los enemigos. (No es acumulable)"
+    },
+    "Jelliette Drop": {
+      "name": "Botín de Jelliette",
+      "description": "Mientras esté en el equipo, aumenta un 55% los objetos obtenidos al pescar. Mientras Jelliette y Jellroy estén en tu base, la velocidad de riego de Jelliette aumenta un 50%. (No es acumulable)"
+    },
+    "Jellroy Drop": {
+      "name": "Botín de Jellroy",
+      "description": "Mientras esté en el equipo, aumenta un 55% los objetos obtenidos al desguazar. Mientras Jelliette y Jellroy estén en tu base, la velocidad de riego de Jellroy aumenta un 50%. (No es acumulable)"
+    },
+    "Jolt Bomb": {
+      "name": "Bomba de descarga",
+      "description": "Al activarla, equipa a Jolthog al jugador para lanzarlo contra un enemigo y provocar una explosión Eléctrica al impactar."
+    },
+    "Jolt Glider": {
+      "name": "Planeador de descarga",
+      "description": "Mientras esté en el equipo, modifica el rendimiento del planeador equipado. Evita el daño por caída y alarga la duración del planeo a alta velocidad."
+    },
+    "Jumping Force": {
+      "name": "Fuerza de salto",
+      "description": "Se puede montar. Permite hacer un doble salto mientras la montas. La Velocidad de movimiento de este Pal aumenta un 5% por cada Pal Eléctrico de tu equipo. (Excluyendo a Rayhound)"
+    },
+    "King of Fluff": {
+      "name": "Rey de la pelusa",
+      "description": "Se puede montar. Mientras combate contigo, sus estadísticas aumentan cuantos más Swee haya en tu equipo."
+    },
+    "King of Muscles": {
+      "name": "Rey de los músculos",
+      "description": "Se puede montar. Mientras esté en el equipo, Kingpaca ayuda a cargar el equipaje y aumenta la capacidad máxima de carga del jugador."
+    },
+    "Kuudere": {
+      "name": "Kuudere",
+      "description": "Al activarla, detecta la ubicación de las Efigies de Pal cercanas."
+    },
+    "Lady of Dark Lightning": {
+      "name": "Dama del relámpago oscuro",
+      "description": "Mientras esté en el equipo, aparece junto al jugador. Remata los ataques del jugador con rayos oscuros."
+    },
+    "Lady of Lightning": {
+      "name": "Dama del relámpago",
+      "description": "Mientras esté en el equipo, aparece junto al jugador. Remata los ataques del jugador con rayos."
+    },
+    "Lantern Enchantment": {
+      "name": "Encantamiento de linterna",
+      "description": "Mientras esté en el equipo, las flechas del jugador explotan al contacto e infligen daño adicional equivalente a un porcentaje de su daño de ataque. (No es acumulable)"
+    },
+    "Lava Spout": {
+      "name": "Chorro de lava",
+      "description": "Mientras esté en el equipo, aumenta el Ataque de los Pals de Fuego. A veces suelta Órgano de llama cuando se asigna al rancho."
+    },
+    "Leap Stance": {
+      "name": "Postura de salto",
+      "description": "Al activarla, Croajiro hincha su abdomen y canaliza su lealtad para acumular energía. Subirse encima impulsa al jugador muy alto por el aire. Mientras está en el aire antes de aterrizar, el Ataque del jugador aumenta un 50%."
+    },
+    "Liberated Pterosaur": {
+      "name": "Pterosaurio liberado",
+      "description": "Se puede montar como montura voladora. El Ataque y la Velocidad de movimiento de este Pal aumentan por cada otro Pal Dragón u Oscuro de tu equipo."
+    },
+    "Life Steal": {
+      "name": "Robo de vida",
+      "description": "Mientras combate contigo, otorga al jugador y a Felbat el efecto de robo de vida, que absorbe parte del daño recibido y restaura Salud."
+    },
+    "Lifmunk Recoil": {
+      "name": "Retroceso de Lifmunk",
+      "description": "Al activarla, salta sobre la cabeza del jugador y usa un subfusil para rematar sus ataques."
+    },
+    "Logging Assistance": {
+      "name": "Asistencia de tala",
+      "description": "Mientras esté en el equipo, mejora la eficiencia de tala un 30% y reduce el peso de todos los tipos de madera un 40%. (No es acumulable)"
+    },
+    "Long-Sleeved Hurray": {
+      "name": "Hurra de mangas largas",
+      "description": "Mientras esté en el equipo, reduce el enfriamiento de las habilidades de compañero de los demás Pals del equipo. (No es acumulable)"
+    },
+    "Lord Fox": {
+      "name": "Señor zorro",
+      "description": "Mientras combate contigo, cambia el tipo de ataque del jugador a Fuego."
+    },
+    "Love's First Blossom": {
+      "name": "Primer brote del amor",
+      "description": "Se puede montar. Mientras esté en el equipo, los Huevos de Pal que recojas tienen un 35% de probabilidad de convertirse en Huevo de Pal Alfa. (No es acumulable)"
+    },
+    "Magical Twin Powers": {
+      "name": "Poderes gemelos mágicos",
+      "description": "Mientras esté en la base, aumenta en +1 el nivel de aptitud de Riego de todos los demás Pals de la base. (No es acumulable)"
+    },
+    "Magma Kaiser": {
+      "name": "Káiser magma",
+      "description": "Se puede montar. Potencia los ataques de Fuego mientras la montas."
+    },
+    "Magma Overload": {
+      "name": "Sobrecarga magmática",
+      "description": "Se puede montar. El Ataque de este Pal aumenta por cada otro Pal de Fuego o de Tierra de tu equipo."
+    },
+    "Magma Tears": {
+      "name": "Lágrimas de magma",
+      "description": "Mientras esté en el equipo, restaura un 0.1% de Salud por segundo al jugador y a los Pals del equipo fuera de combate. (No es acumulable) A veces produce Órgano de llama cuando se asigna al Rancho."
+    },
+    "Masonry Archelon": {
+      "name": "Arquelón albañil",
+      "description": "Se puede montar. Mientras esté en la base, aumenta en +1 el nivel de aptitud de Minería de todos los demás Pals de la base. (No es acumulable)"
+    },
+    "Masquerade Dance": {
+      "name": "Danza de máscaras",
+      "description": "Mientras esté en el equipo, los Pals del equipo ganan más puntos de experiencia."
+    },
+    "Master Night Angler": {
+      "name": "Maestro pescador nocturno",
+      "description": "Se puede montar para desplazarse rápido por el agua. Mientras combate contigo, se reduce el tiempo que tardan los Pals en picar durante la pesca nocturna."
+    },
+    "Master of Unlocking": {
+      "name": "Maestro del cerrojo",
+      "description": "Mientras combate contigo, Mimog puede abrir cofres del tesoro sin usar llave."
+    },
+    "Messenger of Death": {
+      "name": "Mensajero de la muerte",
+      "description": "Se puede montar. Mientras esté en el equipo, el enfriamiento de las habilidades activas de todos los Pals del equipo se reduce un 30% cada vez que derrotas a un enemigo. (No es acumulable)"
+    },
+    "Meteor Mania": {
+      "name": "Fiebre meteórica",
+      "description": "Mientras esté en el equipo, aumenta el daño infligido a las vetas de mineral y es más fácil obtener Fragmento de meteorito."
+    },
+    "Meteor Wings": {
+      "name": "Alas meteóricas",
+      "description": "Se puede montar como montura voladora. Mientras esté en el equipo, el daño de las habilidades de compañero de los Pals que empuñan armas aumenta un 20%. (No es acumulable"
+    },
+    "Milk Maker": {
+      "name": "Productora de leche",
+      "description": "A veces produce Leche cuando se asigna al Rancho."
+    },
+    "Mining Assistance": {
+      "name": "Asistencia minera",
+      "description": "Mientras esté en el equipo, mejora la eficiencia de minado del jugador un 30% y reduce el peso de la Piedra un 80%. (No es acumulable)"
+    },
+    "Missile Party": {
+      "name": "Fiesta de misiles",
+      "description": "Se puede montar. Permite disparar un lanzamisiles a gran velocidad mientras la montas."
+    },
+    "Modified DNA": {
+      "name": "ADN modificado",
+      "description": "Se puede montar como montura voladora. Mientras vuela, aumenta la velocidad de movimiento. Potencia los ataques Oscuros mientras la montas."
+    },
+    "Mysterious Scales": {
+      "name": "Escamas misteriosas",
+      "description": "Al activarla, ataca al enemigo objetivo con Niebla venenosa. Mientras esté en la base, aumenta en +1 el nivel de aptitud de Agricultura de todos los demás Pals de la base. (No es acumulable)"
+    },
+    "Night Dancer": {
+      "name": "Bailarín nocturno",
+      "description": "Se puede montar. Aumenta la velocidad de movimiento mientras la montas de noche."
+    },
+    "Nightmare Iris": {
+      "name": "Iris de pesadilla",
+      "description": "Al activarla, ataca al enemigo objetivo con un potente Rayo de pesadilla."
+    },
+    "Nightmare Stare": {
+      "name": "Mirada de pesadilla",
+      "description": "Al activarla, ataca al enemigo objetivo con una potente Flor de pesadilla."
+    },
+    "Ore-Loving Beast": {
+      "name": "Bestia amante del mineral",
+      "description": "Se puede montar. Mientras esté en el equipo, reduce el peso de todos los tipos de mineral un 30%. (No es acumulable)"
+    },
+    "Overaffectionate": {
+      "name": "Demasiado cariñosa",
+      "description": "Se puede montar. Mientras esté en el equipo, los Huevos de Pal que recojas tienen un (45~55)% de probabilidad de convertirse en Huevo de Pal Alfa. (No es acumulable)"
+    },
+    "Pacapaca Wool": {
+      "name": "Lana Pacapaca",
+      "description": "Se puede montar. Mientras esté en el equipo, aumenta la Defensa y la Velocidad de movimiento de Kingpaca. A veces suelta Lana cuando se asigna al rancho."
+    },
+    "Peacock Pounce": {
+      "name": "Salto del pavo real",
+      "description": "Mientras combate contigo, el aura gélida de Frostplume agudiza tu concentración y mejora la velocidad de recarga."
+    },
+    "Pengullet Launcher": {
+      "name": "Lanzador Pengullet",
+      "description": "Al activarla, el jugador equipa un Lanzacohetes y dispara a Pengullet como munición. Pengullet explota al contacto y queda incapacitado."
+    },
+    "Pengullet Lux Launcher": {
+      "name": "Lanzador Pengullet Lux",
+      "description": "Al activarla, el jugador equipa un Lanzacohetes y dispara a Pengullet Lux como munición. Pengullet Lux explota al contacto y queda incapacitado."
+    },
+    "Phantasmal Arcana": {
+      "name": "Arcano fantasmal",
+      "description": "Mientras esté en el equipo, cuando el jugador ataca a un enemigo afectado por Quemadura, el enemigo genera llamas a su alrededor que infligen daño continuo equivalente al 15% del daño de ataque del jugador a los enemigos que entren en contacto con ellas. (No es acumulable.)"
+    },
+    "Plasma Dash": {
+      "name": "Impulso de plasma",
+      "description": "Se puede montar. También permite impulsarse en el aire y moverse a gran velocidad."
+    },
+    "Power Stone": {
+      "name": "Piedra de poder",
+      "description": "Mientras esté en el equipo, aumenta el daño del jugador y de sus Pals contra enemigos afectados por Embarrado. (No es acumulable)"
+    },
+    "Prayer for Abundant Harvest": {
+      "name": "Plegaria por una cosecha abundante",
+      "description": "Mientras esté en la base, las plegarias de Prunelia bendicen los cultivos y aumentan su cosecha."
+    },
+    "Princess Gaze": {
+      "name": "Mirada de princesa",
+      "description": "Mientras esté en el equipo, aumenta el Ataque de los Pals de Planta."
+    },
+    "Purification of Gaia": {
+      "name": "Purificación de Gaia",
+      "description": "Mientras combate contigo, los Pals de Tierra sueltan más objetos al ser derrotados."
+    },
+    "Queen Bee Command": {
+      "name": "Mando de abeja reina",
+      "description": "Mientras combate contigo, sus estadísticas aumentan cuantos más Beegarde haya en tu equipo."
+    },
+    "Rampant Spores": {
+      "name": "Esporas desbocadas",
+      "description": "Se puede montar. A veces suelta Champiñón o Champiñón de caverna cuando se asigna al Rancho."
+    },
+    "Red Hare": {
+      "name": "Liebre roja",
+      "description": "Se puede montar. Cambia el tipo de ataque del jugador a Fuego mientras la montas."
+    },
+    "Resonant Guardian": {
+      "name": "Guardián resonante",
+      "description": "Se puede montar como montura voladora. Solo se puede invocar 1 por base. Mientras esté en la base, patrulla el cielo sin descanso y bombardea a los intrusos desde las alturas."
+    },
+    "Resurrection": {
+      "name": "Resurrección",
+      "description": "Mientras combate contigo, cuando Gildra queda incapacitada, revive con su hambre reducida a 0."
+    },
+    "Rider of the Snowy Mountain": {
+      "name": "Jinete de la montaña nevada",
+      "description": "Se puede montar. Corre más rápido sobre la nieve. Puede deslizarse rápido por las pendientes."
+    },
+    "Roiling Spores": {
+      "name": "Esporas turbulentas",
+      "description": "Se puede montar. Mientras esté en la base, sus esporas misteriosas reducen un 10% la velocidad a la que baja la cordura de los aliados de la base."
+    },
+    "Rollin' Full Oil": {
+      "name": "Rodillo de aceite",
+      "description": "Mientras esté en el equipo, Kikit ayuda a cargar el equipaje y reduce el peso del petróleo crudo en el inventario del jugador."
+    },
+    "Sacred Barrier": {
+      "name": "Barrera sagrada",
+      "description": "Se puede montar. Mientras la montas, genera una barrera que bloquea todos los ataques. Permite triple salto mientras la montas."
+    },
+    "Samba Step": {
+      "name": "Paso de samba",
+      "description": "Se puede montar. Corre más rápido sobre la hierba."
+    },
+    "Sand Sprint": {
+      "name": "Esprint de arena",
+      "description": "Se puede montar. Corre más rápido sobre la arena."
+    },
+    "Sand Swimmer": {
+      "name": "Nadador de arena",
+      "description": "Se puede montar. Mientras esté en el equipo, Surfent Terra ayuda a cargar el equipaje y reduce el peso de los minerales en el inventario del jugador."
+    },
+    "Sandstorm's Blessing": {
+      "name": "Bendición de la tormenta de arena",
+      "description": "Se puede montar. Cambia el tipo de ataque del jugador a Tierra mientras la montas."
+    },
+    "Scorching Predator": {
+      "name": "Depredador abrasador",
+      "description": "Se puede montar como montura voladora. Mientras combate contigo, los Pals de Hielo sueltan más objetos al ser derrotados."
+    },
+    "Scorpion Sonar": {
+      "name": "Sonar de escorpión",
+      "description": "Al activarla, puede analizar las partículas del aire y encontrar la salida de una mazmorra."
+    },
+    "Seared Fish Fillet": {
+      "name": "Filete de pescado chamuscado",
+      "description": "Al activarla, Skutlass Ignis se convierte en la katana del jugador (Ataque: 2,900). Si no vuelve pronto a su forma normal, Skutlass Ignis quedará incapacitado. También quedará incapacitado si se usa Iagiri."
+    },
+    "Selfless Discipline": {
+      "name": "Disciplina abnegada",
+      "description": "El Ataque y la Defensa de este Pal aumentan un 2% por cada otro Pal de Planta de tu equipo."
+    },
+    "Sentinel of the Great Sea": {
+      "name": "Centinela del Gran Mar",
+      "description": "Mientras combate contigo, remata tus ataques con estocadas de lanza. Se puede montar para desplazarse rápido por el agua. Mientras la montas, puede dar grandes saltos sobre el agua."
+    },
+    "Shadow Stance": {
+      "name": "Postura sombría",
+      "description": "Al activarla, Croajiro Noct canaliza su lealtad e hincha su abdomen para acumular energía. Subirse encima impulsa al jugador muy alto por el aire. Mientras esté en el equipo, mejora un 25% el daño Oscuro del jugador y de sus Pals contra los puntos débiles enemigos. (No es acumulable)"
+    },
+    "Shiny Hauler": {
+      "name": "Transportista brillante",
+      "description": "Mientras esté en el equipo, Turtacle Terra ayuda a cargar el equipaje y reduce el peso de las armaduras en el inventario del jugador. También aumenta el Ataque de los Pals de Tierra."
+    },
+    "Shot-Nyan Mode": {
+      "name": "Modo Shot-Nyan",
+      "description": "Al activarla, Nyafia dispara una escopeta contra los enemigos cercanos durante un tiempo limitado."
+    },
+    "Silk Maker": {
+      "name": "Productora de seda",
+      "description": "Al activarla, ataca al enemigo objetivo con una potente Púa de ventisca. A veces produce Tela de alta calidad cuando se asigna al rancho."
+    },
+    "Sixth Sense": {
+      "name": "Sexto sentido",
+      "description": "Al activarla, usa su sexto sentido para detectar mazmorras cercanas."
+    },
+    "Skilled Fingers": {
+      "name": "Dedos habilidosos",
+      "description": "Mientras esté en el equipo, aumenta el Ataque de los Pals Neutrales un 15%. (No es acumulable). Mientras esté en la base, aumenta en +1 el nivel de aptitud de Artesanía de todos los demás Pals de la base. (No es acumulable)"
+    },
+    "Sky Dragon Affection": {
+      "name": "Afecto del dragón celeste",
+      "description": "Se puede montar como montura voladora. Mientras vuela, aumenta la velocidad de movimiento. Potencia los ataques de Dragón mientras la montas."
+    },
+    "Snake's Sagacity": {
+      "name": "Sagacidad de serpiente",
+      "description": "Mientras esté en el equipo, los ataques del jugador infligen Ceguera. (No es acumulable)"
+    },
+    "Snow Shepherd": {
+      "name": "Pastor de la nieve",
+      "description": "Se puede montar. Permite hacer un doble salto mientras la montas. Mientras esté en el equipo, aumenta la Defensa de los Pals de Hielo un 15%. (No es acumulable)"
+    },
+    "Soil Improver": {
+      "name": "Mejorador del suelo",
+      "description": "Mientras esté en el equipo, aumenta el Ataque de los Pals de Tierra un 15%. A veces suelta Aceite de Pal de alta calidad cuando se asigna al Rancho."
+    },
+    "Soothing Shower": {
+      "name": "Ducha reconfortante",
+      "description": "Mientras esté en el equipo, restaura un 20% de la Salud del jugador cuando su Salud baja del 30%. (No es acumulable) (120 segundos de enfriamiento tras activarse)"
+    },
+    "Soul Collector": {
+      "name": "Recolector de almas",
+      "description": "Mientras combate contigo, los Pals sueltan más Almas de Pal al ser derrotados."
+    },
+    "Sparkling Weasel": {
+      "name": "Comadreja chispeante",
+      "description": "Se puede montar. Cambia el tipo de ataque del jugador a Fuego mientras la montas."
+    },
+    "Spikey Carrier": {
+      "name": "Transportista espinoso",
+      "description": "Mientras esté en el equipo, reduce el peso del Mineral un 80%. (No es acumulable)"
+    },
+    "Static Electricity": {
+      "name": "Electricidad estática",
+      "description": "Mientras esté en el equipo, aumenta el Ataque de los Pals Eléctricos. (No es acumulable.) A veces suelta Órgano eléctrico cuando se asigna al Rancho."
+    },
+    "Steel Guardian Mode": {
+      "name": "Modo guardián de acero",
+      "description": "Al activarla, una determinación de acero aumenta el Ataque y la Defensa de Knocklem durante un tiempo limitado."
+    },
+    "Steel Scorpion": {
+      "name": "Escorpión de acero",
+      "description": "Mientras esté en el equipo, la Defensa del jugador aumenta un 5% y los Pals Eléctricos sueltan un 40% más de objetos al ser derrotados. (No es acumulable)"
+    },
+    "Sticky Princess": {
+      "name": "Princesa pegajosa",
+      "description": "Mientras combate contigo, el medidor de captura baja más despacio en el minijuego de pesca cuando la barra no está alineada."
+    },
+    "Stormbringer Lava Dragon": {
+      "name": "Dragón de lava portador de tormentas",
+      "description": "Se puede montar. Potencia los ataques de Fuego mientras la montas."
+    },
+    "Stormbringer Sea Dragon": {
+      "name": "Dragón marino portador de tormentas",
+      "description": "Se puede montar para desplazarse por el agua. Mientras la montas, evita el gasto de aguante al moverse sobre el agua."
+    },
+    "Stormcloud": {
+      "name": "Nube de tormenta",
+      "description": "Se puede montar. Permite doble salto mientras la montas. Mientras combate contigo, los Pals de Agua sueltan más objetos al ser derrotados."
+    },
+    "Surfing Slam": {
+      "name": "Embestida surfera",
+      "description": "Al activarla, Fuack surfea hacia un enemigo y lo embiste."
+    },
+    "Swift Deity": {
+      "name": "Deidad veloz",
+      "description": "Se puede montar. Cambia el tipo de ataque del jugador a Eléctrico mientras la montas."
+    },
+    "Swift Swimmer": {
+      "name": "Nadador veloz",
+      "description": "Se puede montar para desplazarse por el agua. A veces suelta Cuero cuando se asigna al Rancho."
+    },
+    "Tarantriss’ Web": {
+      "name": "Telaraña de Tarantriss",
+      "description": "Se puede montar. Permite doble salto mientras la montas. Además, puede lanzar seda de araña para engancharse y moverse a gran velocidad."
+    },
+    "Telepeck": {
+      "name": "Telepicotazo",
+      "description": "Al activarla, ataca al enemigo objetivo con un potente Picotazo fantasma."
+    },
+    "Thunder Dragon": {
+      "name": "Dragón del trueno",
+      "description": "Se puede montar. Potencia los ataques Eléctricos mientras la montas."
+    },
+    "Thunderous": {
+      "name": "Atronador",
+      "description": "Se puede montar como montura voladora. Cambia el tipo de ataque del jugador a Eléctrico mientras la montas."
+    },
+    "Tidal Predator": {
+      "name": "Depredador de mareas",
+      "description": "Se puede montar como montura voladora. Mientras combate contigo, los Pals de Fuego sueltan más objetos al ser derrotados."
+    },
+    "Tiny Spark": {
+      "name": "Pequeña chispa",
+      "description": "Mientras esté en el equipo, aumenta el Ataque de los Pals de Fuego."
+    },
+    "Travel Companion": {
+      "name": "Compañera de viaje",
+      "description": "Se puede montar como montura voladora."
+    },
+    "Trick-Loving Fluffle": {
+      "name": "Peluche travieso",
+      "description": "Mientras esté en el equipo, cuando la Salud del jugador baja del 50%, Dupin genera una explosión a su alrededor. Además, mientras la Salud del jugador esté por debajo del 50%, su Ataque aumenta. (No es acumulable)"
+    },
+    "Ultrasonic Sensor": {
+      "name": "Sensor ultrasónico",
+      "description": "Al activarla, usa ondas ultrasónicas para detectar la ubicación de los Pals cercanos."
+    },
+    "Unknown Intruder": {
+      "name": "Intruso desconocido",
+      "description": "Se puede montar. Mientras esté en el equipo, aumenta el daño de las armas de energía del jugador un 10%. (No es acumulable)"
+    },
+    "Untainted Maiden": {
+      "name": "Doncella inmaculada",
+      "description": "Mientras esté en el equipo, aumenta el Ataque del jugador según la variedad de especies de Pal del equipo."
+    },
+    "Unyielding Storm Commander": {
+      "name": "Comandante de la tormenta inquebrantable",
+      "description": "Mientras esté en el equipo, mejora un 25% el daño de Agua del jugador y de sus Pals contra los puntos débiles enemigos. (No es acumulable)"
+    },
+    "Venom Picker": {
+      "name": "Recolectora de veneno",
+      "description": "A veces suelta Glándula de veneno de su lomo cuando se asigna al rancho."
+    },
+    "Void Blade": {
+      "name": "Hoja del vacío",
+      "description": "Al activarla, ataca al enemigo objetivo con un potente Iaigiri. Cuando este Pal usa Iaigiri, aplica un multiplicador de daño de x1.1. Mientras esté en el equipo, aumenta el daño de las armas cuerpo a cuerpo del jugador un 30%, pero solo fuera de combate. (No es acumulable)"
+    },
+    "Void-Dweller": {
+      "name": "Morador del vacío",
+      "description": "Mientras esté en el equipo, aumenta el daño que el jugador inflige a enemigos que no están en combate. (No es acumulable)"
+    },
+    "Warm Body": {
+      "name": "Cuerpo cálido",
+      "description": "Se puede montar. Mantiene caliente al jinete en entornos fríos."
+    },
+    "Waterwing Dance": {
+      "name": "Danza de alas acuáticas",
+      "description": "Se puede montar para desplazarse por el agua. Mientras la montas, cambia el tipo de ataque del jugador a Agua y aumenta el Ataque un 5%."
+    },
+    "Wind and Clouds": {
+      "name": "Viento y nubes",
+      "description": "Se puede montar. Permite doble salto mientras la montas."
+    },
+    "Wings of Death": {
+      "name": "Alas de la muerte",
+      "description": "Se puede montar como montura voladora. Cambia el tipo de ataque del jugador a Oscuro mientras la montas."
+    },
+    "Wings of Flame": {
+      "name": "Alas de llama",
+      "description": "Se puede montar como montura voladora. Potencia los ataques de Fuego mientras la montas."
+    },
+    "Wings of Thunder": {
+      "name": "Alas del trueno",
+      "description": "Se puede montar como montura voladora. Cambia el tipo de ataque del jugador a Eléctrico mientras la montas."
+    },
+    "Wings of Water": {
+      "name": "Alas de agua",
+      "description": "Se puede montar como montura voladora. Potencia los ataques de Agua mientras la montas."
+    },
+    "Winter Trapeze": {
+      "name": "Trapecio invernal",
+      "description": "Mientras esté en el equipo, modifica el rendimiento del planeador equipado. Permite ascender lentamente mientras planeas."
+    },
+    "Witch's Icy Veil": {
+      "name": "Velo helado de la bruja",
+      "description": "Mientras combate contigo, cambia el tipo de ataque del jugador a Hielo."
+    },
+    "Wolf of the Sun": {
+      "name": "Lobo del sol",
+      "description": "Se puede montar. Mientras esté en el equipo, el jugador y los Pals del equipo reciben un 15% menos de daño de Hielo y son inmunes a Congelación. (No es acumulable)"
+    },
+    "Worker Bee": {
+      "name": "Abeja obrera",
+      "description": "A veces suelta Miel cuando se asigna al rancho. Mientras esté en el equipo, las estadísticas de Elizabee aumentan."
+    },
+    "Wriggling Weasel": {
+      "name": "Comadreja ondulante",
+      "description": "Se puede montar. Cambia el tipo de ataque del jugador a Dragón mientras la montas."
+    },
+    "Yellow Tank": {
+      "name": "Tanque amarillo",
+      "description": "Se puede montar. Permite disparar una miniametralladora a gran velocidad mientras la montas."
+    },
+    "Yokozuna's Presence": {
+      "name": "Presencia de yokozuna",
+      "description": "Se puede montar. Mientras esté en el equipo, el jugador y los Pals del equipo reciben menos daño Eléctrico y son inmunes a Electrocución. (No es acumulable)"
+    },
+    "Zephyr Glider": {
+      "name": "Planeador céfiro",
+      "description": "Mientras esté en el equipo, modifica el rendimiento del planeador equipado. Evita el daño por caída y alarga la duración del planeo a alta velocidad."
+    }
+  },
+  "_byPalIdReadme": [
+    "Cinco habilidades comparten nombre entre un Pal y su variante pero tienen",
+    "descripción distinta en wiki.gg (Gobfin/Gobfin Ignis, Gorirat/Gorirat Terra,",
+    "Kingpaca/Kingpaca Cryst, Menasting/Menasting Terra, Vanwyrm/Vanwyrm Cryst).",
+    "La clave por nombre traduce la variante base; estas entradas por palId",
+    "sobrescriben el caso divergente. Tiene prioridad sobre `skills`."
+  ],
+  "byPalId": {
+    "gobfin-ignis": {
+      "name": "Tiburón furioso",
+      "description": "Al activarla, ataca al enemigo objetivo con un potente Fuego espiritual. Mientras esté en el equipo, aumenta el Ataque del jugador."
+    },
+    "gorirat-terra": {
+      "name": "Modo gorila a plena potencia",
+      "description": "Mientras esté en el equipo, aumenta la velocidad de escalada del jugador un 50-100%. (No es acumulable)"
+    },
+    "kingpaca-cryst": {
+      "name": "Rey de los músculos",
+      "description": "Se puede montar. Mientras esté en el equipo, Kingpaca Cryst ayuda a cargar el equipaje y aumenta la capacidad máxima de carga del jugador."
+    },
+    "menasting-terra": {
+      "name": "Escorpión de acero",
+      "description": "Mientras combate contigo, aumenta la Defensa del jugador y los Pals Eléctricos sueltan más objetos al ser derrotados."
+    },
+    "vanwyrm-cryst": {
+      "name": "Saqueador aéreo",
+      "description": "Se puede montar como montura voladora. Mientras esté en el equipo, aumenta un 30% el daño que el jugador inflige a los puntos débiles enemigos. (No es acumulable)"
+    }
+  }
+}

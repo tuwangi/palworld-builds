@@ -22,7 +22,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Magical Twin Powers",
-        "description": "While at a base, increases the [[Watering]] Work Suitability Level for all other Base Pals by +1. (Does not stack)",
+        "description": "While at a base, increases the Watering Work Suitability Level for all other Base Pals by +1. (Does not stack)",
         "workType": "Watering",
         "scaling": [
           {
@@ -69,7 +69,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Guardian of the Desert",
-        "description": "While fighting together, applies <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Ground icon.png|22px|link=Ground|alt=Ground]]</span>&nbsp;[[Ground|Ground]]</span> damage to the player's attacks. Sometimes dodges attacks with a high speed sidestep while in battle.",
+        "description": "While fighting together, applies Ground damage to the player's attacks. Sometimes dodges attacks with a high speed sidestep while in battle.",
         "workType": "Ground Convert",
         "scaling": [
           {
@@ -146,7 +146,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Warm Body",
-        "description": "Can be [[ridden]]. Keeps the rider [[warm]] in [[cold]] environments.",
+        "description": "Can be ridden. Keeps the rider warm in cold environments.",
         "workType": "Mount",
         "scaling": [
           {
@@ -358,7 +358,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Waterwing Dance",
-        "description": "Can be ridden to travel on water.\n\nWhile mounted,\nchanges the player's attack type to <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Water icon.png|22px|link=Water|alt=Water]]</span>&nbsp;[[Water|Water]]</span> and increases Attack by 5%.",
+        "description": "Can be ridden to travel on water. While mounted, changes the player's attack type to Water and increases Attack by 5%.",
         "workType": "Water Mount",
         "scaling": [
           {
@@ -436,7 +436,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Icewing Dance",
-        "description": "Can be ridden to travel on water.  Changes the player's attack type to Ice while mounted.",
+        "description": "Can be ridden to travel on water. Changes the player's attack type to Ice while mounted.",
         "workType": "Water Mount",
         "scaling": []
       },
@@ -639,7 +639,7 @@
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Honey icon.png|22px|link=Honey|alt=Honey]]</span>&nbsp;[[Honey|Honey]]</span> produced",
+            "effectType": "Honey produced",
             "effectValue": "1",
             "target": ""
           },
@@ -651,7 +651,7 @@
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Honey icon.png|22px|link=Honey|alt=Honey]]</span>&nbsp;[[Honey|Honey]]</span> produced",
+            "effectType": "Honey produced",
             "effectValue": "12",
             "target": ""
           },
@@ -663,7 +663,7 @@
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Honey icon.png|22px|link=Honey|alt=Honey]]</span>&nbsp;[[Honey|Honey]]</span> produced",
+            "effectType": "Honey produced",
             "effectValue": "13",
             "target": ""
           },
@@ -675,7 +675,7 @@
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Honey icon.png|22px|link=Honey|alt=Honey]]</span>&nbsp;[[Honey|Honey]]</span> produced",
+            "effectType": "Honey produced",
             "effectValue": "14",
             "target": ""
           },
@@ -687,7 +687,7 @@
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Honey icon.png|22px|link=Honey|alt=Honey]]</span>&nbsp;[[Honey|Honey]]</span> produced",
+            "effectType": "Honey produced",
             "effectValue": "15",
             "target": ""
           },
@@ -711,7 +711,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Nightmare Iris",
-        "description": "When activated, attacks targeted enemy with a powerful [[Nightmare Ray]].",
+        "description": "When activated, attacks targeted enemy with a powerful Nightmare Ray.",
         "workType": "Attack",
         "scaling": [
           {
@@ -758,7 +758,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Nightmare Stare",
-        "description": "When activated, attacks targeted enemy with a powerful [[Nightmare Bloom]].",
+        "description": "When activated, attacks targeted enemy with a powerful Nightmare Bloom.",
         "workType": "Attack",
         "scaling": [
           {
@@ -1028,7 +1028,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Love's First Blossom",
-        "description": "Can be ridden.\n\nWhile in party,\nPal Eggs you pick up have a 35% chance of becoming an [[Alpha]] Pal Egg. (Does not stack)",
+        "description": "Can be ridden. While in party, Pal Eggs you pick up have a 35% chance of becoming an Alpha Pal Egg. (Does not stack)",
         "workType": "Mount",
         "scaling": []
       },
@@ -1045,7 +1045,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Overaffectionate",
-        "description": "Can be ridden. While in party, Pal Eggs you pick up have a <span style=\"color: #B0F5C4;\">(45~55)%</span> chance of becoming an Alpha Pal Egg. (Does not stack)",
+        "description": "Can be ridden. While in party, Pal Eggs you pick up have a (45~55)% chance of becoming an Alpha Pal Egg. (Does not stack)",
         "workType": "Mount",
         "scaling": [
           {
@@ -1092,7 +1092,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Yokozuna's Presence",
-        "description": "Can be ridden.\nWhile in party, player and party Pals take less <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Electric icon.png|22px|link=Electric|alt=Electric]]</span>&nbsp;[[Electric|Electric]]</span> damage and are immune to Electrify. (Does not stack)",
+        "description": "Can be ridden. While in party, player and party Pals take less Electric damage and are immune to Electrify. (Does not stack)",
         "workType": "",
         "scaling": []
       },
@@ -1156,7 +1156,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Void Blade",
-        "description": "When activated, attacks targeted enemy with a powerful [[Iaigiri]].\n\nWhen this Pal uses [[Iaigiri]], it has a x1.1 damage multiplier.\n\nWhile in party,\nincreases the player's melee weapon damage by 30% but only when not in combat. (Does not stack)",
+        "description": "When activated, attacks targeted enemy with a powerful Iaigiri. When this Pal uses Iaigiri, it has a x1.1 damage multiplier. While in party, increases the player's melee weapon damage by 30% but only when not in combat. (Does not stack)",
         "workType": "Attack",
         "scaling": []
       },
@@ -1177,31 +1177,31 @@
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Red Berries icon.png|22px|link=Red Berries|alt=Red Berries]]</span>&nbsp;[[Red Berries|Red Berries]]</span> produced",
+            "effectType": "Red Berries produced",
             "effectValue": "1",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Red Berries icon.png|22px|link=Red Berries|alt=Red Berries]]</span>&nbsp;[[Red Berries|Red Berries]]</span> produced",
+            "effectType": "Red Berries produced",
             "effectValue": "12",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Red Berries icon.png|22px|link=Red Berries|alt=Red Berries]]</span>&nbsp;[[Red Berries|Red Berries]]</span> produced",
+            "effectType": "Red Berries produced",
             "effectValue": "13",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Red Berries icon.png|22px|link=Red Berries|alt=Red Berries]]</span>&nbsp;[[Red Berries|Red Berries]]</span> produced",
+            "effectType": "Red Berries produced",
             "effectValue": "14",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Red Berries icon.png|22px|link=Red Berries|alt=Red Berries]]</span>&nbsp;[[Red Berries|Red Berries]]</span> produced",
+            "effectType": "Red Berries produced",
             "effectValue": "15",
             "target": ""
           }
@@ -1235,7 +1235,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Entangling Tongue",
-        "description": "While in party, when the player performs a dodge roll or dodge step, Carnibora creates a whirlwind that deals <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Grass icon.png|22px|link=Grass|alt=Grass]]</span>&nbsp;[[Grass|Grass]]</span> damage to enemies it touches. (Does not stack)",
+        "description": "While in party, when the player performs a dodge roll or dodge step, Carnibora creates a whirlwind that deals Grass damage to enemies it touches. (Does not stack)",
         "workType": "",
         "scaling": [
           {
@@ -1596,31 +1596,31 @@
         "scaling": [
           {
             "level": 0,
-            "effectType": "recovers <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Health icon.png|22px|link=Health|alt=Health]]</span>&nbsp;[[Health|Health]]</span> of the player and Party Pals by",
+            "effectType": "recovers Health of the player and Party Pals by",
             "effectValue": "0.15% per second",
             "target": "Player"
           },
           {
             "level": 1,
-            "effectType": "recovers <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Health icon.png|22px|link=Health|alt=Health]]</span>&nbsp;[[Health|Health]]</span> of the player and Party Pals by",
+            "effectType": "recovers Health of the player and Party Pals by",
             "effectValue": "0.30% per second",
             "target": "Player"
           },
           {
             "level": 2,
-            "effectType": "recovers <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Health icon.png|22px|link=Health|alt=Health]]</span>&nbsp;[[Health|Health]]</span> of the player and Party Pals by",
+            "effectType": "recovers Health of the player and Party Pals by",
             "effectValue": "0.45% per second",
             "target": "Player"
           },
           {
             "level": 3,
-            "effectType": "recovers <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Health icon.png|22px|link=Health|alt=Health]]</span>&nbsp;[[Health|Health]]</span> of the player and Party Pals by",
+            "effectType": "recovers Health of the player and Party Pals by",
             "effectValue": "0.60% per second",
             "target": "Player"
           },
           {
             "level": 4,
-            "effectType": "recovers <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Health icon.png|22px|link=Health|alt=Health]]</span>&nbsp;[[Health|Health]]</span> of the player and Party Pals by",
+            "effectType": "recovers Health of the player and Party Pals by",
             "effectValue": "0.75% per second",
             "target": "Player"
           }
@@ -1649,36 +1649,36 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Egg Layer",
-        "description": "Sometimes lays an [[Egg]] when assigned to the ranch.",
+        "description": "Sometimes lays an Egg when assigned to the ranch.",
         "workType": "Farming",
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Egg icon.png|22px|link=Egg|alt=Egg]]</span>&nbsp;[[Egg|Egg]]</span> produced",
+            "effectType": "Egg produced",
             "effectValue": "1-2",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Egg icon.png|22px|link=Egg|alt=Egg]]</span>&nbsp;[[Egg|Egg]]</span> produced",
+            "effectType": "Egg produced",
             "effectValue": "1-3",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Egg icon.png|22px|link=Egg|alt=Egg]]</span>&nbsp;[[Egg|Egg]]</span> produced",
+            "effectType": "Egg produced",
             "effectValue": "2-4",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Egg icon.png|22px|link=Egg|alt=Egg]]</span>&nbsp;[[Egg|Egg]]</span> produced",
+            "effectType": "Egg produced",
             "effectValue": "2-5",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Egg icon.png|22px|link=Egg|alt=Egg]]</span>&nbsp;[[Egg|Egg]]</span> produced",
+            "effectType": "Egg produced",
             "effectValue": "2-6",
             "target": ""
           }
@@ -2211,7 +2211,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Mysterious Scales",
-        "description": "When activated, attacks the targeted enemy with [[Poison Fog]]. While at a base, increases the [[Farming]] [[Work Suitability]] Level for all other Base Pals by +1. (Does not stack)",
+        "description": "When activated, attacks the targeted enemy with Poison Fog. While at a base, increases the Farming Work Suitability Level for all other Base Pals by +1. (Does not stack)",
         "workType": "Attack",
         "scaling": [
           {
@@ -2259,7 +2259,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Happy Clover",
-        "description": "While at a base, increases the [[Gathering]] Work Suitability Level for all other Base Pals by +1. (Does not stack)",
+        "description": "While at a base, increases the Gathering Work Suitability Level for all other Base Pals by +1. (Does not stack)",
         "workType": "",
         "scaling": [
           {
@@ -2311,7 +2311,7 @@
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "2",
             "target": ""
           },
@@ -2323,7 +2323,7 @@
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "23",
             "target": ""
           },
@@ -2335,7 +2335,7 @@
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "24",
             "target": ""
           },
@@ -2347,7 +2347,7 @@
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "25",
             "target": ""
           },
@@ -2359,7 +2359,7 @@
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "26",
             "target": ""
           },
@@ -2383,7 +2383,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Leap Stance",
-        "description": "When activated, Croajiro swells its abdomen and channels its loyalty to store energy. Climbing on top will propel the player high into the air.\n\nWhile airborne before landing,\nthe player's Attack is increased by 50%.",
+        "description": "When activated, Croajiro swells its abdomen and channels its loyalty to store energy. Climbing on top will propel the player high into the air. While airborne before landing, the player's Attack is increased by 50%.",
         "workType": "Follower",
         "scaling": [
           {
@@ -2431,7 +2431,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Shadow Stance",
-        "description": "When activated, Croajiro Noct channels its loyalty and puffs up its abdomen to store energy. Climbing on top will propel the player high into the air.\n\n\nWhile in party,\nimproves player's and Pals' <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Dark icon.png|22px|link=Dark|alt=Dark]]</span>&nbsp;[[Dark|Dark]]</span> damage to enemy weak points by 25%. (Does not stack)",
+        "description": "When activated, Croajiro Noct channels its loyalty and puffs up its abdomen to store energy. Climbing on top will propel the player high into the air. While in party, improves player's and Pals' Dark damage to enemy weak points by 25%. (Does not stack)",
         "workType": "Follower",
         "scaling": [
           {
@@ -2602,7 +2602,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Dream Chaser",
-        "description": "While in team, appears near the player.\n\nAttacks hostile enemies with <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Dark icon.png|22px|link=Dark|alt=Dark]]</span>&nbsp;[[Dark|Dark]]</span> magic bullets.\nThese bullets will not reduce the target's Health below 1.",
+        "description": "While in team, appears near the player. Attacks hostile enemies with Dark magic bullets. These bullets will not reduce the target's Health below 1.",
         "workType": "Follower",
         "scaling": [
           {
@@ -2661,7 +2661,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Sand Sprint",
-        "description": "Can be [[ridden]]. Runs faster over sand.",
+        "description": "Can be ridden. Runs faster over sand.",
         "workType": "Mount",
         "scaling": [
           {
@@ -2833,7 +2833,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Caffeine Inoculation",
-        "description": "When activated, Depresso chugs an entire energy drink, increasing its Movement Speed and Work Speed by 100%.\n\nSometimes drops [[Venom Gland]] when assigned to Ranch.",
+        "description": "When activated, Depresso chugs an entire energy drink, increasing its Movement Speed and Work Speed by 100%. Sometimes drops Venom Gland when assigned to Ranch.",
         "workType": "Self Boost",
         "scaling": [
           {
@@ -2880,7 +2880,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Drill Crusher",
-        "description": "When activated, enters the Shell Spin state. <br><br> Follows the player while spinning, increasing [[ore]] mining efficiency by <span style=\"color: #B0F5C4;\">800%</span>.",
+        "description": "When activated, enters the Shell Spin state. Follows the player while spinning, increasing ore mining efficiency by 800%.",
         "workType": "Attack",
         "scaling": [
           {
@@ -3023,7 +3023,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Direhowl Rider",
-        "description": "Can be [[ridden]]. Moves slightly faster than most mounts.",
+        "description": "Can be ridden. Moves slightly faster than most mounts.",
         "workType": "Mount",
         "scaling": [
           {
@@ -3118,7 +3118,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Forest Laser",
-        "description": "Can be ridden.\nWhen activated, Dualith fires a powerful <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Grass icon.png|22px|link=Grass|alt=Grass]]</span>&nbsp;[[Grass|Grass]]</span> laser from its right hand.",
+        "description": "Can be ridden. When activated, Dualith fires a powerful Grass laser from its right hand.",
         "workType": "Mount",
         "scaling": [
           {
@@ -3166,7 +3166,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Corruption Laser",
-        "description": "Can be [[ridden]].<br>\nWhen activated, Dualith fires a powerful <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Dark icon.png|22px|link=Dark|alt=Dark]]</span>&nbsp;[[Dark|Dark]]</span> laser from its right hand.",
+        "description": "Can be ridden. When activated, Dualith fires a powerful Dark laser from its right hand.",
         "workType": "Mount",
         "scaling": []
       },
@@ -3183,12 +3183,12 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Soil Improver",
-        "description": "While in party, increases Attack of <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Ground icon.png|22px|link=Ground|alt=Ground]]</span>&nbsp;[[Ground|Ground]]</span> Pals by <span style=\"color: #B0F5C4;\">15%</span>. <br><br> Sometimes drops [[High Quality Pal Oil]] when assigned to Ranch.",
+        "description": "While in party, increases Attack of Ground Pals by 15%. Sometimes drops High Quality Pal Oil when assigned to Ranch.",
         "workType": "Ground Boost",
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Pal Oil icon.png|22px|link=High Quality Pal Oil|alt=High Quality Pal Oil]]</span>&nbsp;[[High Quality Pal Oil|High Quality Pal Oil]]</span> produced",
+            "effectType": "High Quality Pal Oil produced",
             "effectValue": "1",
             "target": ""
           },
@@ -3200,7 +3200,7 @@
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Pal Oil icon.png|22px|link=High Quality Pal Oil|alt=High Quality Pal Oil]]</span>&nbsp;[[High Quality Pal Oil|High Quality Pal Oil]]</span> produced",
+            "effectType": "High Quality Pal Oil produced",
             "effectValue": "12",
             "target": ""
           },
@@ -3212,7 +3212,7 @@
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Pal Oil icon.png|22px|link=High Quality Pal Oil|alt=High Quality Pal Oil]]</span>&nbsp;[[High Quality Pal Oil|High Quality Pal Oil]]</span> produced",
+            "effectType": "High Quality Pal Oil produced",
             "effectValue": "13",
             "target": ""
           },
@@ -3224,7 +3224,7 @@
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Pal Oil icon.png|22px|link=High Quality Pal Oil|alt=High Quality Pal Oil]]</span>&nbsp;[[High Quality Pal Oil|High Quality Pal Oil]]</span> produced",
+            "effectType": "High Quality Pal Oil produced",
             "effectValue": "14",
             "target": ""
           },
@@ -3236,7 +3236,7 @@
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Pal Oil icon.png|22px|link=High Quality Pal Oil|alt=High Quality Pal Oil]]</span>&nbsp;[[High Quality Pal Oil|High Quality Pal Oil]]</span> produced",
+            "effectType": "High Quality Pal Oil produced",
             "effectValue": "15",
             "target": ""
           },
@@ -3261,18 +3261,18 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Golden Harvest",
-        "description": "While in party, increases the amount of [[Gold Coin]] dropped by enemies by +100%.\n\n\nSometimes drops [[High Quality Pal Oil]] when assigned to Ranch, with a small chance to drop [[Gold Coin]]. (Does not stack)",
+        "description": "While in party, increases the amount of Gold Coin dropped by enemies by +100%. Sometimes drops High Quality Pal Oil when assigned to Ranch, with a small chance to drop Gold Coin. (Does not stack)",
         "workType": "Drop Boost",
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced (20% chance)",
+            "effectType": "Gold Coins produced (20% chance)",
             "effectValue": "100",
             "target": ""
           },
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Pal Oil icon.png|22px|link=High Quality Pal Oil|alt=High Quality Pal Oil]]</span>&nbsp;[[High Quality Pal Oil|High Quality Pal Oil]]</span> produced (80% chance)",
+            "effectType": "High Quality Pal Oil produced (80% chance)",
             "effectValue": "1",
             "target": ""
           },
@@ -3284,13 +3284,13 @@
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced (20% chance)",
+            "effectType": "Gold Coins produced (20% chance)",
             "effectValue": "100-200",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Pal Oil icon.png|22px|link=High Quality Pal Oil|alt=High Quality Pal Oil]]</span>&nbsp;[[High Quality Pal Oil|High Quality Pal Oil]]</span> produced (80% chance)",
+            "effectType": "High Quality Pal Oil produced (80% chance)",
             "effectValue": "12",
             "target": ""
           },
@@ -3302,13 +3302,13 @@
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced (20% chance)",
+            "effectType": "Gold Coins produced (20% chance)",
             "effectValue": "100-300",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Pal Oil icon.png|22px|link=High Quality Pal Oil|alt=High Quality Pal Oil]]</span>&nbsp;[[High Quality Pal Oil|High Quality Pal Oil]]</span> produced (80% chance)",
+            "effectType": "High Quality Pal Oil produced (80% chance)",
             "effectValue": "13",
             "target": ""
           },
@@ -3320,13 +3320,13 @@
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced (20% chance)",
+            "effectType": "Gold Coins produced (20% chance)",
             "effectValue": "100-400",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Pal Oil icon.png|22px|link=High Quality Pal Oil|alt=High Quality Pal Oil]]</span>&nbsp;[[High Quality Pal Oil|High Quality Pal Oil]]</span> produced (80% chance)",
+            "effectType": "High Quality Pal Oil produced (80% chance)",
             "effectValue": "14",
             "target": ""
           },
@@ -3338,13 +3338,13 @@
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced (20% chance)",
+            "effectType": "Gold Coins produced (20% chance)",
             "effectValue": "100-500",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Pal Oil icon.png|22px|link=High Quality Pal Oil|alt=High Quality Pal Oil]]</span>&nbsp;[[High Quality Pal Oil|High Quality Pal Oil]]</span> produced (80% chance)",
+            "effectType": "High Quality Pal Oil produced (80% chance)",
             "effectValue": "15",
             "target": ""
           },
@@ -3493,7 +3493,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Liberated Pterosaur",
-        "description": "Can be ridden as a flying mount.\nThis Pal's Attack and Movement Speed increase for each other <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Dragon icon.png|22px|link=Dragon|alt=Dragon]]</span>&nbsp;[[Dragon|Dragon]]</span> or <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Dark icon.png|22px|link=Dark|alt=Dark]]</span>&nbsp;[[Dark|Dark]]</span> Pal in your party.",
+        "description": "Can be ridden as a flying mount. This Pal's Attack and Movement Speed increase for each other Dragon or Dark Pal in your party.",
         "workType": "",
         "scaling": [
           {
@@ -3552,7 +3552,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Guardian of the Forest",
-        "description": "Can be [[ridden]]. \nCan perform a double jump while mounted and increases lumbering efficiency by 220%.",
+        "description": "Can be ridden. Can perform a double jump while mounted and increases lumbering efficiency by 220%.",
         "workType": "Mount",
         "scaling": [
           {
@@ -3646,7 +3646,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "",
-        "description": "When activated, Elgrove changes the player's attack type to <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Grass icon.png|22px|link=Grass|alt=Grass]]</span>&nbsp;[[Grass|Grass]]</span> and increases Attack.",
+        "description": "When activated, Elgrove changes the player's attack type to Grass and increases Attack.",
         "workType": "",
         "scaling": []
       },
@@ -3673,7 +3673,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Queen Bee Command",
-        "description": "While fighting together, stats will increase the more [[Beegarde]] are in your team.",
+        "description": "While fighting together, stats will increase the more Beegarde are in your team.",
         "workType": "Passive",
         "scaling": [
           {
@@ -3737,7 +3737,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Amicable Water Dragon",
-        "description": "Can be ridden as a flying mount. While flying, movement speed is increased. \n\n\nWhile in party, player and party Pals take 15% less <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Fire icon.png|22px|link=Fire|alt=Fire]]</span>&nbsp;[[Fire|Fire]]</span> damage and are immune to [[Burn]]. (Does not stack)",
+        "description": "Can be ridden as a flying mount. While flying, movement speed is increased. While in party, player and party Pals take 15% less Fire damage and are immune to Burn. (Does not stack)",
         "workType": "Flying Mount",
         "scaling": []
       },
@@ -4066,7 +4066,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Ember Chamber",
-        "description": "While in team,  Finsider Ignis helps carry supplies,  decreasing the weight of weapons  in the player's inventory.  Also increases Attack of Fire Pals.",
+        "description": "While in team, Finsider Ignis helps carry supplies, decreasing the weight of weapons in the player's inventory. Also increases Attack of Fire Pals.",
         "workType": "Follower",
         "scaling": [
           {
@@ -4143,36 +4143,36 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Magma Tears",
-        "description": "While in party, recovers Health of the player and Party Pals by 0.1% per second outside of combat. (Does not stack)\n\n\nSometimes produces Flame Organ when assigned to Ranch.",
+        "description": "While in party, recovers Health of the player and Party Pals by 0.1% per second outside of combat. (Does not stack) Sometimes produces Flame Organ when assigned to Ranch.",
         "workType": "Farming",
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Flame Organ icon.png|22px|link=Flame Organ|alt=Flame Organ]]</span>&nbsp;[[Flame Organ|Flame Organs]]</span> produced",
+            "effectType": "Flame Organs produced",
             "effectValue": "1",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Flame Organ icon.png|22px|link=Flame Organ|alt=Flame Organ]]</span>&nbsp;[[Flame Organ|Flame Organs]]</span> produced",
+            "effectType": "Flame Organs produced",
             "effectValue": "12",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Flame Organ icon.png|22px|link=Flame Organ|alt=Flame Organ]]</span>&nbsp;[[Flame Organ|Flame Organs]]</span> produced",
+            "effectType": "Flame Organs produced",
             "effectValue": "13",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Flame Organ icon.png|22px|link=Flame Organ|alt=Flame Organ]]</span>&nbsp;[[Flame Organ|Flame Organs]]</span> produced",
+            "effectType": "Flame Organs produced",
             "effectValue": "14",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Flame Organ icon.png|22px|link=Flame Organ|alt=Flame Organ]]</span>&nbsp;[[Flame Organ|Flame Organs]]</span> produced",
+            "effectType": "Flame Organs produced",
             "effectValue": "15",
             "target": ""
           }
@@ -4195,31 +4195,31 @@
         "scaling": [
           {
             "level": 0,
-            "effectType": "Percent of Player''s attack dealt to nearby enemies",
+            "effectType": "Percent of Player's attack dealt to nearby enemies",
             "effectValue": "40%",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "Percent of Player''s attack dealt to nearby enemies",
+            "effectType": "Percent of Player's attack dealt to nearby enemies",
             "effectValue": "44%",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "Percent of Player''s attack dealt to nearby enemies",
+            "effectType": "Percent of Player's attack dealt to nearby enemies",
             "effectValue": "48%",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "Percent of Player''s attack dealt to nearby enemies",
+            "effectType": "Percent of Player's attack dealt to nearby enemies",
             "effectValue": "52%",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "Percent of Player''s attack dealt to nearby enemies",
+            "effectType": "Percent of Player's attack dealt to nearby enemies",
             "effectValue": "60%",
             "target": ""
           }
@@ -4780,7 +4780,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Mining Assistance",
-        "description": "When in party,<br/>improves player mining efficiency by <span style=\"color: #B0F5C4;\">30%</span> and reduces [[Stone]] weight by <span style=\"color: #B0F5C4;\">80%</span>. (Does not stack)",
+        "description": "When in party, improves player mining efficiency by 30% and reduces Stone weight by 80%. (Does not stack)",
         "workType": "Detection",
         "scaling": [
           {
@@ -4833,7 +4833,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Galeclaw Glider",
-        "description": "While in team, modifies the performance of the equipped glider.  Enables high-speed gliding and allows shooting with the right hand.",
+        "description": "While in team, modifies the performance of the equipped glider. Enables high-speed gliding and allows shooting with the right hand.",
         "workType": "Glider",
         "scaling": [
           {
@@ -5101,7 +5101,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Sticky Princess",
-        "description": "While fighting together,  the capture gauge decreases more slowly  in the fishing minigame  when the bar is not aligned.",
+        "description": "While fighting together, the capture gauge decreases more slowly in the fishing minigame when the bar is not aligned.",
         "workType": "Fishing",
         "scaling": [
           {
@@ -5160,7 +5160,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Angry Shark",
-        "description": "When activated, attacks targeted enemy with a powerful Aqua Gun. \n\nWhen this Pal uses Aqua Gun, it has a 1.1x multiplier.\n\nWhile in party, increases the player's Attack by 10%.",
+        "description": "When activated, attacks targeted enemy with a powerful Aqua Gun. When this Pal uses Aqua Gun, it has a 1.1x multiplier. While in party, increases the player's Attack by 10%.",
         "workType": "Attack",
         "scaling": [
           {
@@ -5511,7 +5511,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Full-Power Gorilla Mode",
-        "description": "While in party,\nincreases the player's climbing speed by 50-100%. (Does not stack)",
+        "description": "While in party, increases the player's climbing speed by 50-100%. (Does not stack)",
         "workType": "Self Boost",
         "scaling": [
           {
@@ -5604,7 +5604,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Yellow Tank",
-        "description": "Can be [[ridden]]. Can rapidly fire a minigun while mounted.",
+        "description": "Can be ridden. Can rapidly fire a minigun while mounted.",
         "workType": "Mount",
         "scaling": [
           {
@@ -6163,7 +6163,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Dark Knowledge",
-        "description": "While in party, increases Attack of <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Dark icon.png|22px|link=Dark|alt=Dark]]</span>&nbsp;[[Dark|Dark]]</span> Pals by 15%. (Does not stack)",
+        "description": "While in party, increases Attack of Dark Pals by 15%. (Does not stack)",
         "workType": "Dark Boost",
         "scaling": [
           {
@@ -6351,7 +6351,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Darkclaw Hunter",
-        "description": "When activated, attacks targeted enemy with a powerful [[Hellfire Claw]].",
+        "description": "When activated, attacks targeted enemy with a powerful Hellfire Claw.",
         "workType": "Attack",
         "scaling": []
       },
@@ -6367,7 +6367,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Jelliette Drop",
-        "description": "While in party, increases items obtained from fishing by <span style=\"color: #B0F5C4;\">55%</span>. <br><br> While Jelliette and Jellroy are in your base, Jelliette's watering speed increases by <span style=\"color: #B0F5C4;\">50%</span>. (Does not stack)",
+        "description": "While in party, increases items obtained from fishing by 55%. While Jelliette and Jellroy are in your base, Jelliette's watering speed increases by 50%. (Does not stack)",
         "workType": "Drop Boost",
         "scaling": [
           {
@@ -6445,7 +6445,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Jellroy Drop",
-        "description": "While in party,<br/>increases items obtained from salvaging by <span style=\"color: #B0F5C4;\">55%</span>.<br/><br/>While [[Jelliette]] and [[Jellroy]] are in your base, Jellroy's watering speed increases by <span style=\"color: #B0F5C4;\">50%</span>. (Does not stack)",
+        "description": "While in party, increases items obtained from salvaging by 55%. While Jelliette and Jellroy are in your base, Jellroy's watering speed increases by 50%. (Does not stack)",
         "workType": "Drop Boost",
         "scaling": [
           {
@@ -6522,7 +6522,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Aerial Missile",
-        "description": "Can be [[ridden]] as a flying mount. Can rapidly fire a missile launcher while mounted.",
+        "description": "Can be ridden as a flying mount. Can rapidly fire a missile launcher while mounted.",
         "workType": "Flying Mount",
         "scaling": [
           {
@@ -6569,7 +6569,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Jolt Bomb",
-        "description": "When activated, equips Jolthog to the player to be thrown at an enemy, causing an <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Electric icon.png|22px|link=Electric|alt=Electric]]</span>&nbsp;[[Electric|Electric]]</span> explosion upon impact.",
+        "description": "When activated, equips Jolthog to the player to be thrown at an enemy, causing an Electric explosion upon impact.",
         "workType": "Equip",
         "scaling": [
           {
@@ -6616,7 +6616,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Cold Bomb",
-        "description": "When activated, equips Jolthog Cryst to the player to be thrown at an enemy, causing an <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Ice icon.png|22px|link=Ice|alt=Ice]]</span>&nbsp;[[Ice|Ice]]</span> explosion upon impact.",
+        "description": "When activated, equips Jolthog Cryst to the player to be thrown at an enemy, causing an Ice explosion upon impact.",
         "workType": "Equip",
         "scaling": [
           {
@@ -6759,7 +6759,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Grimoire Collector",
-        "description": "While in party, <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Neutral icon.png|22px|link=Neutral|alt=Neutral]]</span>&nbsp;[[Neutral|Neutral]]</span> Pals drop more items when defeated.<br><br> Also has a <span style=\"color: #B0F5C4;\">10%</span> chance to prevent [[Pal Sphere]] consumption when thrown. (Does not stack)",
+        "description": "While in party, Neutral Pals drop more items when defeated. Also has a 10% chance to prevent Pal Sphere consumption when thrown. (Does not stack)",
         "workType": "Drop Boost",
         "scaling": [
           {
@@ -6823,36 +6823,36 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Aqua Spout",
-        "description": "While in party, increases Attack of <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Water icon.png|22px|link=Water|alt=Water]]</span>&nbsp;[[Water|Water]]</span> Pals by 15%. (Does not stack)\n\n\nSometimes drops [[Aquatic Pal Fluids]] when assigned to Ranch.",
+        "description": "While in party, increases Attack of Water Pals by 15%. (Does not stack) Sometimes drops Aquatic Pal Fluids when assigned to Ranch.",
         "workType": "Water Boost",
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Pal Fluids icon.png|22px|link=Pal Fluids|alt=Pal Fluids]]</span>&nbsp;[[Pal Fluids|Pal Fluids]]</span> produced",
+            "effectType": "Pal Fluids produced",
             "effectValue": "1",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Pal Fluids icon.png|22px|link=Pal Fluids|alt=Pal Fluids]]</span>&nbsp;[[Pal Fluids|Pal Fluids]]</span> produced",
+            "effectType": "Pal Fluids produced",
             "effectValue": "12",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Pal Fluids icon.png|22px|link=Pal Fluids|alt=Pal Fluids]]</span>&nbsp;[[Pal Fluids|Pal Fluids]]</span> produced",
+            "effectType": "Pal Fluids produced",
             "effectValue": "13",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Pal Fluids icon.png|22px|link=Pal Fluids|alt=Pal Fluids]]</span>&nbsp;[[Pal Fluids|Pal Fluids]]</span> produced",
+            "effectType": "Pal Fluids produced",
             "effectValue": "14",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Pal Fluids icon.png|22px|link=Pal Fluids|alt=Pal Fluids]]</span>&nbsp;[[Pal Fluids|Pal Fluids]]</span> produced",
+            "effectType": "Pal Fluids produced",
             "effectValue": "15",
             "target": ""
           }
@@ -6875,31 +6875,31 @@
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Flame Organ icon.png|22px|link=Flame Organ|alt=Flame Organ]]</span>&nbsp;[[Flame Organ|Flame Organs]]</span> produced",
+            "effectType": "Flame Organs produced",
             "effectValue": "1",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Flame Organ icon.png|22px|link=Flame Organ|alt=Flame Organ]]</span>&nbsp;[[Flame Organ|Flame Organs]]</span> produced",
+            "effectType": "Flame Organs produced",
             "effectValue": "12",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Flame Organ icon.png|22px|link=Flame Organ|alt=Flame Organ]]</span>&nbsp;[[Flame Organ|Flame Organs]]</span> produced",
+            "effectType": "Flame Organs produced",
             "effectValue": "13",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Flame Organ icon.png|22px|link=Flame Organ|alt=Flame Organ]]</span>&nbsp;[[Flame Organ|Flame Organs]]</span> produced",
+            "effectType": "Flame Organs produced",
             "effectValue": "14",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Flame Organ icon.png|22px|link=Flame Organ|alt=Flame Organ]]</span>&nbsp;[[Flame Organ|Flame Organs]]</span> produced",
+            "effectType": "Flame Organs produced",
             "effectValue": "15",
             "target": ""
           }
@@ -7042,7 +7042,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Fried Killamari",
-        "description": "While in team, modifies the performance of the equipped glider.  Enables gentle floating while gliding for an extended time.",
+        "description": "While in team, modifies the performance of the equipped glider. Enables gentle floating while gliding for an extended time.",
         "workType": "Glider",
         "scaling": [
           {
@@ -7303,7 +7303,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Wolf of the Sun",
-        "description": "Can be [[ridden]]. <br><br>While in party, player and party Pals take <span style=\"color: #B0F5C4;\">15%</span> less <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Ice icon.png|22px|link=Ice|alt=Ice]]</span>&nbsp;[[Ice|Ice]]</span> damage and are immune to [https://palworld.wiki.gg/wiki/Status_Effects#Burn:~:text=Freeze,-%5Bedit Freeze]. (Does not stack)",
+        "description": "Can be ridden. While in party, player and party Pals take 15% less Ice damage and are immune to Freeze. (Does not stack)",
         "workType": "Mount",
         "scaling": []
       },
@@ -7484,66 +7484,66 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Fluffy Shield",
-        "description": "When activated,<br/>equips to the player and becomes a shield.<br/><br/>Sometimes drops [[Wool]] when assigned to Ranch.",
+        "description": "When activated, equips to the player and becomes a shield. Sometimes drops Wool when assigned to Ranch.",
         "workType": "Defense",
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Venom Gland icon.png|22px|link=Venom Gland|alt=Venom Gland]]</span>&nbsp;[[Venom Gland|Venom Glands]]</span> produced",
+            "effectType": "Venom Glands produced",
             "effectValue": "1",
             "target": ""
           },
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "1",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Venom Gland icon.png|22px|link=Venom Gland|alt=Venom Gland]]</span>&nbsp;[[Venom Gland|Venom Glands]]</span> produced",
+            "effectType": "Venom Glands produced",
             "effectValue": "12",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "12",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Venom Gland icon.png|22px|link=Venom Gland|alt=Venom Gland]]</span>&nbsp;[[Venom Gland|Venom Glands]]</span> produced",
+            "effectType": "Venom Glands produced",
             "effectValue": "13",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "13",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Venom Gland icon.png|22px|link=Venom Gland|alt=Venom Gland]]</span>&nbsp;[[Venom Gland|Venom Glands]]</span> produced",
+            "effectType": "Venom Glands produced",
             "effectValue": "14",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "14",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Venom Gland icon.png|22px|link=Venom Gland|alt=Venom Gland]]</span>&nbsp;[[Venom Gland|Venom Glands]]</span> produced",
+            "effectType": "Venom Glands produced",
             "effectValue": "15",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "15",
             "target": ""
           }
@@ -7655,7 +7655,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Selfless Discipline",
-        "description": "This Pal's Attack and Defense increase by 2% for each other <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Grass icon.png|22px|link=Grass|alt=Grass]]</span>&nbsp;[[Grass|Grass]]</span> Pal in your party.",
+        "description": "This Pal's Attack and Defense increase by 2% for each other Grass Pal in your party.",
         "workType": "",
         "scaling": [
           {
@@ -8238,7 +8238,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Frozen Gleam Strike",
-        "description": "When activated, attacks targeted enemy with Snow Claw.<br><br> When this Pal uses Snow Claw, it has a <span style=\"color: #B0F5C4;\">1.1x</span> damage multiplier. <br><br> While in party, increases the player's [https://palworld.wiki.gg/wiki/Weapons#:~:text=Melee%20Weapons,-%5Bedit melee weapon] attack speed by <span style=\"color: #B0F5C4;\">15%</span>",
+        "description": "When activated, attacks targeted enemy with Snow Claw. When this Pal uses Snow Claw, it has a 1.1x damage multiplier. While in party, increases the player's melee weapon attack speed by 15%",
         "workType": "Attack",
         "scaling": [
           {
@@ -8285,7 +8285,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Heart Drain",
-        "description": "While fighting together, grants the player and Lovander a life steal effect that restores <span style=\"color: #B0F5C4;\">5%</span> of damage dealth as Health..",
+        "description": "While fighting together, grants the player and Lovander a life steal effect that restores 5% of damage dealth as Health..",
         "workType": "Passive",
         "scaling": [
           {
@@ -8379,7 +8379,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Antigravity",
-        "description": "While in party, spheres hone in on Pals, and [[carrying capacity]] increases by 300. (Does not stack)",
+        "description": "While in party, spheres hone in on Pals, and carrying capacity increases by 300. (Does not stack)",
         "workType": "Passive",
         "scaling": []
       },
@@ -8395,7 +8395,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Harvest Goddess",
-        "description": "When activated,  the queen's soothing graces greatly restore the player's Health.",
+        "description": "When activated, the queen's soothing graces greatly restore the player's Health.",
         "workType": "Heal",
         "scaling": [
           {
@@ -8442,7 +8442,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Goddess of the Tranquil Light",
-        "description": "When activated,  the queen's soothing graces greatly restore the player's Health.",
+        "description": "When activated, the queen's soothing graces greatly restore the player's Health.",
         "workType": "Heal",
         "scaling": [
           {
@@ -8490,7 +8490,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Phantasmal Arcana",
-        "description": "While in party, when the player attacks an enemy afflicted with [https://palworld.wiki.gg/wiki/Status_Effects#Burn:~:text=Burn,-%5Bedit Burn], the enemy creates flames around itself, dealing continuous damage equal to <span style=\"color: #B0F5C4;\">15%</span> of the player's attack damage to enemies that come into contact with them. (Does not stack.)",
+        "description": "While in party, when the player attacks an enemy afflicted with Burn, the enemy creates flames around itself, dealing continuous damage equal to 15% of the player's attack damage to enemies that come into contact with them. (Does not stack.)",
         "workType": "",
         "scaling": [
           {
@@ -8693,7 +8693,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Messenger of Death",
-        "description": "Can be ridden. \n\nWhile in party,\nall Party Pals' Active Skill cooldowns are reduced by 30% whenever you defeat an enemy. (does not stack)",
+        "description": "Can be ridden. While in party, all Party Pals' Active Skill cooldowns are reduced by 30% whenever you defeat an enemy. (does not stack)",
         "workType": "Mount",
         "scaling": [
           {
@@ -8775,61 +8775,61 @@
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "10",
             "target": ""
           },
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "10",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1020",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1020",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1030",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1030",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1040",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1040",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1050",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1050",
             "target": ""
           }
@@ -8852,61 +8852,61 @@
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "10",
             "target": ""
           },
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "10",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1020",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1020",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1030",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1030",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1040",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1040",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1050",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Gold Coin icon.png|22px|link=Gold Coin|alt=Gold Coin]]</span>&nbsp;[[Gold Coin|Gold Coins]]</span> produced",
+            "effectType": "Gold Coins produced",
             "effectValue": "1050",
             "target": ""
           }
@@ -8924,36 +8924,36 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Pacapaca Wool",
-        "description": "Can be ridden. \nWhile in party, increases Kingpaca's Defense and Movement speed.\n\nSometimes drops [[Wool]] when assigned to the ranch.",
+        "description": "Can be ridden. While in party, increases Kingpaca's Defense and Movement speed. Sometimes drops Wool when assigned to the ranch.",
         "workType": "Mount",
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "2",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "23",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "24",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "25",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Wool icon.png|22px|link=Wool|alt=Wool]]</span>&nbsp;[[Wool|Wool]]</span> produced",
+            "effectType": "Wool produced",
             "effectValue": "26",
             "target": ""
           }
@@ -8972,7 +8972,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Steel Scorpion",
-        "description": "While in party, player's Defense increases by <span style=\"color: #B0F5C4;\">5%</span>, and <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Electric icon.png|22px|link=Electric|alt=Electric]]</span>&nbsp;[[Electric|Electric]]</span> Pals drop <span style=\"color: #B0F5C4;\">40%</span> more items when defeated. (Does not stack)",
+        "description": "While in party, player's Defense increases by 5%, and Electric Pals drop 40% more items when defeated. (Does not stack)",
         "workType": "Drop Boost",
         "scaling": [
           {
@@ -9324,7 +9324,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Magma Overload",
-        "description": "Can be ridden as a mount.\nThis Pal's Attack increases for each other <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Fire icon.png|22px|link=Fire|alt=Fire]]</span>&nbsp;[[Fire|Fire]]</span> or <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Ground icon.png|22px|link=Ground|alt=Ground]]</span>&nbsp;[[Ground|Ground]]</span> Pal in your party.",
+        "description": "Can be ridden as a mount. This Pal's Attack increases for each other Fire or Ground Pal in your party.",
         "workType": "",
         "scaling": [
           {
@@ -9383,7 +9383,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Grenadier Panda",
-        "description": "Can be [[ridden]]. Can rapidly fire a grenade launcher while mounted.",
+        "description": "Can be ridden. Can rapidly fire a grenade launcher while mounted.",
         "workType": "Mount",
         "scaling": [
           {
@@ -9460,7 +9460,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Grenadier Panda",
-        "description": "Can be [[ridden]]. Can rapidly fire a grenade launcher while mounted.",
+        "description": "Can be ridden. Can rapidly fire a grenade launcher while mounted.",
         "workType": "Mount",
         "scaling": [
           {
@@ -9537,36 +9537,36 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Milk Maker",
-        "description": "Sometimes produces [[Milk]] when assigned to Ranch.",
+        "description": "Sometimes produces Milk when assigned to Ranch.",
         "workType": "Farming",
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Milk icon.png|22px|link=Milk|alt=Milk]]</span>&nbsp;[[Milk|Milk]]</span> produced",
+            "effectType": "Milk produced",
             "effectValue": "1-2",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Milk icon.png|22px|link=Milk|alt=Milk]]</span>&nbsp;[[Milk|Milk]]</span> produced",
+            "effectType": "Milk produced",
             "effectValue": "13",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Milk icon.png|22px|link=Milk|alt=Milk]]</span>&nbsp;[[Milk|Milk]]</span> produced",
+            "effectType": "Milk produced",
             "effectValue": "24",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Milk icon.png|22px|link=Milk|alt=Milk]]</span>&nbsp;[[Milk|Milk]]</span> produced",
+            "effectType": "Milk produced",
             "effectValue": "25",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Milk icon.png|22px|link=Milk|alt=Milk]]</span>&nbsp;[[Milk|Milk]]</span> produced",
+            "effectType": "Milk produced",
             "effectValue": "26",
             "target": ""
           }
@@ -9648,7 +9648,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Charming Spore",
-        "description": "While at a base, increases the [[Medicine Production]] [[Work Suitability]] Level for all other Base Pals. (Does not stack)",
+        "description": "While at a base, increases the Medicine Production Work Suitability Level for all other Base Pals. (Does not stack)",
         "workType": "",
         "scaling": [
           {
@@ -9695,7 +9695,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Dark Knight of the Abyss",
-        "description": "Can be [[ridden]]. Can double jump while mounted.",
+        "description": "Can be ridden. Can double jump while mounted.",
         "workType": "Mount",
         "scaling": [
           {
@@ -9790,7 +9790,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Hug You So Much",
-        "description": "While in party, the player's attacks inflict [https://palworld.wiki.gg/wiki/Status_Effects#:~:text=Ivy%2DCovered,-%5Bedit Ivy-Covered] <span style=\"color: #B0F5C4;\">2</span>. (Does not stack)",
+        "description": "While in party, the player's attacks inflict Ivy-Covered 2. (Does not stack)",
         "workType": "",
         "scaling": []
       },
@@ -9806,7 +9806,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Sentinel of the Great Sea",
-        "description": "While fighting together,  it follows up your attacks with spear strikes.  Can be ridden to travel quickly across water. While mounted, it can leap high into the air over water.",
+        "description": "While fighting together, it follows up your attacks with spear strikes. Can be ridden to travel quickly across water. While mounted, it can leap high into the air over water.",
         "workType": "Water Mount",
         "scaling": [
           {
@@ -9941,7 +9941,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Travel Companion",
-        "description": "Can be [[ridden]] as a flying mount.",
+        "description": "Can be ridden as a flying mount.",
         "workType": "Flying Mount",
         "scaling": [
           {
@@ -9988,7 +9988,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Kuudere",
-        "description": "When activated, detects the location of nearby [https://palworld.wiki.gg/wiki/Key_Item#Effigies:~:text=Pal%20Effigies Pal Effigies].",
+        "description": "When activated, detects the location of nearby Pal Effigies.",
         "workType": "Dig, Dog! Dig!",
         "scaling": []
       },
@@ -10336,7 +10336,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Pengullet Launcher",
-        "description": "When activated, the [[player]] equips a [[Rocket Launcher]] and fires Pengullet as ammunition. Pengullet explodes on contact and is incapacitated.",
+        "description": "When activated, the player equips a Rocket Launcher and fires Pengullet as ammunition. Pengullet explodes on contact and is incapacitated.",
         "workType": "Equip",
         "scaling": [
           {
@@ -10384,7 +10384,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Pengullet Lux Launcher",
-        "description": "When activated, the player equips a Rocket Launcher  and fires Pengullet Lux as ammunition.  Pengullet Lux explodes on contact and is incapacitated.",
+        "description": "When activated, the player equips a Rocket Launcher and fires Pengullet Lux as ammunition. Pengullet Lux explodes on contact and is incapacitated.",
         "workType": "Equip",
         "scaling": [
           {
@@ -10432,7 +10432,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Brave Sailor",
-        "description": "While in party, <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Fire icon.png|22px|link=Fire|alt=Fire]]</span>&nbsp;[[Fire|Fire]]</span> [[Pals]] drop 40% more items when defeated.",
+        "description": "While in party, Fire Pals drop 40% more items when defeated.",
         "workType": "Drop Boost",
         "scaling": [
           {
@@ -10480,7 +10480,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Unyielding Storm Commander",
-        "description": "While in party,\nimproves player's and Pals' <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Water icon.png|22px|link=Water|alt=Water]]</span>&nbsp;[[Water|Water]]</span> damage to enemy weak points by 25%. (Does not stack)",
+        "description": "While in party, improves player's and Pals' Water damage to enemy weak points by 25%. (Does not stack)",
         "workType": "Drop Boost",
         "scaling": [
           {
@@ -10527,36 +10527,36 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Blessing of the Flower Spirit",
-        "description": "When activated, soothing blossoms restore the player's Health by 75%.\n\n\nWhile at a base, increases the [[Planting]] Work Suitability Level for all other Base Pals by +1. (Does not stack)",
+        "description": "When activated, soothing blossoms restore the player's Health by 75%. While at a base, increases the Planting Work Suitability Level for all other Base Pals by +1. (Does not stack)",
         "workType": "Heal",
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Health icon.png|22px|link=Health|alt=Health]]</span>&nbsp;[[Health|Health]]</span> restored",
+            "effectType": "Health restored",
             "effectValue": "400",
             "target": "Player"
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Health icon.png|22px|link=Health|alt=Health]]</span>&nbsp;[[Health|Health]]</span> restored",
+            "effectType": "Health restored",
             "effectValue": "440",
             "target": "Player"
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Health icon.png|22px|link=Health|alt=Health]]</span>&nbsp;[[Health|Health]]</span> restored",
+            "effectType": "Health restored",
             "effectValue": "520",
             "target": "Player"
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Health icon.png|22px|link=Health|alt=Health]]</span>&nbsp;[[Health|Health]]</span> restored",
+            "effectType": "Health restored",
             "effectValue": "640",
             "target": "Player"
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Health icon.png|22px|link=Health|alt=Health]]</span>&nbsp;[[Health|Health]]</span> restored",
+            "effectType": "Health restored",
             "effectValue": "800",
             "target": "Player"
           }
@@ -10645,7 +10645,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Rider of the Snowy Mountain",
-        "description": "Can be ridden.  Runs faster over snow. Can slide quickly down slopes.",
+        "description": "Can be ridden. Runs faster over snow. Can slide quickly down slopes.",
         "workType": "Water Mount",
         "scaling": [
           {
@@ -10735,7 +10735,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Scorpion Sonar",
-        "description": "When activated, it can analyze airborne particles and find a [[dungeon]]'s exit.",
+        "description": "When activated, it can analyze airborne particles and find a dungeon's exit.",
         "workType": "Detection",
         "scaling": [
           {
@@ -10919,7 +10919,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Best Boy",
-        "description": "While in party, increases the player's [https://palworld.wiki.gg/wiki/Weapons#:~:text=Melee%20Weapons melee weapon] damage by 10%. (Does not stack)",
+        "description": "While in party, increases the player's melee weapon damage by 10%. (Does not stack)",
         "workType": "Combat",
         "scaling": [
           {
@@ -11044,7 +11044,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Black Hare",
-        "description": "Can be ridden. <br>While mounted, changes the player's attack to <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Dark icon.png|22px|link=Dark|alt=Dark]]</span>&nbsp;[[Dark|Dark]]</span> and increases Attack by <span style=\"color: #B0F5C4;\">5%</span>",
+        "description": "Can be ridden. While mounted, changes the player's attack to Dark and increases Attack by 5%",
         "workType": "Mount",
         "scaling": [
           {
@@ -11227,7 +11227,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Flame Wing",
-        "description": "Can be [[ridden]] as a flying mount. <br><br> While mounted, changes the player's attack type to <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Fire icon.png|22px|link=Fire|alt=Fire]]</span>&nbsp;[[Fire|Fire]]</span> and increases Attack by <span style=\"color: #B0F5C4;\">5%</span>.",
+        "description": "Can be ridden as a flying mount. While mounted, changes the player's attack type to Fire and increases Attack by 5%.",
         "workType": "Flying Mount",
         "scaling": [
           {
@@ -11304,7 +11304,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Jumping Force",
-        "description": "Can be [[ridden]].<br>Can perform a double jump while mounted.<br><br> This Pal's Movement Speed increases by <span style=\"color: #B0F5C4;\">5%</span> for each <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Electric icon.png|22px|link=Electric|alt=Electric]]</span>&nbsp;[[Electric|Electric]]</span> Pal in your party. (Excluding Rayhound)",
+        "description": "Can be ridden. Can perform a double jump while mounted. This Pal's Movement Speed increases by 5% for each Electric Pal in your party. (Excluding Rayhound)",
         "workType": "Mount",
         "scaling": [
           {
@@ -11381,7 +11381,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Snow Shepherd",
-        "description": "Can be [[ridden]]. <br>Can perform a double jump while mounted.<br><br> While in party, increases Defense of <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Ice icon.png|22px|link=Ice|alt=Ice]]</span>&nbsp;[[Ice|Ice]]</span> Pals by <span style=\"color: #B0F5C4;\">15%</span>. (Does not stack)",
+        "description": "Can be ridden. Can perform a double jump while mounted. While in party, increases Defense of Ice Pals by 15%. (Does not stack)",
         "workType": "Mount",
         "scaling": []
       },
@@ -11397,7 +11397,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Cool Body",
-        "description": "Can be [[ridden]]. Keeps the rider cool in hot environments.",
+        "description": "Can be ridden. Keeps the rider cool in hot environments.",
         "workType": "Mount",
         "scaling": []
       },
@@ -11462,7 +11462,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Missile Party",
-        "description": "Can be [[ridden]]. Can rapidly fire a missile launcher while mounted.",
+        "description": "Can be ridden. Can rapidly fire a missile launcher while mounted.",
         "workType": "Mount",
         "scaling": [
           {
@@ -11521,7 +11521,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Ore-Loving Beast",
-        "description": "Can be ridden.\nWhile in party,\nreduces the weight of all types of ore by 30%.\n(Does not stack)",
+        "description": "Can be ridden. While in party, reduces the weight of all types of ore by 30%. (Does not stack)",
         "workType": "Mount",
         "scaling": [
           {
@@ -11569,7 +11569,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Ice-Loving Beast",
-        "description": "Can be [[ridden]]. <br>While in party, reduces weight of ore by <span style=\"color: #B0F5C4;\">35%</span>. (Does not stack)",
+        "description": "Can be ridden. While in party, reduces weight of ore by 35%. (Does not stack)",
         "workType": "Mount",
         "scaling": [
           {
@@ -11616,7 +11616,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Skilled Fingers",
-        "description": "While in party, increases Attack of <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Neutral icon.png|22px|link=Neutral|alt=Neutral]]</span>&nbsp;[[Neutral|Neutral]]</span> Pals by 15%. (Does not stack).\n\nWhile at a base, increases the [[Handiwork]] work Suitability Level for all other Base Pals by +1. (Does not stack)",
+        "description": "While in party, increases Attack of Neutral Pals by 15%. (Does not stack). While at a base, increases the Handiwork work Suitability Level for all other Base Pals by +1. (Does not stack)",
         "workType": "Working",
         "scaling": [
           {
@@ -11693,7 +11693,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Grass Weaver",
-        "description": "While in team, increases Attack of Grass Pals. While at a base, increases work efficiency when working at  Weapon Workbench, Weapon Assembly Line, and other related facilities.",
+        "description": "While in team, increases Attack of Grass Pals. While at a base, increases work efficiency when working at Weapon Workbench, Weapon Assembly Line, and other related facilities.",
         "workType": "Working",
         "scaling": [
           {
@@ -11958,7 +11958,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Hard Head",
-        "description": "Can be [[ridden]]. <br><br> Increases efficiency of destroying Stone by 500%.",
+        "description": "Can be ridden. Increases efficiency of destroying Stone by 500%.",
         "workType": "Mount",
         "scaling": [
           {
@@ -12005,7 +12005,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Desert Empress",
-        "description": "While at base, boosts Anubis's work speed.\nIncreases efficiency if Sekhmet is also working at a Workbench, Workshop, or other related facilities. (Does not stack)",
+        "description": "While at base, boosts Anubis's work speed. Increases efficiency if Sekhmet is also working at a Workbench, Workshop, or other related facilities. (Does not stack)",
         "workType": "",
         "scaling": [
           {
@@ -12188,7 +12188,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Rampant Spores",
-        "description": "Can be [[ridden]]. Sometimes drops [[Mushroom]] or [[Cavern Mushroom]] when assigned to [[Ranch]].",
+        "description": "Can be ridden. Sometimes drops Mushroom or Cavern Mushroom when assigned to Ranch.",
         "workType": "Mount",
         "scaling": []
       },
@@ -12205,7 +12205,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Roiling Spores",
-        "description": "Can be [[ridden]]. While at a [[base]], its mysterious spores slow the rate at which the [[SAN]] value of allies at the base decreases by 10%.",
+        "description": "Can be ridden. While at a base, its mysterious spores slow the rate at which the SAN value of allies at the base decreases by 10%.",
         "workType": "Mount",
         "scaling": []
       },
@@ -12226,7 +12226,7 @@
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Cloth icon.png|22px|link=High Quality Cloth|alt=High Quality Cloth]]</span>&nbsp;[[High Quality Cloth|High Quality Cloth]]</span> produced",
+            "effectType": "High Quality Cloth produced",
             "effectValue": "1",
             "target": ""
           },
@@ -12238,7 +12238,7 @@
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Cloth icon.png|22px|link=High Quality Cloth|alt=High Quality Cloth]]</span>&nbsp;[[High Quality Cloth|High Quality Cloth]]</span> produced",
+            "effectType": "High Quality Cloth produced",
             "effectValue": "12",
             "target": ""
           },
@@ -12250,7 +12250,7 @@
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Cloth icon.png|22px|link=High Quality Cloth|alt=High Quality Cloth]]</span>&nbsp;[[High Quality Cloth|High Quality Cloth]]</span> produced",
+            "effectType": "High Quality Cloth produced",
             "effectValue": "13",
             "target": ""
           },
@@ -12262,7 +12262,7 @@
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Cloth icon.png|22px|link=High Quality Cloth|alt=High Quality Cloth]]</span>&nbsp;[[High Quality Cloth|High Quality Cloth]]</span> produced",
+            "effectType": "High Quality Cloth produced",
             "effectValue": "14",
             "target": ""
           },
@@ -12274,7 +12274,7 @@
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:High Quality Cloth icon.png|22px|link=High Quality Cloth|alt=High Quality Cloth]]</span>&nbsp;[[High Quality Cloth|High Quality Cloth]]</span> produced",
+            "effectType": "High Quality Cloth produced",
             "effectValue": "15",
             "target": ""
           },
@@ -12336,7 +12336,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Fish Fillet",
-        "description": "When activated, Skutlass becomes the player's katana (Attack: <span style=\"color: #B0F5C4;\">2,600</span>)\n\nIf it does not revert to its normal form quickly, Skutlass will become incapacitated.\n\nIt will also become incapacitated if Iaigiri is used.",
+        "description": "When activated, Skutlass becomes the player's katana (Attack: 2,600) If it does not revert to its normal form quickly, Skutlass will become incapacitated. It will also become incapacitated if Iaigiri is used.",
         "workType": "",
         "scaling": [
           {
@@ -12384,7 +12384,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Seared Fish Fillet",
-        "description": "When activated, Skutlass Ignis becomes the player's katana (Attack: <span style=\"color: #B0F5C4;\">2,900</span>).<br><br> If it does not revert to its normal form quickly, Skutlass Ignis will become incapacitated.<br><br> It will also become incapacitated if Iagiri is used.",
+        "description": "When activated, Skutlass Ignis becomes the player's katana (Attack: 2,900). If it does not revert to its normal form quickly, Skutlass Ignis will become incapacitated. It will also become incapacitated if Iagiri is used.",
         "workType": "Combat",
         "scaling": []
       },
@@ -12447,12 +12447,12 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Dig, Dog! Dig!",
-        "description": "When activated, uses its sharp sense of smell to detect nearby [[Chromite]]. While fighting together, a large amount of Chromite is obtained.",
+        "description": "When activated, uses its sharp sense of smell to detect nearby Chromite. While fighting together, a large amount of Chromite is obtained.",
         "workType": "Dig, Dog! Dig!",
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Chromite icon.png|22px|link=Chromite|alt=Chromite]]</span>&nbsp;[[Chromite|Chromite]]</span> drop rate",
+            "effectType": "Chromite drop rate",
             "effectValue": "+100%",
             "target": ""
           },
@@ -12464,7 +12464,7 @@
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Chromite icon.png|22px|link=Chromite|alt=Chromite]]</span>&nbsp;[[Chromite|Chromite]]</span> drop rate",
+            "effectType": "Chromite drop rate",
             "effectValue": "+110%",
             "target": ""
           },
@@ -12476,7 +12476,7 @@
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Chromite icon.png|22px|link=Chromite|alt=Chromite]]</span>&nbsp;[[Chromite|Chromite]]</span> drop rate",
+            "effectType": "Chromite drop rate",
             "effectValue": "+130%",
             "target": ""
           },
@@ -12488,7 +12488,7 @@
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Chromite icon.png|22px|link=Chromite|alt=Chromite]]</span>&nbsp;[[Chromite|Chromite]]</span> drop rate",
+            "effectType": "Chromite drop rate",
             "effectValue": "+160%",
             "target": ""
           },
@@ -12500,7 +12500,7 @@
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Chromite icon.png|22px|link=Chromite|alt=Chromite]]</span>&nbsp;[[Chromite|Chromite]]</span> drop rate",
+            "effectType": "Chromite drop rate",
             "effectValue": "+200%",
             "target": ""
           },
@@ -12659,7 +12659,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Charming Fish",
-        "description": "Can be ridden to travel on water.\nWhile in party, makes it easier to fish up talented Pals. (Does not stack)",
+        "description": "Can be ridden to travel on water. While in party, makes it easier to fish up talented Pals. (Does not stack)",
         "workType": "",
         "scaling": [
           {
@@ -12724,31 +12724,31 @@
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Bone icon.png|22px|link=Bone|alt=Bone]]</span>&nbsp;[[Bone|Bones]]</span> produced",
+            "effectType": "Bones produced",
             "effectValue": "1",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Bone icon.png|22px|link=Bone|alt=Bone]]</span>&nbsp;[[Bone|Bones]]</span> produced",
+            "effectType": "Bones produced",
             "effectValue": "12",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Bone icon.png|22px|link=Bone|alt=Bone]]</span>&nbsp;[[Bone|Bones]]</span> produced",
+            "effectType": "Bones produced",
             "effectValue": "13",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Bone icon.png|22px|link=Bone|alt=Bone]]</span>&nbsp;[[Bone|Bones]]</span> produced",
+            "effectType": "Bones produced",
             "effectValue": "14",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Bone icon.png|22px|link=Bone|alt=Bone]]</span>&nbsp;[[Bone|Bones]]</span> produced",
+            "effectType": "Bones produced",
             "effectValue": "15",
             "target": ""
           }
@@ -12860,7 +12860,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Blade of Uncontrolled Passion",
-        "description": "While in possession, the amount of items obtained from using the [[Meat Cleaver]] increases.",
+        "description": "While in possession, the amount of items obtained from using the Meat Cleaver increases.",
         "workType": "Drop Boost",
         "scaling": [
           {
@@ -12965,7 +12965,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Swift Swimmer",
-        "description": "Can be ridden to travel on water. \n\nSometimes drops [[Leather]] when assigned to Ranch.",
+        "description": "Can be ridden to travel on water. Sometimes drops Leather when assigned to Ranch.",
         "workType": "Mount",
         "scaling": [
           {
@@ -13012,7 +13012,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Sand Swimmer",
-        "description": "Can be [[ridden]]. While in team, Surfent Terra helps carry supplies, decreasing the weight of ores in the player's inventory.",
+        "description": "Can be ridden. While in team, Surfent Terra helps carry supplies, decreasing the weight of ores in the player's inventory.",
         "workType": "Mount",
         "scaling": [
           {
@@ -13136,7 +13136,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Wings of Water",
-        "description": "Can be [[ridden]] as a flying mount. Enhances Water attacks while mounted.",
+        "description": "Can be ridden as a flying mount. Enhances Water attacks while mounted.",
         "workType": "Flying Mount",
         "scaling": [
           {
@@ -13183,7 +13183,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Fluffy",
-        "description": "While in team, [[Sweepa]]'s stats will be increased.",
+        "description": "While in team, Sweepa's stats will be increased.",
         "workType": "Passive",
         "scaling": [
           {
@@ -13293,7 +13293,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Chipper Chimp Gunfire",
-        "description": "When activated, Tanzee Ignis will mercilessly fire a <span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Fire icon.png|22px|link=Fire|alt=Fire]]</span>&nbsp;[[Fire|Fire]]</span> assault rifle at nearby enemies for a limited time.",
+        "description": "When activated, Tanzee Ignis will mercilessly fire a Fire assault rifle at nearby enemies for a limited time.",
         "workType": "",
         "scaling": [
           {
@@ -13403,7 +13403,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Masonry Archelon",
-        "description": "Can be [[ridden]].<br>\nWhile at a base, increases the Mining Work Suitability Level for all other Base Pals by +1.\n(Does not stack)",
+        "description": "Can be ridden. While at a base, increases the Mining Work Suitability Level for all other Base Pals by +1. (Does not stack)",
         "workType": "",
         "scaling": [
           {
@@ -13477,7 +13477,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Ultrasonic Sensor",
-        "description": "When activated, uses ultrasonic waves to detect the location of nearby [[Pals]].",
+        "description": "When activated, uses ultrasonic waves to detect the location of nearby Pals.",
         "workType": "Detection",
         "scaling": [
           {
@@ -13570,7 +13570,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Spikey Carrier",
-        "description": "While in party, reduces [[Ore]] weight by 80%. (Does not stack)",
+        "description": "While in party, reduces Ore weight by 80%. (Does not stack)",
         "workType": "Follower",
         "scaling": [
           {
@@ -13618,7 +13618,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Shiny Hauler",
-        "description": "While in team,  Turtacle Terra helps carry supplies,  decreasing the weight of armor in the player's inventory.  Also increases Attack of Ground Pals.",
+        "description": "While in team, Turtacle Terra helps carry supplies, decreasing the weight of armor in the player's inventory. Also increases Attack of Ground Pals.",
         "workType": "Follower",
         "scaling": [
           {
@@ -13895,7 +13895,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Aerial Marauder",
-        "description": "Can be ridden as a flying mount. \n\nWhile in party, increases damage player deals to enemy weak points by 30%. (Does not stack)",
+        "description": "Can be ridden as a flying mount. While in party, increases damage player deals to enemy weak points by 30%. (Does not stack)",
         "workType": "Flying Mount",
         "scaling": [
           {
@@ -13972,7 +13972,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Snake's Sagacity",
-        "description": "While in party, the player's attacks inflict [https://palworld.wiki.gg/wiki/Status_Effects#Blind:~:text=Blind,-%5Bedit Blind]. (Does not stack)",
+        "description": "While in party, the player's attacks inflict Blind. (Does not stack)",
         "workType": "",
         "scaling": []
       },
@@ -13988,7 +13988,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Grassland Speedster",
-        "description": "While fighting together, increases player's movement speed and  changes the player's attack type to Grass.",
+        "description": "While fighting together, increases player's movement speed and changes the player's attack type to Grass.",
         "workType": "Grass Convert",
         "scaling": []
       },
@@ -14176,7 +14176,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Chilled Whale Cruiser",
-        "description": "Can be ridden.  While fighting together, the fishing minigame  starts with the capture gauge higher than usual. Additionally, the capture gauge fills faster  when the bar is aligned.",
+        "description": "Can be ridden. While fighting together, the fishing minigame starts with the capture gauge higher than usual. Additionally, the capture gauge fills faster when the bar is aligned.",
         "workType": "Mount",
         "scaling": [
           {
@@ -14254,7 +14254,7 @@
       "isVariant": true,
       "partnerSkill": {
         "name": "Cozy Whale Cruiser",
-        "description": "Can be ridden.  While fighting together, the fishing minigame  starts with the capture gauge higher than usual.  Additionally, the capture gauge fills faster  when the bar is aligned.",
+        "description": "Can be ridden. While fighting together, the fishing minigame starts with the capture gauge higher than usual. Additionally, the capture gauge fills faster when the bar is aligned.",
         "workType": "Mount",
         "scaling": [
           {
@@ -14544,36 +14544,36 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Candy Pop",
-        "description": "Sometimes drops [[Cotton Candy]] when assigned to Ranch.\n\nWhite at a base, reduces Hunger depletion rate of Base Pals by -10%. (Does not stack)",
+        "description": "Sometimes drops Cotton Candy when assigned to Ranch. White at a base, reduces Hunger depletion rate of Base Pals by -10%. (Does not stack)",
         "workType": "Farming",
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Cotton Candy icon.png|22px|link=Cotton Candy|alt=Cotton Candy]]</span>&nbsp;[[Cotton Candy|Cotton Candy]]</span> produced",
+            "effectType": "Cotton Candy produced",
             "effectValue": "1",
             "target": ""
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Cotton Candy icon.png|22px|link=Cotton Candy|alt=Cotton Candy]]</span>&nbsp;[[Cotton Candy|Cotton Candy]]</span> produced",
+            "effectType": "Cotton Candy produced",
             "effectValue": "12",
             "target": ""
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Cotton Candy icon.png|22px|link=Cotton Candy|alt=Cotton Candy]]</span>&nbsp;[[Cotton Candy|Cotton Candy]]</span> produced",
+            "effectType": "Cotton Candy produced",
             "effectValue": "13",
             "target": ""
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Cotton Candy icon.png|22px|link=Cotton Candy|alt=Cotton Candy]]</span>&nbsp;[[Cotton Candy|Cotton Candy]]</span> produced",
+            "effectType": "Cotton Candy produced",
             "effectValue": "14",
             "target": ""
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Cotton Candy icon.png|22px|link=Cotton Candy|alt=Cotton Candy]]</span>&nbsp;[[Cotton Candy|Cotton Candy]]</span> produced",
+            "effectType": "Cotton Candy produced",
             "effectValue": "15",
             "target": ""
           }
@@ -14732,7 +14732,7 @@
       "isVariant": false,
       "partnerSkill": {
         "name": "Unknown Intruder",
-        "description": "Can be [[ridden]].<br><br>While in party, increases the player's energy [[weapon]] damage by <span style=\"color: #B0F5C4;\">10%</span>. (Does not stack)",
+        "description": "Can be ridden. While in party, increases the player's energy weapon damage by 10%. (Does not stack)",
         "workType": "Mount",
         "scaling": []
       },
@@ -14801,7 +14801,7 @@
         "scaling": [
           {
             "level": 0,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Meteorite Fragment icon.png|22px|link=Meteorite Fragment|alt=Meteorite Fragment]]</span>&nbsp;[[Meteorite Fragment|Meteorite Fragments]]</span> obtained",
+            "effectType": "Meteorite Fragments obtained",
             "effectValue": "+30%",
             "target": "Player"
           },
@@ -14813,7 +14813,7 @@
           },
           {
             "level": 1,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Meteorite Fragment icon.png|22px|link=Meteorite Fragment|alt=Meteorite Fragment]]</span>&nbsp;[[Meteorite Fragment|Meteorite Fragments]]</span> obtained",
+            "effectType": "Meteorite Fragments obtained",
             "effectValue": "+33%",
             "target": "Player"
           },
@@ -14825,7 +14825,7 @@
           },
           {
             "level": 2,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Meteorite Fragment icon.png|22px|link=Meteorite Fragment|alt=Meteorite Fragment]]</span>&nbsp;[[Meteorite Fragment|Meteorite Fragments]]</span> obtained",
+            "effectType": "Meteorite Fragments obtained",
             "effectValue": "+39%",
             "target": "Player"
           },
@@ -14837,7 +14837,7 @@
           },
           {
             "level": 3,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Meteorite Fragment icon.png|22px|link=Meteorite Fragment|alt=Meteorite Fragment]]</span>&nbsp;[[Meteorite Fragment|Meteorite Fragments]]</span> obtained",
+            "effectType": "Meteorite Fragments obtained",
             "effectValue": "+48%",
             "target": "Player"
           },
@@ -14849,7 +14849,7 @@
           },
           {
             "level": 4,
-            "effectType": "<span class=\"link-icon\" style=\"--link-icon-size: 1.2em; --link-icon-line-height: 1lh;\"><span class=\"icon\">[[File:Meteorite Fragment icon.png|22px|link=Meteorite Fragment|alt=Meteorite Fragment]]</span>&nbsp;[[Meteorite Fragment|Meteorite Fragments]]</span> obtained",
+            "effectType": "Meteorite Fragments obtained",
             "effectValue": "+60%",
             "target": "Player"
           },

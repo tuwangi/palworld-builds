@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Shared favorite collections — public by URL, but not catalog content.
+Disallow: /profile/
+Disallow: /en/profile/
+Disallow: /api/
+
+Sitemap: https://palworld-builds.vercel.app/sitemap-index.xml

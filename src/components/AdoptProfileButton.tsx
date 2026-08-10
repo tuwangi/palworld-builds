@@ -33,11 +33,11 @@ export default function AdoptProfileButton({ id, label, errorLabel, redirectTo }
         type="button"
         disabled={loading}
         onClick={handleClick}
-        class="inline-flex items-center rounded-full bg-brand-500 py-2 px-4 text-sm font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 disabled:opacity-50"
+        class="toolbar-button active disabled:opacity-50"
       >
         {label}
       </button>
-      {failed && <p class="mt-1.5 text-xs text-zinc-500">{errorLabel}</p>}
+      {failed && <p class="mt-1.5 text-xs text-[var(--ink-soft)]">{errorLabel}</p>}
     </div>
   );
 }

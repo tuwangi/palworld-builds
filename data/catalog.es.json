@@ -1,6 +1,7 @@
 {
   "builds": {
     "explosive-archer": {
+      "name": "Arquero explosivo",
       "summary": "Cada flecha detona por el 30% de tu ataque, sin importar qué arco la disparó.",
       "pals": [
         "Lantern Enchantment detona cada flecha al impactar por 15% (rango 1) a 30% (rango 5) de tu daño de ataque, calculado desde tu estadística de ataque y no desde el arco.",
@@ -24,6 +25,7 @@
       ]
     },
     "gunslinger": {
+      "name": "Pistolera",
       "summary": "Dispara sin parar: tus balas son a la vez tu daño y el buff de tu Pal.",
       "pals": [
         "Aumenta el ataque del jugador entre 30% y 80% mientras cada Pal del equipo sea de una especie distinta.",
@@ -48,6 +50,7 @@
       ]
     },
     "frostallion-charge-rifle": {
+      "name": "Frostallion con rifle de carga",
       "summary": "Congela al objetivo, apunta a un punto débil y cobra con un disparo cargado amplificado.",
       "pals": [
         "Mientras está montado, convierte los ataques del jugador a Hielo, aumenta el ataque a distancia montado entre 10% y 40%, y ayuda a infligir Congelación (nivel 2 a 6).",
@@ -66,6 +69,7 @@
       ]
     },
     "full-tackle-box": {
+      "name": "Caja de pesca completa",
       "summary": "Cada parte de un lanzamiento cubierta, usando las formas variantes que la mayoría de guías pasa por alto.",
       "pals": [
         "Mejora la tirada interna para pescar Pals con talento, de 74 a 82; la forma Eléctrica rinde estrictamente más que el Solmora base en cada rango.",
@@ -87,6 +91,7 @@
       ]
     },
     "poison-and-blind-lock": {
+      "name": "Bloqueo de veneno y ceguera",
       "summary": "La única combinación de dos estados que las reglas permiten, porque el Veneno se acumula sobre cualquier otro.",
       "pals": [
         "Añade Ceguera nivel 2 a 6 a los ataques del jugador desde el slot de equipo, estableciendo la primera ventana de control; también es el único Pal que aplica Ceguera de forma pasiva y aprende Poison Fog para aplicar Veneno desde su barra.",
@@ -109,6 +114,7 @@
       ]
     },
     "saya-and-selyne-hard-rotation": {
+      "name": "Rotación dura de Saya y Selyne",
       "summary": "Cinco Dragones que se hacen más fuertes por cada otro Dragón que tengan al lado.",
       "pals": [
         "Gana entre 2% y 6% de Ataque y Velocidad de Movimiento por cada otro Pal Dragón u Oscuro en el equipo (24% en rango 5 aquí); abre o reposiciona rápido antes de ceder el campo.",
@@ -131,6 +137,7 @@
       ]
     },
     "loot-goblin": {
+      "name": "Duende del botín",
       "summary": "Bonos específicos por ruta para Mineral, Oro, despiece y capacidad de carga.",
       "pals": [
         "Mientras está montado, aumenta el daño a mineral entre 1100% y 3300% y añade entre 150% y 300% más de Mineral; no es un bono pasivo para todos los nodos, solo está activo mientras está montado y minando.",
@@ -152,6 +159,7 @@
       ]
     },
     "aegis-wall": {
+      "name": "Muro Égida",
       "summary": "Reduce el tiempo sin escudo, recorta el daño al escudo y superpone recuperación condicional.",
       "pals": [
         "Reduce el retraso de regeneración del escudo entre 30% y 60% y el daño al escudo entre 65% y 80%; la capa de escudo siempre relevante mientras está en el equipo.",
@@ -168,6 +176,7 @@
       "alternatives": []
     },
     "catch-squad": {
+      "name": "Escuadrón de captura",
       "summary": "Elige un montaje de bonus trasero, Congelación o Hiedra, y luego apunta a pasivas y preserva esferas.",
       "pals": [
         "Añade de 1 a 5 niveles de captura solo cuando el lanzamiento obtiene un bono trasero.",
@@ -186,6 +195,7 @@
       ]
     },
     "traversal-kit": {
+      "name": "Kit de desplazamiento",
       "summary": "Encadena saltos a pie, planeo y escalada, y cambia a Starryon después del anochecer.",
       "pals": [
         "Añade exactamente un salto extra en el aire y un dash en el aire para el jugador; la condensación no aumenta ninguno de los dos conteos.",
@@ -204,6 +214,7 @@
       ]
     },
     "knocklem-poison-tank": {
+      "name": "Tanque de veneno Knocklem",
       "summary": "Deja que Knocklem sostenga el campo mientras el Veneno habilita daño, mitigación y rotaciones más rápidas.",
       "pals": [
         "Elegido por la comunidad como el carry activo resistente del núcleo de veneno: se mantiene activo para absorber presión y entregar el daño directo de Pal del equipo. No hay un número de partner skill documentado para este slot; se elige por su resistencia.",
@@ -222,6 +233,7 @@
       ]
     },
     "mobility-melee-swarm": {
+      "name": "Enjambre cuerpo a cuerpo móvil",
       "summary": "Haz dash, planea y pelea de cerca mientras dos Daedream añaden fuego de apoyo constante.",
       "pals": [
         "Añade un salto extra en el aire y un dash en el aire, permitiendo a un jugador cuerpo a cuerpo entrar, evadir y volver a comprometerse.",
@@ -241,6 +253,7 @@
       ]
     },
     "sustain-and-rescue-squad": {
+      "name": "Escuadrón de aguante y rescate",
       "summary": "Rota entre daño, resistencia, curación y recuperación de emergencia en vez de apostar por un solo carry.",
       "pals": [
         "Elegido por la comunidad como el líder de combate de propósito general del equipo: maneja el tiempo de campo habitual y da espacio a los miembros defensivos para recuperarse. No hay un número de partner skill documentado para este slot.",
@@ -260,6 +273,7 @@
       ]
     },
     "anubis-hard-tower-ground-team": {
+      "name": "Equipo de Tierra anti-torre con Anubis",
       "summary": "Construye una rotación cargada de Tierra alrededor de Anubis para peleas de torre en difícil.",
       "pals": [
         "El carry destacado del hilo de la comunidad para la pelea de torre en difícil: ancla la rotación activa con presión de Tierra rápida y estadísticas de combate generales sólidas. No hay un número de partner skill documentado para este slot.",
@@ -278,6 +292,7 @@
       ]
     },
     "fast-kill-exploration-party": {
+      "name": "Grupo de exploración de muerte rápida",
       "summary": "Limpia enemigos errantes rápido, reinicia enfriamientos y sigue moviéndote entre objetivos.",
       "pals": [
         "Combina presión a distancia con velocidad de movimiento (2% a 6% cada una) para mantener la ruta en marcha.",
@@ -296,6 +311,7 @@
       ]
     },
     "life-steal-player-tank": {
+      "name": "Tanque de jugador con robo de vida",
       "summary": "Mantente en pie con robo de vida, recuperación de escudo, daño a distancia y Pals de rotación resistentes.",
       "pals": [
         "Devuelve entre 5% y 9% del daño infligido como vida, tanto para el jugador como para Felbat.",
@@ -315,6 +331,7 @@
       ]
     },
     "bellanoir-glass-cannon-rotation": {
+      "name": "Rotación de cañón de cristal Bellanoir",
       "summary": "Alterna entre dos Bellanoir Libero a través de un núcleo de Veneno para presión implacable de alto riesgo.",
       "pals": [
         "Toma la primera ventana activa y descarga un set de habilidades de alto daño; la primera de dos copias intencionales para barras de habilidad activa independientes.",
@@ -335,6 +352,7 @@
       ]
     },
     "soak-shock-overload": {
+      "name": "Sobrecarga Empapado/Descarga",
       "summary": "Abre con Empapado, convierte al jugador a Eléctrico, y convierte la Electrificación en daño en cadena.",
       "pals": [
         "Hace que los ataques del jugador inflijan Empapado nivel 2 a 6, estableciendo la primera ventana de daño.",
@@ -353,6 +371,7 @@
       ]
     },
     "poison-barrier": {
+      "name": "Barrera de veneno",
       "summary": "Envenena al objetivo, recorta su ataque, y pelea detrás de recuperación de escudo y robo de vida.",
       "pals": [
         "Activa 30 segundos de infligir Veneno en los ataques del jugador y protege pasivamente al equipo del Veneno y del gas tóxico del World Tree.",
@@ -372,6 +391,7 @@
       ]
     },
     "skutlass-katana-rush": {
+      "name": "Asalto de katana Skutlass",
       "summary": "Convierte a Skutlass Ignis en una katana y aprovecha sus diez segundos de vida con golpes cuerpo a cuerpo más rápidos y duros.",
       "pals": [
         "Se convierte en una katana de 2,900 a 4,200 de Ataque durante diez segundos con un enfriamiento de diez segundos; la mecánica definitoria y deliberadamente de alto riesgo del equipo. Que se acabe el tiempo o usar Iaigiri lo incapacita.",
@@ -391,6 +411,7 @@
       ]
     },
     "death-from-above": {
+      "name": "Muerte desde el cielo",
       "summary": "Lánzate, flota en baja gravedad, y sigue disparando durante un planeo rápido con Galeclaw.",
       "pals": [
         "Lanza al jugador alto por el aire y otorga 50% más de Ataque hasta aterrizar; el lanzamiento y la ventana de Ataque en el aire definen todo el patrón de juego.",
@@ -410,6 +431,7 @@
       ]
     },
     "fire-team-template": {
+      "name": "Plantilla de equipo de Fuego",
       "summary": "Superpone Ataque, Defensa y daño a puntos débiles de Pals de Fuego alrededor de un núcleo confiable de Quemadura.",
       "pals": [
         "Aumenta el Ataque de cada Pal de Fuego del equipo entre 15% y 30%; las copias duplicadas no se acumulan.",
@@ -429,6 +451,7 @@
       ]
     },
     "grass-team-template": {
+      "name": "Plantilla de equipo de Planta",
       "summary": "Superpone Ataque, Defensa y daño a puntos débiles de Pals de Planta alrededor de un núcleo de campo de dos slots.",
       "pals": [
         "Aumenta el Ataque de cada Pal de Planta entre 15% y 30% desde cualquier slot de equipo; un segundo Bristla no añade otra copia.",
@@ -448,6 +471,7 @@
       ]
     },
     "water-team-template": {
+      "name": "Plantilla de equipo de Agua",
       "summary": "Combina Ataque, Defensa y daño a puntos débiles de Pals de Agua con presión y resistencia.",
       "pals": [
         "Aumenta el Ataque de cada Pal de Agua entre 15% y 30%; las copias duplicadas no se acumulan.",
@@ -467,6 +491,7 @@
       ]
     },
     "electric-team-template": {
+      "name": "Plantilla de equipo Eléctrico",
       "summary": "Apoya a los Pals Eléctricos, y luego convierte el fuego del jugador montado y genera Electrificación.",
       "pals": [
         "Aumenta el Ataque de cada Pal Eléctrico entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
@@ -486,6 +511,7 @@
       ]
     },
     "ice-team-template": {
+      "name": "Plantilla de equipo de Hielo",
       "summary": "Apoya a Frostallion, congela al objetivo, y luego elige entre noquearlo o capturarlo.",
       "pals": [
         "Aumenta el Ataque de cada Pal de Hielo entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
@@ -505,6 +531,7 @@
       ]
     },
     "ground-team-template": {
+      "name": "Plantilla de equipo de Tierra",
       "summary": "Aplica Barro con el fuego del jugador, y deja que todo el equipo lo aproveche.",
       "pals": [
         "Aumenta el Ataque de cada Pal de Tierra entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
@@ -524,6 +551,7 @@
       ]
     },
     "dark-team-template": {
+      "name": "Plantilla de equipo Oscuro",
       "summary": "Aplica Ceguera con el fuego del jugador, y explótala con todo el equipo.",
       "pals": [
         "Aumenta el Ataque de cada Pal Oscuro entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
@@ -543,6 +571,7 @@
       ]
     },
     "dragon-team-template": {
+      "name": "Plantilla de equipo Dragón",
       "summary": "Construye un carry de cinco Dragones, y alimenta a Shaolong con golpes de bala sostenidos.",
       "pals": [
         "Aumenta el Ataque de cada Pal Dragón entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
@@ -562,11 +591,12 @@
       ]
     },
     "eidrolon-hybrid-carry": {
+      "name": "Hipercarry de doble tipo con Eidrolon",
       "summary": "Build endgame sin armas donde Eidrolon es el único luchador mientras cuatro Pals de bolsillo acumulan buffs de ataque y defensa de doble tipo para un 60% total en cada stat.",
       "pals": [
         "Liberated Pterosaur aumenta su propio ataque y velocidad de movimiento por cada Pal Dragón u Oscuro en el equipo; los cuatro slots de bolsillo maximizan este multiplicador naturalmente.",
         "Sky Dragon's Affection aumenta el ataque de Pals Dragón entre 10% (rango 1) y 30% (rango 5) mientras está en el equipo, funcionando desde el bolsillo sin necesidad de desplegarlo.",
-        "Dark Knowledge aumenta el ataque de Pals Oscuros entre 10% (rango 1) y 30% (rango 5); como Eidrolon es tipo Oscuro, esto aplica un +30% de ataque con condensación máxima.",
+        "Dark Knowledge aumenta el ataque de Pals Oscuros entre 10% (rango 1) y 20% (rango 5); como Eidrolon es tipo Oscuro, esto aplica un +20% de ataque con condensación máxima.",
         "Aumenta la defensa de Pals Oscuros entre 10% (rango 1) y 30% (rango 5); la tipificación Oscura de Eidrolon lo califica para este buff desde el bolsillo.",
         "Aumenta la defensa de Pals Dragón entre 10% (rango 1) y 30% (rango 5); como Eidrolon también es tipo Dragón, esto se acumula con Wistella para un 60% total de defensa con condensación máxima."
       ],
@@ -583,6 +613,7 @@
       ]
     },
     "dragon-fire-tower": {
+      "name": "Escuadrón Dragón-Fuego anti-torre",
       "summary": "Acumula multiplicadores de dragón y fuego para convertir a Eidrolon Ignis en un asesino de jefes de Torre Difícil con soporte de rampa de Orserk.",
       "pals": [
         "Gana +6% de ataque por cada Pal Dragón o Fuego en el equipo hasta un 24% con cuatro aliados; funciona como el luchador activo principal y montura de todo el equipo.",
@@ -604,6 +635,7 @@
       ]
     },
     "gobfin-player-stack": {
+      "name": "Acumulación de jugador con Gobfin",
       "summary": "Monta un conversor elemental y deja que cuatro Gobfins conviertan tus armas en máquinas de matar jefes legendarios.",
       "pals": [
         "Mientras está montado, convierte los ataques del jugador a Fuego y aumenta el ataque del jugador entre 50% (rango 1) y 100% (rango 5); la conversión elemental te permite explotar las debilidades del enemigo.",
@@ -628,7 +660,8 @@
       ]
     },
     "sweepa-fluffball": {
-      "summary": "Cuatro Swee bebés convierten un Sweepa en un tanque de hielo imparable — el build meme favorito de la comunidad que realmente funciona.",
+      "name": "Bola de pelusa Sweepa",
+      "summary": "Cuatro Swee bebés convierten un Sweepa en un tanque de hielo imparable — la build meme favorito de la comunidad que realmente funciona.",
       "pals": [
         "Cada Swee en el equipo otorga a Sweepa +12% de Ataque y Defensa (rango 1) a +24% (rango 5) por Swee; con cuatro Swee condensados al máximo, Sweepa gana +96% de Ataque y +96% de Defensa.",
         "Primer Swee: añade 12% a 24% de Ataque y Defensa a Sweepa. También lleva Vanguard (+10% ataque del jugador a 4 estrellas) y Stronghold Strategist (+10% defensa del jugador) como bonus.",
@@ -646,11 +679,12 @@
       "alternatives": []
     },
     "bellanoir-nightmare-ray": {
+      "name": "Rayo de pesadilla Bellanoir",
       "summary": "Dos Bellanoir disparan Nightmare Ray en rotación con Lapure reduciendo la espera a la mitad — el meta 1.0 para matar jefes con Oscuro.",
       "pals": [
         "Nightmare Ray es una habilidad exclusiva Oscura de alto poder; las stats brutas de Bellanoir y su tipificación Oscura lo convierten en el principal infligidor de daño.",
         "Segundo usuario de Nightmare Ray; rota entre los dos Bellanoir mientras los enfriamientos se alternan, manteniendo tiempo de actividad casi constante de la habilidad exclusiva.",
-        "Reduce los enfriamientos de habilidades de compañero de otros Pals del equipo entre 25% y 50% con condensación máxima, permitiendo que ambos Bellanoir disparen Nightmare Ray aproximadamente el doble de veces.",
+        "Reduce los enfriamientos de habilidades de compañero de otros Pals del equipo entre 10% (rango 1) y 50% con condensación máxima, permitiendo que ambos Bellanoir disparen Nightmare Ray aproximadamente el doble de veces.",
         "Impactar balas del jugador otorga al Pal activo +1% a 5% de Ataque y Defensa por impacto, acumulándose 30 veces para +150% con condensación máxima; usa el Drone Launcher para acumulación automática.",
         "Reduce el daño al escudo del jugador entre 40% (rango 1) y 80% (rango 5) y reduce el retraso de regeneración del escudo entre 30% y 60%; te mantiene vivo mientras los Bellanoir hacen el trabajo."
       ],
@@ -667,11 +701,12 @@
       ]
     },
     "dual-hartalis-neutral": {
+      "name": "Bomba Neutral con doble Hartalis",
       "summary": "Dos Hartalis alternando Purifying Light y Sacred Rain con Cremis potenciando el daño Neutral — el estándar 1.0 para matar jefes con Neutral.",
       "pals": [
         "Purifying Light y Sacred Rain son habilidades exclusivas Neutrales de alto poder; la pasiva Savior Rainbow amplifica aún más su propio daño Neutral.",
         "Segundo Hartalis para rotación; alterna entre los dos para mantener tiempo de actividad de habilidades exclusivas durante ventanas de enfriamiento.",
-        "Aumenta el ataque de Pals Neutrales entre 10% (rango 1) y 30% (rango 5); como ambos Hartalis son Neutral puro, esto aplica a todo su daño.",
+        "Aumenta el ataque de Pals Neutrales entre 10% (rango 1) y 20% (rango 5); como ambos Hartalis son Neutral puro, esto aplica a todo su daño.",
         "El amplificador universal del endgame: impactar balas otorga al Pal activo hasta +150% de Ataque y Defensa con 30 cargas a condensación máxima.",
         "Reduce el daño al escudo hasta 80% y el retraso de regeneración hasta 60%; el ancla defensiva estándar para todos los equipos con núcleo Orserk."
       ],
@@ -687,6 +722,7 @@
       ]
     },
     "dual-knocklem-fire": {
+      "name": "Rotación de Fuego con doble Knocklem Ignis",
       "summary": "Rota dos Knocklem Ignis para mantener Iron Guardian Mode activo permanentemente — el meta de Fuego 1.0 para daño sostenido contra jefes.",
       "pals": [
         "Iron Guardian Mode aumenta masivamente el Ataque y la Defensa mientras está activo; Flame Cutter es su habilidad exclusiva de Fuego de alto daño.",
@@ -708,11 +744,12 @@
       ]
     },
     "dual-dandilord-poison": {
+      "name": "Veneno persistente con doble Dandilord",
       "summary": "Dos Dandilords acumulan veneno mientras Hoocrates potencia su mitad Oscura — una alternativa centrada en DoT al meta oscuro de Bellanoir.",
       "pals": [
         "Tipo dual Planta/Oscuro con habilidades que infligen veneno; su Habilidad de Compañero amplifica los ticks de daño de veneno en objetivos afectados.",
         "Segundo Dandilord duplica la velocidad de aplicación de veneno y permite rotar cuando uno está en enfriamiento.",
-        "Aumenta el ataque de Pals Oscuros entre 10% (rango 1) y 30% (rango 5); aplica a ambos Dandilords ya que comparten el tipo Oscuro.",
+        "Aumenta el ataque de Pals Oscuros entre 10% (rango 1) y 20% (rango 5); aplica a ambos Dandilords ya que comparten el tipo Oscuro.",
         "Eleva al Pal activo a +150% de Ataque y Defensa; como el daño de veneno escala con el ataque del infligidor, Orserk amplifica directamente los ticks de DoT.",
         "Ancla de escudo estándar 1.0 — 80% de reducción de daño al escudo significa que puedes esperar los ticks de DoT de veneno de forma segura."
       ],
@@ -729,6 +766,7 @@
       ]
     },
     "flying-gunner-frostallion": {
+      "name": "Artillero volador con Frostallion",
       "summary": "Frostallion duplica tu daño desde la silla mientras cuatro Gobfins lo multiplican — el loadout definitivo de caza de legendarios de la comunidad.",
       "pals": [
         "Mientras está montado, convierte los ataques del jugador a Hielo y duplica todo el daño del jugador como multiplicador final; esta duplicación se aplica después de los bonuses de Gobfin y accesorios.",
@@ -752,7 +790,8 @@
       ]
     },
     "legendary-exploration": {
-      "summary": "Jetragon para los cielos, Necromus para tierra, Galeclaw para planear y Kitsun para el clima — un build de pura travesía que omite el combate por velocidad.",
+      "name": "Kit de exploración legendario",
+      "summary": "Jetragon para los cielos, Necromus para tierra, Galeclaw para planear y Kitsun para el clima — una build de pura travesía que omite el combate por velocidad.",
       "pals": [
         "La montura voladora más rápida del juego; cubre largas distancias a velocidad inigualable y funciona como Pal de combate Dragón de emergencia.",
         "La montura terrestre más rápida con excelente velocidad de sprint y doble salto; se combina con Jetragon para entornos donde volar no es práctico.",
@@ -762,7 +801,7 @@
       ],
       "equipment": [],
       "synergyNotes": [
-        "Este no es un build de combate — cada slot sirve a un propósito de travesía o calidad de vida. Jetragon cubre el vuelo, Necromus cubre tierra, Galeclaw planea y Kitsun resuelve la temperatura.",
+        "Este no es una build de combate — cada slot sirve a un propósito de travesía o calidad de vida. Jetragon cubre el vuelo, Necromus cubre tierra, Galeclaw planea y Kitsun resuelve la temperatura.",
         "El impulso de planeador de Galeclaw se activa en cada despliegue; toca saltar e inmediatamente abre el planeador para un impulso de velocidad horizontal que rivaliza con algunas monturas voladoras.",
         "Jormuntide Ignis es el slot de seguridad de combate; sus altas estadísticas y tipificación Fuego/Dragón proporcionan suficiente potencia de fuego para manejar encuentros aleatorios del mundo sin cambiar a un equipo de combate dedicado.",
         "No se requiere condensación ni crianza más allá de capturar los Pals base — este es un loadout de exploración listo para usar en rutas de farming y travesía del postgame."
@@ -773,13 +812,14 @@
       ]
     },
     "daedream-necklace-squad": {
+      "name": "Escuadrón del collar de Daedream",
       "summary": "Cuatro Daedreams flotan a tu lado permanentemente gracias al collar, atacando automáticamente todo lo visible mientras montas.",
       "pals": [
         "El Collar de Daedream lo mantiene perpetuamente activo sin ser invocado; ataca automáticamente con proyectiles Oscuros y no puede matar Pals salvajes (clemencia integrada en ataques de collar).",
         "Segundo Daedream añade otro atacante automático; los cuatro disparan independientemente, cuadruplicando el DPS pasivo.",
         "Tercer Daedream; el pelotón de fusilamiento se vuelve más denso.",
         "Cuarto Daedream; con cuatro activos, la pantalla se llena de proyectiles Oscuros teledirigidos que eliminan Pals pequeños sin intervención del jugador.",
-        "Aumenta el ataque de Pals Oscuros entre 10% (rango 1) y 30% (rango 5) mientras está en el equipo; los cuatro Daedreams se benefician simultáneamente."
+        "Aumenta el ataque de Pals Oscuros entre 10% (rango 1) y 20% (rango 5) mientras está en el equipo; los cuatro Daedreams se benefician simultáneamente."
       ],
       "equipment": [],
       "synergyNotes": [
@@ -794,12 +834,13 @@
       ]
     },
     "gorirat-berserker-nuke": {
+      "name": "Bomba berserker Gorirat",
       "summary": "El Modo Gorila +200% de ataque de Gorirat más cuatro buffers de bolsillo se acumulan a 27,430 de ataque — el stat de ataque de Pal más alto jamás registrado en 1.0.",
       "pals": [
         "Full-Power Gorilla Mode aumenta el ataque entre 50% (rango 1) y 200% (rango 5) durante el berserk, pero solo aplica a habilidades de ataque a distancia, no cuerpo a cuerpo.",
         "El Drone Launcher construye 30 cargas de +5% de Ataque y Defensa cada una para +150% total con condensación máxima; el amplificador universal de endgame.",
         "Aumenta el ataque del Pal activo en 80% con condensación máxima a costa de drenaje de vida; sinergiza con el estilo de juego de ráfaga ya que la pelea debería terminar antes de que la vida importe.",
-        "Aumenta el ataque de Pals Neutrales entre 10% (rango 1) y 30% (rango 5); Gorirat es Neutral puro así que el buffer completo aplica.",
+        "Aumenta el ataque de Pals Neutrales entre 10% (rango 1) y 20% (rango 5); Gorirat es Neutral puro así que el buffer completo aplica.",
         "Aumenta el daño de Fuego entre 25% y 50% con condensación máxima; aplica a cualquier habilidad de fruta de tipo Fuego enseñada a Gorirat."
       ],
       "equipment": [],
@@ -807,15 +848,16 @@
         "La matemática: ataque base de Gorirat +200% Modo Gorila +150% Orserk +80% Celesdir Noct +30% Cremis +50% Blazamut (para habilidades de Fuego) + 4× báculos (+64%) + Mammorest Curry (+25%) = pico de 27,430 de ataque.",
         "Esto solo funciona con habilidades de tipo ataque a distancia (proyectiles) — el Modo Gorila excluye explícitamente ataques cuerpo a cuerpo. Enseña a Gorirat habilidades de disparo de alto poder mediante Frutas de Habilidad.",
         "El drenaje de vida de Celesdir Noct es irrelevante si la pelea termina en una ventana de ráfaga; para peleas más largas, cambia a Silvegis para intercambiar el +80% de ataque por un 80% de escudo.",
-        "Este es un build de speedkill de exhibición — borra jefes pero requiere configuración. Para juego general, quita Celesdir Noct por Silvegis y trátalo como un equipo de Gorirat fuerte pero equilibrado."
+        "Este es una build de speedkill de exhibición — borra jefes pero requiere configuración. Para juego general, quita Celesdir Noct por Silvegis y trátalo como un equipo de Gorirat fuerte pero equilibrado."
       ],
       "alternatives": [
-        "Descarta el arriesgado +80% de ataque por 80% de reducción de daño al escudo; convierte el speedkill en un build sostenible para contenido de Torre Difícil.",
+        "Descarta el arriesgado +80% de ataque por 80% de reducción de daño al escudo; convierte el speedkill en una build sostenible para contenido de Torre Difícil.",
         "Solenne usada como atacante de respaldo autosuficiente en lugar de buffer puro; su nuke Purifying Light puede terminar lo que Gorirat empieza si cae."
       ]
     },
     "tocotoco-bomb-squad": {
-      "summary": "Cinco pájaros lanzadores de huevos explosivos criados con pasivas de combate — un build meme que es sorprendentemente letal con tiradas de habilidades Lucky.",
+      "name": "Escuadrón bomba Tocotoco",
+      "summary": "Cinco pájaros lanzadores de huevos explosivos criados con pasivas de combate — una build meme que es sorprendentemente letal con tiradas de habilidades Lucky.",
       "pals": [
         "Egg Bomb Launcher dispara proyectiles explosivos; los Tocotocos Lucky pueden obtener habilidades de un grupo de 32 incluyendo Dragon Meteor (600 de poder) y Holy Burst (700 de poder).",
         "Segundo Tocotoco duplica la producción explosiva.",
@@ -827,7 +869,7 @@
       "synergyNotes": [
         "Cría Tocotocos con pasivas Ferocious, Musclehead, Lucky y Legend para máximo daño de huevo; Lucky también desbloquea el grupo de habilidades expandido para cada pájaro.",
         "Los Tocotocos Lucky (nivel 51+ con mínimo 50 IVs) pueden obtener aleatoriamente Holy Burst (700), Thunderstorm (600), Dragon Meteor (600) u otras habilidades de ultra-alto poder — haciendo de cada pájaro un nuke potencial.",
-        "Este es un build meme, no una composición de Torre Difícil; es absurdamente divertido en mundo abierto donde cinco pájaros bombardeando Pals salvajes nunca deja de ser gracioso.",
+        "Este es una build meme, no una composición de Torre Difícil; es absurdamente divertido en mundo abierto donde cinco pájaros bombardeando Pals salvajes nunca deja de ser gracioso.",
         "Los huevos explosivos heredan la estadística de ataque del Tocotoco, así que la condensación y las mejoras de almas aumentan directamente el daño AoE de cada huevo lanzado."
       ],
       "alternatives": [
@@ -835,9 +877,10 @@
       ]
     },
     "elizabee-royal-guard": {
+      "name": "Guardia real Elizabee",
       "summary": "Cuatro Beegardes potencian el ataque y defensa de Elizabee en +96% cada uno mientras producen miel — el análogo de Planta al build meme de Sweepa.",
       "pals": [
-        "Cada Beegarde en el equipo otorga a Elizabee +12% de Ataque y +12% de Defensa (rango 1) a +24% (rango 5) por Beegarde; Elizabee también tiene un boost de auto-ataque oculto de +5% a +8% de su propia habilidad de compañero.",
+        "Cada Beegarde en el equipo otorga a Elizabee +12% de Ataque y +12% de Defensa (rango 1) a +24% (rango 5) por Beegarde; Elizabee también tiene un boost de auto-ataque de su propia habilidad de compañero que solo empieza por encima del rango 1 y llega a +8% en el rango 5.",
         "Primer Beegarde: +12% a +24% de Ataque y Defensa a Elizabee. También produce miel pasivamente en el rancho cuando no está en el equipo activo.",
         "Segundo Beegarde: +12% a +24%.",
         "Tercer Beegarde: +12% a +24%.",
@@ -855,6 +898,7 @@
       ]
     },
     "verdash-speed-demon": {
+      "name": "Demonio de velocidad Verdash",
       "summary": "Verdash otorga +40% de velocidad de movimiento en vez de ataque, mientras cuatro Gobfins suministran el daño — el sueño del speedrunner con elemento Planta.",
       "pals": [
         "A diferencia de otros Pals de intercambio elemental, Verdash otorga +20% a +40% de velocidad de movimiento a sí mismo y al jugador (rango 1 a 5) mientras convierte los ataques del jugador a Planta — intercambia el boost de ataque habitual por movilidad extrema.",
@@ -867,7 +911,7 @@
       "synergyNotes": [
         "Verdash es el único Pal de intercambio elemental que aumenta la velocidad de movimiento en vez del ataque; el boost de velocidad te permite esquivar ataques de jefes a distancias que matarían a un jugador estacionario.",
         "Los Gobfins compensan el boost de ataque faltante de Verdash — +80% de ataque del jugador de cuatro Gobfins maximizados lleva tus armas de tipo Planta a daño competitivo para matar jefes.",
-        "Este build destaca contra Pals de Agua y Tierra (débiles a Planta) mientras la velocidad lo convierte en el build de farming más rápido del juego — corre por áreas eliminando Pals salvajes antes de que reaccionen.",
+        "Esta build destaca contra Pals de Agua y Tierra (débiles a Planta) mientras la velocidad lo convierte en la build de farming más rápido del juego — corre por áreas eliminando Pals salvajes antes de que reaccionen.",
         "Excelente para farmear Piezas de Civilización Antigua: corre por mazmorras con +40% de velocidad, mata jefes de un disparo con armas de tipo Planta y sal antes de que el temporizador llegue a cero."
       ],
       "alternatives": [

@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { ChevronLeftIcon } from "../components/icons";
+import { t, buildPath } from "../lib/i18n";
+
+/**
+ * One 404 serves both locales: the page can't know which tree a bad URL was
+ * aimed at, so it leads with Spanish (the default locale) and offers the
+ * English catalog as the second link rather than guessing.
+ */
+const es = t("es");
+const en = t("en");
+---
+
+<Layout title={es.notFoundTitle} description={es.notFoundCopy} locale="es" noindex>
+  <nav class="site-nav" aria-label={es.navPrimary}>
+    <a href={buildPath("es")} class="brand-lockup">
+      <span class="brand-mark" aria-hidden="true">P</span>
+      <span>
+        <span class="brand-name block">Palworld Builds</span>
+        <span class="brand-kicker">Field guide / 1.0</span>
+      </span>
+    </a>
+  </nav>
+
+  <main class="detail-shell">
+    <header class="detail-hero">
+      <div>
+        <p class="eyebrow">404</p>
+        <h1 class="detail-title">{es.notFoundHeading}</h1>
+        <p class="detail-summary">{es.notFoundCopy}</p>
+        <div class="detail-badges">
+          <a href={buildPath("es")} class="back-link"><ChevronLeftIcon class="size-4" /> {es.backToList}</a>
+          <a href={buildPath("en")} class="back-link">{en.backToList} (English)</a>
+        </div>
+      </div>
+    </header>
+  </main>
+</Layout>

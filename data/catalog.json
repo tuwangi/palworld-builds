@@ -7,33 +7,51 @@
       "slug": "explosive-archer",
       "name": "Explosive Archer",
       "summary": "Every arrow detonates for 30% of your attack, independent of which bow fired it.",
-      "purpose": ["player_weapon_damage", "boss_damage"],
-      "elements": ["dark", "fire", "grass", "ground"],
+      "purpose": [
+        "player_weapon_damage",
+        "boss_damage"
+      ],
+      "elements": [
+        "dark",
+        "fire",
+        "grass",
+        "ground"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "loomen",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Lantern Enchantment detonates each arrow on contact for 15% (rank 1) to 30% (rank 5) of your attack damage, calculated from your attack stat rather than the bow."
         },
         {
           "palId": "robinquill-terra",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises bow charge speed by 15% to 30%, letting you fire more full-power shots per minute."
         },
         {
           "palId": "robinquill",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises bow damage by 10% to 35%; the only pal in 1.0 whose equipped-weapon bonus covers bows, so this slot has no substitute."
         },
         {
           "palId": "solenne",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Pays 30% to 80% attack while no two party pals share a species; raises both the arrow and the Loomen explosion since it is priced off attack."
         },
         {
           "palId": "vanwyrm-cryst",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises weak-point damage by 30% to 50%; a charged bow shot gives time to line up a headshot."
         }
       ],
@@ -43,10 +61,17 @@
           "kind": "weapon",
           "status": "required",
           "reason": "Robinquill's damage bonus and Robinquill Terra's charge-speed bonus only apply to bows; the Loomen explosion is a flat percentage of attack and works with any bow.",
-          "alternatives": ["advanced-bow", "three-shot-bow", "compound-bow"]
+          "alternatives": [
+            "advanced-bow",
+            "three-shot-bow",
+            "compound-bow"
+          ]
         }
       ],
-      "requirements": ["condensation", "specific_weapon"],
+      "requirements": [
+        "condensation",
+        "specific_weapon"
+      ],
       "synergyNotes": [
         "Charge, aim for the head, release: Robinquill Terra makes the charge 30% faster, Robinquill adds up to 35% bow damage, and Loomen detonates the arrow on contact for up to 30% of attack.",
         "Solenne raises the attack the explosion is priced off, scaling both the arrow and the detonation.",
@@ -82,33 +107,53 @@
       "slug": "gunslinger",
       "name": "Gunslinger",
       "summary": "Shoot constantly: your bullets are both your damage and your pal buff.",
-      "purpose": ["player_weapon_damage", "active_pal_support", "hybrid_damage"],
-      "elements": ["dark", "neutral", "ice", "dragon", "electric"],
+      "purpose": [
+        "player_weapon_damage",
+        "active_pal_support",
+        "hybrid_damage"
+      ],
+      "elements": [
+        "dark",
+        "neutral",
+        "ice",
+        "dragon",
+        "electric"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "solenne",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer attack by 30% to 80% while every pal in the party is a different species."
         },
         {
           "palId": "frostplume",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer reload speed by 20% to 50%, which matters because Orserk's stacks decay five seconds after the last hit."
         },
         {
           "palId": "nyafia",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer shotgun damage by 10% to 35%; its activated Partner Skill also fires a shotgun."
         },
         {
           "palId": "orserk",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Each landed bullet gives the active pal 1% to 5% Attack and Defense for five seconds, stacking up to 30 times for 150% at full condensation."
         },
         {
           "palId": "vanwyrm-cryst",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Adds 30% to 50% weak-point damage on every shot with every gun."
         }
       ],
@@ -118,10 +163,16 @@
           "kind": "weapon",
           "status": "required",
           "reason": "Nyafia's damage bonus applies to shotguns specifically, so the weapon choice is not open; magazine size matters because Orserk's stacks decay on reload.",
-          "alternatives": ["beam-scatter"]
+          "alternatives": [
+            "beam-scatter"
+          ]
         }
       ],
-      "requirements": ["condensation", "specific_weapon", "endgame"],
+      "requirements": [
+        "condensation",
+        "specific_weapon",
+        "endgame"
+      ],
       "synergyNotes": [
         "Keep a shotgun on the target and never stop firing: Solenne, Frostplume, Nyafia and Vanwyrm Cryst raise the trainer's own damage or handling.",
         "Every bullet that lands stacks the Orserk buff on the active pal, up to 150% Attack and Defense at 30 stacks; stacks expire five seconds after the last hit, so a long reload undoes the ramp.",
@@ -162,38 +213,62 @@
       "slug": "frostallion-charge-rifle",
       "name": "Frostallion Charge Rifle",
       "summary": "Freeze the target, line up a weak point and cash out with an amplified charged shot.",
-      "purpose": ["player_weapon_damage", "boss_damage"],
-      "elements": ["ice", "dark", "neutral", "dragon", "ground"],
+      "purpose": [
+        "player_weapon_damage",
+        "boss_damage"
+      ],
+      "elements": [
+        "ice",
+        "dark",
+        "neutral",
+        "dragon",
+        "ground"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "frostallion",
-          "role": ["mount", "element_conversion"],
+          "role": [
+            "mount",
+            "element_conversion"
+          ],
           "explanation": "While mounted, converts trainer attacks to Ice, raises mounted ranged attack by 10% to 40%, and helps inflict Freeze (level 2 to 6)."
         },
         {
           "palId": "vanwyrm-cryst",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises trainer damage dealt to weak body parts by 30% to 50%, directly rewarding accurate charge shots."
         },
         {
           "palId": "xenogard",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises damage from the equipped energy weapon by 10% to 35%, including the charge-rifle setup."
         },
         {
           "palId": "cryolinx-terra",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Rewards trainer weak-point hits with an additional 30% to 60% damage increase."
         },
         {
           "palId": "solenne",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Adds a broad trainer ranged-attack increase of 30% to 80% on top of the specialized multipliers."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation", "endgame", "rare_content"],
+      "requirements": [
+        "condensation",
+        "endgame",
+        "rare_content"
+      ],
       "synergyNotes": [
         "Mount Frostallion to convert the shot to Ice and try to Freeze the target before charging, then reposition for a clean weak-point angle before releasing one fully prepared charge-rifle shot.",
         "Source-reported ~200,000 damage on a training dummy is a community result under specific gear/passives/condensation, not a universal guarantee."
@@ -218,38 +293,61 @@
       "slug": "full-tackle-box",
       "name": "Full Tackle Box",
       "summary": "Every part of a cast covered, using the variant forms most guides overlook.",
-      "purpose": ["utility", "capture"],
-      "elements": ["water", "electric", "dark", "fire", "ice", "neutral"],
+      "purpose": [
+        "utility",
+        "capture"
+      ],
+      "elements": [
+        "water",
+        "electric",
+        "dark",
+        "fire",
+        "ice",
+        "neutral"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "solmora-lux",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "Improves the internal roll for fishing up talented Pals, 74 to 82; the Electric form pays strictly higher than base Solmora at every rank."
         },
         {
           "palId": "jelliette",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "Adds 55% to 95% more rewards to both item catches and Pal catches."
         },
         {
           "palId": "gloopie",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "Reduces gauge loss by 12% to 35% while the fishing bars are not overlapping."
         },
         {
           "palId": "whalaska-ignis",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "Starts the capture gauge 7% to 17% higher and adds the same bonus while the bars overlap; the Fire form beats base Whalaska at every rank."
         },
         {
           "palId": "lunaris",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "Adds 300 to 600 carrying capacity, which matters because Jelliette nearly doubles what every catch yields."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation", "breeding"],
+      "requirements": [
+        "condensation",
+        "breeding"
+      ],
       "synergyNotes": [
         "None of the five needs to be deployed during the minigame; every effect works from the party slot, so keep whichever water mount is convenient out and ride between spots.",
         "Solmora Lux and Whalaska Ignis are bred variant forms, strictly better than their base forms at every rank with no condition attached.",
@@ -285,33 +383,52 @@
       "slug": "poison-and-blind-lock",
       "name": "Poison and Blind Lock",
       "summary": "The one two-status combo the rules allow, because Poison layers on top of everything.",
-      "purpose": ["status_effects", "player_weapon_damage", "boss_damage"],
-      "elements": ["dark", "ground", "neutral"],
+      "purpose": [
+        "status_effects",
+        "player_weapon_damage",
+        "boss_damage"
+      ],
+      "elements": [
+        "dark",
+        "ground",
+        "neutral"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "venusa",
-          "role": ["status_applier"],
+          "role": [
+            "status_applier"
+          ],
           "explanation": "Adds Blind level 2 to 6 to trainer attacks from the party slot, establishing the first control window; also the only pal that both applies Blind passively and learns Poison Fog to apply Poison from its bar."
         },
         {
           "palId": "roujay",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises damage dealt by both trainer and Roujay while the target is Blinded, 50% to 65%."
         },
         {
           "palId": "prixter",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises damage dealt by both trainer and Prixter while Poison is active, 50% to 65%."
         },
         {
           "palId": "bakemi",
-          "role": ["weak_point_support", "defensive_support"],
+          "role": [
+            "weak_point_support",
+            "defensive_support"
+          ],
           "explanation": "Trainer hits against Poisoned enemies lower their attack by 40% to 80%, the largest mitigation number of any partner skill in the game; only applies on the trainer's own hits."
         },
         {
           "palId": "solenne",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Amplifies trainer ranged damage 30% to 80% while keeping five different species, turning each status window into a burst phase."
         }
       ],
@@ -321,10 +438,15 @@
           "kind": "weapon",
           "status": "recommended",
           "reason": "The build needs enough hits per second to keep both statuses refreshed and to trigger Bakemi's attack cut repeatedly; Plasma Rifle is the highest sustained DPS option for that.",
-          "alternatives": ["heavy-assault-rifle"]
+          "alternatives": [
+            "heavy-assault-rifle"
+          ]
         }
       ],
-      "requirements": ["condensation", "endgame"],
+      "requirements": [
+        "condensation",
+        "endgame"
+      ],
       "synergyNotes": [
         "Poison is the only status effect in Palworld 1.0 that coexists with another instead of replacing it, so Blind plus Poison is the one two-status lock that holds; Roujay and Prixter both pay out on the same hit.",
         "Field Venusa and open with Poison Fog (0 power, pure status); Blind is already applying passively from the party slot, so one cast puts both statuses on the target at once. Reapply Poison every 17 seconds.",
@@ -355,33 +477,55 @@
       "slug": "saya-and-selyne-hard-rotation",
       "name": "Saya and Selyne Hard Rotation",
       "summary": "Five Dragons that each get stronger for every other Dragon standing next to them.",
-      "purpose": ["pal_element_damage", "boss_damage", "hybrid_damage"],
-      "elements": ["dragon", "water", "fire"],
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "hybrid_damage"
+      ],
+      "elements": [
+        "dragon",
+        "water",
+        "fire"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "eidrolon",
-          "role": ["mount", "mobility"],
+          "role": [
+            "mount",
+            "mobility"
+          ],
           "explanation": "Gains 2% to 6% Attack and Move Speed for each other Dragon or Dark pal in the party (24% at rank 5 here); opens or repositions quickly before yielding the field."
         },
         {
           "palId": "shaolong",
-          "role": ["mount", "carry"],
+          "role": [
+            "mount",
+            "carry"
+          ],
           "explanation": "Gains 4% to 8% ranged attack for each other Dragon ally, 32% at full condensation with four Dragon allies; contributes a compact ranged burst window."
         },
         {
           "palId": "orserk",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Each landed bullet gives the active (mounted) pal 1% to 5% Attack and Defense, stacking up to 30 times for 150% at full condensation; itself a Dragon, so it also feeds the other members' count-based bonuses."
         },
         {
           "palId": "blazamut-ryu",
-          "role": ["mount", "weak_point_support"],
+          "role": [
+            "mount",
+            "weak_point_support"
+          ],
           "explanation": "Raises trainer and Pal damage against Dragon-weak targets by 25% to 40%."
         },
         {
           "palId": "quivern",
-          "role": ["mount", "element_booster"],
+          "role": [
+            "mount",
+            "element_booster"
+          ],
           "explanation": "Raises ranged attack by 15% to 30% for every Dragon pal in the party, which here means all five."
         }
       ],
@@ -393,7 +537,12 @@
           "reason": "The trainer's weapon is filler between mounted skill bars; rate of fire matters because every bullet feeds an Orserk stack onto whichever Dragon is currently mounted."
         }
       ],
-      "requirements": ["condensation", "endgame", "legendary", "rare_content"],
+      "requirements": [
+        "condensation",
+        "endgame",
+        "legendary",
+        "rare_content"
+      ],
       "synergyNotes": [
         "The composition is the build: three of the five partner skills scale with the number of Dragons in the party, so all five members must stay Dragon-type or the count-based bonuses shrink immediately.",
         "Rotation pattern: mount a pal, spend its active skills, dismount, move to the next; each pal has an independent cooldown pool, and shooting during the swap keeps feeding Orserk stacks.",
@@ -424,38 +573,60 @@
       "slug": "loot-goblin",
       "name": "Loot Goblin",
       "summary": "Route-specific boosts for Ore, Gold, butchering and carrying capacity.",
-      "purpose": ["utility", "early_progression"],
-      "elements": ["dark", "dragon", "ground", "water", "neutral"],
+      "purpose": [
+        "utility",
+        "early_progression"
+      ],
+      "elements": [
+        "dark",
+        "dragon",
+        "ground",
+        "water",
+        "neutral"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "astegon",
-          "role": ["mount", "utility"],
+          "role": [
+            "mount",
+            "utility"
+          ],
           "explanation": "While mounted, raises ore damage by 1100% to 3300% and adds 150% to 300% more Ore; not a passive all-node bonus, only active while mounted and mining."
         },
         {
           "palId": "dumud-gild",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "While in party, adds 100% to 200% more Gold Coins from defeated enemies."
         },
         {
           "palId": "splatterina",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "While in party, adds 100% to 200% more items from using the Meat Cleaver."
         },
         {
           "palId": "lunaris",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "While in party, adds 300 to 600 carrying capacity."
         },
         {
           "palId": "fuddler",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "While in party, improves trainer mining efficiency by 30% to 60% and reduces Stone weight by 80% to 100%."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "This is a route toolkit, not five global loot multipliers: swap the specialist slot to match the target material (mount Astegon for Ore runs, keep Dumud Gild for enemy Gold, bring Splatterina when using the Meat Cleaver).",
         "Weight-reduction effects are material-specific in the current data: Fuddler only reduces Stone weight, so swap it for Turtacle on Ore-heavy runs or Gumoss for wood."
@@ -495,38 +666,59 @@
       "slug": "aegis-wall",
       "name": "Aegis Wall",
       "summary": "Shorten shield downtime, cut shield damage and layer conditional recovery.",
-      "purpose": ["survival", "player_support"],
-      "elements": ["dark", "ground", "grass", "water", "neutral"],
+      "purpose": [
+        "survival",
+        "player_support"
+      ],
+      "elements": [
+        "dark",
+        "ground",
+        "grass",
+        "water",
+        "neutral"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "silvegis",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Reduces shield-regeneration delay by 30% to 60% and shield damage by 65% to 80%; the always-relevant shield layer while in party."
         },
         {
           "palId": "lapiron",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Raises trainer Defense by 50% to 65%, but only while the trainer is sprinting."
         },
         {
           "palId": "warsect",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Generates a 5% to 9% barrier after five melee hits land within five seconds."
         },
         {
           "palId": "teafant",
-          "role": ["healing"],
+          "role": [
+            "healing"
+          ],
           "explanation": "Below 30% Health, restores 20% to 40% Health, then enters a 120-second cooldown."
         },
         {
           "palId": "celesdir",
-          "role": ["healing"],
+          "role": [
+            "healing"
+          ],
           "explanation": "Outside combat, regenerates 0.15% to 0.75% Health per second for the trainer and the pal."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "Layered mitigation with explicit conditions, not a promise of invulnerability: Lapiron needs sprinting, Warsect needs five melee hits within five seconds, Teafant triggers only below 30% Health with a 120-second cooldown, and Celesdir only regenerates outside combat.",
         "Silvegis is the direct shield specialist (its Aegis Shield carries both shield-regen-delay reduction and shield-damage reduction in the current data), while the other four add sprinting Defense, a melee-triggered barrier and recovery rather than duplicating it."
@@ -544,38 +736,57 @@
       "slug": "catch-squad",
       "name": "Catch Squad",
       "summary": "Choose a back, Freeze or Ivy setup, then target passives and preserve spheres.",
-      "purpose": ["capture"],
-      "elements": ["dark", "ice", "grass", "neutral"],
+      "purpose": [
+        "capture"
+      ],
+      "elements": [
+        "dark",
+        "ice",
+        "grass",
+        "neutral"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "wispaw",
-          "role": ["status_applier"],
+          "role": [
+            "status_applier"
+          ],
           "explanation": "Adds 1 to 5 capture levels only when the throw earns a back bonus."
         },
         {
           "palId": "muffly",
-          "role": ["status_applier"],
+          "role": [
+            "status_applier"
+          ],
           "explanation": "Adds 1 to 5 capture levels while the target is Frozen."
         },
         {
           "palId": "souffline",
-          "role": ["status_applier"],
+          "role": [
+            "status_applier"
+          ],
           "explanation": "Adds 1 to 5 capture levels while the target is Ivy-Covered."
         },
         {
           "palId": "yakumo",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "While fighting alongside the trainer, gives captured Pals a 15% to 30% chance to share one of Yakumo's eligible Passive Skills (some passives excluded)."
         },
         {
           "palId": "katress",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "Gives each thrown sphere a 10% to 50% chance not to be consumed; does not refund a sphere after a failed capture."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "This is a capture toolbox, not five additive bonuses: pick the setup the target and status skills support (back bonus, Freeze, or Ivy-Covered) rather than assuming the three capture-level bonuses stack on one throw.",
         "Practical rotation: weaken the target with Mercy Hit or a Ring of Mercy so the setup cannot accidentally finish it, apply the chosen condition, then throw."
@@ -600,38 +811,60 @@
       "slug": "traversal-kit",
       "name": "Traversal Kit",
       "summary": "Chain on-foot jumps, gliding and climbing, then switch to Starryon after dark.",
-      "purpose": ["exploration", "mobility"],
-      "elements": ["grass", "neutral", "water", "ground", "dark"],
+      "purpose": [
+        "exploration",
+        "mobility"
+      ],
+      "elements": [
+        "grass",
+        "neutral",
+        "water",
+        "ground",
+        "dark"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "verdash",
-          "role": ["mobility"],
+          "role": [
+            "mobility"
+          ],
           "explanation": "Adds exactly one extra trainer mid-air jump and one mid-air dash; condensing does not increase either count."
         },
         {
           "palId": "valentail",
-          "role": ["mobility"],
+          "role": [
+            "mobility"
+          ],
           "explanation": "Makes the trainer floatier while jumping and falling; a fixed on-foot low-gravity flag."
         },
         {
           "palId": "celaray",
-          "role": ["mobility"],
+          "role": [
+            "mobility"
+          ],
           "explanation": "Prevents trainer fall damage and extends the equipped glider's high-speed gliding duration."
         },
         {
           "palId": "gorirat-terra",
-          "role": ["mobility"],
+          "role": [
+            "mobility"
+          ],
           "explanation": "Raises trainer climbing speed by 50% to 100%, the on-foot stat that scales most in this kit."
         },
         {
           "palId": "starryon",
-          "role": ["mount", "mobility"],
+          "role": [
+            "mount",
+            "mobility"
+          ],
           "explanation": "While ridden, gains 25% jump power; its own movement speed rises 50% to 100% but only at night. Neither mounted bonus applies on foot."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "Four effects work on foot (Verdash, Valentail, Celaray, Gorirat Terra); Starryon's jump power and night speed apply to Starryon itself while mounted, not as a trainer buff.",
         "Gorirat Terra's climbing bonus and Starryon's night speed both scale 50% to 100% with condensation; Verdash, Valentail and Celaray stay fixed at their base effect regardless of rank."
@@ -656,38 +889,62 @@
       "slug": "knocklem-poison-tank",
       "name": "Knocklem Poison Tank",
       "summary": "Let Knocklem hold the field while Poison enables damage, mitigation and faster rotations.",
-      "purpose": ["survival", "status_effects", "boss_damage"],
-      "elements": ["ground", "dark", "water", "neutral"],
+      "purpose": [
+        "survival",
+        "status_effects",
+        "boss_damage"
+      ],
+      "elements": [
+        "ground",
+        "dark",
+        "water",
+        "neutral"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "knocklem",
-          "role": ["carry", "defensive_support"],
+          "role": [
+            "carry",
+            "defensive_support"
+          ],
           "explanation": "Community-selected as the tanky active carry for the poison core: stays active to absorb pressure and deliver the team's direct Pal damage. No specific partner-skill number is documented for this slot; it is chosen for durability."
         },
         {
           "palId": "bakemi",
-          "role": ["weak_point_support", "defensive_support"],
+          "role": [
+            "weak_point_support",
+            "defensive_support"
+          ],
           "explanation": "Turns trainer hits on Poisoned targets into an enemy attack reduction of 40% to 80%."
         },
         {
           "palId": "prixter",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer and Prixter damage by 50% to 65% while the target remains Poisoned."
         },
         {
           "palId": "dumud",
-          "role": ["carry", "flex"],
+          "role": [
+            "carry",
+            "flex"
+          ],
           "explanation": "Adds a ranged Ground rotation (15% to 30% attack) when Knocklem needs to recover."
         },
         {
           "palId": "lapure",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "Shortens the trainer's Partner Skill cooldown by 10% to 50% so utility comes back sooner."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "Lead with a Poison application, then leave Knocklem active to hold attention while attacking the debuffed target; reapply Poison before it falls off so Prixter and Bakemi keep contributing.",
         "This trades peak burst for a forgiving boss loop: it spends a slot on Knocklem's staying power and another on Lapure's cooldown utility instead of maximizing damage, unlike a glass-cannon poison team."
@@ -712,38 +969,61 @@
       "slug": "mobility-melee-swarm",
       "name": "Mobility Melee Swarm",
       "summary": "Dash, glide and fight up close while two Daedreams add constant follow-up fire.",
-      "purpose": ["mobility", "exploration", "hybrid_damage"],
-      "elements": ["grass", "neutral", "dark"],
+      "purpose": [
+        "mobility",
+        "exploration",
+        "hybrid_damage"
+      ],
+      "elements": [
+        "grass",
+        "neutral",
+        "dark"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "verdash",
-          "role": ["mobility"],
+          "role": [
+            "mobility"
+          ],
           "explanation": "Adds an extra mid-air jump and mid-air dash, letting a melee player enter, evade and re-engage."
         },
         {
           "palId": "galeclaw",
-          "role": ["mobility", "carry"],
+          "role": [
+            "mobility",
+            "carry"
+          ],
           "explanation": "Chosen for responsive combat gliding and rapid mid-fight repositioning, used to cross gaps and reset spacing during fights. No specific partner-skill number documented for this slot."
         },
         {
           "palId": "loupmoon",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer melee attack speed by 15% to 30%, making the close-range loop feel faster."
         },
         {
           "palId": "daedream",
-          "role": ["carry", "flex"],
+          "role": [
+            "carry",
+            "flex"
+          ],
           "explanation": "Stays beside the trainer with its necklace and contributes automatic follow-up attacks; first of two intentional copies for the orbiting-familiar theme."
         },
         {
           "palId": "daedream",
-          "role": ["carry", "flex"],
+          "role": [
+            "carry",
+            "flex"
+          ],
           "explanation": "A second copy, intentionally duplicated (and preserved in the source's Team Builder link) to double the automatic follow-up pressure."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "Use Galeclaw and Verdash to enter from above or cross gaps safely, then stay close enough for Loupmoon's faster melee rhythm to matter.",
         "The two necklace-equipped Daedreams supply automatic pressure while dodging and striking; air dash or glide away after a risky combo, then re-enter once stamina and spacing are comfortable.",
@@ -769,33 +1049,56 @@
       "slug": "sustain-and-rescue-squad",
       "name": "Sustain and Rescue Squad",
       "summary": "Rotate damage, bulk, healing and emergency recovery instead of betting on one carry.",
-      "purpose": ["survival", "active_pal_support"],
-      "elements": ["dragon", "ground", "ice", "water", "grass", "neutral"],
+      "purpose": [
+        "survival",
+        "active_pal_support"
+      ],
+      "elements": [
+        "dragon",
+        "ground",
+        "ice",
+        "water",
+        "grass",
+        "neutral"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "elphidran",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Community-selected as the party's general-purpose combat lead: handles routine field time and gives the defensive members room to recover. No specific partner-skill number documented for this slot."
         },
         {
           "palId": "tetroise",
-          "role": ["defensive_support", "flex"],
+          "role": [
+            "defensive_support",
+            "flex"
+          ],
           "explanation": "Takes a sturdy rotation slot when the fight becomes too dangerous for the damage lead; a durable combat slot chosen for its base stats rather than a documented partner-skill number."
         },
         {
           "palId": "whalaska",
-          "role": ["defensive_support", "flex"],
+          "role": [
+            "defensive_support",
+            "flex"
+          ],
           "explanation": "Adds another high-bulk body so the party can keep rotating under sustained pressure; chosen for staying power rather than a numerical party buff."
         },
         {
           "palId": "lyleen",
-          "role": ["healing"],
+          "role": [
+            "healing"
+          ],
           "explanation": "Uses its activated Partner Skill to restore the trainer and party after meaningful damage; the central sustain tool in the lineup."
         },
         {
           "palId": "herbil",
-          "role": ["healing", "flex"],
+          "role": [
+            "healing",
+            "flex"
+          ],
           "explanation": "Fills the last slot as a recovery-focused safety net for failed rotations; community-selected rescue pick."
         }
       ],
@@ -830,38 +1133,63 @@
       "slug": "anubis-hard-tower-ground-team",
       "name": "Anubis Hard-Tower Ground Team",
       "summary": "Build a Ground-heavy rotation around Anubis for hard tower fights.",
-      "purpose": ["pal_element_damage", "boss_damage"],
-      "elements": ["ground", "dark", "dragon", "electric"],
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage"
+      ],
+      "elements": [
+        "ground",
+        "dark",
+        "dragon",
+        "electric"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "anubis",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "The community thread's featured carry for the hard tower fight: anchors the active rotation with fast Ground pressure and strong general combat stats. No specific partner-skill number documented for this slot."
         },
         {
           "palId": "dualith-noct",
-          "role": ["carry", "flex"],
+          "role": [
+            "carry",
+            "flex"
+          ],
           "explanation": "Adds another Ground-oriented active skill bar and a different set of attack timings, as part of the thread's tested hard-mode rotation."
         },
         {
           "palId": "surfent-terra",
-          "role": ["mount", "status_applier"],
+          "role": [
+            "mount",
+            "status_applier"
+          ],
           "explanation": "Adds Muddy infliction (level 2 to 6) and mounted movement speed for safer repositioning."
         },
         {
           "palId": "orserk",
-          "role": ["active_pal_booster", "flex"],
+          "role": [
+            "active_pal_booster",
+            "flex"
+          ],
           "explanation": "Prevents the party from being entirely Ground-type and rewards sustained bullet pressure, giving a different elemental profile if a phase resists Ground."
         },
         {
           "palId": "kikit",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Adds a compact defensive option (15% to 30% Defense) for the final slot during dangerous phases."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation", "endgame", "rare_content"],
+      "requirements": [
+        "condensation",
+        "endgame",
+        "rare_content"
+      ],
       "synergyNotes": [
         "Open with Anubis and spend its fastest Ground attacks, then cycle through Dualith Noct and Surfent Terra while those skills recover.",
         "Bring out Orserk when the boss resists Ground or when sustained bullet pressure is safer; keep Kikit as the defensive pivot for dangerous phases, then return to Anubis once cooldowns reset."
@@ -886,38 +1214,61 @@
       "slug": "fast-kill-exploration-party",
       "name": "Fast-Kill Exploration Party",
       "summary": "Clear roaming enemies quickly, reset cooldowns and keep moving between objectives.",
-      "purpose": ["exploration", "capture", "early_progression"],
-      "elements": ["dragon", "dark", "water"],
+      "purpose": [
+        "exploration",
+        "capture",
+        "early_progression"
+      ],
+      "elements": [
+        "dragon",
+        "dark",
+        "water"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "eidrolon",
-          "role": ["mount", "mobility"],
+          "role": [
+            "mount",
+            "mobility"
+          ],
           "explanation": "Combines ranged pressure with movement speed (2% to 6% each) to keep the route moving."
         },
         {
           "palId": "maraith",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Refunds 30% to 60% of its active-skill cooldown after defeating an enemy, ideal for chains of weaker targets; much less valuable against a single large boss."
         },
         {
           "palId": "croajiro-noct",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises trainer and Pal damage by 25% to 40% against enemies vulnerable to Dark."
         },
         {
           "palId": "killamari",
-          "role": ["mobility", "flex"],
+          "role": [
+            "mobility",
+            "flex"
+          ],
           "explanation": "Community-selected glider slot: keeps traversal smooth between fights and gives a familiar early-game utility option. No specific partner-skill number documented for this slot."
         },
         {
           "palId": "wispaw",
-          "role": ["status_applier", "utility"],
+          "role": [
+            "status_applier",
+            "utility"
+          ],
           "explanation": "Raises the capture-level bonus by 1 to 5 when a sphere hits from behind."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "Travel on Eidrolon and open each pack with enough burst to give Maraith quick finishing targets, chaining weaker enemies so it keeps refunding its cooldown.",
         "A playful all-purpose lineup rather than a single-boss damage stack; it shines clearing roaming enemies, dungeons and mixed objectives where movement, repeated kills and occasional captures all matter."
@@ -942,38 +1293,62 @@
       "slug": "life-steal-player-tank",
       "name": "Life-Steal Player Tank",
       "summary": "Stay on your feet with life steal, shield recovery, ranged damage and durable rotation Pals.",
-      "purpose": ["player_support", "player_weapon_damage", "survival"],
-      "elements": ["dark", "neutral", "dragon", "ground"],
+      "purpose": [
+        "player_support",
+        "player_weapon_damage",
+        "survival"
+      ],
+      "elements": [
+        "dark",
+        "neutral",
+        "dragon",
+        "ground"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "felbat",
-          "role": ["healing", "defensive_support"],
+          "role": [
+            "healing",
+            "defensive_support"
+          ],
           "explanation": "Returns 5% to 9% of damage dealt as health for both trainer and Felbat."
         },
         {
           "palId": "solenne",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer ranged attack by 30% to 80% so the survival package still contributes offense."
         },
         {
           "palId": "xenogard",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Boosts equipped energy-weapon damage by 10% to 35% for a player-led raid setup."
         },
         {
           "palId": "silvegis",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Shortens shield recovery start rate by 30% to 60% and reduces shield damage taken by 65% to 80%."
         },
         {
           "palId": "tetroise-primo",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "Reduces equipment wear by 80% to 100% during long raid attempts and repeated farming sessions; economic endurance rather than direct damage, easiest slot to swap out for a short attempt."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation", "endgame", "rare_content"],
+      "requirements": [
+        "condensation",
+        "endgame",
+        "rare_content"
+      ],
       "synergyNotes": [
         "Primarily a player-damage build: Solenne and Xenogard reward weapon use, while Felbat and Silvegis help the trainer survive long enough to keep firing.",
         "Keep Felbat active while dealing steady weapon damage so life steal offsets chip damage; break line of sight when the shield drops so Silvegis can accelerate recovery."
@@ -1003,38 +1378,62 @@
       "slug": "bellanoir-glass-cannon-rotation",
       "name": "Bellanoir Glass-Cannon Rotation",
       "summary": "Cycle two Bellanoir Liberos through a Poison core for relentless high-risk pressure.",
-      "purpose": ["boss_damage", "status_effects", "hybrid_damage"],
-      "elements": ["dark", "dragon", "electric", "ground"],
+      "purpose": [
+        "boss_damage",
+        "status_effects",
+        "hybrid_damage"
+      ],
+      "elements": [
+        "dark",
+        "dragon",
+        "electric",
+        "ground"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "bellanoir-libero",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Takes the first active window and unloads a high-damage skill set; first of two intentional copies for independent active-skill bars."
         },
         {
           "palId": "bellanoir-libero",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "A second, intentional copy: enters when the first copy's strongest skills are cooling down, supplying an independent active-skill bar."
         },
         {
           "palId": "orserk",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Builds additional pressure through repeated bullet hits during the rotation."
         },
         {
           "palId": "prixter",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer and Prixter damage by 50% to 65% whenever Poison is active."
         },
         {
           "palId": "bakemi",
-          "role": ["weak_point_support", "defensive_support"],
+          "role": [
+            "weak_point_support",
+            "defensive_support"
+          ],
           "explanation": "Adds a 40% to 80% enemy attack-down effect against Poisoned targets."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation", "endgame", "rare_content"],
+      "requirements": [
+        "condensation",
+        "endgame",
+        "rare_content"
+      ],
       "synergyNotes": [
         "The duplicate Bellanoir Libero slots are deliberate: rotate between the two independent active-skill bars instead of waiting for one full cooldown set.",
         "Apply Poison first so Prixter and Bakemi are online, unload the first Bellanoir Libero's strongest skills, then swap immediately to the second copy for another full burst bar.",
@@ -1065,38 +1464,60 @@
       "slug": "soak-shock-overload",
       "name": "Soak/Shock Overload",
       "summary": "Open with Soak, convert the trainer to Electric, then turn Electrify into chain damage.",
-      "purpose": ["status_effects", "player_weapon_damage", "hybrid_damage"],
-      "elements": ["dragon", "water", "electric", "ground"],
+      "purpose": [
+        "status_effects",
+        "player_weapon_damage",
+        "hybrid_damage"
+      ],
+      "elements": [
+        "dragon",
+        "water",
+        "electric",
+        "ground"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "ophydia",
-          "role": ["status_applier"],
+          "role": [
+            "status_applier"
+          ],
           "explanation": "Makes trainer attacks inflict Soak level 2 to 6, establishing the first damage window."
         },
         {
           "palId": "jormuntide",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises damage dealt by trainer and Jormuntide by 50% to 65% while the enemy remains Soaked."
         },
         {
           "palId": "prixter-lux",
-          "role": ["element_conversion"],
+          "role": [
+            "element_conversion"
+          ],
           "explanation": "Activates a 30-second Electric conversion and 30% trainer Attack boost on a 50-second cooldown, connecting the Soak opener to the Electric half of the rotation. Does not guarantee Electrify by itself."
         },
         {
           "palId": "slowatt",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Trainer hits on an Electrified enemy trigger an area discharge worth 40% to 60% of trainer attack."
         },
         {
           "palId": "univolt",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises trainer and Univolt Electric damage by 25% to 40%, but only when Electric is hitting an elemental weakness."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation", "endgame"],
+      "requirements": [
+        "condensation",
+        "endgame"
+      ],
       "synergyNotes": [
         "Play as a sequence, not simultaneous statuses: tag the target with Ophydia so Jormuntide amplifies the opening Soak window, then activate Prixter Lux for the timed Electric conversion, and keep firing until Electrify replaces the opener so Slowatt becomes the payoff.",
         "Univolt only pays off against enemies actually vulnerable to Electric, since its bonus is conditional on hitting an elemental weakness."
@@ -1121,38 +1542,62 @@
       "slug": "poison-barrier",
       "name": "Poison Barrier",
       "summary": "Poison the target, cut its attack, and fight behind shield recovery and life steal.",
-      "purpose": ["status_effects", "survival", "player_support"],
-      "elements": ["grass", "dark", "ground", "neutral"],
+      "purpose": [
+        "status_effects",
+        "survival",
+        "player_support"
+      ],
+      "elements": [
+        "grass",
+        "dark",
+        "ground",
+        "neutral"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "dandilord",
-          "role": ["status_applier", "defensive_support"],
+          "role": [
+            "status_applier",
+            "defensive_support"
+          ],
           "explanation": "Activates 30 seconds of Poison infliction on trainer attacks and passively protects the party from Poison and World Tree toxic gas."
         },
         {
           "palId": "prixter",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer and Prixter damage by 50% to 65% while Poison is active."
         },
         {
           "palId": "bakemi",
-          "role": ["weak_point_support", "defensive_support"],
+          "role": [
+            "weak_point_support",
+            "defensive_support"
+          ],
           "explanation": "Trainer hits against a Poisoned target reduce its Attack by 40% to 80%."
         },
         {
           "palId": "silvegis",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Shortens shield-regeneration delay by 30% to 60% and reduces shield damage taken by 65% to 80% throughout the Poison rotation."
         },
         {
           "palId": "felbat",
-          "role": ["healing"],
+          "role": [
+            "healing"
+          ],
           "explanation": "While fighting together, trainer and Felbat recover 5% to 9% of damage dealt as Health; requires Felbat to be the active pal, not just in party."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation", "endgame"],
+      "requirements": [
+        "condensation",
+        "endgame"
+      ],
       "synergyNotes": [
         "A layered survival loop, not a literal permanent barrier: activate Dandilord just before the damage phase, establish Poison to trigger Bakemi's attack reduction, then keep attacking through Prixter's amplified window while Silvegis protects the shield cycle.",
         "Silvegis fills a gap Poison alone does not solve: neither Prixter nor Bakemi directly protects the trainer's shield, so it supplies that separate defensive layer."
@@ -1182,38 +1627,60 @@
       "slug": "skutlass-katana-rush",
       "name": "Skutlass Katana Rush",
       "summary": "Turn Skutlass Ignis into a katana and pack its ten-second life span with faster, harder melee hits.",
-      "purpose": ["player_weapon_damage", "hybrid_damage"],
-      "elements": ["fire", "water", "ground", "ice", "dark", "neutral"],
+      "purpose": [
+        "player_weapon_damage",
+        "hybrid_damage"
+      ],
+      "elements": [
+        "fire",
+        "water",
+        "ground",
+        "ice",
+        "dark",
+        "neutral"
+      ],
       "progression": "mid",
       "pals": [
         {
           "palId": "skutlass-ignis",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Becomes a 2,900-to-4,200-Attack katana for ten seconds on a ten-second cooldown; the party's defining and deliberately high-risk mechanic. Timing out or using Iaigiri incapacitates it."
         },
         {
           "palId": "pupperai",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer melee weapon damage by 10% to 35% from a party slot."
         },
         {
           "palId": "loupmoon-cryst",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer melee weapon attack speed by 15% to 30%, helping fill the katana window."
         },
         {
           "palId": "warsect-terra",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Generates a 5% to 9% barrier after five melee hits land within the required window."
         },
         {
           "palId": "solenne",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer Attack by 30% to 80% because all five party species are different."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "Not the mathematically strongest melee party by the source's own admission: the original author called Skutlass and Warsect Terra the fun, weaker slots and separately suggested a normal Loupmoon + Gobfin version for more raw damage; this guide keeps the unusual living-katana identity.",
         "Activate Skutlass Ignis only when already in range; land five quick melee hits to trigger Warsect Terra's barrier, and switch held item before the ten-second timer ends (rather than using Iaigiri) to avoid incapacitation."
@@ -1243,38 +1710,59 @@
       "slug": "death-from-above",
       "name": "Death From Above",
       "summary": "Launch, hang in low gravity, and keep shooting through a fast Galeclaw glide.",
-      "purpose": ["player_weapon_damage", "mobility", "hybrid_damage"],
-      "elements": ["water", "neutral"],
+      "purpose": [
+        "player_weapon_damage",
+        "mobility",
+        "hybrid_damage"
+      ],
+      "elements": [
+        "water",
+        "neutral"
+      ],
       "progression": "mid",
       "pals": [
         {
           "palId": "croajiro",
-          "role": ["mobility", "carry"],
+          "role": [
+            "mobility",
+            "carry"
+          ],
           "explanation": "Launches the trainer high into the air and grants 50% more Attack until landing; the launch and airborne Attack window define the entire play pattern."
         },
         {
           "palId": "valentail",
-          "role": ["mobility"],
+          "role": [
+            "mobility"
+          ],
           "explanation": "Reduces gravity on the trainer so the airborne firing window lasts longer."
         },
         {
           "palId": "frostplume",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer reload speed by 20% to 50%, reducing dead time before landing."
         },
         {
           "palId": "galeclaw",
-          "role": ["mobility", "carry"],
+          "role": [
+            "mobility",
+            "carry"
+          ],
           "explanation": "Enables high-speed gliding with right-hand shooting, so the trainer can steer without ending the attack."
         },
         {
           "palId": "solenne",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises trainer Attack by 30% to 80% while every party species remains different."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "Activate Croajiro at the edge of weapon range for the launch, start firing once airborne, use Valentail to stretch the fall, then transition into Galeclaw gliding for forward control while keeping the weapon active.",
         "Croajiro's own verified contribution is 50% more Attack while airborne (a larger figure circulating in the source community likely folds in other setup modifiers, so the guide keeps only the confirmed number)."
@@ -1304,38 +1792,59 @@
       "slug": "fire-team-template",
       "name": "Fire Team Template",
       "summary": "Layer Fire-Pal Attack, Defense and weak-point damage around a reliable Burn core.",
-      "purpose": ["pal_element_damage", "status_effects", "early_progression"],
-      "elements": ["fire", "water", "dragon"],
+      "purpose": [
+        "pal_element_damage",
+        "status_effects",
+        "early_progression"
+      ],
+      "elements": [
+        "fire",
+        "water",
+        "dragon"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "kelpsea-ignis",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Attack of every Fire Pal in the party by 15% to 30%; duplicate copies do not stack."
         },
         {
           "palId": "rooby",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Defense of every Fire Pal by 15% to 30% while in the party."
         },
         {
           "palId": "finsider-ignis",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises the player's and Pals' Fire damage by 25% to 40% only against a Fire-weak target."
         },
         {
           "palId": "renjishi",
-          "role": ["status_applier"],
+          "role": [
+            "status_applier"
+          ],
           "explanation": "Player attacks inflict Burn level 2 (rank 1) to level 6 (rank 5); a status-strength curve, not a percent damage bonus."
         },
         {
           "palId": "jormuntide-ignis",
-          "role": ["carry", "trainer_damage_support"],
+          "role": [
+            "carry",
+            "trainer_damage_support"
+          ],
           "explanation": "130 base Attack, and raises the player's and Pals' damage to Burning enemies by 50% to 65%; also nullifies lava damage for the trainer."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "Editable starting template, not a fixed ranking: keep the three support jobs together, and replace a field slot when travel, wave clearing or a different status plan matters more.",
         "Burn damage and Fire weak-point damage are separate, independent conditions: Jormuntide Ignis checks whether the enemy is Burning, Finsider Ignis checks whether it is weak to Fire, and one can be true without the other."
@@ -1365,38 +1874,58 @@
       "slug": "grass-team-template",
       "name": "Grass Team Template",
       "summary": "Layer Grass-Pal Attack, Defense and weak-point damage around a two-slot field core.",
-      "purpose": ["pal_element_damage", "player_support", "early_progression"],
-      "elements": ["grass", "dark"],
+      "purpose": [
+        "pal_element_damage",
+        "player_support",
+        "early_progression"
+      ],
+      "elements": [
+        "grass",
+        "dark"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "bristla",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Attack of every Grass Pal by 15% to 30% from any party slot; a second Bristla does not add another copy."
         },
         {
           "palId": "nitemary-botan",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Defense of every Grass Pal by 15% to 30% while in the party."
         },
         {
           "palId": "ribbuny-botan",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises the player's and Pals' Grass damage by 25% to 40% only when the target is weak to Grass."
         },
         {
           "palId": "dandilord",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "135 base Attack, the highest in the current Grass roster; its activated Poison and party-wide poison/toxic-gas protection add control and utility rather than Grass damage."
         },
         {
           "palId": "lyleen",
-          "role": ["healing", "carry"],
+          "role": [
+            "healing",
+            "carry"
+          ],
           "explanation": "120 base Attack paired with an activated heal for the player and party Pals (80% at rank 1, 90% at rank 5) on a 300-second cooldown; best used after meaningful damage rather than as passive regeneration."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "Editable starting template: keep the three support jobs (Bristla, Nitemary Botan, Ribbuny Botan) together, then field Dandilord or Lyleen as the encounter demands.",
         "The three Grass support effects are separate calculations (Attack, Defense, weak-point damage), each non-stacking with a duplicate carrier of itself; the weak-point bonus does nothing against a target that isn't weak to Grass."
@@ -1426,38 +1955,60 @@
       "slug": "water-team-template",
       "name": "Water Team Template",
       "summary": "Pair Water-Pal Attack, Defense and weak-point damage with pressure and bulk.",
-      "purpose": ["pal_element_damage", "survival", "early_progression"],
-      "elements": ["water", "neutral", "electric"],
+      "purpose": [
+        "pal_element_damage",
+        "survival",
+        "early_progression"
+      ],
+      "elements": [
+        "water",
+        "neutral",
+        "electric"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "kelpsea",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Attack of every Water Pal by 15% to 30%; duplicate copies do not stack."
         },
         {
           "palId": "gloopie-primo",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Defense of every Water Pal by 15% to 30% while in the party."
         },
         {
           "palId": "penking-lux",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises the player's and Pals' Water damage by 25% to 40% only when the target is weak to Water."
         },
         {
           "palId": "neptilius",
-          "role": ["carry", "mount"],
+          "role": [
+            "carry",
+            "mount"
+          ],
           "explanation": "145 base Attack; follows the player's attacks with Water spear strikes while in the party and can be ridden across water, with a swim-speed bonus starting at rank 2."
         },
         {
           "palId": "panthalus",
-          "role": ["defensive_support", "flex"],
+          "role": [
+            "defensive_support",
+            "flex"
+          ],
           "explanation": "180 base HP and 200 base Defense for a durable rotation slot; its Partner Skill only patrols/bombards while assigned at a base, so it is not counted here as a party combat buff."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "The final two slots are jobs, not a universal ranking: replace pressure (Neptilius) or bulk (Panthalus) when a fight needs trainer conversion, aerial travel or a different elemental mix.",
         "Penking Lux contributes its combat bonus only when the enemy is weak to Water; Kelpsea and Gloopie Primo apply regardless of matchup."
@@ -1487,38 +2038,59 @@
       "slug": "electric-team-template",
       "name": "Electric Team Template",
       "summary": "Support Electric Pals, then convert mounted trainer fire and build Electrify.",
-      "purpose": ["pal_element_damage", "status_effects", "early_progression"],
-      "elements": ["electric", "dragon", "dark"],
+      "purpose": [
+        "pal_element_damage",
+        "status_effects",
+        "early_progression"
+      ],
+      "elements": [
+        "electric",
+        "dragon",
+        "dark"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "sparkit",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Attack of every Electric Pal by 15% to 30% while in the party; duplicates do not stack."
         },
         {
           "palId": "dinossom-lux",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Defense of every Electric Pal by 15% to 30% while in the party."
         },
         {
           "palId": "univolt",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises the player's and Pals' Electric damage by 25% to 40% only when the target is weak to Electric; riding it is optional."
         },
         {
           "palId": "helzephyr-lux",
-          "role": ["mount", "element_conversion"],
+          "role": [
+            "mount",
+            "element_conversion"
+          ],
           "explanation": "While mounted, changes the trainer's attacks to Electric and raises trainer Attack by 5% to 20%; both effects stop applying when dismounted."
         },
         {
           "palId": "snock",
-          "role": ["status_applier"],
+          "role": [
+            "status_applier"
+          ],
           "explanation": "Makes the player's attacks inflict Electrify level 2 (rank 1) to level 6 (rank 5); pairs with Helzephyr Lux for Electric trainer damage."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "A rider-led starting point, not a claim that the same five slots fit every Electric encounter: keep Sparkit, Dinossom Lux and Univolt in the party, mount Helzephyr Lux, and attack with the trainer.",
         "Helzephyr Lux does not buff every Electric Pal; it only changes the mounted trainer's own attack element and Attack. Sparkit is the member that raises Electric-Pal Attack across the party."
@@ -1548,38 +2120,60 @@
       "slug": "ice-team-template",
       "name": "Ice Team Template",
       "summary": "Support Frostallion, freeze the target, then choose a knockout or a catch.",
-      "purpose": ["pal_element_damage", "status_effects", "capture"],
-      "elements": ["ice", "ground"],
+      "purpose": [
+        "pal_element_damage",
+        "status_effects",
+        "capture"
+      ],
+      "elements": [
+        "ice",
+        "ground"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "foxcicle",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Attack of every Ice Pal by 15% to 30% while in the party; duplicates do not stack."
         },
         {
           "palId": "rayhound-cryst",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Defense of every Ice Pal by 15% to 30% while in the party; its rideable and double-jump features do not change the recipient of the party effect."
         },
         {
           "palId": "moldron-cryst",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises the player's and Pals' Ice damage by 25% to 40% only when the target is weak to Ice; riding it is optional."
         },
         {
           "palId": "frostallion",
-          "role": ["mount", "element_conversion", "status_applier"],
+          "role": [
+            "mount",
+            "element_conversion",
+            "status_applier"
+          ],
           "explanation": "While mounted, changes the trainer's attacks to Ice, raises trainer Attack by 10% to 40%, and applies Freeze level 2 to 6; stops applying when dismounted."
         },
         {
           "palId": "muffly",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "Improves capture attempts against Pals afflicted with Freeze on a 1-to-5 capture-level curve; does nothing to an unfrozen target."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation", "endgame"],
+      "requirements": [
+        "condensation",
+        "endgame"
+      ],
       "synergyNotes": [
         "A late-game Ice party built as a freeze-and-capture loop: keep Foxcicle, Rayhound Cryst and Moldron Cryst in the party, mount Frostallion, apply Freeze, then throw a sphere during that window; replace the capture slot when the objective is a fast defeat rather than a catch.",
         "Frostallion does not buff every Ice Pal: Foxcicle is the party member that raises Ice-Pal Attack, while Frostallion only converts and boosts the mounted trainer's own attacks."
@@ -1609,38 +2203,57 @@
       "slug": "ground-team-template",
       "name": "Ground Team Template",
       "summary": "Apply Muddy with trainer fire, then let the whole party exploit it.",
-      "purpose": ["pal_element_damage", "status_effects", "early_progression"],
-      "elements": ["ground", "water"],
+      "purpose": [
+        "pal_element_damage",
+        "status_effects",
+        "early_progression"
+      ],
+      "elements": [
+        "ground",
+        "water"
+      ],
       "progression": "mixed",
       "pals": [
         {
           "palId": "dumud",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Attack of every Ground Pal by 15% to 30% while in the party; duplicates do not stack."
         },
         {
           "palId": "kikit",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Defense of every Ground Pal by 15% to 30% while in the party."
         },
         {
           "palId": "turtacle-terra",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises the player's and Pals' Ground damage by 25% to 40% only when the target is weak to Ground; its separate 80% to 100% curve is Sulfur/Coal weight reduction, not combat damage."
         },
         {
           "palId": "surfent-terra",
-          "role": ["status_applier"],
+          "role": [
+            "status_applier"
+          ],
           "explanation": "Makes the player's attacks inflict Muddy level 2 (rank 1) to level 6 (rank 5) while in the party; riding is optional."
         },
         {
           "palId": "pierdon",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises the player's and Pals' damage against enemies afflicted with Muddy by 50% to 65%; does nothing before Muddy is active."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation"],
+      "requirements": [
+        "condensation"
+      ],
       "synergyNotes": [
         "Treat the weak-point and Muddy conditions independently: keep Dumud, Kikit and Turtacle Terra in the party, hit with the trainer to let Surfent Terra apply Muddy, then attack during that window so Pierdon contributes.",
         "Muddy damage and Ground weak-point damage do not always apply together; Pierdon checks for the Muddy status while Turtacle Terra checks for a Ground elemental weakness, and the template does not assume both are true in every encounter."
@@ -1670,38 +2283,57 @@
       "slug": "dark-team-template",
       "name": "Dark Team Template",
       "summary": "Apply Blind with trainer fire, then exploit it with the whole party.",
-      "purpose": ["pal_element_damage", "status_effects"],
-      "elements": ["dark", "water"],
+      "purpose": [
+        "pal_element_damage",
+        "status_effects"
+      ],
+      "elements": [
+        "dark",
+        "water"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "hoocrates",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Attack of every Dark Pal by 15% to 30% while in the party; duplicates do not stack."
         },
         {
           "palId": "wistella",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Defense of every Dark Pal by 15% to 30% while in the party."
         },
         {
           "palId": "croajiro-noct",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises the player's and Pals' Dark damage by 25% to 40% only when the target is weak to Dark."
         },
         {
           "palId": "venusa",
-          "role": ["status_applier"],
+          "role": [
+            "status_applier"
+          ],
           "explanation": "Makes the player's attacks inflict Blind level 2 (rank 1) to level 6 (rank 5) while in the party."
         },
         {
           "palId": "roujay",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Raises the player's and Pals' damage against enemies afflicted with Blind by 50% to 65%; does nothing before Blind is active."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation", "endgame"],
+      "requirements": [
+        "condensation",
+        "endgame"
+      ],
       "synergyNotes": [
         "A late-game Dark party: keep Hoocrates, Wistella and Croajiro Noct in the party, hit with the trainer so Venusa applies Blind, then attack during that window so Roujay contributes.",
         "The weak-point and Blind conditions are independent: Roujay checks whether the target is afflicted with Blind, while Croajiro Noct checks a Dark elemental weakness instead; the template does not promise both trigger on every target."
@@ -1731,38 +2363,62 @@
       "slug": "dragon-team-template",
       "name": "Dragon Team Template",
       "summary": "Build a five-Dragon carry, then feed Shaolong with sustained bullet hits.",
-      "purpose": ["pal_element_damage", "active_pal_support", "boss_damage"],
-      "elements": ["dragon", "grass", "fire", "electric", "water"],
+      "purpose": [
+        "pal_element_damage",
+        "active_pal_support",
+        "boss_damage"
+      ],
+      "elements": [
+        "dragon",
+        "grass",
+        "fire",
+        "electric",
+        "water"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "quivern",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Attack of every Dragon Pal by 15% to 30% while in the party; duplicates do not stack."
         },
         {
           "palId": "dinossom",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Raises the Defense of every Dragon Pal by 15% to 30% while in the party."
         },
         {
           "palId": "blazamut-ryu",
-          "role": ["weak_point_support"],
+          "role": [
+            "weak_point_support"
+          ],
           "explanation": "Raises the player's and Pals' Dragon damage by 25% to 40% only when the target is weak to Dragon."
         },
         {
           "palId": "orserk",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Each trainer bullet hit grants the active Pal +1% to 5% Attack and Defense for five seconds, stacking up to 30 times; does not buff the trainer's own gun."
         },
         {
           "palId": "shaolong",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Gains +4% to 8% Attack for each other Dragon Pal in the party; with all four default allies qualifying, that is +16% to 32% self Attack before other effects."
         }
       ],
       "equipment": [],
-      "requirements": ["condensation", "endgame", "rare_content"],
+      "requirements": [
+        "condensation",
+        "endgame",
+        "rare_content"
+      ],
       "synergyNotes": [
         "A coordinated carry shell, not five interchangeable damage multipliers: keep Quivern, Dinossom, Blazamut Ryu and Orserk in the party, field Shaolong, and land trainer bullet hits continuously to maintain Orserk's stacks on the active Pal.",
         "Keeping all five party members Dragon-type matters mechanically: Shaolong counts each other Dragon Pal separately, so replacing one with a non-Dragon pal removes a qualifying ally from its self-buff."
@@ -1792,39 +2448,68 @@
       "slug": "eidrolon-hybrid-carry",
       "name": "Eidrolon Dual-Type Hypercarry",
       "summary": "Weaponless endgame build where Eidrolon is the sole fighter while four pocket pals stack dual-type attack and defense buffs for 60% total in each stat.",
-      "purpose": ["pal_element_damage", "active_pal_support", "survival", "endgame"],
-      "elements": ["dark", "dragon", "grass"],
+      "purpose": [
+        "pal_element_damage",
+        "active_pal_support",
+        "survival",
+        "endgame"
+      ],
+      "elements": [
+        "dark",
+        "dragon",
+        "grass"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "eidrolon",
-          "role": ["carry", "mount"],
+          "role": [
+            "carry",
+            "mount"
+          ],
           "explanation": "Liberated Pterosaur increases its own attack and movement speed for every Dragon or Dark Pal in the party; all four pocket slots naturally max out this multiplier.",
-          "recommendedPassives": ["Legend", "Musclehead", "Serenity", "Ferocious"]
+          "recommendedPassives": [
+            "Legend",
+            "Musclehead",
+            "Serenity",
+            "Ferocious"
+          ]
         },
         {
           "palId": "quivern",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Sky Dragon's Affection raises Dragon Pal attack by 10% (rank 1) to 30% (rank 5) while in the party, working from the pocket without ever being deployed."
         },
         {
           "palId": "hoocrates",
-          "role": ["element_booster"],
-          "explanation": "Dark Knowledge raises Dark Pal attack by 10% (rank 1) to 30% (rank 5); because Eidrolon is Dark-type this applies a flat +30% attack boost at max condensation."
+          "role": [
+            "element_booster"
+          ],
+          "explanation": "Dark Knowledge raises Dark Pal attack by 10% (rank 1) to 20% (rank 5); because Eidrolon is Dark-type this applies a flat +20% attack boost at max condensation."
         },
         {
           "palId": "wistella",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Raises Dark Pal defense by 10% (rank 1) to 30% (rank 5); Eidrolon's Dark typing qualifies it for this buff from the pocket."
         },
         {
           "palId": "dinossom",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Raises Dragon Pal defense by 10% (rank 1) to 30% (rank 5); because Eidrolon is also Dragon-type this stacks with Wistella for 60% total defense at max condensation."
         }
       ],
       "equipment": [],
-      "requirements": ["endgame", "condensation", "breeding"],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding"
+      ],
       "synergyNotes": [
         "Eidrolon is both Dragon and Dark, qualifying for both Wistella and Dinossom defense buffs simultaneously — a 60% flat defense increase that applies against every damage type.",
         "Quivern and Hoocrates stack 30% attack each from their respective element pools, giving a 60% total attack multiplier to every move Eidrolon uses.",
@@ -1856,38 +2541,63 @@
       "slug": "dragon-fire-tower",
       "name": "Dragon Fire Tower Squad",
       "summary": "Stack dragon and fire multipliers to turn Eidrolon Ignis into a Hard Tower boss-killer with Orserk ramp support.",
-      "purpose": ["pal_element_damage", "boss_damage", "endgame", "hybrid_damage"],
-      "elements": ["dragon", "fire", "electric"],
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "endgame",
+        "hybrid_damage"
+      ],
+      "elements": [
+        "dragon",
+        "fire",
+        "electric"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "eidrolon-ignis",
-          "role": ["carry", "mount"],
+          "role": [
+            "carry",
+            "mount"
+          ],
           "explanation": "Gains +6% attack per Dragon or Fire Pal in the party for up to 24% at four matching allies; serves as the main active fighter and mount for the entire team."
         },
         {
           "palId": "blazamut-ryu",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Improves Dragon-type super-effective attacks by 25% (rank 1) to 40% (rank 5), amplifying every Dragon move used against a Dragon-weak target."
         },
         {
           "palId": "jormuntide-ignis",
-          "role": ["status_applier"],
+          "role": [
+            "status_applier"
+          ],
           "explanation": "Enemies afflicted with Burn take 30% to 65% more damage at max condensation, multiplying the damage of all attacks after a Burn is applied."
         },
         {
           "palId": "orserk",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Every bullet that hits the enemy grants the active Pal +1% to 5% Attack and Defense for five seconds, stacking up to 30 times for +150% at max condensation; works with the Drone Launcher for hands-free stacking."
         },
         {
           "palId": "quivern",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Boosts Dragon Pal attack by 10% (rank 1) to 30% (rank 5); applies to Eidrolon Ignis directly because it is a Dragon-type."
         }
       ],
       "equipment": [],
-      "requirements": ["endgame", "legendary", "condensation", "breeding"],
+      "requirements": [
+        "endgame",
+        "legendary",
+        "condensation",
+        "breeding"
+      ],
       "synergyNotes": [
         "Open with the Drone Launcher to build Orserk stacks immediately — 30 stacks grant +150% Attack and Defense to the active Pal, and the Drone Launcher builds them without consuming ammo.",
         "Once Burn procs from Jormuntide Ignis, the target takes up to 65% increased damage from all sources, multiplying the already high Dragon damage modifiers from Quivern and Blazamut Ryu.",
@@ -1919,33 +2629,52 @@
       "slug": "gobfin-player-stack",
       "name": "Gobfin Player Stack",
       "summary": "Mount an elemental converter and let four Gobfins turn your guns into legendary boss-killing machines.",
-      "purpose": ["player_weapon_damage", "boss_damage", "endgame"],
-      "elements": ["fire", "water"],
+      "purpose": [
+        "player_weapon_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "fire",
+        "water"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "ragnahawk",
-          "role": ["mount", "element_conversion", "trainer_damage_support"],
+          "role": [
+            "mount",
+            "element_conversion",
+            "trainer_damage_support"
+          ],
           "explanation": "While mounted, converts player attacks to Fire and increases player attack by 50% (rank 1) to 100% (rank 5); the elemental conversion lets you exploit enemy weaknesses."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Angry Shark raises player attack by 10% (rank 1) to 20% (rank 5) per Gobfin in the party, stacking additively for up to 80% with four max-condensed copies."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Second Gobfin: adds another 10% to 20% player attack."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Third Gobfin: adds another 10% to 20% player attack."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Fourth Gobfin: adds another 10% to 20% player attack. Four max-condensed Gobfins plus Vanguard passive on each totals ~120% player attack from the pocket alone."
         }
       ],
@@ -1957,7 +2686,11 @@
           "reason": "High fire rate builds Orserk-independent DPS; any gun works — Shotgun for burst, Rocket Launcher for AoE — but the Assault Rifle offers the best sustained damage over a full magazine."
         }
       ],
-      "requirements": ["endgame", "condensation", "specific_weapon"],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "specific_weapon"
+      ],
       "synergyNotes": [
         "The math: four 4-star Gobfins grant +80% player attack from partner skills alone. Adding Vanguard (+10% each at 4-star) and Stronghold Strategist (+10% defense each) makes the player both harder-hitting and tankier than any Pal-led team.",
         "Ragnahawk's 100% attack boost at max condensation applies after Gobfin stacking, effectively doubling the already massive player attack value.",
@@ -1994,39 +2727,66 @@
       "slug": "sweepa-fluffball",
       "name": "Sweepa Fluffball",
       "summary": "Four baby Swee turn one Sweepa into an unstoppable ice tank — the community's favorite meme build that actually works.",
-      "purpose": ["pal_element_damage", "active_pal_support", "survival"],
-      "elements": ["ice"],
+      "purpose": [
+        "pal_element_damage",
+        "active_pal_support",
+        "survival"
+      ],
+      "elements": [
+        "ice"
+      ],
       "progression": "mid",
       "pals": [
         {
           "palId": "sweepa",
-          "role": ["carry", "mount"],
+          "role": [
+            "carry",
+            "mount"
+          ],
           "explanation": "Each Swee in the party grants Sweepa +12% Attack and Defense (rank 1) to +24% (rank 5) per Swee; with four max-condensed Swee, Sweepa gains +96% Attack and +96% Defense.",
-          "recommendedPassives": ["Legend", "Ferocious", "Musclehead", "Burly Body", "Swift"]
+          "recommendedPassives": [
+            "Legend",
+            "Ferocious",
+            "Musclehead",
+            "Burly Body",
+            "Swift"
+          ]
         },
         {
           "palId": "swee",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "First Swee: adds 12% to 24% Attack and Defense to Sweepa. Also carries Vanguard (+10% player attack at 4-star) and Stronghold Strategist (+10% player defense) as a bonus."
         },
         {
           "palId": "swee",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Second Swee: adds another 12% to 24%."
         },
         {
           "palId": "swee",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Third Swee: adds another 12% to 24%."
         },
         {
           "palId": "swee",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Fourth Swee: adds another 12% to 24%. Total Sweepa bonus at max condensation: +96% Attack, +96% Defense, making it about twice as strong as a normal Pal of its level."
         }
       ],
       "equipment": [],
-      "requirements": ["mid_game", "condensation", "breeding"],
+      "requirements": [
+        "mid_game",
+        "condensation",
+        "breeding"
+      ],
       "synergyNotes": [
         "Sweepa's partner skill works off the number of Swee in the party, not their level or condensation — four 0-star Swee already give +48% each stat, making this viable as early as you can catch them.",
         "Each Swee with 4-star Vanguard and Stronghold Strategist also gives the player +10% attack and +10% defense, stacking up to +40% each — the Swee pull double duty as player buffers.",
@@ -2047,38 +2807,62 @@
       "slug": "bellanoir-nightmare-ray",
       "name": "Bellanoir Nightmare Ray",
       "summary": "Dual Bellanoirs fire Nightmare Ray on cooldown with Lapure cutting the wait in half — the 1.0 meta for Dark boss-killing.",
-      "purpose": ["pal_element_damage", "boss_damage", "endgame"],
-      "elements": ["dark", "dragon", "electric", "neutral"],
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "dark",
+        "dragon",
+        "electric",
+        "neutral"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "bellanoir",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Nightmare Ray is a high-power exclusive Dark skill; Bellanoir's raw stats and Dark typing make it the primary damage dealer."
         },
         {
           "palId": "bellanoir-libero",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Second Nightmare Ray user; rotate between the two Bellanoirs as cooldowns cycle, maintaining near-constant exclusive-skill uptime."
         },
         {
           "palId": "lapure",
-          "role": ["utility"],
-          "explanation": "Reduces partner skill cooldowns of other party Pals by 25% to 50% at max condensation, letting both Bellanoirs fire Nightmare Ray roughly twice as often."
+          "role": [
+            "utility"
+          ],
+          "explanation": "Reduces partner skill cooldowns of other party Pals by 10% (rank 1) to 50% at max condensation, letting both Bellanoirs fire Nightmare Ray roughly twice as often."
         },
         {
           "palId": "orserk",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Landing player bullets grants the active Pal +1% to 5% Attack and Defense per hit, stacking 30 times for +150% at max condensation; use the Drone Launcher for automatic stacking."
         },
         {
           "palId": "silvegis",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Reduces damage to the player's shield by 40% (rank 1) to 80% (rank 5) and reduces shield regeneration delay by 30% to 60%; keeps you alive while the Bellanoirs do the work."
         }
       ],
       "equipment": [],
-      "requirements": ["endgame", "condensation", "breeding", "legendary"],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding",
+        "legendary"
+      ],
       "synergyNotes": [
         "Orserk and Silvegis are the universal 1.0 endgame core — Orserk scales the active Pal to +150% Attack and Defense, Silvegis makes the player nearly immortal behind an 80% damage-reduced shield.",
         "Lapure is the wildcard that doubles the team's effective DPS by halving cooldowns; it benefits both Bellanoirs simultaneously since the effect is party-wide.",
@@ -2110,38 +2894,61 @@
       "slug": "dual-hartalis-neutral",
       "name": "Dual Hartalis Neutral Nuke",
       "summary": "Two Hartalis cycling Purifying Light and Sacred Rain with Cremis buffing Neutral damage — the 1.0 Neutral boss-killing standard.",
-      "purpose": ["pal_element_damage", "boss_damage", "endgame"],
-      "elements": ["neutral", "dragon", "electric"],
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "neutral",
+        "dragon",
+        "electric"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "hartalis",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Purifying Light and Sacred Rain are high-power Neutral exclusive skills; Savior Rainbow passive amplifies its own Neutral damage further."
         },
         {
           "palId": "hartalis",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Second Hartalis for rotation; cycle between the two to maintain exclusive-skill uptime during cooldown windows."
         },
         {
           "palId": "cremis",
-          "role": ["element_booster"],
-          "explanation": "Boosts Neutral Pal attack by 10% (rank 1) to 30% (rank 5); since both Hartalis are pure Neutral, this applies to all their damage."
+          "role": [
+            "element_booster"
+          ],
+          "explanation": "Boosts Neutral Pal attack by 10% (rank 1) to 20% (rank 5); since both Hartalis are pure Neutral, this applies to all their damage."
         },
         {
           "palId": "orserk",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "The universal endgame amplifier: landing bullets grants the active Pal up to +150% Attack and Defense with 30 stacks at max condensation."
         },
         {
           "palId": "silvegis",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Reduces shield damage by up to 80% and shield regen delay by up to 60%; the standard defensive anchor for all Orserk-core teams."
         }
       ],
       "equipment": [],
-      "requirements": ["endgame", "condensation", "breeding", "legendary"],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding",
+        "legendary"
+      ],
       "synergyNotes": [
         "Hartalis is one of the hardest-hitting Neutral Pals in 1.0 and its exclusive skills have no elemental resistances to worry about — every target takes full damage.",
         "The Orserk + Silvegis universal core provides +150% attack/defense ramp and near-immortality; this same core appears in every game8 1.0 endgame team.",
@@ -2168,38 +2975,62 @@
       "slug": "dual-knocklem-fire",
       "name": "Dual Knocklem Ignis Fire Rotation",
       "summary": "Rotate two Knocklem Ignis to keep Iron Guardian Mode active permanently — the 1.0 Fire meta for sustained boss damage.",
-      "purpose": ["pal_element_damage", "boss_damage", "endgame"],
-      "elements": ["fire", "dragon", "electric", "neutral"],
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "fire",
+        "dragon",
+        "electric",
+        "neutral"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "knocklem-ignis",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Iron Guardian Mode massively boosts Attack and Defense while active; Flame Cutter is its exclusive high-damage Fire skill."
         },
         {
           "palId": "knocklem-ignis",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Second Knocklem Ignis rotated in while the first is on cooldown; this keeps Iron Guardian Mode active on whichever Knocklem is currently deployed."
         },
         {
           "palId": "kelpsea-ignis",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Boosts Fire Pal attack by 10% (rank 1) to 30% (rank 5); applies to both Knocklem Ignis variants."
         },
         {
           "palId": "orserk",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Drone Launcher hits build stacks of +1% to 5% Attack/Defense per hit on the active Pal, up to 30 stacks for +150% total at max condensation."
         },
         {
           "palId": "silvegis",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Up to 80% shield damage reduction and 60% faster shield recovery; the defensive backbone of every 1.0 endgame team."
         }
       ],
       "equipment": [],
-      "requirements": ["endgame", "condensation", "breeding", "legendary"],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding",
+        "legendary"
+      ],
       "synergyNotes": [
         "The rotation: deploy Knocklem Ignis 1, activate Iron Guardian Mode, build Orserk stacks, let it fight until the mode ends, then swap to Knocklem Ignis 2 and repeat — effectively infinite Guardian uptime.",
         "Kelpsea Ignis's 30% Fire attack buff applies to both Knocklem variants simultaneously because it's a party-wide aura, not a targeted buff.",
@@ -2231,38 +3062,66 @@
       "slug": "dual-dandilord-poison",
       "name": "Dual Dandilord Poison DoT",
       "summary": "Two Dandilords stack poison while Hoocrates buffs their Dark half — a DoT-focused alternative to the Bellanoir dark meta.",
-      "purpose": ["pal_element_damage", "status_effects", "boss_damage", "endgame"],
-      "elements": ["dark", "grass", "dragon", "electric", "neutral"],
+      "purpose": [
+        "pal_element_damage",
+        "status_effects",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "dark",
+        "grass",
+        "dragon",
+        "electric",
+        "neutral"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "dandilord",
-          "role": ["carry", "status_applier"],
+          "role": [
+            "carry",
+            "status_applier"
+          ],
           "explanation": "Grass/Dark dual-type with poison-inflicting skills; its Partner Skill amplifies poison damage ticks on afflicted targets."
         },
         {
           "palId": "dandilord",
-          "role": ["carry", "status_applier"],
+          "role": [
+            "carry",
+            "status_applier"
+          ],
           "explanation": "Second Dandilord doubles poison application speed and lets you rotate when one is on cooldown."
         },
         {
           "palId": "hoocrates",
-          "role": ["element_booster"],
-          "explanation": "Boosts Dark Pal attack by 10% (rank 1) to 30% (rank 5); applies to both Dandilords since they share the Dark type."
+          "role": [
+            "element_booster"
+          ],
+          "explanation": "Boosts Dark Pal attack by 10% (rank 1) to 20% (rank 5); applies to both Dandilords since they share the Dark type."
         },
         {
           "palId": "orserk",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Ramps the active Pal to +150% Attack and Defense; since poison damage scales with the inflictor's attack, Orserk directly amplifies the DoT ticks."
         },
         {
           "palId": "silvegis",
-          "role": ["defensive_support"],
+          "role": [
+            "defensive_support"
+          ],
           "explanation": "Standard 1.0 shield anchor — 80% shield damage reduction means you can wait out poison DoT ticks safely."
         }
       ],
       "equipment": [],
-      "requirements": ["endgame", "condensation", "breeding", "legendary"],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding",
+        "legendary"
+      ],
       "synergyNotes": [
         "Poison damage over time scales with the inflicting Pal's attack stat — Orserk's +150% ramp applies to poison ticks just as it does to direct damage, making this uniquely efficient for DoT strategies.",
         "Hoocrates buffs the Dark half of both Dandilords, and their Dark-type moves benefit while the poison ticks independently; the Grass half can be buffed separately with Bristla for a full DPS variant.",
@@ -2294,33 +3153,52 @@
       "slug": "flying-gunner-frostallion",
       "name": "Flying Gunner Frostallion",
       "summary": "Frostallion doubles your damage from the saddle while four Gobfins multiply it — the community's definitive legendary-hunting loadout.",
-      "purpose": ["player_weapon_damage", "boss_damage", "endgame"],
-      "elements": ["ice", "water"],
+      "purpose": [
+        "player_weapon_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "ice",
+        "water"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "frostallion",
-          "role": ["mount", "element_conversion", "trainer_damage_support"],
+          "role": [
+            "mount",
+            "element_conversion",
+            "trainer_damage_support"
+          ],
           "explanation": "While mounted, converts player attacks to Ice and doubles all player damage as a final multiplier; this doubling applies after Gobfin and accessory bonuses."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Angry Shark: +10% to 20% player attack per Gobfin; four copies stack additively to +80% before Frostallion's 2x multiplier."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Second Gobfin for another +10% to 20% player attack."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Third Gobfin for another +10% to 20% player attack."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Fourth Gobfin for another +10% to 20% player attack. With Vanguard on all four: +120% player attack before Frostallion's doubling, yielding roughly 10x the damage of an unbuffed player."
         }
       ],
@@ -2332,7 +3210,13 @@
           "reason": "The Legendary Assault Rifle's high fire rate and magazine size keep sustained DPS high; 84 bullets killed a max-level Jetragon in community testing with this exact setup."
         }
       ],
-      "requirements": ["endgame", "condensation", "legendary", "specific_weapon", "specific_mount"],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "legendary",
+        "specific_weapon",
+        "specific_mount"
+      ],
       "synergyNotes": [
         "Frostallion's final 2x multiplier makes this the highest theoretical player damage in the game — community tests report 855 Attack with this setup, hitting for 10x what a fully-bred combat Pal achieves.",
         "Gobfins run Vanguard (+10% player attack at 4-star) and Stronghold Strategist (+10% player defense) — the player ends up tankier than a Pal team despite being a 'glass cannon.'",
@@ -2364,38 +3248,63 @@
       "slug": "legendary-exploration",
       "name": "Legendary Exploration Kit",
       "summary": "Jetragon for the skies, Necromus for the ground, Galeclaw to glide, and Kitsun for weather — a pure traversal build that skips combat for speed.",
-      "purpose": ["exploration", "mobility", "utility"],
-      "elements": ["dragon", "dark", "neutral", "fire"],
+      "purpose": [
+        "exploration",
+        "mobility",
+        "utility"
+      ],
+      "elements": [
+        "dragon",
+        "dark",
+        "neutral",
+        "fire"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "jetragon",
-          "role": ["mount", "mobility"],
+          "role": [
+            "mount",
+            "mobility"
+          ],
           "explanation": "Fastest flying mount in the game; covers long distances at unmatched speed and doubles as a Dragon-type emergency combat Pal."
         },
         {
           "palId": "necromus",
-          "role": ["mount", "mobility"],
+          "role": [
+            "mount",
+            "mobility"
+          ],
           "explanation": "Fastest ground mount with excellent sprint speed and double-jump; pairs with Jetragon for environments where flying isn't practical."
         },
         {
           "palId": "galeclaw",
-          "role": ["mobility", "utility"],
+          "role": [
+            "mobility",
+            "utility"
+          ],
           "explanation": "The best glider Pal in the game; deploying Galeclaw mid-air gives a massive forward burst, covering more horizontal distance than any parachute."
         },
         {
           "palId": "kitsun",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "While mounted, grants immunity to hot and cold temperature effects; eliminates the need for heat-resistant or cold-resistant armor swaps."
         },
         {
           "palId": "jormuntide-ignis",
-          "role": ["utility"],
+          "role": [
+            "utility"
+          ],
           "explanation": "Provides Fire-type combat coverage for any hostile encounters during exploration; its high base stats mean you won't be defenseless if ambushed."
         }
       ],
       "equipment": [],
-      "requirements": ["endgame", "legendary"],
+      "requirements": [
+        "endgame",
+        "legendary"
+      ],
       "synergyNotes": [
         "This is not a combat build — every slot serves a traversal or quality-of-life purpose. Jetragon covers flight, Necromus covers ground, Galeclaw glides, and Kitsun solves temperature.",
         "Galeclaw's glider boost procs on every deployment; tap jump and immediately open the glider for a horizontal speed burst that rivals some flying mounts.",
@@ -2427,38 +3336,58 @@
       "slug": "daedream-necklace-squad",
       "name": "Daedream Necklace Squad",
       "summary": "Four Daedreams hover alongside you at all times via the necklace, auto-attacking everything in sight while you ride a mount.",
-      "purpose": ["pal_element_damage", "status_effects", "exploration"],
-      "elements": ["dark", "grass"],
+      "purpose": [
+        "pal_element_damage",
+        "status_effects",
+        "exploration"
+      ],
+      "elements": [
+        "dark",
+        "grass"
+      ],
       "progression": "early",
       "pals": [
         {
           "palId": "daedream",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Daedream's Necklace keeps it perpetually active without being summoned; it auto-attacks nearby enemies with Dark-type projectiles and can't kill wild Pals (mercy built into necklace attacks)."
         },
         {
           "palId": "daedream",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Second Daedream adds another auto-attacker; all four fire independently, quadrupling passive DPS."
         },
         {
           "palId": "daedream",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Third Daedream; the firing squad grows denser."
         },
         {
           "palId": "daedream",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Fourth Daedream; with four active, the screen fills with homing Dark projectiles that delete small Pals without any player input."
         },
         {
           "palId": "hoocrates",
-          "role": ["element_booster"],
-          "explanation": "Boosts Dark Pal attack by 10% (rank 1) to 30% (rank 5) while in the party; all four Daedreams benefit simultaneously."
+          "role": [
+            "element_booster"
+          ],
+          "explanation": "Boosts Dark Pal attack by 10% (rank 1) to 20% (rank 5) while in the party; all four Daedreams benefit simultaneously."
         }
       ],
       "equipment": [],
-      "requirements": ["early_game", "condensation"],
+      "requirements": [
+        "early_game",
+        "condensation"
+      ],
       "synergyNotes": [
         "In 1.0, necklace Pals no longer require saddles and their attacks don't kill wild Pals — this makes the Daedream squad the ultimate passive capture assist, softening targets without accidental kills.",
         "The four Daedreams attack independently of whatever the player is doing — you can ride a mount, fish, or mine while they clear threats around you automatically.",
@@ -2490,38 +3419,63 @@
       "slug": "gorirat-berserker-nuke",
       "name": "Gorirat Berserker Nuke",
       "summary": "Gorirat's +200% attack Gorilla Mode plus four pocket buffers stack to 27,430 attack — the highest Pal attack stat ever recorded in 1.0.",
-      "purpose": ["pal_element_damage", "boss_damage", "endgame"],
-      "elements": ["neutral", "dragon", "electric", "dark", "fire"],
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "neutral",
+        "dragon",
+        "electric",
+        "dark",
+        "fire"
+      ],
       "progression": "endgame",
       "pals": [
         {
           "palId": "gorirat",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Full-Power Gorilla Mode boosts attack by 50% (rank 1) to 200% (rank 5) during berserk, but only applies to shot-attack skills, not melee moves."
         },
         {
           "palId": "orserk",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Drone Launcher builds 30 stacks of +5% Attack and Defense each for +150% total at max condensation; the universal endgame amplifier."
         },
         {
           "palId": "celesdir-noct",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Boosts the active Pal's attack by 80% at max condensation at the cost of health drain; synergizes with the burst playstyle since the fight should end before health matters."
         },
         {
           "palId": "cremis",
-          "role": ["element_booster"],
-          "explanation": "Boosts Neutral Pal attack by 10% (rank 1) to 30% (rank 5); Gorirat is pure Neutral so the full buffer applies."
+          "role": [
+            "element_booster"
+          ],
+          "explanation": "Boosts Neutral Pal attack by 10% (rank 1) to 20% (rank 5); Gorirat is pure Neutral so the full buffer applies."
         },
         {
           "palId": "blazamut",
-          "role": ["element_booster"],
+          "role": [
+            "element_booster"
+          ],
           "explanation": "Boosts Fire damage by 25% to 50% at max condensation; applies to any Fire-type shot-attack skill fruits taught to Gorirat."
         }
       ],
       "equipment": [],
-      "requirements": ["endgame", "condensation", "breeding", "legendary"],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding",
+        "legendary"
+      ],
       "synergyNotes": [
         "The math: Gorirat base attack +200% Gorilla Mode +150% Orserk +80% Celesdir Noct +30% Cremis +50% Blazamut (for Fire shot skills) + 4× baton accessories (+64%) + Mammorest Curry (+25%) = 27,430 attack peak.",
         "This only works with shot-attack type skills (ranged projectiles) — Gorilla Mode explicitly excludes melee attacks. Teach Gorirat high-power shot skills via Skill Fruits.",
@@ -2553,40 +3507,68 @@
       "slug": "tocotoco-bomb-squad",
       "name": "Tocotoco Bomb Squad",
       "summary": "Five explosive egg-launching birds bred with combat passives — a meme build that's surprisingly lethal with Lucky skill rolls.",
-      "purpose": ["pal_element_damage", "status_effects"],
-      "elements": ["neutral"],
+      "purpose": [
+        "pal_element_damage",
+        "status_effects"
+      ],
+      "elements": [
+        "neutral"
+      ],
       "progression": "mid",
       "pals": [
         {
           "palId": "tocotoco",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Egg Bomb Launcher fires explosive projectiles; Lucky Tocotocos can roll skills from a 32-skill pool including Dragon Meteor (600 power) and Holy Burst (700 power).",
-          "recommendedSkills": ["Dragon Meteor", "Holy Burst", "Thunderstorm"],
-          "recommendedPassives": ["Ferocious", "Musclehead", "Lucky", "Legend"]
+          "recommendedSkills": [
+            "Dragon Meteor",
+            "Holy Burst",
+            "Thunderstorm"
+          ],
+          "recommendedPassives": [
+            "Ferocious",
+            "Musclehead",
+            "Lucky",
+            "Legend"
+          ]
         },
         {
           "palId": "tocotoco",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Second Tocotoco doubles the explosive output."
         },
         {
           "palId": "tocotoco",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Third Tocotoco; with five birds, the battlefield becomes a bullet-hell of explosive eggs."
         },
         {
           "palId": "tocotoco",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Fourth Tocotoco."
         },
         {
           "palId": "tocotoco",
-          "role": ["carry"],
+          "role": [
+            "carry"
+          ],
           "explanation": "Fifth Tocotoco. One player rode a mutated Tocotoco ('Fat Fuack') with Megaton as a meme bomb-mount — the community named this Taco Tuesdays."
         }
       ],
       "equipment": [],
-      "requirements": ["mid_game", "condensation", "breeding"],
+      "requirements": [
+        "mid_game",
+        "condensation",
+        "breeding"
+      ],
       "synergyNotes": [
         "Breed Tocotocos with Ferocious, Musclehead, Lucky, and Legend passives for maximum egg damage; Lucky also unlocks the expanded skill pool for each bird.",
         "Lucky Tocotocos (level 51+ with minimum 50 IVs) can randomly roll Holy Burst (700 power), Thunderstorm (600), Dragon Meteor (600), or other ultra-high-power skills — making each bird a potential nuke.",
@@ -2613,38 +3595,58 @@
       "slug": "elizabee-royal-guard",
       "name": "Elizabee Royal Guard",
       "summary": "Four Beegardes buff Elizabee's attack and defense by +96% each while producing honey — the Grass analog to the Sweepa meme build.",
-      "purpose": ["pal_element_damage", "active_pal_support", "survival"],
-      "elements": ["grass"],
+      "purpose": [
+        "pal_element_damage",
+        "active_pal_support",
+        "survival"
+      ],
+      "elements": [
+        "grass"
+      ],
       "progression": "mid",
       "pals": [
         {
           "palId": "elizabee",
-          "role": ["carry"],
-          "explanation": "Each Beegarde in the party grants Elizabee +12% Attack and +12% Defense (rank 1) to +24% (rank 5) per Beegarde; Elizabee also has a hidden +5% to +8% self-attack boost from its own partner skill."
+          "role": [
+            "carry"
+          ],
+          "explanation": "Each Beegarde in the party grants Elizabee +12% Attack and +12% Defense (rank 1) to +24% (rank 5) per Beegarde; Elizabee also has a self-attack boost from its own partner skill that only starts above rank 1, reaching +8% at rank 5."
         },
         {
           "palId": "beegarde",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "First Beegarde: +12% to +24% Attack and Defense to Elizabee. Also produces honey passively at the ranch when not in the active party."
         },
         {
           "palId": "beegarde",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Second Beegarde: +12% to +24%."
         },
         {
           "palId": "beegarde",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Third Beegarde: +12% to +24%."
         },
         {
           "palId": "beegarde",
-          "role": ["active_pal_booster"],
+          "role": [
+            "active_pal_booster"
+          ],
           "explanation": "Fourth Beegarde: +12% to +24%. Total at max condensation: +104% Attack (+96% from Beegardes + 8% self), +96% Defense."
         }
       ],
       "equipment": [],
-      "requirements": ["mid_game", "condensation", "breeding"],
+      "requirements": [
+        "mid_game",
+        "condensation",
+        "breeding"
+      ],
       "synergyNotes": [
         "Unlike Sweepa/Swee which gives only Attack+Defense, Beegardes give both stats simultaneously — Elizabee becomes about twice as strong and twice as tanky as a normal Pal of its level.",
         "Elizabee is a Grass type with a staff-wielding partner skill; it delivers strong Grass AoE damage and its inflated stats make it viable through mid-to-late game content.",
@@ -2671,38 +3673,59 @@
       "slug": "verdash-speed-demon",
       "name": "Verdash Speed Demon",
       "summary": "Verdash grants +40% movement speed instead of attack, while four Gobfins supply the damage — a Grass-element speedrunner's dream.",
-      "purpose": ["player_weapon_damage", "exploration", "mobility"],
-      "elements": ["grass", "water"],
+      "purpose": [
+        "player_weapon_damage",
+        "exploration",
+        "mobility"
+      ],
+      "elements": [
+        "grass",
+        "water"
+      ],
       "progression": "mid",
       "pals": [
         {
           "palId": "verdash",
-          "role": ["element_conversion", "mobility"],
+          "role": [
+            "element_conversion",
+            "mobility"
+          ],
           "explanation": "Unlike other element-swap Pals, Verdash grants +20% to +40% movement speed to itself and the player (rank 1 to 5) while converting player attacks to Grass — it trades the usual attack boost for extreme mobility."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Angry Shark: +10% to +20% player attack per Gobfin in the party with max condensation."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Second Gobfin: +20%."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Third Gobfin: +20%."
         },
         {
           "palId": "gobfin",
-          "role": ["trainer_damage_support"],
+          "role": [
+            "trainer_damage_support"
+          ],
           "explanation": "Fourth Gobfin: +20%. Total: +80% player attack and +40% movement speed — you outrun everything while dealing Grass-typed weapon damage."
         }
       ],
       "equipment": [],
-      "requirements": ["mid_game", "condensation"],
+      "requirements": [
+        "mid_game",
+        "condensation"
+      ],
       "synergyNotes": [
         "Verdash is the only element-swap Pal that boosts movement speed instead of attack; the speed boost lets you strafe-dodge boss attacks at ranges that would kill a stationary player.",
         "The Gobfins compensate for Verdash's missing attack buff — +80% player attack from four maxed Gobfins brings your Grass-typed guns up to competitive boss-killing damage.",

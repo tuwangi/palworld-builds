@@ -28,7 +28,7 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
 ---
 
 <Layout title={`${build.name} — Palworld Builds`} description={build.summary} locale={locale}>
-  <nav class="site-nav" aria-label="Primary navigation">
+  <nav class="site-nav" aria-label={strings.navPrimary}>
     <a href={buildPath(locale)} class="brand-lockup">
       <span class="brand-mark" aria-hidden="true">P</span>
       <span>
@@ -57,7 +57,7 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
         </div>
       </div>
       <div class="detail-favorite">
-        <DetailFavoriteButton client:load buildId={build.id} labels={{ save: strings.saveFavorite, remove: strings.removeFavorite }} />
+        <DetailFavoriteButton client:visible buildId={build.id} labels={{ save: strings.saveFavorite, remove: strings.removeFavorite }} />
       </div>
     </header>
 
@@ -77,6 +77,10 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
       <ol role="list" class="detail-list">
         {build.pals.map((slot, index) => (
           <li class="detail-card">
+            {/* The five team slots are what this page is for, and they sit at
+                the top — `client:visible` left a window where a card was on
+                screen but not yet interactive, so the first tap did nothing.
+                The alternatives section below keeps the deferred hydration. */}
             <PalInfoModal
               client:load
               name={slot.name}
@@ -89,11 +93,14 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
               recommendedPassives={slot.recommendedPassives}
               specialNote={slot.specialNote}
               slotNumber={String(index + 1).padStart(2, "0")}
-              locale={locale}
               strings={{
                 openDetails: strings.palOpenDetails,
                 close: strings.palClose,
                 partnerSkill: strings.palPartnerSkill,
+                partnerSkillMissing: strings.palPartnerSkillMissing,
+                scalingTitle: strings.palScalingTitle,
+                scalingBase: strings.palScalingBase,
+                scalingMax: strings.palScalingMax,
                 buildRole: strings.palBuildRole,
                 buildNotes: strings.palBuildNotes,
                 recommendedSkills: strings.palRecommendedSkills,
@@ -136,7 +143,7 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
           {build.alternatives.map((alternative) => (
             <li class="detail-card">
               <PalInfoModal
-                client:load
+                client:visible
                 name={alternative.palName}
                 iconUrl={alternative.palIconUrl}
                 elementLabels={alternative.palElements.map((element) => labels.element.get(element) ?? element)}
@@ -146,11 +153,14 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
                 recommendedSkills={[]}
                 recommendedPassives={[]}
                 contextLabel={`${strings.replaces} ${alternative.replacesPalName}`}
-                locale={locale}
-                strings={{
+                  strings={{
                   openDetails: strings.palOpenDetails,
                   close: strings.palClose,
                   partnerSkill: strings.palPartnerSkill,
+                partnerSkillMissing: strings.palPartnerSkillMissing,
+                scalingTitle: strings.palScalingTitle,
+                scalingBase: strings.palScalingBase,
+                scalingMax: strings.palScalingMax,
                   buildRole: strings.palBuildRole,
                   buildNotes: strings.palBuildNotes,
                   recommendedSkills: strings.palRecommendedSkills,

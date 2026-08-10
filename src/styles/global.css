@@ -543,3 +543,56 @@ button:focus-visible, a:focus-visible, input:focus-visible {
 
   .pal-modal-backdrop, .pal-modal { animation: none; }
 }
+
+/* Condensation-rank scaling table inside the Pal modal. The raw wiki table is
+   five near-identical rows per effect; this shows only rank 0 vs rank 4, which
+   is the question a player actually has ("is condensing this worth it?"). */
+.pal-info-empty {
+  @apply mt-2 text-sm leading-6 text-[var(--ink-soft)] italic;
+}
+
+.pal-scaling {
+  @apply mt-4 overflow-x-auto rounded-xl border border-[var(--line)] bg-[var(--paper)]/60 p-3;
+}
+
+.pal-scaling-title {
+  @apply mb-2 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-[var(--ink-soft)];
+}
+
+.pal-scaling table {
+  @apply w-full border-collapse text-left text-xs;
+}
+
+.pal-scaling thead th {
+  @apply pb-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.1em] text-[var(--ink-soft)];
+}
+
+.pal-scaling thead th:not(:first-child),
+.pal-scaling tbody td {
+  @apply text-right tabular-nums;
+}
+
+.pal-scaling tbody th {
+  @apply py-1.5 pr-3 align-top font-semibold text-[var(--ink)];
+}
+
+.pal-scaling tbody th span {
+  @apply mt-0.5 block font-normal text-[10px] uppercase tracking-[0.08em] text-[var(--ink-soft)];
+}
+
+.pal-scaling tbody td {
+  @apply py-1.5 pl-3 font-semibold text-[var(--ink-soft)];
+}
+
+.pal-scaling tbody td:last-child {
+  @apply text-[var(--coral-dark)];
+}
+
+.pal-scaling tbody tr + tr th,
+.pal-scaling tbody tr + tr td {
+  @apply border-t border-[var(--line)];
+}
+
+.profile-collection {
+  @apply mt-10;
+}

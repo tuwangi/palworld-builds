@@ -1,31 +1,84 @@
 ---
 import "../styles/global.css";
 import type { Locale } from "../lib/taxonomy";
+import { t, LOCALES } from "../lib/i18n";
 
 interface Props {
   title: string;
   description?: string;
   locale?: Locale;
+  /** Profile pages are per-user collections — indexable content they are not. */
+  noindex?: boolean;
 }
 
-const { title, description = "Companion personal de equipos de Palworld.", locale = "es" } = Astro.props;
+const { title, description, locale = "es", noindex = false } = Astro.props;
+const strings = t(locale);
+const resolvedDescription = description ?? strings.siteDescription;
+
+const canonical = new URL(Astro.url.pathname, Astro.site);
+
+/**
+ * Spanish is the default locale and lives at the root; English is mirrored
+ * under /en/. Both directions of the pair have to declare each other or
+ * search engines treat them as competing duplicates.
+ */
+function hrefForLocale(target: Locale): string {
+  const path = Astro.url.pathname;
+  const withoutPrefix = path.startsWith("/en/") ? path.slice(3) : path === "/en" ? "/" : path;
+  return new URL(target === "es" ? withoutPrefix : `/en${withoutPrefix}`, Astro.site).href;
+}
 ---
 
 <!doctype html>
-<html lang={locale}>
+<html lang={strings.htmlLang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f5f1e8" />
+    <meta name="description" content={resolvedDescription} />
     <title>{title}</title>
+
+    <link rel="canonical" href={canonical.href} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+    {
+      !noindex &&
+        LOCALES.map((alt) => <link rel="alternate" hreflang={alt} href={hrefForLocale(alt)} />)
+    }
+    {!noindex && <link rel="alternate" hreflang="x-default" href={hrefForLocale("es")} />}
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Palworld Builds" />
+    <meta property="og:locale" content={locale === "es" ? "es_ES" : "en_US"} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={resolvedDescription} />
+    <meta property="og:url" content={canonical.href} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={resolvedDescription} />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    {/* Loaded as `print` so it never blocks first paint, then promoted to
+        `all` once it arrives. `display=swap` already covers the FOUT. */}
     <link
+      id="webfonts"
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      media="print"
     />
+    <script is:inline>
+      (() => {
+        const link = document.getElementById("webfonts");
+        if (link) link.media = "all";
+      })();
+    </script>
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <div id="app" class="site-shell">

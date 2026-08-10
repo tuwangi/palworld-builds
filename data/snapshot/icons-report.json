@@ -1,18 +1,19 @@
 {
-  "generatedAt": "2026-08-09T20:25:02.802Z",
+  "generatedAt": "2026-08-10T01:24:43.256Z",
   "pals": {
-    "total": 287,
-    "downloaded": 287,
-    "failed": []
-  },
-  "items": {
-    "total": 8,
-    "downloaded": 7,
-    "missing": [
+    "total": 289,
+    "downloaded": 288,
+    "failed": [
       {
-        "id": "three-shot-bow",
-        "reason": "no icon on paldb.gg item page"
+        "id": "ra",
+        "name": "Ra",
+        "error": "absent from paldb.gg listing and wiki.gg has no icon file"
       }
     ]
+  },
+  "items": {
+    "total": 9,
+    "downloaded": 9,
+    "missing": []
   }
 }

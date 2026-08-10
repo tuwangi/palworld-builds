@@ -2,6 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import * as cheerio from "cheerio";
 import { cargoQueryAll } from "./lib/cargo.mjs";
 import { slugify } from "./lib/slug.mjs";
+import { cleanWikitext } from "./lib/wikitext.mjs";
 
 const OUT_DIR = new URL("../data/snapshot/", import.meta.url);
 const CAPTURED_AT = process.env.SNAPSHOT_CAPTURED_AT ?? new Date().toISOString();
@@ -86,9 +87,9 @@ async function fetchWikiPals() {
     const list = scalingBySkill.get(row.partnerSkill) ?? [];
     list.push({
       level: Number(row.level),
-      effectType: row.effectType,
-      effectValue: row.effectValue,
-      target: row.target,
+      effectType: cleanWikitext(row.effectType),
+      effectValue: cleanWikitext(row.effectValue),
+      target: cleanWikitext(row.target),
     });
     scalingBySkill.set(row.partnerSkill, list);
   }
@@ -96,9 +97,9 @@ async function fetchWikiPals() {
   const skillByPal = new Map();
   for (const row of skillRows) {
     skillByPal.set(row.palName, {
-      name: row.partnerSkill,
-      description: row.description,
-      workType: row.type,
+      name: cleanWikitext(row.partnerSkill),
+      description: cleanWikitext(row.description),
+      workType: cleanWikitext(row.type),
       scaling: (scalingBySkill.get(row.partnerSkill) ?? []).sort((a, b) => a.level - b.level),
     });
   }

@@ -316,3 +316,47 @@ Pal (`PalAvatar.astro` para paginas estaticas, `PalAvatarChip` en
 `BuildBrowser.tsx` para el listado). Para items sin icono, no se muestra
 nada — el nombre ya es suficiente y un glifo generico seria mas enganoso
 que informativo.
+
+## Limpieza del wikitext (agosto 2026)
+
+Cargo no devuelve prosa limpia: las descripciones de partner skills y los
+`effectType` de `PalPartnerSkillScale` llegan envueltos en `<span
+class="link-icon">`, con `[[File:...]]`, enlaces con pipe, enlaces externos
+`[url etiqueta]`, entidades `&nbsp;` y apostrofos escapados como `''`.
+
+`scripts/lib/wikitext.mjs` los normaliza y `build-snapshot.mjs` lo aplica **al
+escribir**, no al renderizar: el snapshot es la fuente factual que leen los
+validadores, las claves de traduccion y la UI, y si el markup queda dentro cada
+capa tiene que rederivar la misma limpieza y pueden discrepar.
+
+Estado antes de la limpieza: 29 descripciones con `&nbsp;` visible en la UI en
+ingles, y 125 filas de escalado cuyo `effectType` era una etiqueta HTML
+completa en lugar de un nombre de efecto.
+
+Si cambian las reglas de limpieza, `npm run snapshot:normalize` las reaplica al
+snapshot ya descargado sin volver a pedir nada a la red.
+
+## Cobertura de iconos
+
+`paldb.gg` es la fuente primaria, pero va por detras de wiki.gg en algunas
+variantes 1.0: `Rayhound Cryst` tiene fila en wiki.gg y **ninguna pagina** en
+paldb.gg, y las armas `Assault Rifle` y `Three Shot Bow` dan 404 ahi. Para esos
+casos `fetch-icons.mjs` cae al API de archivos de wiki.gg
+(`File:<Nombre> icon.png`).
+
+El script tambien **se niega a escribir el manifiesto** si el listado de
+paldb.gg devuelve menos de 200 Pals: ese selector es el unico punto donde un
+cambio de markup en paldb.gg podria vaciar silenciosamente todos los iconos del
+sitio.
+
+## Huecos conocidos de la fuente (no se inventan)
+
+- **Elgrove**: wiki.gg publica su descripcion con el nombre de la habilidad
+  vacio.
+- **17 Pals usados en builds no tienen fila en `PalPartnerSkill`**:
+  `aegidron`, `celesdir-noct`, `dandilord`, `eidrolon-ignis`, `gloopie-primo`,
+  `knocklem-ignis`, `moldron-cryst`, `nitemary-botan`, `prixter-lux`,
+  `renjishi`, `shaolong`, `silvance`, `solmora-lux`, `starryon-primo`,
+  `tetroise-primo`, `univolt-cryst`, `wistella`. Todos vienen del parche de
+  cobertura de paldb.gg. Verificado contra wiki.gg en vivo (2026-08-09): no
+  existen ahi. La UI lo dice en vez de mostrar una ficha vacia.

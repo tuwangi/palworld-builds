@@ -9,12 +9,13 @@ type Strings = {
   profileLeaveButton: string;
   profileErrorInvalid: string;
   profileErrorUnavailable: string;
+  profileErrorNotYours: string;
 };
 
 export default function ProfileControl({ strings }: { strings: Strings }) {
   const { profileId, joinProfile, leaveProfile, ready } = useFavorites();
   const [input, setInput] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "invalid" | "unavailable">("idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "invalid" | "unavailable" | "not_yours">("idle");
 
   if (!ready) return null;
 
@@ -44,7 +45,7 @@ export default function ProfileControl({ strings }: { strings: Strings }) {
       window.location.reload();
       return;
     }
-    setStatus(result.reason === "invalid_id" ? "invalid" : "unavailable");
+    setStatus(result.reason === "invalid_id" ? "invalid" : result.reason === "not_yours" ? "not_yours" : "unavailable");
   }
 
   return (
@@ -68,7 +69,7 @@ export default function ProfileControl({ strings }: { strings: Strings }) {
         </button>
       </form>
       <p class="mt-1.5 text-xs text-white/55">
-        {status === "invalid" ? strings.profileErrorInvalid : status === "unavailable" ? strings.profileErrorUnavailable : strings.profileHint}
+        {status === "invalid" ? strings.profileErrorInvalid : status === "not_yours" ? strings.profileErrorNotYours : status === "unavailable" ? strings.profileErrorUnavailable : strings.profileHint}
       </p>
     </div>
   );

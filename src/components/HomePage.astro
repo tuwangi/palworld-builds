@@ -34,7 +34,7 @@ const requirementOptions = activeOptions(toOptions(labels.requirement), "require
 ---
 
 <Layout title={strings.pageTitle} description={strings.tagline} locale={locale}>
-  <nav class="site-nav" aria-label="Primary navigation">
+  <nav class="site-nav" aria-label={strings.navPrimary}>
     <a href={buildPath(locale)} class="brand-lockup">
       <span class="brand-mark" aria-hidden="true">P</span>
       <span>
@@ -58,7 +58,7 @@ const requirementOptions = activeOptions(toOptions(labels.requirement), "require
       </div>
     </section>
 
-    <section class="profile-strip" aria-label="Shared favorites">
+    <section class="profile-strip" aria-label={strings.profileStripLabel}>
       <div>
         <strong>{strings.collectionTitle}</strong>
         <p>{strings.collectionDescription}</p>
@@ -73,6 +73,7 @@ const requirementOptions = activeOptions(toOptions(labels.requirement), "require
           profileLeaveButton: strings.profileLeaveButton,
           profileErrorInvalid: strings.profileErrorInvalid,
           profileErrorUnavailable: strings.profileErrorUnavailable,
+          profileErrorNotYours: strings.profileErrorNotYours,
         }}
       />
     </section>

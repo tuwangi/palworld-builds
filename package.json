@@ -4,15 +4,18 @@
   "type": "module",
   "scripts": {
     "snapshot:build": "node scripts/build-snapshot.mjs",
+    "snapshot:normalize": "node scripts/normalize-snapshot.mjs",
     "icons:fetch": "node scripts/fetch-icons.mjs",
     "validate": "node scripts/validate-catalog.mjs",
     "validate:translations": "node scripts/validate-translations.mjs",
+    "audit:scaling": "node scripts/check-scaling-claims.mjs",
     "dev": "astro dev",
     "build": "npm run validate && npm run validate:translations && astro build",
     "preview": "astro preview"
   },
   "dependencies": {
     "@astrojs/preact": "^6.0.2",
+    "@astrojs/sitemap": "^3.7.3",
     "@astrojs/vercel": "^11.0.5",
     "@tailwindcss/vite": "^4.3.3",
     "ajv": "^8.17.1",

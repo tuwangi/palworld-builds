@@ -1,13 +1,15 @@
 import { useEffect, useState } from "preact/hooks";
 import { XMarkIcon } from "./icons";
-import type { SnapshotPartnerSkill } from "../lib/data";
-import { localizePartnerSkill } from "../lib/partnerSkillLocalization";
-import type { Locale } from "../lib/taxonomy";
+import type { LocalizedPartnerSkill } from "../lib/partnerSkillLocalization";
 
 type Strings = {
   openDetails: string;
   close: string;
   partnerSkill: string;
+  partnerSkillMissing: string;
+  scalingTitle: string;
+  scalingBase: string;
+  scalingMax: string;
   buildRole: string;
   buildNotes: string;
   recommendedSkills: string;
@@ -22,13 +24,16 @@ type Props = {
   elementLabels: string[];
   roleLabels: string[];
   explanation: string;
-  partnerSkill: SnapshotPartnerSkill | null;
+  /**
+   * Already localized upstream in data.ts — this island never sees the
+   * English source or the translation tables, so neither ships to the client.
+   */
+  partnerSkill: LocalizedPartnerSkill | null;
   recommendedSkills: string[];
   recommendedPassives: string[];
   specialNote?: string;
   contextLabel?: string;
   slotNumber?: string;
-  locale: Locale;
   strings: Strings;
 };
 
@@ -44,7 +49,6 @@ export default function PalInfoModal({
   specialNote,
   contextLabel,
   slotNumber,
-  locale,
   strings,
 }: Props) {
   const [open, setOpen] = useState(false);
@@ -57,8 +61,6 @@ export default function PalInfoModal({
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
   }, [open]);
-
-  const localizedPartner = partnerSkill ? localizePartnerSkill(partnerSkill, locale) : null;
 
   return (
     <>
@@ -95,13 +97,48 @@ export default function PalInfoModal({
             </div>
 
             <div class="pal-modal-body">
-              {partnerSkill && (
-                <div class="pal-info-block pal-info-featured">
-                  <p class="pal-info-label">{strings.partnerSkill}</p>
-                  <h3>{localizedPartner?.name}</h3>
-                  <p>{localizedPartner?.description}</p>
-                </div>
-              )}
+              <div class="pal-info-block pal-info-featured">
+                <p class="pal-info-label">{strings.partnerSkill}</p>
+                {partnerSkill ? (
+                  <>
+                    {/* wiki.gg publishes Elgrove's description with an empty
+                        skill name; render the prose rather than an empty heading. */}
+                    {partnerSkill.name && <h3>{partnerSkill.name}</h3>}
+                    <p>{partnerSkill.description}</p>
+                    {partnerSkill.scaling.length > 0 && (
+                      <div class="pal-scaling">
+                        <p class="pal-scaling-title">{strings.scalingTitle}</p>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th scope="col"></th>
+                              <th scope="col">{strings.scalingBase}</th>
+                              <th scope="col">{strings.scalingMax}</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {partnerSkill.scaling.map((row) => (
+                              <tr key={`${row.effectType}-${row.target}`}>
+                                <th scope="row">
+                                  {row.effectType}
+                                  {row.target && <span>{row.target}</span>}
+                                </th>
+                                <td>{row.base}</td>
+                                <td>{row.max}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  /* 17 Pals used by builds are paldb.gg-only 1.0 variants with
+                     no wiki.gg partner-skill row. Say so instead of rendering
+                     an empty card that reads as "this Pal has no skill". */
+                  <p class="pal-info-empty">{strings.partnerSkillMissing}</p>
+                )}
+              </div>
               {roleLabels.length > 0 && <div class="pal-info-block">
                 <p class="pal-info-label">{strings.buildRole}</p>
                 <div class="pal-modal-tags">{roleLabels.map((role) => <span>{role}</span>)}</div>
