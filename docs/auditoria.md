@@ -192,3 +192,69 @@ Medida provisional tomada: **33 de las 44 builds bajaron a
 contradicha o sin datos. La app mostraba "Verificacion cruzada" sobre builds
 cuyas cifras no resisten el cruce, y esa etiqueta era el problema mas urgente.
 Las 11 restantes conservan su etiqueta.
+
+## Segunda pasada — reescritura desde wiki.gg (2026-08-10)
+
+Se reescribieron los 60 slots que la clasificacion marcaba como CONTRADICHO o
+SIN DATOS, tomando el texto de los datos reales, y se sustituyeron Pals cuando
+el efecto que la build necesitaba existia en otro Pal.
+
+Resultado de `npm run audit:scaling`:
+
+| | antes | despues |
+| --- | --- | --- |
+| OK | 58 | **82** |
+| PARCIAL (total derivado, legitimo) | 36 | 37 |
+| CONTRADICHO | 49 | **0** |
+| SIN DATOS | 11 | **0** |
+
+Los 37 PARCIAL restantes son todos totales derivados y ahora citan tambien el
+valor por rango del que salen (ej. Orserk: +1% a +5% por carga, 30 cargas,
++150% a 4★), asi que la cifra es trazable.
+
+### Efectos que se comprobo que NO existen en 1.0
+
+`scripts/effect-index.mjs` invierte el snapshot y responde "quien da el efecto
+X". Con el se confirmo que estas tres cosas, que el catalogo daba por hechas,
+no las provee **ningun** Pal del juego:
+
+- **Defensa por elemento.** Ninguna habilidad sube la Defensa de los Pals de un
+  elemento. Las plantillas tenian un slot dedicado a eso en los ocho elementos.
+- **Ataque de Pals Dragon.** El unico efecto con target "Dragon Pals" es
+  Dragon Hunter (Cryolinx), y es tasa de objetos.
+- **Daño contra enemigos envenenados.** Existen amplificadores para Ceguera
+  (Roujay), Cubierto de hiedra (Needoll), Embarrado (Pierdon) y enemigos fuera
+  de combate (Hoodle). Veneno no tiene ninguno. Cuatro builds lo asumian via
+  Prixter, cuya habilidad real encuentra la salida de una mazmorra.
+
+### Sustituciones de Pal
+
+| Build | Sale | Entra | Por que |
+| --- | --- | --- | --- |
+| grass-team-template | Nitemary Botan | Warsect | no existe Defensa de Planta; Hard Armor da Defensa real al jugador |
+| water-team-template | Gloopie Primo | Teafant | no existe Defensa de Agua; Soothing Shower cura de verdad |
+| ice-team-template | Moldron Cryst | Vanwyrm Cryst | sin datos en wiki.gg; Aerial Marauder es amplificador verificado |
+| ground-team-template | Kikit | Warsect Terra | Kikit reduce peso de petroleo, no da Defensa |
+| dark-team-template | Wistella | Felbat | sin datos; Life Steal es el efecto defensivo Oscuro real |
+| dragon-team-template | Dinossom | Chillet | Dinossom potencia daño de Planta montada |
+| poison-and-blind-lock | Prixter | Vanwyrm Cryst | no existe amplificador de daño por Veneno |
+| knocklem-poison-tank | Prixter | Robinquill Terra | idem |
+| bellanoir-glass-cannon-rotation | Prixter | Vanwyrm Cryst | idem |
+| poison-barrier | Prixter | Robinquill Terra | idem |
+| eidrolon-hybrid-carry | Wistella | Croajiro Noct | buff Oscuro real en vez de una Defensa inventada |
+| eidrolon-hybrid-carry | Dinossom | Felbat | Dinossom no aportaba nada a ese equipo |
+
+### Build retirada
+
+`dragon-fire-tower`: tres de sus cinco slots eran bonos de montura que no
+pueden estar activos a la vez, un cuarto Pal (Eidrolon Ignis) no tiene fila en
+wiki.gg, y su fuente de Reddit no se pudo confirmar. **43 builds** quedan.
+
+### Etiquetas de verificacion, redefinidas
+
+- `cross_checked` (25): cada cifra que cita esta respaldada por wiki.gg **y**
+  su URL de fuente resuelve.
+- `unverified` (18): la fuente no se pudo confirmar (las 8 de Reddit que
+  quedan) o algun slot sigue apoyandose en un Pal sin datos.
+
+Por fuente: palmods.gg 21/8, game8.co 4/2, reddit.com 0/8.

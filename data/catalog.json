@@ -29,30 +29,30 @@
         {
           "palId": "robinquill-terra",
           "role": [
-            "trainer_damage_support"
+            "weak_point_support"
           ],
-          "explanation": "Raises bow charge speed by 15% to 30%, letting you fire more full-power shots per minute."
+          "explanation": "Hawk Eye raises weak-point damage by 20% (0★) to 40% (4★). It has nothing to do with bow charge speed — that claim had no source — but a charged bow shot is exactly what lets you aim for a weak point."
         },
         {
           "palId": "robinquill",
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Raises bow damage by 10% to 35%; the only pal in 1.0 whose equipped-weapon bonus covers bows, so this slot has no substitute."
+          "explanation": "Grounded Archer raises the player's bow damage — the only equipped-weapon bonus in 1.0 that covers bows, so this slot has no substitute. wiki.gg publishes no condensation curve for it."
         },
         {
           "palId": "solenne",
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Pays 30% to 80% attack while no two party pals share a species; raises both the arrow and the Loomen explosion since it is priced off attack."
+          "explanation": "Untainted Maiden raises the player's Attack while every Pal in the party is a different species — which this team satisfies. wiki.gg documents the effect but publishes no condensation curve, so no figure can be quoted for it."
         },
         {
           "palId": "vanwyrm-cryst",
           "role": [
             "weak_point_support"
           ],
-          "explanation": "Raises weak-point damage by 20% (0★) to 40% (4★); a charged bow shot gives time to line up a headshot."
+          "explanation": "Aerial Marauder raises weak-point damage by 20% (0★) to 40% (4★) — the same buff as Robinquill Terra's Hawk Eye, and its own description says it does not stack, so run whichever is better condensed and treat the other as a flying mount."
         }
       ],
       "equipment": [
@@ -100,7 +100,7 @@
         "title": "Explosive Archer Build in Palworld 1.0 (Party Comp and Team Link)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "gunslinger",
@@ -126,7 +126,7 @@
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Raises trainer attack by 30% to 80% while every pal in the party is a different species."
+          "explanation": "Untainted Maiden raises the player's Attack while every Pal in the party is a different species — which this team satisfies. wiki.gg documents the effect but publishes no condensation curve, so no figure can be quoted for it."
         },
         {
           "palId": "frostplume",
@@ -138,9 +138,9 @@
         {
           "palId": "nyafia",
           "role": [
-            "trainer_damage_support"
+            "carry"
           ],
-          "explanation": "Raises trainer shotgun damage by 10% to 35%; its activated Partner Skill also fires a shotgun."
+          "explanation": "Shot-Nyan Mode is an activated attack, not a passive buff: Nyafia fires a shotgun at nearby enemies for a limited time, with attack power scaling from 50 (0★) to 100 (4★). It does not raise the player's shotgun damage."
         },
         {
           "palId": "orserk",
@@ -206,7 +206,7 @@
         "title": "Gunslinger Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "frostallion-charge-rifle",
@@ -260,7 +260,7 @@
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Adds a broad trainer ranged-attack increase of 30% to 80% on top of the specialized multipliers."
+          "explanation": "Untainted Maiden raises the player's Attack while every Pal in the party is a different species — which this team satisfies. wiki.gg documents the effect but publishes no condensation curve, so no figure can be quoted for it."
         }
       ],
       "equipment": [],
@@ -286,7 +286,7 @@
         "title": "Frostallion Charge Rifle Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "full-tackle-box",
@@ -326,7 +326,7 @@
           "role": [
             "utility"
           ],
-          "explanation": "Reduces gauge loss by 12% to 35% while the fishing bars are not overlapping."
+          "explanation": "Sticky Princess slows how fast the capture gauge drains while the fishing bars are not aligned, by 12% (0★) up to 35% (4★)."
         },
         {
           "palId": "whalaska-ignis",
@@ -410,11 +410,12 @@
           "explanation": "Raises damage dealt by both trainer and Roujay while the target is Blinded, 50% to 65%."
         },
         {
-          "palId": "prixter",
+          "palId": "vanwyrm-cryst",
           "role": [
-            "trainer_damage_support"
+            "weak_point_support",
+            "mount"
           ],
-          "explanation": "Raises damage dealt by both trainer and Prixter while Poison is active, 50% to 65%."
+          "explanation": "Replaces Prixter, whose Scorpion Sonar only finds a dungeon's exit — no Pal in 1.0 amplifies damage against Poisoned enemies, so that slot could not be filled as written. Aerial Marauder raises weak-point damage by 20% (0★) to 40% (4★), which applies whatever status the target is under."
         },
         {
           "palId": "bakemi",
@@ -429,7 +430,7 @@
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Amplifies trainer ranged damage 30% to 80% while keeping five different species, turning each status window into a burst phase."
+          "explanation": "Untainted Maiden raises the player's Attack while every Pal in the party is a different species — which this team satisfies. wiki.gg documents the effect but publishes no condensation curve, so no figure can be quoted for it."
         }
       ],
       "equipment": [
@@ -470,7 +471,7 @@
         "title": "Poison and Blind Lock Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "saya-and-selyne-hard-rotation",
@@ -503,7 +504,7 @@
             "mount",
             "carry"
           ],
-          "explanation": "Gains 4% to 8% ranged attack for each other Dragon ally, 32% at 4★ with four Dragon allies; contributes a compact ranged burst window."
+          "explanation": "wiki.gg has no partner skill row for Shaolong — it is one of the 1.0 variants that only exists in paldb.gg's listing — so no figure can be quoted. It is here as a Dragon body that feeds the count-based bonuses of the rest of the team."
         },
         {
           "palId": "orserk",
@@ -515,18 +516,16 @@
         {
           "palId": "blazamut-ryu",
           "role": [
-            "mount",
-            "weak_point_support"
+            "mount"
           ],
-          "explanation": "Raises trainer and Pal damage against Dragon-weak targets by 25% to 40%."
+          "explanation": "Dragon Kaiser raises Dragon damage by 50% (0★) to 100% (4★) — but only while you are riding it. It is a mount bonus, not a party-wide buff and not a weakness multiplier."
         },
         {
           "palId": "quivern",
           "role": [
-            "mount",
-            "element_booster"
+            "mount"
           ],
-          "explanation": "Raises ranged attack by 15% to 30% for every Dragon pal in the party, which here means all five."
+          "explanation": "Sky Dragon Affection raises Dragon damage by 50% (0★) to 100% (4★) — but only while you are riding it. It is a mount bonus, not a party-wide buff and not a weakness multiplier."
         }
       ],
       "equipment": [
@@ -659,7 +658,7 @@
         "title": "Loot Goblin Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "cross_checked"
     },
     {
       "id": "aegis-wall",
@@ -682,9 +681,10 @@
         {
           "palId": "silvegis",
           "role": [
+            "mount",
             "defensive_support"
           ],
-          "explanation": "Reduces shield-regeneration delay by 30% to 60% and shield damage by 65% to 80%; the always-relevant shield layer while in party."
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
         },
         {
           "palId": "lapiron",
@@ -712,7 +712,7 @@
           "role": [
             "healing"
           ],
-          "explanation": "Outside combat, regenerates 0.15% to 0.75% Health per second for the trainer and the pal."
+          "explanation": "Blessing of Purification regenerates Health for the player while mounted, from 0.15% per second (0★) to 0.75% per second (4★)."
         }
       ],
       "equipment": [],
@@ -729,7 +729,7 @@
         "title": "Aegis Wall Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "catch-squad",
@@ -804,7 +804,7 @@
         "title": "Catch Squad Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "cross_checked"
     },
     {
       "id": "traversal-kit",
@@ -882,7 +882,7 @@
         "title": "Traversal Kit Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "cross_checked"
     },
     {
       "id": "knocklem-poison-tank",
@@ -919,11 +919,11 @@
           "explanation": "Turns trainer hits on Poisoned targets into an enemy attack reduction of 40% to 80%."
         },
         {
-          "palId": "prixter",
+          "palId": "robinquill-terra",
           "role": [
-            "trainer_damage_support"
+            "weak_point_support"
           ],
-          "explanation": "Raises trainer and Prixter damage by 50% to 65% while the target remains Poisoned."
+          "explanation": "Replaces Prixter, whose Scorpion Sonar only finds a dungeon's exit — no Pal in 1.0 amplifies damage against Poisoned enemies, so that slot could not be filled as written. Hawk Eye raises weak-point damage by 20% (0★) to 40% (4★), which applies whatever status the target is under."
         },
         {
           "palId": "dumud",
@@ -962,7 +962,7 @@
         "title": "Knocklem Poison Tank Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "mobility-melee-swarm",
@@ -999,9 +999,9 @@
         {
           "palId": "loupmoon",
           "role": [
-            "trainer_damage_support"
+            "carry"
           ],
-          "explanation": "Raises trainer melee attack speed by 15% to 30%, making the close-range loop feel faster."
+          "explanation": "Dark Gleam Strike is an activated Jumping Claw with a 1.1x (0★) to 2.5x (4★) damage multiplier. It does not raise the player's melee attack speed — that is Loupmoon Cryst's skill, not this one."
         },
         {
           "palId": "daedream",
@@ -1042,7 +1042,7 @@
         "title": "Mobility Melee Swarm Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "sustain-and-rescue-squad",
@@ -1126,7 +1126,7 @@
         "title": "Sustain and Rescue Squad Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "cross_checked"
     },
     {
       "id": "anubis-hard-tower-ground-team",
@@ -1179,9 +1179,9 @@
         {
           "palId": "kikit",
           "role": [
-            "defensive_support"
+            "utility"
           ],
-          "explanation": "Adds a compact defensive option (15% to 30% Defense) for the final slot during dangerous phases."
+          "explanation": "Rollin' Full Oil cuts the weight of crude oil in your inventory. It gives no Defense bonus — that claim had no source — so this is a hauling slot, and the easiest one to swap for a fight you are struggling with."
         }
       ],
       "equipment": [],
@@ -1207,7 +1207,7 @@
         "title": "Anubis Hard-Tower Ground Team Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "fast-kill-exploration-party",
@@ -1286,7 +1286,7 @@
         "title": "Fast-Kill Exploration Party Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "reviewed"
+      "verification": "cross_checked"
     },
     {
       "id": "life-steal-player-tank",
@@ -1319,7 +1319,7 @@
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Raises trainer ranged attack by 30% to 80% so the survival package still contributes offense."
+          "explanation": "Untainted Maiden raises the player's Attack while every Pal in the party is a different species — which this team satisfies. wiki.gg documents the effect but publishes no condensation curve, so no figure can be quoted for it."
         },
         {
           "palId": "xenogard",
@@ -1331,16 +1331,17 @@
         {
           "palId": "silvegis",
           "role": [
+            "mount",
             "defensive_support"
           ],
-          "explanation": "Shortens shield recovery start rate by 30% to 60% and reduces shield damage taken by 65% to 80%."
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
         },
         {
           "palId": "tetroise-primo",
           "role": [
             "utility"
           ],
-          "explanation": "Reduces equipment wear by 80% to 100% during long raid attempts and repeated farming sessions; economic endurance rather than direct damage, easiest slot to swap out for a short attempt."
+          "explanation": "wiki.gg has no partner skill row for Tetroise Primo — it is one of the 1.0 variants that only exists in paldb.gg's listing — so no figure can be quoted. It is here as a durability slot, and the easiest one to swap out."
         }
       ],
       "equipment": [],
@@ -1413,11 +1414,12 @@
           "explanation": "Builds additional pressure through repeated bullet hits during the rotation."
         },
         {
-          "palId": "prixter",
+          "palId": "vanwyrm-cryst",
           "role": [
-            "trainer_damage_support"
+            "weak_point_support",
+            "mount"
           ],
-          "explanation": "Raises trainer and Prixter damage by 50% to 65% whenever Poison is active."
+          "explanation": "Replaces Prixter, whose Scorpion Sonar only finds a dungeon's exit — no Pal in 1.0 amplifies damage against Poisoned enemies, so that slot could not be filled as written. Aerial Marauder raises weak-point damage by 20% (0★) to 40% (4★), which applies whatever status the target is under."
         },
         {
           "palId": "bakemi",
@@ -1457,7 +1459,7 @@
         "title": "Bellanoir Glass-Cannon Rotation Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "soak-shock-overload",
@@ -1487,16 +1489,16 @@
         {
           "palId": "jormuntide",
           "role": [
-            "trainer_damage_support"
+            "mount"
           ],
-          "explanation": "Raises damage dealt by trainer and Jormuntide by 50% to 65% while the enemy remains Soaked."
+          "explanation": "Stormbringer Sea Dragon is a water mount that stops stamina drain while moving on water and adds up to +20% movement speed at 4★. It does not amplify damage against Soaked enemies — no Pal does."
         },
         {
           "palId": "prixter-lux",
           "role": [
             "element_conversion"
           ],
-          "explanation": "Activates a 30-second Electric conversion and 30% trainer Attack boost on a 50-second cooldown, connecting the Soak opener to the Electric half of the rotation. Does not guarantee Electrify by itself."
+          "explanation": "wiki.gg has no partner skill row for Prixter Lux — it is one of the 1.0 variants that only exists in paldb.gg's listing — so no figure can be quoted. It is here as the Electric half of the rotation."
         },
         {
           "palId": "slowatt",
@@ -1508,9 +1510,10 @@
         {
           "palId": "univolt",
           "role": [
-            "weak_point_support"
+            "element_conversion",
+            "mount"
           ],
-          "explanation": "Raises trainer and Univolt Electric damage by 25% to 40%, but only when Electric is hitting an elemental weakness."
+          "explanation": "Swift Deity converts the player's attacks to Electric while mounted, which is what links this half of the rotation. wiki.gg publishes no condensation curve for it, so there is no damage percentage to quote."
         }
       ],
       "equipment": [],
@@ -1564,11 +1567,11 @@
           "explanation": "Activates 30 seconds of Poison infliction on trainer attacks and passively protects the party from Poison and World Tree toxic gas."
         },
         {
-          "palId": "prixter",
+          "palId": "robinquill-terra",
           "role": [
-            "trainer_damage_support"
+            "weak_point_support"
           ],
-          "explanation": "Raises trainer and Prixter damage by 50% to 65% while Poison is active."
+          "explanation": "Replaces Prixter, whose Scorpion Sonar only finds a dungeon's exit — no Pal in 1.0 amplifies damage against Poisoned enemies, so that slot could not be filled as written. Hawk Eye raises weak-point damage by 20% (0★) to 40% (4★), which applies whatever status the target is under."
         },
         {
           "palId": "bakemi",
@@ -1581,9 +1584,10 @@
         {
           "palId": "silvegis",
           "role": [
+            "mount",
             "defensive_support"
           ],
-          "explanation": "Shortens shield-regeneration delay by 30% to 60% and reduces shield damage taken by 65% to 80% throughout the Poison rotation."
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
         },
         {
           "palId": "felbat",
@@ -1674,7 +1678,7 @@
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Raises trainer Attack by 30% to 80% because all five party species are different."
+          "explanation": "Untainted Maiden raises the player's Attack while every Pal in the party is a different species — which this team satisfies. wiki.gg documents the effect but publishes no condensation curve, so no figure can be quoted for it."
         }
       ],
       "equipment": [],
@@ -1703,7 +1707,7 @@
         "title": "Skutlass Katana Rush Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "death-from-above",
@@ -1756,7 +1760,7 @@
           "role": [
             "trainer_damage_support"
           ],
-          "explanation": "Raises trainer Attack by 30% to 80% while every party species remains different."
+          "explanation": "Untainted Maiden raises the player's Attack while every Pal in the party is a different species — which this team satisfies. wiki.gg documents the effect but publishes no condensation curve, so no figure can be quoted for it."
         }
       ],
       "equipment": [],
@@ -1785,7 +1789,7 @@
         "title": "Death From Above Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "fire-team-template",
@@ -1809,7 +1813,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Raises the Attack of every Fire Pal in the party by 15% to 30%; duplicate copies do not stack."
+          "explanation": "Lava Spout raises the Attack of Fire Pals in the party. wiki.gg documents the effect but publishes no condensation curve for it, so treat the size as unknown; it does not stack with Rooby."
         },
         {
           "palId": "rooby",
@@ -1821,9 +1825,10 @@
         {
           "palId": "finsider-ignis",
           "role": [
-            "weak_point_support"
+            "utility",
+            "element_booster"
           ],
-          "explanation": "Raises the player's and Pals' Fire damage by 25% to 40% only against a Fire-weak target."
+          "explanation": "Ember Chamber raises Fire Pal Attack by 10% (0★) to 20% (4★) — the same buff as Rooby, so they do not stack — and cuts weapon weight in your inventory by 60% (0★) to 100% (4★), which is the real reason to run both."
         },
         {
           "palId": "renjishi",
@@ -1893,18 +1898,19 @@
           "explanation": "Raises the Attack of every Grass Pal by 10% (0★) to 20% (4★) from any party slot; a second Bristla does not add another copy."
         },
         {
-          "palId": "nitemary-botan",
+          "palId": "warsect",
           "role": [
-            "element_booster"
+            "defensive_support"
           ],
-          "explanation": "Raises the Defense of every Grass Pal by 15% to 30% while in the party."
+          "explanation": "Replaces the Grass defense buffer the original list called for: no Pal in 1.0 raises Defense by element. Hard Armor is the closest real effect — player Defense +5% (0★) to +10% (4★) and the same reduction to Fire damage taken."
         },
         {
           "palId": "ribbuny-botan",
           "role": [
-            "weak_point_support"
+            "element_booster",
+            "utility"
           ],
-          "explanation": "Raises the player's and Pals' Grass damage by 25% to 40% only when the target is weak to Grass."
+          "explanation": "Grass Weaver raises Grass Pal Attack by 10% (0★) to 20% (4★) — the same buff as Bristla, so the two do not stack — and speeds up weapon-bench work at base by 200% (0★) to 400% (4★)."
         },
         {
           "palId": "dandilord",
@@ -1919,7 +1925,7 @@
             "healing",
             "carry"
           ],
-          "explanation": "120 base Attack paired with an activated heal for the player and party Pals (80% at 0★, 90% at 4★) on a 300-second cooldown; best used after meaningful damage rather than as passive regeneration."
+          "explanation": "Harvest Goddess is an activated heal for the player worth a flat 1,000 HP (0★) to 2,000 HP (4★) — a fixed amount, not a percentage — so it is worth most on a high-Health build and should be saved for after real damage."
         }
       ],
       "equipment": [],
@@ -1975,11 +1981,12 @@
           "explanation": "Raises the Attack of every Water Pal by 15%; duplicate copies do not stack. wiki.gg documents the 15% but publishes no condensation curve for it."
         },
         {
-          "palId": "gloopie-primo",
+          "palId": "teafant",
           "role": [
-            "element_booster"
+            "healing",
+            "defensive_support"
           ],
-          "explanation": "Raises the Defense of every Water Pal by 15% to 30% while in the party."
+          "explanation": "Replaces the Water defense buffer the original list called for: that effect does not exist in 1.0. Soothing Shower is the real defensive option — when your Health drops below 30% it restores a flat 200 HP (0★) to 400 HP (4★), then goes on a 120-second cooldown."
         },
         {
           "palId": "penking-lux",
@@ -2031,7 +2038,7 @@
         "title": "Water Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "electric-team-template",
@@ -2060,16 +2067,17 @@
         {
           "palId": "dinossom-lux",
           "role": [
-            "element_booster"
+            "mount"
           ],
-          "explanation": "Raises the Defense of every Electric Pal by 15% to 30% while in the party."
+          "explanation": "Thunder Dragon is a mount, not a party buff: it raises Electric damage by 50% (0★) to 100% (4★) but only while you are riding it. Dismounted it contributes nothing to the team."
         },
         {
           "palId": "univolt",
           "role": [
-            "weak_point_support"
+            "element_conversion",
+            "mount"
           ],
-          "explanation": "Raises the player's and Pals' Electric damage by 25% to 40% only when the target is weak to Electric; riding it is optional."
+          "explanation": "Swift Deity converts the player's attacks to Electric while mounted. wiki.gg publishes no condensation curve for it, so the conversion is the whole value — there is no damage percentage to scale."
         },
         {
           "palId": "helzephyr-lux",
@@ -2113,7 +2121,7 @@
         "title": "Electric Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "ice-team-template",
@@ -2146,11 +2154,12 @@
           "explanation": "Raises the Defense of every Ice Pal by 15% to 30% while in the party; its rideable and double-jump features do not change the recipient of the party effect."
         },
         {
-          "palId": "moldron-cryst",
+          "palId": "vanwyrm-cryst",
           "role": [
-            "weak_point_support"
+            "weak_point_support",
+            "mount"
           ],
-          "explanation": "Raises the player's and Pals' Ice damage by 25% to 40% only when the target is weak to Ice; riding it is optional."
+          "explanation": "Replaces a Pal wiki.gg has no data for. Aerial Marauder is a verified damage amplifier — weak-point damage +20% (0★) to +40% (4★) — and it doubles as a flying mount, which the Ice list otherwise lacks."
         },
         {
           "palId": "frostallion",
@@ -2196,7 +2205,7 @@
         "title": "Ice Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "ground-team-template",
@@ -2222,11 +2231,11 @@
           "explanation": "Raises the Attack of every Ground Pal by 10% (0★) to 20% (4★) while in the party; duplicates do not stack."
         },
         {
-          "palId": "kikit",
+          "palId": "warsect-terra",
           "role": [
-            "element_booster"
+            "defensive_support"
           ],
-          "explanation": "Raises the Defense of every Ground Pal by 15% to 30% while in the party."
+          "explanation": "Replaces the Ground defense buffer the original list called for: no Pal raises Defense by element. Fortified Shell gives the player +5% (0★) to +10% (4★) Defense and the same reduction to Fire damage taken."
         },
         {
           "palId": "turtacle-terra",
@@ -2276,7 +2285,7 @@
         "title": "Ground Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "dark-team-template",
@@ -2301,11 +2310,12 @@
           "explanation": "Raises the Attack of every Dark Pal by 15% to 30% while in the party; duplicates do not stack."
         },
         {
-          "palId": "wistella",
+          "palId": "felbat",
           "role": [
-            "element_booster"
+            "defensive_support",
+            "healing"
           ],
-          "explanation": "Raises the Defense of every Dark Pal by 15% to 30% while in the party."
+          "explanation": "Replaces the Dark defense buffer the original list called for: that effect does not exist. Life Steal returns 5% (0★) to 9% (4★) of damage as Health to both the player and Felbat, the closest thing to a defensive Dark party effect."
         },
         {
           "palId": "croajiro-noct",
@@ -2356,7 +2366,7 @@
         "title": "Dark Team Template Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "dragon-team-template",
@@ -2380,23 +2390,23 @@
         {
           "palId": "quivern",
           "role": [
-            "element_booster"
+            "mount"
           ],
-          "explanation": "Raises the Attack of every Dragon Pal by 15% to 30% while in the party; duplicates do not stack."
+          "explanation": "Sky Dragon Affection is a flying mount that raises Dragon damage by 50% (0★) to 100% (4★) — but only while mounted. It is not a party-wide Dragon attack buff; no Pal in 1.0 provides one."
         },
         {
-          "palId": "dinossom",
+          "palId": "chillet",
           "role": [
-            "element_booster"
+            "element_conversion"
           ],
-          "explanation": "Raises the Defense of every Dragon Pal by 15% to 30% while in the party."
+          "explanation": "Replaces Dinossom, whose skill boosts Grass damage while mounted and has nothing to do with a Dragon team. Wriggling Weasel converts the player's attacks to Dragon and raises movement speed, so the whole team pushes the same element."
         },
         {
           "palId": "blazamut-ryu",
           "role": [
-            "weak_point_support"
+            "mount"
           ],
-          "explanation": "Raises the player's and Pals' Dragon damage by 25% to 40% only when the target is weak to Dragon."
+          "explanation": "Dragon Kaiser raises Dragon damage by 50% (0★) to 100% (4★) while mounted. Like Quivern it is a mount bonus, not a weakness multiplier — running both means picking which one you actually ride."
         },
         {
           "palId": "orserk",
@@ -2410,7 +2420,7 @@
           "role": [
             "carry"
           ],
-          "explanation": "Gains +4% to 8% Attack for each other Dragon Pal in the party; with all four default allies qualifying, that is +16% to 32% self Attack before other effects."
+          "explanation": "wiki.gg has no partner skill row for Shaolong, so no figure can be quoted for it. It is here as a Dragon body that feeds the count-based bonuses of the rest of the team."
         }
       ],
       "equipment": [],
@@ -2478,9 +2488,9 @@
         {
           "palId": "quivern",
           "role": [
-            "element_booster"
+            "mount"
           ],
-          "explanation": "Sky Dragon's Affection raises Dragon Pal attack by 10% (0★) to 30% (4★) while in the party, working from the pocket without ever being deployed."
+          "explanation": "Sky Dragon Affection is a flying mount that raises Dragon damage by 50% (0★) to 100% (4★) while ridden. It does not buff Dragon Pals in the party — no Pal in 1.0 does; the only effect in the game targeting Dragon Pals is Cryolinx's item drop rate."
         },
         {
           "palId": "hoocrates",
@@ -2490,18 +2500,19 @@
           "explanation": "Dark Knowledge raises Dark Pal attack by 10% (0★) to 20% (4★); because Eidrolon is Dark-type this applies a flat +20% attack boost at 4★."
         },
         {
-          "palId": "wistella",
+          "palId": "croajiro-noct",
           "role": [
-            "defensive_support"
+            "element_booster"
           ],
-          "explanation": "Raises Dark Pal defense by 10% (0★) to 30% (4★); Eidrolon's Dark typing qualifies it for this buff from the pocket."
+          "explanation": "Replaces Wistella, which wiki.gg has no data for and was credited with a Dark defense buff that does not exist. Shadow Stance raises Dark Pal Attack by 10% (0★) to 20% (4★), which Eidrolon qualifies for — a real buff in place of an invented one."
         },
         {
-          "palId": "dinossom",
+          "palId": "felbat",
           "role": [
-            "defensive_support"
+            "defensive_support",
+            "healing"
           ],
-          "explanation": "Raises Dragon Pal defense by 10% (0★) to 30% (4★); because Eidrolon is also Dragon-type this stacks with Wistella for 60% total defense at 4★."
+          "explanation": "Replaces Dinossom, whose skill boosts Grass damage while mounted and never applied here. Life Steal returns 5% (0★) to 9% (4★) of damage as Health to the player and Felbat, which is the survivability this glass-cannon list actually lacked."
         }
       ],
       "equipment": [],
@@ -2532,94 +2543,6 @@
       "source": {
         "url": "https://www.reddit.com/r/Palworld/comments/1vb5ekt/the_ultimate_dualtype_hypercarry_build_how_to/",
         "title": "The Ultimate Dual-Type Hypercarry Build (r/Palworld)",
-        "capturedAt": "2026-08-09T00:00:00Z"
-      },
-      "verification": "unverified"
-    },
-    {
-      "id": "dragon-fire-tower",
-      "slug": "dragon-fire-tower",
-      "name": "Dragon Fire Tower Squad",
-      "summary": "Stack dragon and fire multipliers to turn Eidrolon Ignis into a Hard Tower boss-killer with Orserk ramp support.",
-      "purpose": [
-        "pal_element_damage",
-        "boss_damage",
-        "endgame",
-        "hybrid_damage"
-      ],
-      "elements": [
-        "dragon",
-        "fire",
-        "electric"
-      ],
-      "progression": "endgame",
-      "pals": [
-        {
-          "palId": "eidrolon-ignis",
-          "role": [
-            "carry",
-            "mount"
-          ],
-          "explanation": "Gains +6% attack per Dragon or Fire Pal in the party for up to 24% at four matching allies; serves as the main active fighter and mount for the entire team."
-        },
-        {
-          "palId": "blazamut-ryu",
-          "role": [
-            "element_booster"
-          ],
-          "explanation": "Improves Dragon-type super-effective attacks by 25% (0★) to 40% (4★), amplifying every Dragon move used against a Dragon-weak target."
-        },
-        {
-          "palId": "jormuntide-ignis",
-          "role": [
-            "status_applier"
-          ],
-          "explanation": "Enemies afflicted with Burn take 30% to 65% more damage at 4★, multiplying the damage of all attacks after a Burn is applied."
-        },
-        {
-          "palId": "orserk",
-          "role": [
-            "active_pal_booster"
-          ],
-          "explanation": "Every bullet that hits the enemy grants the active Pal +1% to 5% Attack and Defense for five seconds, stacking up to 30 times for +150% at 4★; works with the Drone Launcher for hands-free stacking."
-        },
-        {
-          "palId": "quivern",
-          "role": [
-            "element_booster"
-          ],
-          "explanation": "Boosts Dragon Pal attack by 10% (0★) to 30% (4★); applies to Eidrolon Ignis directly because it is a Dragon-type."
-        }
-      ],
-      "equipment": [],
-      "requirements": [
-        "endgame",
-        "legendary",
-        "condensation",
-        "breeding"
-      ],
-      "synergyNotes": [
-        "Open with the Drone Launcher to build Orserk stacks immediately — 30 stacks grant +150% Attack and Defense to the active Pal, and the Drone Launcher builds them without consuming ammo.",
-        "Once Burn procs from Jormuntide Ignis, the target takes up to 65% increased damage from all sources, multiplying the already high Dragon damage modifiers from Quivern and Blazamut Ryu.",
-        "Eidrolon Ignis itself gains up to 24% attack from its own partner skill counting the four Dragon/Fire allies, stacking additively with the Quivern and Orserk buffs.",
-        "Recommended accessories: Elphidran Ring (Lv4 Dragon Damage), Jetdragon's Talisman (Lv4 Pal Defense), Divine Dragon's Baton (Lv4 Pal Attack), and Dogen Emblem (Lv4 Player Attack)."
-      ],
-      "alternatives": [
-        {
-          "palId": "celesdir-noct",
-          "replacesPalId": "quivern",
-          "reason": "Trades the universal Dragon attack buff for a riskier +80% attack at the cost of constant health drain; higher burst for fights you can end quickly but impractical for exploration."
-        },
-        {
-          "palId": "rooby",
-          "replacesPalId": "blazamut-ryu",
-          "reason": "Replaces the super-effective-only Dragon damage boost with a flat Fire Pal attack buff of up to 30% that works on all targets, not just Dragon-weak ones."
-        }
-      ],
-      "gameVersion": "1.0",
-      "source": {
-        "url": "https://www.reddit.com/r/Palworld/comments/1uxugm4/offering_late_game_advice/",
-        "title": "Offering Late Game Advice - Hardmode Towers Comp (r/Palworld)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
       "verification": "unverified"
@@ -2743,7 +2666,7 @@
             "carry",
             "mount"
           ],
-          "explanation": "Each Swee in the party grants Sweepa +12% Attack and Defense (0★) to +24% (4★) per Swee; with four 4★ Swee, Sweepa gains +96% Attack and +96% Defense.",
+          "explanation": "King of Fluff gives Sweepa itself +0% (0★) to +8% (4★) Attack. The big number comes from the Swee: each one grants Sweepa +12% (0★) to +24% (4★) Attack and Defense through their own skill, so four 4★ Swee is +96% each way.",
           "recommendedPassives": [
             "Legend",
             "Ferocious",
@@ -2851,9 +2774,10 @@
         {
           "palId": "silvegis",
           "role": [
+            "mount",
             "defensive_support"
           ],
-          "explanation": "Reduces damage to the player's shield by 40% (0★) to 80% (4★) and reduces shield regeneration delay by 30% to 60%; keeps you alive while the Bellanoirs do the work."
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
         }
       ],
       "equipment": [],
@@ -2887,7 +2811,7 @@
         "title": "Palworld 1.0 Best Endgame Teams (game8.co)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "dual-hartalis-neutral",
@@ -2932,14 +2856,15 @@
           "role": [
             "active_pal_booster"
           ],
-          "explanation": "The universal endgame amplifier: landing bullets grants the active Pal up to +150% Attack and Defense with 30 stacks at 4★."
+          "explanation": "The universal endgame amplifier: each landed bullet grants the active Pal +1% (0★) to +5% (4★) Attack and Defense for five seconds, stacking up to 30 times — +150% at 4★ if you can hold all 30 stacks."
         },
         {
           "palId": "silvegis",
           "role": [
+            "mount",
             "defensive_support"
           ],
-          "explanation": "Reduces shield damage by up to 80% and shield regen delay by up to 60%; the standard defensive anchor for all Orserk-core teams."
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
         }
       ],
       "equipment": [],
@@ -2968,7 +2893,7 @@
         "title": "Palworld 1.0 Best Endgame Teams — Neutral Element (game8.co)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "unverified"
+      "verification": "cross_checked"
     },
     {
       "id": "dual-knocklem-fire",
@@ -3007,7 +2932,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Boosts Fire Pal attack by 10% (0★) to 30% (4★); applies to both Knocklem Ignis variants."
+          "explanation": "Lava Spout raises the Attack of Fire Pals in the party, which covers both Knocklem Ignis. wiki.gg documents the effect but publishes no condensation curve, so no figure can be quoted."
         },
         {
           "palId": "orserk",
@@ -3019,9 +2944,10 @@
         {
           "palId": "silvegis",
           "role": [
+            "mount",
             "defensive_support"
           ],
-          "explanation": "Up to 80% shield damage reduction and 60% faster shield recovery; the defensive backbone of every 1.0 endgame team."
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
         }
       ],
       "equipment": [],
@@ -3105,14 +3031,15 @@
           "role": [
             "active_pal_booster"
           ],
-          "explanation": "Ramps the active Pal to +150% Attack and Defense; since poison damage scales with the inflictor's attack, Orserk directly amplifies the DoT ticks."
+          "explanation": "Each landed bullet grants the active Pal +1% (0★) to +5% (4★) Attack and Defense for five seconds, up to 30 stacks — +150% at 4★ with all of them held. Poison damage scales off the inflictor's attack, so this feeds the DoT ticks directly."
         },
         {
           "palId": "silvegis",
           "role": [
+            "mount",
             "defensive_support"
           ],
-          "explanation": "Standard 1.0 shield anchor — 80% shield damage reduction means you can wait out poison DoT ticks safely."
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
         }
       ],
       "equipment": [],
@@ -3241,7 +3168,7 @@
         "title": "Frostallion + 4 Gobfin player attack build discussion (r/Palworld)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "legendary-exploration",
@@ -3412,7 +3339,7 @@
         "title": "Daedream Necklace allows multiple Daedreams simultaneously (r/Palworld)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "gorirat-berserker-nuke",
@@ -3452,7 +3379,7 @@
           "role": [
             "element_booster"
           ],
-          "explanation": "Boosts the active Pal's attack by 80% at 4★ at the cost of health drain; synergizes with the burst playstyle since the fight should end before health matters."
+          "explanation": "wiki.gg has no partner skill row for Celesdir Noct — it is one of the 1.0 variants that only exists in paldb.gg's listing — so no figure can be quoted. It is here as a burst amplifier that trades Health for damage."
         },
         {
           "palId": "cremis",
@@ -3464,9 +3391,9 @@
         {
           "palId": "blazamut",
           "role": [
-            "element_booster"
+            "mount"
           ],
-          "explanation": "Boosts Fire damage by 25% to 50% at 4★; applies to any Fire-type shot-attack skill fruits taught to Gorirat."
+          "explanation": "Magma Kaiser boosts Fire damage while mounted. Its only published curve is a separate on-kill buff worth +5% (0★) to +10% (4★) Attack and Defense to the Pal fighting alongside you, lasting 20 seconds and stacking five times."
         }
       ],
       "equipment": [],
@@ -3588,7 +3515,7 @@
         "title": "Anyone tried riding an explosive mount? Tocotoco bomb memes (r/Palworld)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "elizabee-royal-guard",
@@ -3666,7 +3593,7 @@
         "title": "Updated Combat Teams List — Elizabee+Beegarde (r/Palworld)",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "verdash-speed-demon",
@@ -3690,7 +3617,7 @@
             "element_conversion",
             "mobility"
           ],
-          "explanation": "Unlike other element-swap Pals, Verdash grants +20% to +40% movement speed to itself and the player (0★ to 5) while converting player attacks to Grass — it trades the usual attack boost for extreme mobility."
+          "explanation": "Grassland Speedster raises the player's movement speed and converts their attacks to Grass. wiki.gg publishes no condensation curve, so the speed figures this build used to quote had no source — the element conversion is the part you can rely on."
         },
         {
           "palId": "gobfin",

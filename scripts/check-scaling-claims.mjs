@@ -38,7 +38,14 @@ const PERCENT = /[0-9]+(?:\.[0-9]+)?%/g;
 function knownFigures(skill) {
   const values = new Set();
   for (const row of skill.scaling ?? []) {
-    if (row.effectValue) values.add(row.effectValue.replace(/[+\s]/g, ""));
+    // Normalize the shapes wiki.gg writes the same figure in: a leading sign
+    // ("-35%" for a reduction the prose states as "by 35%") and trailing units
+    // ("0.15% per second"). Without this the checker flags correct sentences.
+    if (!row.effectValue) continue;
+    const raw = row.effectValue.replace(/[+\s]/g, "");
+    values.add(raw);
+    values.add(raw.replace(/^-/, ""));
+    for (const percent of raw.match(/[0-9]+(?:\.[0-9]+)?%/g) ?? []) values.add(percent);
   }
   // The prose often carries a figure the scale table omits (Aqua Spout's 15%).
   for (const match of skill.description.match(PERCENT) ?? []) values.add(match);
