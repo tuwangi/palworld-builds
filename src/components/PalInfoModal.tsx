@@ -77,9 +77,10 @@ export default function PalInfoModal({
             <strong>{name}</strong>
             <span>{strings.openDetails}</span>
           </span>
-          {contextLabel && <span class="pal-context-label">{contextLabel}</span>}
+          <span class="pal-card-elements">{elements.map((element) => <span>{element}</span>)}</span>
         </span>
         {roleLabels.length > 0 && <span class="pal-card-roles">{roleLabels.map((role) => <span>{role}</span>)}</span>}
+        {contextLabel && <span class="pal-context-label">{contextLabel}</span>}
         <span class="pal-card-note">{explanation}</span>
       </button>
 

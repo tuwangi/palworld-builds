@@ -13,11 +13,11 @@ const { iconUrl, name, class: className = "size-10" } = Astro.props;
     <img
       src={iconUrl}
       alt=""
-      class={`${className} shrink-0 rounded-full bg-white/5 object-cover outline-1 -outline-offset-1 outline-white/10`}
+      class={`${className} shrink-0 rounded-full bg-white object-cover outline-1 -outline-offset-1 outline-[rgba(19,34,56,0.18)]`}
     />
   ) : (
     <span
-      class={`${className} shrink-0 inline-flex items-center justify-center rounded-full bg-white/5 font-display text-zinc-500 outline-1 -outline-offset-1 outline-white/10`}
+      class={`${className} shrink-0 inline-flex items-center justify-center rounded-full bg-white font-display text-[var(--ink-soft)] outline-1 -outline-offset-1 outline-[rgba(19,34,56,0.18)]`}
       aria-hidden="true"
     >
       {name.charAt(0)}
