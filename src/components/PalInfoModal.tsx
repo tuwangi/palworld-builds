@@ -24,6 +24,8 @@ type Props = {
   recommendedSkills: string[];
   recommendedPassives: string[];
   specialNote?: string;
+  contextLabel?: string;
+  slotNumber?: string;
   strings: Strings;
 };
 
@@ -48,6 +50,8 @@ export default function PalInfoModal({
   recommendedSkills,
   recommendedPassives,
   specialNote,
+  contextLabel,
+  slotNumber,
   strings,
 }: Props) {
   const [open, setOpen] = useState(false);
@@ -65,13 +69,18 @@ export default function PalInfoModal({
 
   return (
     <>
-      <button type="button" class="pal-trigger" onClick={() => setOpen(true)} aria-label={`${strings.openDetails}: ${name}`}>
-        {iconUrl ? <img src={iconUrl} alt="" class="size-11 rounded-full object-cover" /> : <span class="grid size-11 place-items-center rounded-full bg-[var(--paper-deep)] font-display font-bold text-[var(--ink-soft)]">{name.charAt(0)}</span>}
-        <span class="pal-trigger-copy">
-          <strong>{name}</strong>
-          <span>{strings.openDetails}</span>
+      <button type="button" class="pal-card-button" onClick={() => setOpen(true)} aria-label={`${strings.openDetails}: ${name}`}>
+        <span class="pal-card-head">
+          {slotNumber && <span class="detail-number">{slotNumber}</span>}
+          {iconUrl ? <img src={iconUrl} alt="" class="size-11 rounded-full object-cover" /> : <span class="grid size-11 place-items-center rounded-full bg-[var(--paper-deep)] font-display font-bold text-[var(--ink-soft)]">{name.charAt(0)}</span>}
+          <span class="pal-trigger-copy">
+            <strong>{name}</strong>
+            <span>{strings.openDetails}</span>
+          </span>
+          {contextLabel && <span class="pal-context-label">{contextLabel}</span>}
         </span>
-        <span class="pal-trigger-arrow" aria-hidden="true">↗</span>
+        {roleLabels.length > 0 && <span class="pal-card-roles">{roleLabels.map((role) => <span>{role}</span>)}</span>}
+        <span class="pal-card-note">{explanation}</span>
       </button>
 
       {open && (
@@ -95,10 +104,10 @@ export default function PalInfoModal({
                   <p>{partnerDescription}</p>
                 </div>
               )}
-              <div class="pal-info-block">
+              {roleLabels.length > 0 && <div class="pal-info-block">
                 <p class="pal-info-label">{strings.buildRole}</p>
                 <div class="pal-modal-tags">{roleLabels.map((role) => <span>{role}</span>)}</div>
-              </div>
+              </div>}
               <div class="pal-info-block">
                 <p class="pal-info-label">{strings.buildNotes}</p>
                 <p>{explanation}</p>

@@ -2,7 +2,6 @@
 import Layout from "../layouts/Layout.astro";
 import Badge from "./Badge.astro";
 import ElementBadge from "./ElementBadge.astro";
-import PalAvatar from "./PalAvatar.astro";
 import ItemIcon from "./ItemIcon.astro";
 import DetailFavoriteButton from "./DetailFavoriteButton";
 import PalInfoModal from "./PalInfoModal";
@@ -78,35 +77,30 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
       <ol role="list" class="detail-list">
         {build.pals.map((slot, index) => (
           <li class="detail-card">
-            <div class="detail-card-head">
-              <span class="detail-number">{String(index + 1).padStart(2, "0")}</span>
-              <PalInfoModal
-                client:load
-                name={slot.name}
-                iconUrl={slot.iconUrl}
-                elements={slot.elements}
-                roleLabels={slot.role.map((role) => labels.role.get(role) ?? role)}
-                explanation={slot.explanation}
-                partnerSkill={slot.partnerSkill}
-                recommendedSkills={slot.recommendedSkills}
-                recommendedPassives={slot.recommendedPassives}
-                specialNote={slot.specialNote}
-                strings={{
-                  openDetails: strings.palOpenDetails,
-                  close: strings.palClose,
-                  partnerSkill: strings.palPartnerSkill,
-                  buildRole: strings.palBuildRole,
-                  buildNotes: strings.palBuildNotes,
-                  recommendedSkills: strings.palRecommendedSkills,
-                  recommendedPassives: strings.palRecommendedPassives,
-                  specialNote: strings.palSpecialNote,
-                  eyebrow: strings.palEyebrow,
-                }}
-              />
-              {slot.elements.map((element) => <ElementBadge element={element} locale={locale} />)}
-            </div>
-            <div class="mt-3 flex flex-wrap gap-1.5">{slot.role.map((role) => <Badge>{labels.role.get(role) ?? role}</Badge>)}</div>
-            <p>{slot.explanation}</p>
+            <PalInfoModal
+              client:load
+              name={slot.name}
+              iconUrl={slot.iconUrl}
+              elements={slot.elements}
+              roleLabels={slot.role.map((role) => labels.role.get(role) ?? role)}
+              explanation={slot.explanation}
+              partnerSkill={slot.partnerSkill}
+              recommendedSkills={slot.recommendedSkills}
+              recommendedPassives={slot.recommendedPassives}
+              specialNote={slot.specialNote}
+              slotNumber={String(index + 1).padStart(2, "0")}
+              strings={{
+                openDetails: strings.palOpenDetails,
+                close: strings.palClose,
+                partnerSkill: strings.palPartnerSkill,
+                buildRole: strings.palBuildRole,
+                buildNotes: strings.palBuildNotes,
+                recommendedSkills: strings.palRecommendedSkills,
+                recommendedPassives: strings.palRecommendedPassives,
+                specialNote: strings.palSpecialNote,
+                eyebrow: strings.palEyebrow,
+              }}
+            />
           </li>
         ))}
       </ol>
@@ -140,11 +134,29 @@ const uniqueRequirements = build.requirements.filter((requirement) => !build.pur
         <ul role="list" class="detail-list">
           {build.alternatives.map((alternative) => (
             <li class="detail-card">
-              <div class="detail-card-head">
-                <PalAvatar iconUrl={alternative.palIconUrl} name={alternative.palName} class="size-9" />
-                <h3>{alternative.palName} <span class="font-sans text-sm font-medium text-[var(--ink-soft)]">{strings.replaces} {alternative.replacesPalName}</span></h3>
-              </div>
-              <p>{alternative.reason}</p>
+              <PalInfoModal
+                client:load
+                name={alternative.palName}
+                iconUrl={alternative.palIconUrl}
+                elements={alternative.palElements}
+                roleLabels={[]}
+                explanation={alternative.reason}
+                partnerSkill={alternative.palPartnerSkill}
+                recommendedSkills={[]}
+                recommendedPassives={[]}
+                contextLabel={`${strings.replaces} ${alternative.replacesPalName}`}
+                strings={{
+                  openDetails: strings.palOpenDetails,
+                  close: strings.palClose,
+                  partnerSkill: strings.palPartnerSkill,
+                  buildRole: strings.palBuildRole,
+                  buildNotes: strings.palBuildNotes,
+                  recommendedSkills: strings.palRecommendedSkills,
+                  recommendedPassives: strings.palRecommendedPassives,
+                  specialNote: strings.palSpecialNote,
+                  eyebrow: strings.palEyebrow,
+                }}
+              />
             </li>
           ))}
         </ul>

@@ -149,6 +149,8 @@ export type ResolvedAlternative = {
   palId: string;
   palName: string;
   palIconUrl: string | null;
+  palElements: string[];
+  palPartnerSkill: SnapshotPartnerSkill | null;
   replacesPalId: string;
   replacesPalName: string;
   reason: string;
@@ -220,6 +222,8 @@ function toDetail(build: RawBuild, locale: Locale): BuildDetail {
       palId: alt.palId,
       palName: resolvePal(alt.palId).name,
       palIconUrl: palIconUrl(alt.palId),
+      palElements: resolvePal(alt.palId).elements,
+      palPartnerSkill: resolvePal(alt.palId).partnerSkill,
       replacesPalId: alt.replacesPalId,
       replacesPalName: resolvePal(alt.replacesPalId).name,
       reason: es?.alternatives[i] ?? alt.reason,
