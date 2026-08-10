@@ -348,6 +348,29 @@ button:focus-visible, a:focus-visible, input:focus-visible {
   transform: rotate(8deg) translate(1px, -1px);
 }
 
+.favorite-button {
+  position: relative;
+  z-index: 2;
+}
+
+.favorite-button:hover {
+  border-color: rgba(232, 93, 74, 0.45);
+  background: #fbe3dc;
+  color: var(--coral-dark);
+  transform: scale(1.04);
+}
+
+.favorite-icon {
+  transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), color 180ms ease;
+}
+
+.favorite-button:hover .favorite-icon {
+  color: var(--coral);
+  transform: scale(1.18) rotate(-8deg);
+}
+
+.favorite-button:active { transform: scale(0.96); }
+
 .empty-state {
   @apply rounded-[22px] border border-dashed border-[var(--line)] bg-white/45 px-6 py-16 text-center;
 }

@@ -17,9 +17,9 @@ export function FavoriteButton({ isFavorite, onToggle, labels, withLabel = false
         type="button"
         onClick={onToggle}
         aria-pressed={isFavorite}
-        class="inline-flex items-center gap-x-2 rounded-full border border-[var(--line)] bg-white/70 py-2 pr-4 pl-3 text-sm font-bold text-[var(--ink)]"
+        class="favorite-button inline-flex items-center gap-x-2 rounded-full border border-[var(--line)] bg-white/70 py-2 pr-4 pl-3 text-sm font-bold text-[var(--ink)]"
       >
-        {isFavorite ? <HeartIcon class={heartClass} /> : <HeartOutlineIcon class={heartClass} />}
+        {isFavorite ? <HeartIcon class={`favorite-icon ${heartClass}`} /> : <HeartOutlineIcon class={`favorite-icon ${heartClass}`} />}
         {label}
       </button>
     );
@@ -31,10 +31,10 @@ export function FavoriteButton({ isFavorite, onToggle, labels, withLabel = false
       onClick={onToggle}
       aria-pressed={isFavorite}
       aria-label={label}
-      class="relative inline-flex size-9 shrink-0 items-center justify-center rounded-full"
+      class="favorite-button relative inline-flex size-9 shrink-0 items-center justify-center rounded-full"
     >
       <span class="pointer-fine:hidden absolute top-1/2 left-1/2 size-[max(100%,3rem)] -translate-1/2" aria-hidden="true" />
-      {isFavorite ? <HeartIcon class={heartClass} /> : <HeartOutlineIcon class={heartClass} />}
+      {isFavorite ? <HeartIcon class={`favorite-icon ${heartClass}`} /> : <HeartOutlineIcon class={`favorite-icon ${heartClass}`} />}
     </button>
   );
 }
