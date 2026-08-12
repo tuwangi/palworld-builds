@@ -895,6 +895,103 @@
       "alternatives": [
         "Solenne (30% a 80% de ataque del jugador, condición de especie única) reemplaza un Gobfin por un ataque de jugador potencialmente mayor si el estilo de juego de velocidad te mantiene vivo sin el Gobfin extra."
       ]
+    },
+    "dual-shaolong-water-rotation": {
+      "name": "Rotación Doble de Shaolong de Agua",
+      "summary": "Dos Shaolong para presión directa de Agua/Dragón, el buff de montura de Quivern y el núcleo Orserk+Silvegis — el estándar 1.0 de Agua endgame de game8.",
+      "pals": [
+        "wiki.gg no tiene fila de habilidad de compañero para Shaolong — es una de las variantes 1.0 que solo existe en el listado de paldb.gg — así que no se puede citar ninguna cifra. Está aquí como cuerpo de Agua/Dragón que aporta daño directo, no un buff acumulable.",
+        "Segundo Shaolong rotado junto al primero; aplica la misma advertencia de fila de habilidad de compañero inexistente, así que esta ranura se valora por su tipo Agua/Dragón y sus estadísticas base, no por una habilidad documentada.",
+        "Sky Dragon Affection es una montura voladora que aumenta el daño Dragón entre 50% (0★) y 100% (4★) mientras la montas. No potencia a los Pals Dragón del equipo — ningún Pal de 1.0 lo hace; el único efecto del juego dirigido a Pals Dragón es la tasa de objetos de Cryolinx.",
+        "El amplificador universal de endgame: cada bala que impacta otorga al Pal activo entre +1% (0★) y +5% (4★) de Ataque y Defensa durante cinco segundos, acumulable hasta 30 veces — +150% a 4★ si consigues mantener las 30 cargas.",
+        "Aegis Shield es una habilidad de montura, no un buff pasivo de equipo: alarga el escudo que da Aegis Charge mientras montas a Silvegis. wiki.gg no publica curva de condensación, así que los porcentajes de reducción de escudo que citaba esta build no tenían fuente."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "El núcleo universal Orserk + Silvegis da la misma rampa de +150% ataque/defensa y la red de seguridad del escudo de montura que usa cada equipo endgame 1.0 de game8; cambia los atacantes principales y este chasis funciona para cualquier elemento.",
+        "Shaolong no tiene fila de habilidad de compañero en wiki.gg — es uno de los ~10 Pals de 1.0 que solo aparecen en paldb.gg — así que esta build se apoya en las estadísticas base y el tipo doble Agua/Dragón en vez de un porcentaje de buff citable.",
+        "El bono de daño Dragón de Quivern solo aplica mientras es el Pal montado, no como un aura de equipo; ten en cuenta esa diferencia al cambiar la ranura de montura."
+      ],
+      "alternatives": [
+        "game8 también lista una variante más ligera que quita el segundo Shaolong por Aqua Spout de Kelpsea (+15% de ataque para Pals de Agua; wiki.gg documenta la cifra fija pero no publica curva de condensación), cambiando un cuerpo por un buff de Agua para todo el equipo.",
+        "game8 también lista una variante que cambia ambas ranuras de Shaolong por Neptilius: 145 de Ataque base, sigue los ataques del jugador con golpes de lanza de Agua, y se puede montar para cruzar el agua con un bono de velocidad de natación desde el rango 2 — cambiando al Shaolong sin fila de habilidad de compañero por un Pal que wiki.gg documenta por completo."
+      ]
+    },
+    "dual-frostallion-ice-squad": {
+      "name": "Escuadrón Doble de Frostallion de Hielo",
+      "summary": "Dos Frostallion — uno como montura activa, otro como seguro en la banca — con el buff de Hielo de Foxcicle y el núcleo Orserk+Silvegis: el estándar 1.0 de Hielo endgame de game8.",
+      "pals": [
+        "Ice Steed convierte los ataques del entrenador a Hielo y aumenta el Ataque del entrenador entre 10% (0★) y 40% (4★) mientras está montado; la tabla de escalado de wiki.gg también lista un aumento de ataque Oscuro/Hielo propio y una conversión de ataque Oscuro junto a la de Hielo que la descripción de texto de la habilidad no menciona, así que trata solo la mitad de conversión a Hielo como confirmada.",
+        "Segundo Frostallion como respaldo: Ice Steed solo aplica mientras está montado activamente y no tiene duración de autobuff una vez desmontado, a diferencia de Steel Guardian Mode de Knocklem, así que rotar entre dos Frostallion no da ningún beneficio acumulable. Esta ranura es un seguro si el primero es derrotado, según el listado de game8, no un multiplicador de daño.",
+        "Aumenta el Ataque de cada Pal de Hielo entre 10% (0★) y 20% (4★) mientras está en el equipo; las copias duplicadas no se acumulan.",
+        "El amplificador universal de endgame: cada bala que impacta otorga al Pal activo entre +1% (0★) y +5% (4★) de Ataque y Defensa durante cinco segundos, acumulable hasta 30 veces — +150% a 4★ si consigues mantener las 30 cargas.",
+        "Aegis Shield es una habilidad de montura, no un buff pasivo de equipo: alarga el escudo que da Aegis Charge mientras montas a Silvegis. wiki.gg no publica curva de condensación, así que los porcentajes de reducción de escudo que citaba esta build no tenían fuente."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Ice Steed solo aplica mientras Frostallion es el Pal montado y no tiene autobuff persistente una vez desmontado; el segundo Frostallion es un reemplazo por si la montura es derrotada, no una rotación acumulable como el Guardian Mode de Knocklem.",
+        "El buff de ataque de Hielo de Foxcicle es para todo el equipo y no requiere estar montado, así que aplica a ambas ranuras de Frostallion y a cualquier otro Pal de Hielo al mismo tiempo.",
+        "El mismo núcleo Orserk + Silvegis que usa cada equipo endgame 1.0 de game8 da la rampa de +150% ataque/defensa; cambia el atacante principal y el buffer para reusar este chasis en cualquier elemento."
+      ],
+      "alternatives": [
+        "Variante enfocada en DPS de Hielo de game8: Moldron Cryst no tiene fila de habilidad de compañero en wiki.gg (viene parcheado desde paldb.gg, como Shaolong), así que no se puede citar ninguna cifra de aumento de ataque — cambia el escudo de montura de Silvegis por otro cuerpo de Hielo/Tierra y sacrifica la red de seguridad defensiva por daño puro."
+      ]
+    },
+    "eidrolon-twin-dragon-squad": {
+      "name": "Escuadrón Dragón de Doble Variante de Eidrolon",
+      "summary": "Eidrolon y su variante de Fuego/Dragón acumulando el bono por-Dragón-o-Oscuro de Liberated Pterosaur, con el buff de montura de Quivern y el núcleo Orserk+Silvegis — el estándar 1.0 de Dragón endgame de game8.",
+      "pals": [
+        "Liberated Pterosaur aumenta el propio Ataque y Velocidad de Movimiento de Eidrolon entre +2% (0★) y +6% (4★) por cada otro Pal Dragón u Oscuro en el equipo. Con Eidrolon Ignis, Quivern, Orserk y Silvegis todos de tipo Dragón, son cuatro cargas — hasta +24% a 4★.",
+        "wiki.gg no tiene fila de habilidad de compañero para Eidrolon Ignis — como Shaolong, esta variante 1.0 solo está documentada en el listado de paldb.gg — así que no se puede citar ninguna cifra. Aporta un segundo cuerpo Dragón/Fuego y alimenta el conteo acumulable por-Dragón-o-Oscuro de Eidrolon.",
+        "Sky Dragon Affection es una montura voladora que aumenta el daño Dragón entre 50% (0★) y 100% (4★) mientras la montas. No potencia a los Pals Dragón del equipo — ningún Pal de 1.0 lo hace; el único efecto del juego dirigido a Pals Dragón es la tasa de objetos de Cryolinx.",
+        "El amplificador universal de endgame: cada bala que impacta otorga al Pal activo entre +1% (0★) y +5% (4★) de Ataque y Defensa durante cinco segundos, acumulable hasta 30 veces — +150% a 4★ si consigues mantener las 30 cargas.",
+        "Aegis Shield es una habilidad de montura, no un buff pasivo de equipo: alarga el escudo que da Aegis Charge mientras montas a Silvegis. wiki.gg no publica curva de condensación, así que los porcentajes de reducción de escudo que citaba esta build no tenían fuente."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "El propio Ataque y Velocidad de Movimiento de Eidrolon escalan con el conteo de otros Pals Dragón u Oscuro en el equipo; Eidrolon Ignis, Quivern, Orserk y Silvegis son todos de tipo Dragón, así que esta alineación lleva esa carga al máximo de cuatro (+24% a 4★) sin necesitar un quinto Pal Dragón.",
+        "Ni Eidrolon ni Eidrolon Ignis tienen un buff de ataque Dragón para el equipo — Liberated Pterosaur solo potencia al propio Eidrolon. El bono de Dragón de Quivern es un efecto solo de montura para quien lo monte, no un aura pasiva tampoco.",
+        "Eidrolon Ignis no tiene fila de habilidad de compañero en wiki.gg, el mismo vacío de cobertura que Shaolong y Moldron Cryst; está incluido aquí por su cuerpo Dragón/Fuego y el conteo acumulable, no por un buff documentado."
+      ],
+      "alternatives": [
+        "Variante enfocada en DPS de Dragón de game8: Dark Knowledge aumenta el Ataque de Pals Oscuros entre 10% (0★) y 20% (4★), lo que aplica a la mitad Oscura de Eidrolon, a costa del escudo de montura de Silvegis."
+      ]
+    },
+    "dual-knocklem-ground-rotation": {
+      "name": "Rotación Doble de Knocklem de Tierra",
+      "summary": "Rota dos Knocklem para mantener Steel Guardian Mode activo permanentemente, con Dumud potenciando el ataque de Tierra y el núcleo Orserk+Silvegis — el estándar 1.0 de Tierra endgame de game8.",
+      "pals": [
+        "Steel Guardian Mode es un buff que se activa uno mismo, no un aura de equipo: +50% (0★) a +200% (4★) de Ataque y Defensa durante un tiempo limitado mientras está activo.",
+        "Segundo Knocklem entra en rotación cuando termina la duración de Steel Guardian Mode del primero, manteniendo el buff de +50% a +200% de Ataque/Defensa activo en el Knocklem que esté desplegado — el mismo patrón de rotación que la pareja de Knocklem Ignis de la variante de Fuego.",
+        "Aumenta el Ataque de cada Pal de Tierra entre 10% (0★) y 20% (4★) mientras está en el equipo; las copias duplicadas no se acumulan.",
+        "El amplificador universal de endgame: cada bala que impacta otorga al Pal activo entre +1% (0★) y +5% (4★) de Ataque y Defensa durante cinco segundos, acumulable hasta 30 veces — +150% a 4★ si consigues mantener las 30 cargas.",
+        "Aegis Shield es una habilidad de montura, no un buff pasivo de equipo: alarga el escudo que da Aegis Charge mientras montas a Silvegis. wiki.gg no publica curva de condensación, así que los porcentajes de reducción de escudo que citaba esta build no tenían fuente."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "La rotación imita a la variante de Fuego: despliega Knocklem 1, activa Steel Guardian Mode, pelea hasta que termine, cambia a Knocklem 2 y repite, manteniendo el buff de +50% a +200% de Ataque/Defensa activo sin parar.",
+        "El buff de ataque de Tierra de Dumud es para todo el equipo y aplica a ambos Knocklem al mismo tiempo, ya que no requiere que sean el Pal activo.",
+        "El mismo núcleo Orserk + Silvegis que usa cada equipo endgame 1.0 de game8 da la rampa de +150% ataque/defensa; esta es la contraparte de Tierra de Dual Knocklem Ignis Fire Rotation, usando al Knocklem base (sin Ignis) en su lugar."
+      ],
+      "alternatives": []
+    },
+    "dual-silvance-grass-rotation": {
+      "name": "Rotación Doble de Silvance de Planta",
+      "summary": "Dos Silvance para daño directo de Planta, Bristla potenciando el ataque de Planta y el núcleo Orserk+Silvegis — el estándar 1.0 de Planta endgame de game8.",
+      "pals": [
+        "wiki.gg no tiene fila de habilidad de compañero para Silvance — como Shaolong y Eidrolon Ignis, es uno de los Pals de 1.0 documentados solo en el listado de paldb.gg — así que no se puede citar ninguna cifra. Aporta daño directo de Planta en vez de un buff acumulable.",
+        "Segundo Silvance rotado junto al primero; aplica la misma advertencia de fila de habilidad de compañero inexistente, así que esta ranura se valora por su tipo Planta y sus estadísticas base, no por una habilidad documentada.",
+        "Aumenta el Ataque de cada Pal de Planta entre 10% (0★) y 20% (4★) desde cualquier slot de equipo; un segundo Bristla no añade otra copia.",
+        "El amplificador universal de endgame: cada bala que impacta otorga al Pal activo entre +1% (0★) y +5% (4★) de Ataque y Defensa durante cinco segundos, acumulable hasta 30 veces — +150% a 4★ si consigues mantener las 30 cargas.",
+        "Aegis Shield es una habilidad de montura, no un buff pasivo de equipo: alarga el escudo que da Aegis Charge mientras montas a Silvegis. wiki.gg no publica curva de condensación, así que los porcentajes de reducción de escudo que citaba esta build no tenían fuente."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Silvance no tiene fila de habilidad de compañero en wiki.gg, el mismo vacío de cobertura que Shaolong, Eidrolon Ignis y Moldron Cryst; ambas copias están aquí por el daño base de Planta, no por un buff documentado.",
+        "El buff de ataque de Planta de Bristla es para todo el equipo y aplica a ambos Silvance al mismo tiempo; un segundo Bristla no añadiría una segunda copia del buff.",
+        "El mismo núcleo Orserk + Silvegis que usa cada equipo endgame 1.0 de game8 da la rampa de +150% ataque/defensa; esta es la contraparte de Planta de los otros equipos de doble atacante elemental."
+      ],
+      "alternatives": []
     }
   }
 }

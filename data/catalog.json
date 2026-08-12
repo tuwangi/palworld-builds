@@ -3673,6 +3673,407 @@
         "capturedAt": "2026-08-09T00:00:00Z"
       },
       "verification": "unverified"
+    },
+    {
+      "id": "dual-shaolong-water-rotation",
+      "slug": "dual-shaolong-water-rotation",
+      "name": "Dual Shaolong Water Rotation",
+      "summary": "Two Shaolong for direct Water/Dragon pressure, Quivern's mount buff, and the Orserk+Silvegis core — game8's 1.0 Water endgame standard.",
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "water",
+        "dragon",
+        "electric"
+      ],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "shaolong",
+          "role": [
+            "mount",
+            "carry"
+          ],
+          "explanation": "wiki.gg has no partner skill row for Shaolong — it is one of the 1.0 variants that only exists in paldb.gg's listing — so no figure can be quoted. It is here as a Water/Dragon body that feeds direct damage rather than a stacking buff."
+        },
+        {
+          "palId": "shaolong",
+          "role": [
+            "carry"
+          ],
+          "explanation": "Second Shaolong rotated in alongside the first; the same no-partner-skill-row caveat applies, so this slot is valued for its Water/Dragon typing and base stats, not a documented ability."
+        },
+        {
+          "palId": "quivern",
+          "role": [
+            "mount"
+          ],
+          "explanation": "Sky Dragon Affection is a flying mount that raises Dragon damage by 50% (0★) to 100% (4★) while ridden. It does not buff Dragon Pals in the party — no Pal in 1.0 does; the only effect in the game targeting Dragon Pals is Cryolinx's item drop rate."
+        },
+        {
+          "palId": "orserk",
+          "role": [
+            "active_pal_booster"
+          ],
+          "explanation": "The universal endgame amplifier: each landed bullet grants the active Pal +1% (0★) to +5% (4★) Attack and Defense for five seconds, stacking up to 30 times — +150% at 4★ if you can hold all 30 stacks."
+        },
+        {
+          "palId": "silvegis",
+          "role": [
+            "mount",
+            "defensive_support"
+          ],
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
+        }
+      ],
+      "equipment": [],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding",
+        "legendary"
+      ],
+      "synergyNotes": [
+        "The Orserk + Silvegis universal core provides the same +150% attack/defense ramp and mount-shield safety net used across every game8 1.0 endgame team; swap the ace attackers and this chassis works for any element.",
+        "Shaolong carries no wiki.gg partner-skill row — it is one of the ~10 1.0 Pals only listed in paldb.gg — so this build leans on base stats and Water/Dragon dual-typing rather than a quotable buff percentage.",
+        "Quivern's Dragon damage bonus only applies while it is the mounted Pal, not as a party-wide aura; keep that distinction in mind when swapping the mount slot."
+      ],
+      "alternatives": [
+        {
+          "palId": "kelpsea",
+          "replacesPalId": "shaolong",
+          "reason": "game8 also lists a lighter variant that drops the second Shaolong for Kelpsea's Aqua Spout (+15% Water Pal attack; wiki.gg documents the flat figure but publishes no condensation curve for it), trading a body for a party-wide Water buff."
+        },
+        {
+          "palId": "neptilius",
+          "replacesPalId": "shaolong",
+          "reason": "game8 also lists a variant that swaps both Shaolong slots for Neptilius: 145 base Attack, follows player attacks with Water spear strikes, and can be ridden across water with a swim-speed bonus from rank 2 — trading the no-partner-skill-row Shaolong for a Pal wiki.gg fully documents."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://game8.co/games/Palworld/archives/440398",
+        "title": "Palworld 1.0 Best Endgame Teams — Water Element (game8.co)",
+        "capturedAt": "2026-08-12T00:00:00Z"
+      },
+      "verification": "unverified"
+    },
+    {
+      "id": "dual-frostallion-ice-squad",
+      "slug": "dual-frostallion-ice-squad",
+      "name": "Dual Frostallion Ice Squad",
+      "summary": "Two Frostallion — one active mount, one benched insurance — with Foxcicle's Ice buff and the Orserk+Silvegis core: game8's 1.0 Ice endgame standard.",
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "ice",
+        "dragon",
+        "electric"
+      ],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "frostallion",
+          "role": [
+            "mount",
+            "element_conversion"
+          ],
+          "explanation": "Ice Steed converts the trainer's attacks to Ice and raises trainer Attack by 10% (0★) to 40% (4★) while mounted; wiki.gg's scaling table also lists a self Dark/Ice attack boost and a Dark attack conversion alongside the Ice one that the plain-text skill description does not mention, so treat only the Ice-conversion half as confirmed."
+        },
+        {
+          "palId": "frostallion",
+          "role": [
+            "mount"
+          ],
+          "explanation": "Second Frostallion held as backup: Ice Steed only applies while actively mounted and has no self-buff duration once dismounted, unlike Knocklem's Steel Guardian Mode, so rotating between two Frostallions carries no stacking benefit. This slot is insurance if the first one faints, per game8's listing, not a damage multiplier."
+        },
+        {
+          "palId": "foxcicle",
+          "role": [
+            "element_booster"
+          ],
+          "explanation": "Raises the Attack of every Ice Pal by 10% (0★) to 20% (4★) while in the party; duplicates do not stack."
+        },
+        {
+          "palId": "orserk",
+          "role": [
+            "active_pal_booster"
+          ],
+          "explanation": "The universal endgame amplifier: each landed bullet grants the active Pal +1% (0★) to +5% (4★) Attack and Defense for five seconds, stacking up to 30 times — +150% at 4★ if you can hold all 30 stacks."
+        },
+        {
+          "palId": "silvegis",
+          "role": [
+            "mount",
+            "defensive_support"
+          ],
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
+        }
+      ],
+      "equipment": [],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding",
+        "legendary"
+      ],
+      "synergyNotes": [
+        "Ice Steed only applies while Frostallion is the mounted Pal and has no persistent self-buff once dismounted; the second Frostallion is a fainted-mount replacement, not a stacking rotation like Knocklem's Guardian Mode.",
+        "Foxcicle's Ice attack buff is party-wide and does not require being mounted, so it applies to both Frostallion slots and any other Ice Pal simultaneously.",
+        "The same Orserk + Silvegis core used across every game8 1.0 endgame team provides the +150% attack/defense ramp; swap the ace attacker and buffer to reuse this chassis for any element."
+      ],
+      "alternatives": [
+        {
+          "palId": "moldron-cryst",
+          "replacesPalId": "silvegis",
+          "reason": "game8's DPS-focused Ice variant: Moldron Cryst has no wiki.gg partner-skill row (patched in from paldb.gg, like Shaolong), so no attack-boost figure can be quoted — it trades Silvegis's mount shield for another Ice/Ground body and gives up the defensive safety net for raw damage."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://game8.co/games/Palworld/archives/440398",
+        "title": "Palworld 1.0 Best Endgame Teams — Ice Element (game8.co)",
+        "capturedAt": "2026-08-12T00:00:00Z"
+      },
+      "verification": "unverified"
+    },
+    {
+      "id": "eidrolon-twin-dragon-squad",
+      "slug": "eidrolon-twin-dragon-squad",
+      "name": "Eidrolon Twin-Variant Dragon Squad",
+      "summary": "Eidrolon and its Fire/Dragon variant stacking Liberated Pterosaur's per-Dragon-or-Dark bonus, with Quivern's mount buff and the Orserk+Silvegis core — game8's 1.0 Dragon endgame standard.",
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "dragon",
+        "dark",
+        "fire",
+        "electric"
+      ],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "eidrolon",
+          "role": [
+            "carry",
+            "mount"
+          ],
+          "explanation": "Liberated Pterosaur raises Eidrolon's own Attack and Move Speed by +2% (0★) to +6% (4★) for each other Dragon or Dark Pal in the party. With Eidrolon Ignis, Quivern, Orserk and Silvegis all Dragon-typed, that is four stacks — up to +24% at 4★."
+        },
+        {
+          "palId": "eidrolon-ignis",
+          "role": [
+            "carry"
+          ],
+          "explanation": "wiki.gg has no partner skill row for Eidrolon Ignis — like Shaolong, this 1.0 variant is only documented in paldb.gg's listing — so no figure can be quoted. It contributes a second Dragon/Fire body and feeds Eidrolon's per-Dragon-or-Dark-Pal stacking count."
+        },
+        {
+          "palId": "quivern",
+          "role": [
+            "mount"
+          ],
+          "explanation": "Sky Dragon Affection is a flying mount that raises Dragon damage by 50% (0★) to 100% (4★) while ridden. It does not buff Dragon Pals in the party — no Pal in 1.0 does; the only effect in the game targeting Dragon Pals is Cryolinx's item drop rate."
+        },
+        {
+          "palId": "orserk",
+          "role": [
+            "active_pal_booster"
+          ],
+          "explanation": "The universal endgame amplifier: each landed bullet grants the active Pal +1% (0★) to +5% (4★) Attack and Defense for five seconds, stacking up to 30 times — +150% at 4★ if you can hold all 30 stacks."
+        },
+        {
+          "palId": "silvegis",
+          "role": [
+            "mount",
+            "defensive_support"
+          ],
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
+        }
+      ],
+      "equipment": [],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding",
+        "legendary"
+      ],
+      "synergyNotes": [
+        "Eidrolon's own Attack and Move Speed scale with the count of other Dragon or Dark Pals in the party; Eidrolon Ignis, Quivern, Orserk and Silvegis are all Dragon-typed, so this line-up maxes that stack at four (+24% at 4★) without needing a fifth Dragon Pal.",
+        "Neither Eidrolon nor Eidrolon Ignis has a party-wide Dragon attack buff to give — Liberated Pterosaur only boosts Eidrolon itself. Quivern's Dragon bonus is a mount-only effect for whoever rides it, not a passive aura either.",
+        "Eidrolon Ignis has no wiki.gg partner-skill row, the same coverage gap as Shaolong and Moldron Cryst; it is included here for its Dragon/Fire body and the stacking count, not a documented buff."
+      ],
+      "alternatives": [
+        {
+          "palId": "hoocrates",
+          "replacesPalId": "silvegis",
+          "reason": "game8's DPS-focused Dragon variant: Dark Knowledge raises Dark Pal Attack by 10% (0★) to 20% (4★), which applies to Eidrolon's Dark half, at the cost of Silvegis's mount shield."
+        }
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://game8.co/games/Palworld/archives/440398",
+        "title": "Palworld 1.0 Best Endgame Teams — Dragon Element (game8.co)",
+        "capturedAt": "2026-08-12T00:00:00Z"
+      },
+      "verification": "unverified"
+    },
+    {
+      "id": "dual-knocklem-ground-rotation",
+      "slug": "dual-knocklem-ground-rotation",
+      "name": "Dual Knocklem Ground Rotation",
+      "summary": "Rotate two Knocklem to keep Steel Guardian Mode active permanently, with Dumud buffing Ground attack and the Orserk+Silvegis core — game8's 1.0 Ground endgame standard.",
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "ground",
+        "water",
+        "dragon",
+        "electric"
+      ],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "knocklem",
+          "role": [
+            "carry"
+          ],
+          "explanation": "Steel Guardian Mode is a self-activated buff, not a party aura: +50% (0★) to +200% (4★) Attack and Defense for a limited time while active."
+        },
+        {
+          "palId": "knocklem",
+          "role": [
+            "carry"
+          ],
+          "explanation": "Second Knocklem rotated in once the first's Steel Guardian Mode duration ends, keeping the +50% to +200% Attack/Defense buff active on whichever Knocklem is currently deployed — the same rotation pattern as the Fire variant's Knocklem Ignis pair."
+        },
+        {
+          "palId": "dumud",
+          "role": [
+            "element_booster"
+          ],
+          "explanation": "Raises the Attack of every Ground Pal by 10% (0★) to 20% (4★) while in the party; duplicates do not stack."
+        },
+        {
+          "palId": "orserk",
+          "role": [
+            "active_pal_booster"
+          ],
+          "explanation": "The universal endgame amplifier: each landed bullet grants the active Pal +1% (0★) to +5% (4★) Attack and Defense for five seconds, stacking up to 30 times — +150% at 4★ if you can hold all 30 stacks."
+        },
+        {
+          "palId": "silvegis",
+          "role": [
+            "mount",
+            "defensive_support"
+          ],
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
+        }
+      ],
+      "equipment": [],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding",
+        "legendary"
+      ],
+      "synergyNotes": [
+        "The rotation mirrors the Fire variant: deploy Knocklem 1, trigger Steel Guardian Mode, fight until it ends, swap to Knocklem 2 and repeat, keeping the +50% to +200% Attack/Defense buff active continuously.",
+        "Dumud's Ground attack buff is party-wide and applies to both Knocklem simultaneously since it does not require them to be the active Pal.",
+        "The same Orserk + Silvegis core used across every game8 1.0 endgame team provides the +150% attack/defense ramp; this is the Ground counterpart to Dual Knocklem Ignis Fire Rotation, using the base (non-Ignis) Knocklem instead."
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://game8.co/games/Palworld/archives/440398",
+        "title": "Palworld 1.0 Best Endgame Teams — Ground Element (game8.co)",
+        "capturedAt": "2026-08-12T00:00:00Z"
+      },
+      "verification": "unverified"
+    },
+    {
+      "id": "dual-silvance-grass-rotation",
+      "slug": "dual-silvance-grass-rotation",
+      "name": "Dual Silvance Grass Rotation",
+      "summary": "Two Silvance for direct Grass damage, Bristla buffing Grass attack, and the Orserk+Silvegis core — game8's 1.0 Grass endgame standard.",
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "grass",
+        "dragon",
+        "electric"
+      ],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "silvance",
+          "role": [
+            "carry"
+          ],
+          "explanation": "wiki.gg has no partner skill row for Silvance — like Shaolong and Eidrolon Ignis, it is one of the 1.0 Pals only documented in paldb.gg's listing — so no figure can be quoted. It contributes direct Grass damage rather than a stacking buff."
+        },
+        {
+          "palId": "silvance",
+          "role": [
+            "carry"
+          ],
+          "explanation": "Second Silvance rotated in alongside the first; the same no-partner-skill-row caveat applies, so this slot is valued for its Grass typing and base stats, not a documented ability."
+        },
+        {
+          "palId": "bristla",
+          "role": [
+            "element_booster"
+          ],
+          "explanation": "Raises the Attack of every Grass Pal by 10% (0★) to 20% (4★) from any party slot; a second Bristla does not add another copy."
+        },
+        {
+          "palId": "orserk",
+          "role": [
+            "active_pal_booster"
+          ],
+          "explanation": "The universal endgame amplifier: each landed bullet grants the active Pal +1% (0★) to +5% (4★) Attack and Defense for five seconds, stacking up to 30 times — +150% at 4★ if you can hold all 30 stacks."
+        },
+        {
+          "palId": "silvegis",
+          "role": [
+            "mount",
+            "defensive_support"
+          ],
+          "explanation": "Aegis Shield is a mount skill, not a passive team buff: it extends the shield you get from Aegis Charge while riding Silvegis. wiki.gg publishes no condensation curve for it, so the shield-reduction percentages this build used to quote had no source."
+        }
+      ],
+      "equipment": [],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding",
+        "legendary"
+      ],
+      "synergyNotes": [
+        "Silvance has no wiki.gg partner-skill row, the same coverage gap as Shaolong, Eidrolon Ignis and Moldron Cryst; both copies are here for base Grass damage, not a documented buff.",
+        "Bristla's Grass attack buff is party-wide and applies to both Silvance simultaneously; a second Bristla would not add a second copy of the buff.",
+        "The same Orserk + Silvegis core used across every game8 1.0 endgame team provides the +150% attack/defense ramp; this is the Grass counterpart to the other dual-attacker element teams."
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://game8.co/games/Palworld/archives/440398",
+        "title": "Palworld 1.0 Best Endgame Teams — Grass Element (game8.co)",
+        "capturedAt": "2026-08-12T00:00:00Z"
+      },
+      "verification": "unverified"
     }
   ]
 }
