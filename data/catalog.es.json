@@ -56,16 +56,21 @@
         "Mientras está montado, convierte los ataques del jugador a Hielo, aumenta el ataque a distancia montado entre 10% y 40%, y ayuda a infligir Congelación (nivel 2 a 6).",
         "Aumenta el daño del jugador a partes débiles entre 30% y 50%, premiando directamente los disparos cargados precisos.",
         "Aumenta el daño del arma de energía equipada entre 10% y 35%, incluyendo el montaje de rifle de carga.",
-        "Premia los golpes del jugador a puntos débiles con un aumento adicional de daño de 30% a 60%.",
+        "Electro Hunter no es un buff de punto débil: aumenta la tasa de drop de objetos de Pals Eléctricos derrotados entre 40% (0★) y 80% (4★) y no tiene ningún efecto sobre el daño a puntos débiles ni sobre la conversión a Hielo. Una fuente (mobalytics) le atribuye un bono de punto débil que ningún Pal en 1.0 da realmente. Se mantiene aquí como cuerpo de Tierra; trata la acumulación de punto débil de esta build como Vanwyrm Cryst más el bono de montura de Frostallion, no una tercera fuente.",
         "Untainted Maiden aumenta el Ataque del jugador mientras cada Pal del equipo sea de una especie distinta — condición que este equipo cumple. wiki.gg documenta el efecto pero no publica curva de condensación, así que no se puede citar ninguna cifra."
       ],
-      "equipment": [],
+      "equipment": [
+        "La elección de mobalytics para esta build: los drones se mantienen activos y siguen haciendo daño mientras encaras el próximo disparo cargado, a diferencia del Rifle de Plasma o el Arco Mecánico que necesitan apuntado continuo.",
+        "La elección de mobalytics para un aumento fijo de Ataque del jugador que escala con los multiplicadores de punto débil de esta build.",
+        "La elección de mobalytics para Defensa y Vida, ya que mantenerte montado y con vida durante la carga del disparo importa tanto como el daño extra."
+      ],
       "synergyNotes": [
         "Monta a Frostallion para convertir el disparo a Hielo e intenta Congelar al objetivo antes de cargar, luego reposiciónate para un ángulo limpio al punto débil antes de soltar un disparo de rifle de carga totalmente preparado.",
         "Los ~200,000 de daño reportados por la fuente en un muñeco de entrenamiento son un resultado de la comunidad bajo equipo, pasivas y condensación específicos, no una garantía universal."
       ],
       "alternatives": [
-        "Cambia algo de daño por una recuperación de escudo más rápida y ventanas de apuntado más seguras."
+        "Cambia algo de daño por una recuperación de escudo más rápida y ventanas de apuntado más seguras.",
+        "La versión de mobalytics de esta build empareja a Frostallion con Moldron Cryst en vez de Xenogard para jefes con debilidad a Hielo, atribuyéndole un buff de +40% de daño a puntos débiles de Hielo — pero Moldron Cryst no tiene fila de habilidad de compañero en wiki.gg para confirmar esa cifra, el mismo vacío de cobertura que Shaolong y Silvance."
       ]
     },
     "full-tackle-box": {
@@ -992,6 +997,23 @@
         "El mismo núcleo Orserk + Silvegis que usa cada equipo endgame 1.0 de game8 da la rampa de +150% ataque/defensa; esta es la contraparte de Planta de los otros equipos de doble atacante elemental."
       ],
       "alternatives": []
+    },
+    "beakon-electric-grenade-squad": {
+      "name": "Escuadrón Eléctrico de Granadas de Beakon",
+      "summary": "Beakon y Mossanda Lux dan dos opciones de montura distintas — conversión Eléctrica o ráfaga de granadas — mientras Sparkit, Snock y Orserk potencian, aplican Electrificación y acumulan el amplificador universal de endgame.",
+      "pals": [
+        "Thunderous es una habilidad de montura, no un buff de velocidad para todo el equipo: mientras está montado convierte los ataques del jugador a Eléctrico y aumenta el Ataque del jugador entre +5% (0★) y +20% (4★). Una fuente (deltiasgaming) le atribuye un aumento de velocidad de movimiento para cada otro Pal Eléctrico del equipo — ningún Pal de 1.0 da ese efecto; Thunderous solo afecta al jugador, y solo mientras Beakon es la montura activa.",
+        "Grenadier Panda es una habilidad de montura que dispara un lanzagranadas mientras la montas, con un poder de ataque propio que escala de 30 (0★) a 60 (4★) — una estadística fija para ese ataque de granada, no un buff porcentual para el resto del equipo.",
+        "El amplificador universal de endgame: cada bala que impacta otorga al Pal activo entre +1% (0★) y +5% (4★) de Ataque y Defensa durante cinco segundos, acumulable hasta 30 veces — +150% a 4★ si consigues mantener las 30 cargas.",
+        "Aumenta el Ataque de cada Pal Eléctrico entre 15% y 30% mientras está en el equipo; las copias duplicadas no se acumulan.",
+        "Hace que los ataques del jugador inflijan Electrificación nivel 2 (0★) a nivel 6 (4★)."
+      ],
+      "equipment": [],
+      "synergyNotes": [
+        "Thunderous de Beakon y Grenadier Panda de Mossanda Lux son ambas habilidades de montura — solo aplica una a la vez, la del Pal que estés montando; trátalas como dos opciones de montura para la misma ranura, no cinco efectos activos a la vez.",
+        "El buff de ataque Eléctrico de Sparkit y la Electrificación de Snock son para todo el equipo y no requieren estar montado, así que aplican sin importar cuál de las dos monturas esté activa.",
+        "Deltia's Gaming le atribuye a Beakon un aumento de velocidad de movimiento para todo el equipo Eléctrico, pero Thunderous solo afecta el propio Ataque y el elemento de ataque del jugador mientras está montado — no hay ningún Pal en 1.0 que potencie la velocidad de movimiento de otros Pals Eléctricos."
+      ]
     }
   }
 }

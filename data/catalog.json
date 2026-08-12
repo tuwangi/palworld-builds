@@ -251,9 +251,9 @@
         {
           "palId": "cryolinx-terra",
           "role": [
-            "weak_point_support"
+            "flex"
           ],
-          "explanation": "Rewards trainer weak-point hits with an additional 30% to 60% damage increase."
+          "explanation": "Electro Hunter is not a weak-point buff: it raises item drop rate from defeated Electric Pals by 40% (0★) to 80% (4★) and has no effect on weak-point damage or Ice conversion. A source (mobalytics) credits it with a weak-point bonus that no Pal in 1.0 actually provides. Kept here as a Ground body; treat this build's weak-point stacking as Vanwyrm Cryst plus Frostallion's mount bonus, not a third source."
         },
         {
           "palId": "solenne",
@@ -263,7 +263,30 @@
           "explanation": "Untainted Maiden raises the player's Attack while every Pal in the party is a different species — which this team satisfies. wiki.gg documents the effect but publishes no condensation curve, so no figure can be quoted for it."
         }
       ],
-      "equipment": [],
+      "equipment": [
+        {
+          "itemId": "drone-launcher",
+          "kind": "weapon",
+          "status": "recommended",
+          "reason": "mobalytics' pick for this build: the drones stay active and keep dealing damage while you line up the next charge shot, unlike Plasma Rifle or Mechanical Bow which need continuous aim.",
+          "alternatives": [
+            "plasma-rifle",
+            "mechanical-bow"
+          ]
+        },
+        {
+          "itemId": "attack-pendant",
+          "kind": "accessory",
+          "status": "recommended",
+          "reason": "mobalytics' pick for a flat player Attack increase that scales with the build's weak-point multipliers."
+        },
+        {
+          "itemId": "warsect-terra-s-belt",
+          "kind": "accessory",
+          "status": "recommended",
+          "reason": "mobalytics' pick for Defense and Health, since staying mounted and alive through the charge-shot windup matters as much as the extra damage."
+        }
+      ],
       "requirements": [
         "condensation",
         "endgame",
@@ -278,6 +301,11 @@
           "palId": "silvegis",
           "replacesPalId": "vanwyrm-cryst",
           "reason": "Trades some damage for faster shield recovery and safer aiming windows."
+        },
+        {
+          "palId": "moldron-cryst",
+          "replacesPalId": "xenogard",
+          "reason": "mobalytics' version of this build pairs Frostallion with Moldron Cryst instead of Xenogard for Ice-weakness bosses, crediting it with a +40% Ice weak-point damage buff — but Moldron Cryst has no wiki.gg partner-skill row to confirm that figure, the same coverage gap as Shaolong and Silvance."
         }
       ],
       "gameVersion": "1.0",
@@ -286,7 +314,7 @@
         "title": "Frostallion Charge Rifle Build in Palworld 1.0",
         "capturedAt": "2026-08-09T00:00:00Z"
       },
-      "verification": "cross_checked"
+      "verification": "unverified"
     },
     {
       "id": "full-tackle-box",
@@ -4071,6 +4099,92 @@
       "source": {
         "url": "https://game8.co/games/Palworld/archives/440398",
         "title": "Palworld 1.0 Best Endgame Teams — Grass Element (game8.co)",
+        "capturedAt": "2026-08-12T00:00:00Z"
+      },
+      "verification": "unverified"
+    },
+    {
+      "id": "beakon-electric-grenade-squad",
+      "slug": "beakon-electric-grenade-squad",
+      "name": "Beakon Electric Grenade Squad",
+      "summary": "Beakon and Mossanda Lux give two different mount options — Electric conversion or grenade burst — while Sparkit, Snock and Orserk buff, apply Electrify and stack the universal endgame amplifier.",
+      "purpose": [
+        "pal_element_damage",
+        "boss_damage",
+        "endgame"
+      ],
+      "elements": [
+        "electric",
+        "dragon"
+      ],
+      "progression": "endgame",
+      "pals": [
+        {
+          "palId": "beakon",
+          "role": [
+            "mount",
+            "element_conversion"
+          ],
+          "explanation": "Thunderous is a mount skill, not a party-wide speed buff: while mounted it converts the player's attacks to Electric and raises player Attack by +5% (0★) to +20% (4★). A source (deltiasgaming) credits it with boosting movement speed for every other Electric Pal in the party — no Pal in 1.0 provides that effect; Thunderous only affects the player, and only while Beakon is the active mount.",
+          "recommendedPassives": [
+            "Swift",
+            "Nimble",
+            "Legend",
+            "Runner"
+          ]
+        },
+        {
+          "palId": "mossanda-lux",
+          "role": [
+            "mount",
+            "carry"
+          ],
+          "explanation": "Grenadier Panda is a mount skill that fires a grenade launcher while ridden, with its own Attack power scaling from 30 (0★) to 60 (4★) — a flat stat for that grenade attack, not a percentage buff for the rest of the team.",
+          "recommendedPassives": [
+            "Legend",
+            "Immortality",
+            "Eternal Flame",
+            "Musclehead"
+          ]
+        },
+        {
+          "palId": "orserk",
+          "role": [
+            "active_pal_booster"
+          ],
+          "explanation": "The universal endgame amplifier: each landed bullet grants the active Pal +1% (0★) to +5% (4★) Attack and Defense for five seconds, stacking up to 30 times — +150% at 4★ if you can hold all 30 stacks."
+        },
+        {
+          "palId": "sparkit",
+          "role": [
+            "element_booster"
+          ],
+          "explanation": "Raises the Attack of every Electric Pal by 15% to 30% while in the party; duplicates do not stack."
+        },
+        {
+          "palId": "snock",
+          "role": [
+            "status_applier"
+          ],
+          "explanation": "Makes the player's attacks inflict Electrify level 2 (0★) to level 6 (4★)."
+        }
+      ],
+      "equipment": [],
+      "requirements": [
+        "endgame",
+        "condensation",
+        "breeding",
+        "legendary"
+      ],
+      "synergyNotes": [
+        "Beakon's Thunderous and Mossanda Lux's Grenadier Panda are both mount skills — only one applies at a time, whichever Pal you're currently riding; treat them as two different mount options for the same slot, not five independently active effects.",
+        "Sparkit's Electric attack buff and Snock's Electrify application are both party-wide and don't require being mounted, so they apply regardless of which of the two mounts is active.",
+        "Deltia's Gaming credits Beakon with boosting party-wide Electric Pal movement speed, but Thunderous only affects the player's own Attack and attack element while mounted — there is no Pal in 1.0 that buffs other Electric Pals' movement speed."
+      ],
+      "gameVersion": "1.0",
+      "source": {
+        "url": "https://deltiasgaming.com/palworld-1-0-best-endgame-team-composition/",
+        "title": "Palworld 1.0: Best Endgame Team Composition (deltiasgaming.com)",
         "capturedAt": "2026-08-12T00:00:00Z"
       },
       "verification": "unverified"
